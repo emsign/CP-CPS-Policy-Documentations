@@ -21,8 +21,8 @@
 <p>&amp;</p>
 <p>CERTIFICATION PRACTICE STATEMENT</p>
 <p>(CP/CPS) For SSL/TLS Certificates</p></td>
-<td style="text-align: left;">09-September-2025</td>
-<td style="text-align: left;">Version 1.01</td>
+<td style="text-align: left;">19-November-2025</td>
+<td style="text-align: left;">Version 1.02</td>
 <td style="text-align: left;">1.3.6.1.4.1.50977.1.0.1.1</td>
 </tr>
 </tbody>
@@ -558,9 +558,9 @@ The CP/CPS shall be reviewed and updated by emSign at least annually, or more fr
 
 **Attestation Letter**: A letter attesting that Subject Information is correct written by an accountant, lawyer, government official, or other reliable third party customarily relied upon for such information.
 
-**Audit Period**: In a period‐of‐time audit, the period between the first day (start) and the last day of operations (end) covered by the auditors in their engagement. (This is not the same as the period of time when the auditors are on‐site at the CA.) The coverage rules and maximum length of audit periods are defined in this CP/CPS.
-
-**Audit Report:** A report from a Qualified Auditor stating the Qualified Auditor’s opinion on whether an entity’s processes and controls comply with the mandatory provisions of these Requirements.
+> **Audit Period**: In a period‐of‐time audit, the period between the first day (start) and the last day of operations (end) covered by the auditors in their engagement. (This is not the same as the period of time when the auditors are on‐site at the CA.) The coverage rules and maximum length of audit periods are defined in this CP/CPS.
+>
+> **Audit Report:** A report from a Qualified Auditor stating the Qualified Auditor’s opinion on whether an entity’s processes and controls comply with the mandatory provisions of these Requirements.
 
 **Authorization Domain Name**: The Domain Name used to obtain authorization for certificate issuance for a given FQDN. The CA may use the FQDN returned from a DNS CNAME lookup as the FQDN for the purposes of domain validation. If the FQDN contains a wildcard character, then the CA MUST remove all wildcard labels from the left most portion of requested FQDN. The CA may prune zero or more labels from left to right until encountering a Base Domain Name and may use any one of the intermediate values for the purpose of domain validation.
 
@@ -586,7 +586,7 @@ The CP/CPS shall be reviewed and updated by emSign at least annually, or more fr
 
 **Certificate Profile**: A set of documents or files that defines requirements for Certificate content and Certificate extensions in accordance with Section 7, e.g. a Section in a CA’s CPS or a certificate template file used by CA software.
 
-**Certificate Revocation List**: A regularly updated time‐stamped list of revoked Certificates that is created and digitally signed by the CA that issued the Certificates.
+> **Certificate Revocation List**: A regularly updated time‐stamped list of revoked Certificates that is created and digitally signed by the CA that issued the Certificates.
 
 **Certificate System**: Means the system used by emSign or a delegated third party in providing identity verification, registration and enrollment, Certificate approval, issuance, validity status, support, and other PKI-related services
 
@@ -620,7 +620,7 @@ The CP/CPS shall be reviewed and updated by emSign at least annually, or more fr
 
 **Domain Contact**: The Domain Name Registrant, technical contact, or administrative contract (or the equivalent under a ccTLD) as listed in the WHOIS record of the Base Domain Name or in a DNS SOA record.
 
-**Domain Label**: From RFC 8499 (http://tools.ietf.org/html/rfc8499): “An ordered list of zero or more octets that makes up a portion of a domain name. Using graph theory, a label identifies one node in a portion of the graph of all possible domain names.”
+> **Domain Label**: From RFC 8499 (http://tools.ietf.org/html/rfc8499): “An ordered list of zero or more octets that makes up a portion of a domain name. Using graph theory, a label identifies one node in a portion of the graph of all possible domain names.”
 
 **Domain Name Registrant**: Sometimes referred to as the “owner” of a Domain Name, but more properly the person(s) or entity(ies) registered with a Domain Name Registrar as having the right to control how a Domain Name is used, such as the natural person or Legal Entity that is listed as the “Registrant” by WHOIS or the Domain Name Registrar.
 
@@ -638,7 +638,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **EV Guidelines (EVG)**: CA/Browser Forum Guidelines for the Issuance and Management of Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](https://www.cabforum.org/)
 
-**Expiry Date**: The “Not After” date in a Certificate that defines the end of a Certificate’s validity period.
+> **Expiry Date**: The “Not After” date in a Certificate that defines the end of a Certificate’s validity period.
 
 **Fully‐Qualified Domain Name**: A Domain Name that includes the labels of all superior nodes in the Internet Domain Name System.
 
@@ -666,7 +666,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **Network Perspective**: Related to Multi-Perspective Issuance Corroboration. A Network Perspective refers to a system (such as a cloud-hosted server) or a group of network elements (like a VPN and its supporting infrastructure) used to send outbound Internet traffic during domain control validation and/or CAA checking. The location of a Network Perspective is defined as the point where outbound Internet traffic before any encapsulation is initially passed to the Internet service provider or network infrastructure responsible for connectivity.
 
-**Object Identifier**: A unique alphanumeric or numeric identifier registered under the International Organization for Standardization’s applicable standard for a specific object or object class.
+> **Object Identifier**: A unique alphanumeric or numeric identifier registered under the International Organization for Standardization’s applicable standard for a specific object or object class.
 
 **OCSP Responder**: An online server operated under the authority of the CA and connected to its Repository for processing Certificate status requests.
 
@@ -682,7 +682,7 @@ Online Channel: Refers to emSign's online platforms such as CERTInext, ACME, API
 
 **Public Key**: The key of a Key Pair that may be publicly disclosed by the holder of the corresponding Private Key and that is used by a Relying Party to verify Digital Signatures created with the holder's corresponding Private Key and/or to encrypt messages so that they can be decrypted only with the holder's corresponding Private Key.
 
-**Publicly‐Trusted Certificate**: A Certificate that is trusted by virtue of the fact that its corresponding Root Certificate is distributed as a trust anchor in widely‐available application software.
+> **Publicly‐Trusted Certificate**: A Certificate that is trusted by virtue of the fact that its corresponding Root Certificate is distributed as a trust anchor in widely‐available application software.
 
 **Qualified Auditor**: A natural person or Legal Entity that meets the requirements of this CP/CPS.
 
@@ -714,7 +714,7 @@ Online Channel: Refers to emSign's online platforms such as CERTInext, ACME, API
 
 **Root CA**: The top level Certification Authority whose Root Certificate is distributed by Application Software Suppliers and that issues Subordinate CA Certificates.
 
-**Root Certificate**: The self‐signed Certificate issued by the Root CA to identify itself and to facilitate verification of Certificates issued to its Subordinate CAs.
+> **Root Certificate**: The self‐signed Certificate issued by the Root CA to identify itself and to facilitate verification of Certificates issued to its Subordinate CAs.
 
 **Sovereign State**: A state or country that administers its own government, and is not dependent upon, or subject to, another power.
 
@@ -750,11 +750,11 @@ Online Channel: Refers to emSign's online platforms such as CERTInext, ACME, API
 
 **WebTrust for Certification Authorities**: Means the current program for CAs located at CPA Canada Webtrust Principles and Criteria.
 
-**WHOIS**: Information retrieved directly from the Domain Name Registrar or registry operator via the protocol defined in RFC 3912, the Registry Data Access Protocol defined in RFC 7482, or an HTTPS website.
+**WHOIS**: Information retrieved directly from the Domain Name Registrar or registry operator via the protocol defined in RFC 3912, the Registry Data Access Protocol defined in RFC 7482, or an HTTPS website
 
-**Wildcard Certificate**: A Certificate containing an asterisk (\*) in the left‐most position of any of the Subject Fully‐Qualified Domain Names contained in the Certificate.
+> **Wildcard Certificate**: A Certificate containing an asterisk (\*) in the left‐most position of any of the Subject Fully‐Qualified Domain Names contained in the Certificate.
 
-> **Wildcard Domain Name**: A Domain Name consisting of a single asterisk character followed by a single full stop character (\*.) followed by a FQDN
+**Wildcard Domain Name**: A Domain Name consisting of a single asterisk character followed by a single full stop character (\*.) followed by a FQDN
 
 **X.509**: Means the ITU-T standard for Certificates and their corresponding authentication framework
 
@@ -1005,11 +1005,9 @@ Where the initial Subscriber identification & authentication process as per this
 |:---|:---|:---|:---|:---|
 | Subject Identity Information Validation | March 15, 2026 |   | 825 days | Re-key allowed using passphrase, shared secret, or other mechanism if initial identification completed within 825 days. |
 | Subject Identity Information Validation |   | March 15, 2026 | 398 days | Re-key allowed using passphrase, shared secret, or other mechanism if initial identification completed within 398 days. |
-| Domain Name and IP Address Validation | March 15, 2026 |   | 398 days | Must be validated within this period prior to certificate issuance. |
-| Domain Name and IP Address Validation | March 15, 2026 | March 15, 2027 | 200 days | Must be validated within this period prior to certificate issuance. |
-| Domain Name and IP Address Validation | March 15, 2027 | March 15, 2029 | 100 days | Must be validated within this period prior to certificate issuance. |
+| Domain Name and IP Address Validation | November 19, 2025 |   | 90 days | Must be validated within this period prior to certificate issuance. |
 | Domain Name and IP Address Validation | March 15, 2029 |   | 10 days | Must be validated within this period prior to certificate issuance. |
-| EV (Extended Validation) | — | — | As per EV guidelines | Re-key authentication must follow EV Guidelines. |
+| EV (Extended Validation) | \- | \- | As per EV guidelines | Re-key authentication must follow EV Guidelines. |
 
 <a id="identification-and-authentication-for-re-key-after-revocation"></a>
 
@@ -1101,7 +1099,7 @@ If emSign issues a certificate after performing a CAA check, issuance shall occu
 
 Subscribers who already have CAA records in their DNS zones and intend to request Server TLS certificates from emSign must include a CAA record with the appropriate issue, issuewild, or issuemail property set to "emsign.com" to explicitly authorize emSign to issue the corresponding certificate type.
 
-Where applicable, emSign will also apply Multi-Perspective Issuance Corroboration (MPIC) to ensure that domain validation checks are not biased by single-network visibility and reflect globally reachable DNS resolution.
+> Where applicable, emSign will also apply Multi-Perspective Issuance Corroboration (MPIC) to ensure that domain validation checks are not biased by single-network visibility and reflect globally reachable DNS resolution.
 
 <a id="approval-or-rejection-of-certificate-applications"></a>
 
@@ -2516,7 +2514,7 @@ The maximum validity periods for Digital Certificates issued within the emSign C
 <p>EKU</p></td>
 <td style="text-align: left;">Not Applicable</td>
 <td style="text-align: left;">Not Applicable</td>
-<td style="text-align: left;">398 Days</td>
+<td style="text-align: left;">90 Days</td>
 </tr>
 </tbody>
 </table>
@@ -2529,9 +2527,8 @@ Reference for maximum Validity Periods of Subscriber Certificates
 
 | **Certificate Issued On or After** | **Certificate Issued Before** | **Maximum Validity Period** |
 |:---|:---|:---|
-| – | March 15, 2026 | 398 days |
-| March 15, 2026 | March 15, 2027 | 200 days |
-| March 15, 2027 | March 15, 2029 | 100 days |
+| – | November 19, 2025 | 398 days |
+| November 19, 2025 | March 15, 2029 | 90 days |
 | March 15, 2029 | – | 47 days |
 
 All certificates including subscriber certificates or any subordinate CA certificate end date shall not exceed the end date of its signing certificate (issuer).
@@ -2969,7 +2966,7 @@ emSign PKI will provide refund to subscribers under certain circumstances and su
 
 ### 9.2.1. Insurance Cover 
 
-emSign maintains Commercial General Liability insurance with a policy limit of at least two million US dollars \$2,000,000 in coverage and Errors and Omissions/Professional Liability insurance with a policy limit of at least Five million US dollars \$ 5,000,000 in coverage.
+emSign maintains Commercial General Liability insurance with a policy limit of at least two million US dollars (\$2,000,000) in coverage and Errors and Omissions/Professional Liability insurance with a policy limit of at least Five million US dollars (\$ 5,000,000) in coverage.
 
 <a id="other-assets"></a>
 
@@ -3129,7 +3126,7 @@ RAs and LRAs warrant that:
 
 4.  All Certificates requested by them meet all material requirements of this CP/CPS.
 
-Additional representations and warranties may be contained in emSign’s agreement with RA/LRAs.
+> Additional representations and warranties may be contained in emSign’s agreement with RA/LRAs.
 
 <a id="subscriber-representation-and-warranties"></a>
 
@@ -4328,5 +4325,11 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 - In section 4.3.1.6 updated with post linting.
 
 - In section 11.2, 11.3, 11.4 and 11.5 updated the certificate profile.
+
+**Version 1.02: 19-November-2025**
+
+- In section 3.3.1 updated Domain Name and IP Address validation data reuse validity.
+
+- In section 6.3.2 updated Subscriber Certificates with Server Authentication EKU validity.
 
 </div>
