@@ -21,8 +21,8 @@
 <p>&amp;</p>
 <p>CERTIFICATION PRACTICE STATEMENT</p>
 <p>(CP/CPS)</p></td>
-<td style="text-align: left;">09-September-2025</td>
-<td style="text-align: left;">Version 1.21</td>
+<td style="text-align: left;">22-November-2025</td>
+<td style="text-align: left;">Version 1.22</td>
 <td style="text-align: left;">1.3.6.1.4.1.50977.1.0.1</td>
 </tr>
 </tbody>
@@ -54,11 +54,13 @@ This CP/CPS specifies the principles, procedures and practices that the emSign P
 
     - Baseline Requirements for the Issuance and Management of Extended Validation (EV) Certificates,
 
-    - Baseline Requirements for the Issuance and Management of Publicly‐Trusted Code Signing Certificates
+    - Baseline Requirements for the Issuance and Management of Publicly‐Trusted Code
 
-    - Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates.
+> Signing Certificates
 
-    - Network and Certificate System Security Requirements
+- Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates.
+
+- Network and Certificate System Security Requirements
 
 3.  Baseline Requirements for Code Signing Certificates (Ref: [<u>https://aka.ms/csbr</u>)](https://aka.ms/csbr)
 
@@ -347,7 +349,7 @@ A Subscriber, as used herein, refers to both the Subject of the Certificate and 
 
 Technically, CAs are also subscribers of emSign certificates either as a CA issuing a self-signed Certificate to itself (Root CA), or as a CA being issued a Certificate by a superior CA (Issuing CA / Subordinate CA).
 
-References to “end entities” and “subscribers” in this CP/CPS, however, apply only to end-user Subscribers.
+> References to “end entities” and “subscribers” in this CP/CPS, however, apply only to end-user Subscribers.
 
 Obligations of Subscribers within the emSign PKI include:
 
@@ -541,9 +543,9 @@ The CP/CPS shall be reviewed/revised from time to time, as and when needed by th
 
 **Attestation Letter**: A letter attesting that Subject Information is correct written by an accountant, lawyer, government official, or other reliable third party customarily relied upon for such information.
 
-**Audit Period**: In a period‐of‐time audit, the period between the first day (start) and the last day of operations (end) covered by the auditors in their engagement. (This is not the same as the period of time when the auditors are on‐site at the CA.) The coverage rules and maximum length of audit periods are defined in this CP/CPS.
-
-**Audit Report:** A report from a Qualified Auditor stating the Qualified Auditor’s opinion on whether an entity’s processes and controls comply with the mandatory provisions of these Requirements.
+> **Audit Period**: In a period‐of‐time audit, the period between the first day (start) and the last day of operations (end) covered by the auditors in their engagement. (This is not the same as the period of time when the auditors are on‐site at the CA.) The coverage rules and maximum length of audit periods are defined in this CP/CPS.
+>
+> **Audit Report:** A report from a Qualified Auditor stating the Qualified Auditor’s opinion on whether an entity’s processes and controls comply with the mandatory provisions of these Requirements.
 
 **Authorization Domain Name**: The Domain Name used to obtain authorization for certificate issuance for a given FQDN. The CA may use the FQDN returned from a DNS CNAME lookup as the FQDN for the purposes of domain validation. If the FQDN contains a wildcard character, then the CA MUST remove all wildcard labels from the left most portion of requested FQDN. The CA may prune zero or more labels from left to right until encountering a Base Domain Name and may use any one of the intermediate values for the purpose of domain validation.
 
@@ -569,7 +571,7 @@ The CP/CPS shall be reviewed/revised from time to time, as and when needed by th
 
 **Certificate Profile**: A set of documents or files that defines requirements for Certificate content and Certificate extensions in accordance with Section 7, e.g. a Section in a CA’s CPS or a certificate template file used by CA software.
 
-**Certificate Revocation List**: A regularly updated time‐stamped list of revoked Certificates that is created and digitally signed by the CA that issued the Certificates.
+> **Certificate Revocation List**: A regularly updated time‐stamped list of revoked Certificates that is created and digitally signed by the CA that issued the Certificates.
 
 **Certificate System**: Means the system used by emSign or a delegated third party in providing identity verification, registration and enrollment, Certificate approval, issuance, validity status, support, and other PKI-related services
 
@@ -609,7 +611,7 @@ The CP/CPS shall be reviewed/revised from time to time, as and when needed by th
 
 **Domain Contact**: The Domain Name Registrant, technical contact, or administrative contract (or the equivalent under a ccTLD) as listed in the WHOIS record of the Base Domain Name or in a DNS SOA record.
 
-**Domain Label**: From RFC 8499 (http://tools.ietf.org/html/rfc8499): “An ordered list of zero or more octets that makes up a portion of a domain name. Using graph theory, a label identifies one node in a portion of the graph of all possible domain names.”
+> **Domain Label**: From RFC 8499 (http://tools.ietf.org/html/rfc8499): “An ordered list of zero or more octets that makes up a portion of a domain name. Using graph theory, a label identifies one node in a portion of the graph of all possible domain names.”
 
 **Domain Name Registrant**: Sometimes referred to as the “owner” of a Domain Name, but more properly the person(s) or entity(ies) registered with a Domain Name Registrar as having the right to control how a Domain Name is used, such as the natural person or Legal Entity that is listed as the “Registrant” by WHOIS or the Domain Name Registrar.
 
@@ -627,7 +629,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **EV Guidelines (EVG)**: CA/Browser Forum Guidelines for the Issuance and Management of Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](https://www.cabforum.org/)
 
-**Expiry Date**: The “Not After” date in a Certificate that defines the end of a Certificate’s validity period.
+> **Expiry Date**: The “Not After” date in a Certificate that defines the end of a Certificate’s validity period.
 
 **Fully‐Qualified Domain Name**: A Domain Name that includes the labels of all superior nodes in the Internet Domain Name System.
 
@@ -655,7 +657,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **Network Perspective:** Related to Multi-Perspective Issuance Corroboration. A system (e.g., a cloud-hosted server instance) or collection of network components (e.g., a VPN and corresponding infrastructure) for sending outbound Internet traffic associated with a domain control validation method and/or CAA check. The location of a Network Perspective is determined by the point where unencapsulated outbound Internet traffic is typically first handed off to the network infrastructure providing Internet connectivity to that perspective.
 
-**Object Identifier**: A unique alphanumeric or numeric identifier registered under the International Organization for Standardization’s applicable standard for a specific object or object class.
+> **Object Identifier**: A unique alphanumeric or numeric identifier registered under the International Organization for Standardization’s applicable standard for a specific object or object class.
 
 **OCSP Responder**: An online server operated under the authority of the CA and connected to its Repository for processing Certificate status requests.
 
@@ -669,7 +671,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **Public Key**: The key of a Key Pair that may be publicly disclosed by the holder of the corresponding Private Key and that is used by a Relying Party to verify Digital Signatures created with the holder's corresponding Private Key and/or to encrypt messages so that they can be decrypted only with the holder's corresponding Private Key.
 
-**Publicly‐Trusted Certificate**: A Certificate that is trusted by virtue of the fact that its corresponding Root Certificate is distributed as a trust anchor in widely‐available application software.
+> **Publicly‐Trusted Certificate**: A Certificate that is trusted by virtue of the fact that its corresponding Root Certificate is distributed as a trust anchor in widely‐available application software.
 
 **Qualified Auditor**: A natural person or Legal Entity that meets the requirements of this CP/CPS.
 
@@ -701,7 +703,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **Root CA**: The top level Certification Authority whose Root Certificate is distributed by Application Software Suppliers and that issues Subordinate CA Certificates.
 
-**Root Certificate**: The self‐signed Certificate issued by the Root CA to identify itself and to facilitate verification of Certificates issued to its Subordinate CAs.
+> **Root Certificate**: The self‐signed Certificate issued by the Root CA to identify itself and to facilitate verification of Certificates issued to its Subordinate CAs.
 
 **Sovereign State**: A state or country that administers its own government, and is not dependent upon, or subject to, another power.
 
@@ -739,7 +741,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **WHOIS**: Information retrieved directly from the Domain Name Registrar or registry operator via the protocol defined in RFC 3912, the Registry Data Access Protocol defined in RFC 7482, or an HTTPS website
 
-**Wildcard Certificate**: A Certificate containing an asterisk (\*) in the left‐most position of any of the Subject Fully‐Qualified Domain Names contained in the Certificate.
+> **Wildcard Certificate**: A Certificate containing an asterisk (\*) in the left‐most position of any of the Subject Fully‐Qualified Domain Names contained in the Certificate.
 
 **Wildcard Domain Name**: A Domain Name consisting of a single asterisk character followed by a single full stop character (\*.) followed by a FQDN
 
@@ -1416,12 +1418,12 @@ Future identification of repeat Applicants and subsequent authentication checks 
 
 However, use of the documents and data provided to verify certificate information in accordance to Appendix A shall be valid for a period no more than a specific period, prior to issuing the Certificate. This specific period shall not be more than the maximum validity period of the digital certificates limited under section 6.3.2 of this CP/CPS. Any issuance exceeding such period, shall undergo the requirements specified under Appendix A of this CP/CPS.
 
-For SSL/TLS Certificates, emSign PKI’s Issuing CAs shall also verify the existence of CAA record (RFC 6844) in applicant’s DNS. If any CAA record exists in applicant’s DNS, then the issuance shall be made only of the CAA record value contains the expected value for emSign PKI. The CAA records authorizing emSign PKI shall contain ‘emsign.com’ as the issuer domain names for ‘issue’ and ‘issuewild’ entries.
-
-Subscribers who wish to authorize emSign to issue S/MIME Certificates for their Mailbox Addresses should include in their respective DNS zone a CAA record property "issuemail", including the value “emSign.com”.
-
-Starting on March 15, 2025, prior to issuing a Certificate that includes a Mailbox Address, emSign SHALL retrieve and process CAA records in accordance with Section 4 of RFC 9495.
-
+> For SSL/TLS Certificates, emSign PKI’s Issuing CAs shall also verify the existence of CAA record (RFC 6844) in applicant’s DNS. If any CAA record exists in applicant’s DNS, then the issuance shall be made only of the CAA record value contains the expected value for emSign PKI. The CAA records authorizing emSign PKI shall contain ‘emsign.com’ as the issuer domain names for ‘issue’ and ‘issuewild’ entries.
+>
+> Subscribers who wish to authorize emSign to issue S/MIME Certificates for their Mailbox Addresses should include in their respective DNS zone a CAA record property "issuemail", including the value “emSign.com”.
+>
+> Starting on March 15, 2025, prior to issuing a Certificate that includes a Mailbox Address, emSign SHALL retrieve and process CAA records in accordance with Section 4 of RFC 9495.
+>
 > When processing CAA records, emSign SHALL process the "issuemail" property tag as specified in RFC 9495. Additional property tags MAY be supported, but SHALL NOT conflict with or supersede the authorizations to issue S/MIME Certificates as specified in the issuemail property tag.
 >
 > If emSign issues a Certificate following a CAA check, it SHALL do so within the TTL of the CAA record, or 8 hours, whichever is lesser. This stipulation does not prevent emSign from checking CAA records at any other time.
@@ -2272,9 +2274,7 @@ All Issuing CAs of emSign PKI provides personnel in trusted roles with the docum
 
 Audit log shall be maintained for:
 
-1.  CA & Certificate Lifecycle Management Events:
-
-<!-- -->
+> 1\. CA & Certificate Lifecycle Management Events:
 
 1.  Generation, certification, backup, recovery and/or destruction of the CA Key Pairs are recorded. This includes all configuration data used in the process.
 
@@ -2286,11 +2286,7 @@ Audit log shall be maintained for:
 
 5.  Compromise of a Private Key
 
-<!-- -->
-
-2.  Security Related Events:
-
-<!-- -->
+2\. Security Related Events:
 
 1.  Firewall and router activities
 
@@ -2306,11 +2302,7 @@ Audit log shall be maintained for:
 
 7.  Each movement of the removable media
 
-<!-- -->
-
-3.  Certificate Application Information:
-
-<!-- -->
+3\. Certificate Application Information:
 
 1.  All documentation & related information provided by the Applicant for application validation process
 
@@ -3246,7 +3238,7 @@ emSign PKI will provide refund to subscribers under certain circumstances and su
 
 ### 9.2.1. Insurance Cover 
 
-emSign maintains Commercial General Liability insurance with a policy limit of at least two million US dollars \$2,000,000 in coverage and Errors and Omissions/Professional Liability insurance with a policy limit of at least Five million US dollars \$ 5,000,000 in coverage.
+emSign maintains Commercial General Liability insurance with a policy limit of at least two million US dollars (\$2,000,000) in coverage and Errors and Omissions/Professional Liability insurance with a policy limit of at least Five million US dollars (\$ 5,000,000) in coverage.
 
 <a id="other-assets"></a>
 
@@ -3662,9 +3654,9 @@ If any of the provisions of this CP/CPS is held invalid by a competent authority
 
 ### 9.16.4. Enforcement (attorneys' fees and waiver of rights) 
 
-Issuing CAs under emSign PKI may seek indemnification and attorneys’ fees from a party for damages, losses and expenses related to that party’s conduct.
-
-emSign PKI’s failure to enforce a provision of this CP/CPS does not waive emSign PKI ’s right to enforce the same provision later or right to enforce any other provision of this CP/CPS.
+> Issuing CAs under emSign PKI may seek indemnification and attorneys’ fees from a party for damages, losses and expenses related to that party’s conduct.
+>
+> emSign PKI’s failure to enforce a provision of this CP/CPS does not waive emSign PKI ’s right to enforce the same provision later or right to enforce any other provision of this CP/CPS.
 
 No waiver to any party shall be effective unless it is given in writing by respective issuing CAs under emSign PKI.
 
@@ -3706,11 +3698,7 @@ No stipulation.
 <td style="text-align: left;"><strong>Domain Verification</strong></td>
 <td><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
 <ol type="1">
-<li><p>Validating the request by sending a Random Value to an email address created by prepending ‘admin’, ‘administrator’, ‘webmaster’, ‘hostmaster’, or ‘postmaster’ in the local part, followed by the at-sign (“@”), followed by the Authorization Domain Name and obtaining a response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.4)</p></li>
 <li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
-<li><p>Validating the request by sending a Random Value to an email address of DNS CAA Email Contact. The relevant CAA Resource Record Set MUST be found using the search algorithm defined in RFC 8659 Section 3 (Baseline Requirements Section 3.2.2.4.13)</p></li>
-<li><p>Validating the request by sending a Random Value to a DNS TXT Record Email Contact via email and then receiving a confirming response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.14)</p></li>
-<li><p>Validating the request by calling the DNS TXT Record Phone Contact’s phone number and obtaining a confirming response to validate the Authorization Domain Name. (Baseline Requirements Section 3.2.2.4.16)</p></li>
 <li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p></li>
 <li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
 <li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
@@ -3718,7 +3706,7 @@ No stipulation.
 <p><strong>Wildcard domains:</strong> These shall undergo additional checks, to not to wrongly issue, for a domain listed in public suffix list (PSL). If the domain is listed in PSL, the application shall be refused, unless applicant proves ownership of entire domain namespace.</p>
 <p><strong>Country:</strong> If the Country is present in application, it shall be validated against, the domain names ccTLD, or the domain registrar provided information, or by IP address range allocation (by country) checked for the domain or the applicant’s IP address.</p>
 <p><strong>IP Address</strong>: If the IP address is requested for the certificate, in place of domain name, it shall be verified to have the applicant’s control over the IP as per Baseline Requirements Section 3.2.2.5, by means of (i) change in agreed information in an URL containing the IP address, OR (ii)</p>
-<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) Email, Fax, SMS, or Postal Mail to IP Address Contact OR (iv) Phone Contact with IP Address Contact OR (v) ACME “http-01” method for IP Addresses OR (vi) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
+<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME “http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
 <p><strong>MPIC:</strong></p>
 <p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
 <ol type="1">
@@ -3778,11 +3766,7 @@ No stipulation.
 <td style="text-align: left;"><strong>Domain Verification</strong></td>
 <td style="text-align: left;"><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
 <ol type="1">
-<li><p>Validating the request by sending a Random Value to an email address created by prepending ‘admin’, ‘administrator’, ‘webmaster’, ‘hostmaster’, or ‘postmaster’ in the local part, followed by the at-sign (“@”), followed by the Authorization Domain Name and obtaining a response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.4)</p></li>
 <li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
-<li><p>Validating the request by sending a Random Value to an email address of DNS CAA Email Contact. The relevant CAA Resource Record Set MUST be found using the search algorithm defined in RFC 8659 Section 3 (Baseline Requirements Section 3.2.2.4.13)</p></li>
-<li><p>Validating the request by sending a Random Value to a DNS TXT Record Email Contact via email and then receiving a confirming response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.14)</p></li>
-<li><p>Validating the request by calling the DNS TXT Record Phone Contact’s phone number and obtaining a confirming response to validate the Authorization Domain Name. (Baseline Requirements Section 3.2.2.4.16)</p></li>
 <li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p></li>
 <li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
 <li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
@@ -3790,7 +3774,7 @@ No stipulation.
 <p><strong>Wildcard domains:</strong> These shall undergo additional checks, to not to wrongly issue, for a domain listed in public suffix list (PSL). If the domain is listed in PSL, the application shall be refused, unless applicant proves ownership of entire domain namespace.</p>
 <p><strong>Country:</strong> If the Country is present in application, it shall be validated against, the domain names ccTLD, or the domain registrar provided information, or by IP address range allocation (by country) checked for the domain or the applicant’s IP address.</p>
 <p><strong>IP Address</strong>: If the IP address is requested for the certificate, in place of domain name, it shall be verified to have the applicant’s control over the IP as per Baseline Requirements Section 3.2.2.5, by means of (i) change in agreed information in an URL containing the IP address, OR (ii)</p>
-<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) Email, Fax, SMS, or Postal Mail to IP Address Contact OR (iv) Phone Contact with IP Address Contact OR (v) ACME “http-01” method for IP Addresses OR (vi) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
+<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME “http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
 <p><strong>MPIC:</strong></p>
 <p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
 <ol type="1">
@@ -3855,11 +3839,8 @@ No stipulation.
 <td style="text-align: left;"><strong>Domain Verification</strong></td>
 <td style="text-align: left;"><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
 <ol type="1">
-<li><p>Validating the request by sending a Random Value to an email address created by prepending ‘admin’, ‘administrator’, ‘webmaster’, ‘hostmaster’, or ‘postmaster’ in the local part, followed by the at-sign (“@”), followed by the Authorization Domain Name and obtaining a response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.4)</p></li>
 <li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
-<li><p>Validating the request by sending a Random Value to an email address of DNS CAA Email Contact. The relevant CAA Resource Record Set MUST be found using the search algorithm defined in RFC 8659 Section 3 (Baseline Requirements Section 3.2.2.4.13)</p></li>
-<li><p>Validating the request by sending a Random Value to a DNS TXT Record Email Contact via email and then receiving a confirming response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.14)</p></li>
-<li><p>Validating the request by calling the DNS TXT Record Phone Contact’s phone number and obtaining a confirming response to validate the Authorization Domain Name. (Baseline Requirements Section 3.2.2.4.16)</p></li>
+<li></li>
 <li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p></li>
 <li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
 <li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
@@ -7081,7 +7062,9 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - Self-audit sample size is explicitly added as part of CP-CPS in section 8.7.
 
-- Domain Verification procedure for IP addresses & wildcard domain in Section 10.1, 10.2 and 10.3 of Appendix A.
+- Domain Verification procedure for IP addresses & wildcard domain in Section 10.1, 10.2 and
+
+> 10.3 of Appendix A.
 
 - CRL URL correction (special character) in all certificate profiles of Appendix B
 
@@ -7127,7 +7110,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - Inserted statement in section 1.5.1 “The changes in CP/CPS are also made based on review of latest Baseline Requirements of CA Browser Forum, as and when published, which may need the policy or practices to be amended.”
 
-- In section 4.9.1, amended the subscriber revocation statement to “Issuing CA shall revoke a Digital Certificate of Subscriber within 24 Hours when…”.
+> In section 4.9.1, amended the subscriber revocation statement to “Issuing CA shall revoke a Digital Certificate of Subscriber within 24 Hours when…”.
 
 - In section 6.1.5, the conditional statement is removed, which was referring to 'SHA-1 usage subject to provisions allowed by Baseline Requirements’.
 
@@ -7163,7 +7146,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - New section 3.1.3 and 3.1.4 are inserted, and accordingly existing sections in that position are renumbered to 3.1.5, 3.1.6 and 3.1.7. These new sections are introduced to adhere to the structure of RFC 3647 on ‘anonymous or pseudonymous names’ and ‘Rules for interpreting various name forms’. This is a text addition to CP/CPS and there is no change in practice due to this effect. emSign practices prior to this change adhered to the definition given in these sections.
 
-- In section 1, it promises to adhere to latest CA Browser Forum requirements. For an easy reference, now the statement also contains the URL to CA Browser forum website, which helps the reader to navigate the same.
+> In section 1, it promises to adhere to latest CA Browser Forum requirements. For an easy reference, now the statement also contains the URL to CA Browser forum website, which helps the reader to navigate the same.
 
 - Version number has been removed from header of all the pages, and retained in first page of the document, as a single point of reference.
 
@@ -7338,5 +7321,9 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 - In Section 4.3.1 added Issuance Safeguards section
 
 - In section 6.3.2 added maximum validity periods of SSL/TLS subscriber certificates
+
+**Version 1.22: 22-November-2025**
+
+- In Section 10.1, 10.2 and 10.3 updated DCV methods
 
 </div>
