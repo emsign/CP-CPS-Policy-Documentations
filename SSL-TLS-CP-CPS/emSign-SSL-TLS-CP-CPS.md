@@ -21,8 +21,8 @@
 <p>&amp;</p>
 <p>CERTIFICATION PRACTICE STATEMENT</p>
 <p>(CP/CPS) For SSL/TLS Certificates</p></td>
-<td style="text-align: left;">19-November-2025</td>
-<td style="text-align: left;">Version 1.02</td>
+<td style="text-align: left;">28-November-2025</td>
+<td style="text-align: left;">Version 1.03</td>
 <td style="text-align: left;">1.3.6.1.4.1.50977.1.0.1.1</td>
 </tr>
 </tbody>
@@ -2209,6 +2209,14 @@ All Issuing CAs under emSign PKI have in place an appropriate Key compromise pla
 
 - Notifying emSign Issuing CA and all of the Holders of Digital Certificates issued by that emSign PKI’s Issuing CA.
 
+<a id="mass-revocation-plan"></a>
+
+#### 5.7.1.1. Mass Revocation Plan 
+
+emSign maintains a documented Mass Revocation Plan to manage large-scale certificate revocation events, such as widespread misissuance or compromise. This plan is reviewed, tested, and updated at least annually and is integrated into emSign’s overall business continuity and incident response frameworks. It outlines clear roles and responsibilities for executing revocation actions, including notification to affected Subscribers, revocation timelines, and post-revocation validation.
+
+The plan ensures rapid response while minimizing disruption to relying parties. Revocation actions are initiated in accordance with emSign’s incident handling procedures and under the supervision of the emSign Policy Authority. Communication protocols include timely updates through appropriate channels and coordination with root programs and ecosystem stakeholders as required.
+
 <a id="computing-resources-software-andor-data-are-corrupted"></a>
 
 ### 5.7.2. Computing resources, software, and/or data are corrupted 
@@ -4321,5 +4329,9 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 - In section 6.3.2 updated Subscriber Certificates with Server Authentication EKU validity.
 
 - In section 10.1, 10.2 and 10.3 updated DCV methods
+
+**Version 1.03: 28-November-2025**
+
+In section 5.7.1 added a new sub-section 5.7.1.1, for the mass revocation plan.
 
 </div>
