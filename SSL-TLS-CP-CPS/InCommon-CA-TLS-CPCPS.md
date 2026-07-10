@@ -2,7 +2,7 @@
 
 | **Policy Document Description** | **Date of Publication** | **Version** | **CP/CPS OID** |
 |----|:--:|:--:|:--:|
-| INCOMMON PKI CERTIFICATE POLICY & CERTIFICATION PRACTICE STATEMENT (CP/CPS) FOR SSL/TLS CERTIFICATES | 21-Apr-2026 | Version 1.05 | 1.3.6.1.4.1.5923.1.4.3.1.2 |
+| INCOMMON PKI CERTIFICATE POLICY & CERTIFICATION PRACTICE STATEMENT (CP/CPS) FOR SSL/TLS CERTIFICATES | 10-July-2026 | Version 1.06 | 1.3.6.1.4.1.5923.1.4.3.1.2 |
 
 <a id="introduction"></a>
 
@@ -10,7 +10,7 @@
 
 This Certificate Policy and Certification Practice Statement (CP/CPS for Server Authentication) governs the provision of publicly trusted SSL/TLS certificates (“Service”) to the InCommon Federation subscriber base, pursuant to a reseller agreement between InCommon and CertiNext Inc..
 
-The TLS platform, branded as CERTInext, along with the underlying PKI hierarchies operated for InCommon (referred to as “InCommon PKI”) issued under the emSign trust framework (referred to as “emSign” or “emSign PKI”), is operated by CertiNext Inc., USA, which is part of the eMudhra Group. eMudhra Group is engaged globally in Digital Identity, Authentication, and Transaction Management solutions (further information available at [www.emudhra.com](http://www.emudhra.com)).
+The TLS platform, branded as CERTInext, along with the underlying PKI hierarchies operated for InCommon (referred to as “InCommon PKI”) issued under the emSign trust framework (referred to as “emSign” or “emSign PKI”), is operated by CertiNext Inc., USA, which is part of the eMudhra Group. eMudhra Group is engaged globally in Digital Identity, Authentication, and Transaction Management solutions (further information available at [<u>www.emudhra.com</u>)](http://www.emudhra.com/).
 
 Under the Reseller Agreement, CertiNext operates the CA infrastructure and maintains the CP/CPS and related repository documents in accordance with WebTrust, CA/Browser Forum Baseline Requirements for TLS Server Certificates including InCommon, while InCommon holds final review and approval authority over all such specific CP/CPSes and related repository documents hosted by InCommon relevant to the Services provided to InCommon.
 
@@ -34,7 +34,7 @@ This CP/CPS is applicable to all entities having a defined relationship with the
 
 4.  Subscribers
 
-5\. Relying Parties.
+5.  Relying Parties.
 
 In this document, the terms “InCommon,” and “InCommon PKI” are used interchangeably and refer collectively to, InCommon Issuing Certification Authorities that operate under emSign .
 
@@ -46,15 +46,17 @@ This CP/CPS specifies the principles, procedures, and practices that is being fo
 
     - Framework for Certificate Policy and Certification Practice Statement structure.
 
-2.  The latest versions (as on date of this CP/CPS) of the CA/Browser Forum Requirements (Ref: <https://cabforum.org/> [)](https://cabforum.org/):
+2.  The latest versions (as on date of this CP/CPS) of the CA/Browser Forum Requirements (Ref: [<u>https://cabforum.org/</u> ):](https://cabforum.org/)
 
     - Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates (TLS BR)
 
-    - Baseline Requirements for the Issuance and Management of Extended Validation (EV) Certificates
+    - Baseline Requirements for the Issuance and Management of Extended Validation (EV)
 
-    - Network and Certificate System Security Requirements
+Certificates
 
-    - *(Note: While other CA/B Forum Baseline Requirements such as for S/MIME and Code Signing exist, they are out of scope for this SSL/TLS CP/CPS and are included here only for completeness and alignment of terminology)*
+- Network and Certificate System Security Requirements
+
+- *(Note: While other CA/B Forum Baseline Requirements such as for S/MIME and Code Signing exist, they are out of scope for this SSL/TLS CP/CPS and are included here only for completeness and alignment of terminology)*
 
 3.  WebTrust: Principles and Criteria for Certification Authorities, including:
 
@@ -64,7 +66,7 @@ This CP/CPS specifies the principles, procedures, and practices that is being fo
 
     - WebTrust: Principles and Criteria for Certification Authorities – Extended Validation TLS (where applicable)
 
-4.   Adherence to the latest published version Root Program Requirements and CCADB policy of major relying party software providers:
+4.  Adherence to the latest published version Root Program Requirements and CCADB policy of major relying party software providers:
 
     - Google Chrome Root Program Policy
 
@@ -93,17 +95,17 @@ The OID for the trust hierarchy is an iso (1) identified-organization (3) dod (6
 This document defines the Certificate Policy and Certification Practice Statement (CP/CPS) for SSL/TLS. The object identifier (OID) values corresponding to the emSign SSL/TLS CP/CPS are as follows:
 
 | **Entity / Certificate Policy** | **OID**                        |
-|---------------------------------|--------------------------------|
+|:--------------------------------|:-------------------------------|
 | Organization                    | 1.3.6.1.4.1.50977              |
 | emSign PKI                      | 1.3.6.1.4.1.50977.1            |
 | emSign SSL CP/CPS               | 1.3.6.1.4.1.50977.1.0.1.1      |
 | InCommon CP/CPS                 | **1.3.6.1.4.1.5923.1.4.3.1.2** |
 
 | **Field** | **Value** |
-|----|----|
+|:---|----|
 | Document Name | InCommon PKI Certificate Policy & Certificate Practice Statement |
 | Document OID | **1.3.6.1.4.1.5923.1.4.3.1.2** |
-| Provider Repository | <https://repository.emsign.com><u>/</u> |
+| Provider Repository | [<u>https://repository.emsign.com/</u>](https://repository.emsign.com/) |
 | InCommon Repository | [<u>https://incommon.org/certificates/repository/</u>](https://incommon.org/certificates/repository/) |
 
 **Type of certificate**
@@ -112,41 +114,41 @@ The OID for Certificate Policies under the trust hierarchy is an iso (1) identif
 
 The OID arcs for the various Certificates described in this CP/CPS are as follows:
 
-<table style="width:100%;">
+<table style="width:81%;">
 <colgroup>
-<col style="width: 49%" />
-<col style="width: 49%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
 </colgroup>
 <thead>
 <tr>
-<th><strong>Type of Certificate</strong></th>
-<th><strong>Policy OID</strong></th>
+<th style="text-align: left;"><strong>Type of Certificate</strong></th>
+<th style="text-align: left;"><strong>Policy OID</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>SSL/TLS - Domain Validation</td>
-<td><p>2.23.140.1.2.1,</p>
+<td style="text-align: left;">SSL/TLS - Domain Validation</td>
+<td style="text-align: left;"><p>2.23.140.1.2.1,</p>
 <p>1.3.6.1.4.1.50977.1.2.100</p></td>
 </tr>
 <tr>
-<td>SSL/TLS - Organization Validation</td>
-<td><p>2.23.140.1.2.2,</p>
+<td style="text-align: left;">SSL/TLS - Organization Validation</td>
+<td style="text-align: left;"><p>2.23.140.1.2.2,</p>
 <p>1.3.6.1.4.1.50977.1.2.110</p></td>
 </tr>
 <tr>
-<td>SSL/TLS - Individual Validation</td>
-<td><p>2.23.140.1.2.3,</p>
+<td style="text-align: left;">SSL/TLS - Individual Validation</td>
+<td style="text-align: left;"><p>2.23.140.1.2.3,</p>
 <p>1.3.6.1.4.1.50977.1.2.115</p></td>
 </tr>
 <tr>
-<td>SSL/TLS - Extended Validation</td>
-<td><p>2.23.140.1.1,</p>
+<td style="text-align: left;">SSL/TLS - Extended Validation</td>
+<td style="text-align: left;"><p>2.23.140.1.1,</p>
 <p>1.3.6.1.4.1.50977.1.2.120</p></td>
 </tr>
 <tr>
-<td>OCSP Certificate</td>
-<td>1.3.6.1.4.1.50977.1.2.600</td>
+<td style="text-align: left;">OCSP Certificate</td>
+<td style="text-align: left;">1.3.6.1.4.1.50977.1.2.600</td>
 </tr>
 </tbody>
 </table>
@@ -221,9 +223,7 @@ We may enter into contractual relationships with authorized entities to operate 
 
 - Identifying and authenticating Subscribers in accordance with this CP/CPS
 
-- Maintain and process all supporting documentation related to certificate application
-
-- Receiving, authenticating and processing certificate revocation requests
+- Maintain and process all supporting documentation related to certificate application • Receiving, authenticating and processing certificate revocation requests
 
 - Providing suitable training to personnel performing RA functions.
 
@@ -245,7 +245,7 @@ References to “end entities” and “subscribers” in this CP/CPS, however, 
 
 Obligations of Subscribers include:
 
-- Generating or causing to be generated one or more asymmetric key pairs
+Generating or causing to be generated one or more asymmetric key pairs
 
 - Submitting public keys and credentials for registration
 
@@ -287,7 +287,7 @@ Obligations of Relying Parties include:
 
 - Confirming that the subscriber uses the public-key in the Subscriber’s certificate in compliance with this SSL/TLS CP/CPS.
 
-- Any other terms as per Relying Party Agreement.
+Any other terms as per Relying Party Agreement.
 
 All obligations within this section relate to Reasonable Reliance on the validity of a Digital Signature, not the accuracy of the underlying electronic record. A Relying Party must exercise Reasonable Reliance as set out in this section. This CP/CPS does not require a Certificate Holder to ensure that potential relying parties are compliant with the relying party obligations.
 
@@ -317,13 +317,13 @@ A digital certificate enables individuals or entities to prove their identity in
 
 ### 1.4.1. Appropriate Certificate Uses 
 
-Certificates issued under this CP/CPS are intended solely for use in TLS Server Authentication (id-kpserverAuth, OID 1.3.6.1.5.5.7.3.1), as indicated by the Key Usage and Extended Key Usage (EKU) extensions included in the certificate.
+Certificates issued under this CP/CPS are intended solely for use in TLS Server Authentication (idkpserverAuth, OID 1.3.6.1.5.5.7.3.1), as indicated by the Key Usage and Extended Key Usage (EKU) extensions included in the certificate.
 
 These certificates enable secure communication by authenticating the identity of a server and establishing encrypted TLS sessions with client systems, such as web browsers or applications. Subscribers are responsible for selecting the appropriate certificate type based on the intended usage and assurance level required for their deployment environment.
 
 We issues the following SSL/TLS certificate profiles:
 
-- Domain Validated (DV) Certificates: Intended for securing server communications where domain ownership/control has been validated. These certificates are suitable for basic encryption use cases where organizational identity is not required.
+Domain Validated (DV) Certificates: Intended for securing server communications where domain ownership/control has been validated. These certificates are suitable for basic encryption use cases where organizational identity is not required.
 
 - Organization Validated (OV) Certificates: Intended for use where moderate assurance of the server operator’s identity is needed. OV certificates include verified organization information in the certificate subject.
 
@@ -381,6 +381,8 @@ Prohibited uses include, but are not limited to, the following:
 
     - End-entity certificates must not be used to issue other certificates or act as a Certification Authority (CA).
 
+    - 
+
     - CA certificates must not be used to perform end-entity functions, such as document signing or server authentication.
 
 7.  Violation of laws or regulations: Use of certificates must comply with all applicable laws, statutes, regulations, court orders, and governmental mandates.
@@ -415,7 +417,7 @@ Obligations of the Policy Authority include:
 
 - Ensures that all aspects of CA services, operations, and infrastructure as described in this document are performed in accordance with the requirements, representations, and warranties
 
-- 
+\-
 
 <a id="contact-person"></a>
 
@@ -429,7 +431,7 @@ Attn: Policy Director InCommon PKI Policy Authority
 
 Ann Arbor, MI 48105
 
-Email: <help@incommon.org>
+Email: <u>help@incommon.org</u>
 
 Attn: Policy Director emSign PKI Policy Authority
 
@@ -451,9 +453,7 @@ To report problems with a certificate issued by us or request revocation, partie
 
 #### 1.5.3.1. Email Contact 
 
-Certificate-related issues such as key compromise, certificate misuse, or suspected fraudulent issuance may be reported via email:
-
-Attn: Revocation Support
+Certificate-related issues such as key compromise, certificate misuse, or suspected fraudulent issuance may be reported via email: Attn: Revocation Support
 
 Email: <u>problem-reporting@emsign.com</u>
 
@@ -461,9 +461,7 @@ Email: <u>problem-reporting@emsign.com</u>
 
 #### 1.5.3.2. CERTInext Portal 
 
-Subscribers, partners, and authorized users may initiate certificate revocation requests through the CERTInext Portal using the certificate management dashboard that is available via Login using:
-
-URL: <https://www.certinext.io>
+Subscribers, partners, and authorized users may initiate certificate revocation requests through the CERTInext Portal using the certificate management dashboard that is available via Login using: URL: <u>[https://www.certinext.i](https://www.certinext.io/)[o](https://www.emsign.com/)</u>
 
 <a id="enterprise-api-partner-integrations"></a>
 
@@ -631,9 +629,7 @@ For any changes specific to the InCommon PKI service, CertiNext shall provide In
 
 **Legal Entity**: An association, corporation, partnership, proprietorship, trust, government entity or other entity with legal standing in a country’s legal system.
 
-**Multi-Perspective Issuance Corroboration**: A process in which the results of domain validation and
-
-CAA checking performed by the Primary Network Perspective are confirmed by additional Network Perspectives prior to issuing a certificate.
+**Multi-Perspective Issuance Corroboration**: A process in which the results of domain validation and CAA checking performed by the Primary Network Perspective are confirmed by additional Network Perspectives prior to issuing a certificate.
 
 **Network Perspective**: Related to Multi-Perspective Issuance Corroboration. A Network Perspective refers to a system (such as a cloud-hosted server) or a group of network elements (like a VPN and its supporting infrastructure) used to send outbound Internet traffic during domain control validation and/or CAA checking. The location of a Network Perspective is defined as the point where outbound Internet traffic before any encapsulation is initially passed to the Internet service provider or network infrastructure responsible for connectivity.
 
@@ -643,7 +639,7 @@ CAA checking performed by the Primary Network Perspective are confirmed by addit
 
 **Online Certificate Status Protocol**: An online Certificate-checking protocol that enables relying party application software to determine the status of an identified Certificate.
 
-Online Channel: Refers to our online platforms such as CERTInext, ACME, API, and any other internet-based interfaces or services that enable Subscribers or Relying Parties to access our services through automated or self-service mechanisms.
+Online Channel: Refers to our online platforms such as CERTInext, ACME, API, and any other internetbased interfaces or services that enable Subscribers or Relying Parties to access our services through automated or self-service mechanisms.
 
 **Parent Company**: A company that Controls a Subsidiary Company.
 
@@ -681,9 +677,7 @@ Online Channel: Refers to our online platforms such as CERTInext, ACME, API, and
 
 **Reserved IP Address**: An IPv4 or IPv6 address that the IANA has marked as reserved:
 
-[<u>http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml</u>](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml)
-
-[<u>http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml</u>](http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml)
+[<u>http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml</u>](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml) [<u>http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml</u>](http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml)
 
 **Root CA System**: Means a system used to create a Root Certificate or to generate, store, or sign with the Private Key associated with a Root Certificate.
 
@@ -738,7 +732,7 @@ Online Channel: Refers to our online platforms such as CERTInext, ACME, API, and
 ### 1.6.2. Acronyms 
 
 | **\#** | **Acronyms** | **Meaning** |
-|----|----|----|
+|:---|:---|:---|
 | 1 | ACME | Automated Certificate Management Environment |
 | 2 | AICPA | American Institute of Certified Public Accountants |
 | 3 | API | Application Programming Interface |
@@ -814,9 +808,7 @@ The repository ensures that Root Certificates, publicly trusted Subordinate CA C
 
 Each Issuing CA shall ensure that relevant certification information, including Root and Subordinate CA Certificates, Cross-Certificates (if any), revocation data, this CP/CPS, and applicable Subscriber and Relying Party Agreements, is published in the online repository or other designated location, in accordance with applicable policies and obligations.
 
-We reserve the right to withhold publication of any information deemed confidential or
-
-security-sensitive.
+We reserve the right to withhold publication of any information deemed confidential or security-sensitive.
 
 Repository Responsibilities Include:
 
@@ -852,9 +844,7 @@ Pointers to repository information in CA and end entity Certificates shall only 
 
 ## 2.3. Time or Frequency of Publication 
 
-We shall publish CA certificates and revocation data as soon as possible after
-
-issuance.
+We shall publish CA certificates and revocation data as soon as possible after issuance.
 
 CAs shall publish new or modified versions of CP/CPS within seven days of their approval. The CP/CPS is subjected to minimum of one annual review, even if there are no external factors influencing the changes in CP/CPS. Such review shall amend the version and date of publication of CP/CPS, as approved by Policy Authority.
 
@@ -932,13 +922,15 @@ We validate the identity of Applicants prior to issuing SSL/TLS certificates. Fo
 
 For SSL/TLS certificates, the Applicant must demonstrate control of the private key corresponding to the public key in the certificate request. This is typically done by submitting a PKCS#10 Certificate Signing Request (CSR) that is signed using the private key. Other industry-approved methods may be used, subject to Policy Authority’s validation and approval.
 
-Our platforms do not generate key pairs for end-entity SSL/TLS certificates that include the id-kpserverAuth or anyExtendedKeyUsage EKU values. The Subscriber is responsible for secure key generation and protection. This ensures the Subscriber maintains sole control over the private key, as required by the CA/Browser Forum Baseline Requirements.
+Our platforms do not generate key pairs for end-entity SSL/TLS certificates that include the idkpserverAuth or anyExtendedKeyUsage EKU values. The Subscriber is responsible for secure key generation and protection. This ensures the Subscriber maintains sole control over the private key, as required by the CA/Browser Forum Baseline Requirements.
 
 <a id="authentication-of-organization-identity"></a>
 
 ### 3.2.2. Authentication of Organization Identity 
 
-If a Certificate asserts the identity of an Organization, our authorized Registration Authorities or we shall validate the organization’s legal name, address, and existence using reliable third-party sources such as government business registries. Operational existence may also be confirmed as applicable. All validations are conducted in accordance with the certificate type and procedures outlined in Appendix A.
+If a Certificate asserts the identity of an Organization, our authorized Registration Authorities or we shall validate the organization’s legal name, address, and existence using reliable third-party sources such as government business registries. Operational existence may also be confirmed as applicable. All validations are conducted in accordance with the certificate type and procedures outlined in Appendix
+
+A.
 
 <a id="authentication-of-individual-identity"></a>
 
@@ -986,55 +978,77 @@ Subscribers may request Re-key any number of times during the validity period of
 
 Where the initial Subscriber identification & authentication process as per this CP/CPS will be been performed as below:
 
-<table>
+<table style="width:82%;">
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 17%" />
-<col style="width: 15%" />
-<col style="width: 17%" />
-<col style="width: 25%" />
+<col style="width: 19%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 3%" />
+<col style="width: 11%" />
+<col style="width: 2%" />
+<col style="width: 20%" />
 </colgroup>
 <thead>
 <tr>
-<th><strong>Validation Type</strong></th>
-<th><p><strong>Certificate</strong></p>
-<p><strong>Issued On or After</strong></p></th>
-<th><p><strong>Certificate</strong></p>
+<th style="text-align: left;"><p><strong>Validation Type</strong></p></th>
+<th style="text-align: left;"><p><strong>Certificate</strong></p>
+<p><strong>Issued On or</strong></p>
+<p><strong>After</strong></p></th>
+<th style="text-align: left;"><p><strong>Certificate</strong></p>
 <p><strong>Issued</strong></p>
 <p><strong>Before</strong></p></th>
-<th><p><strong>Maximum</strong></p>
-<p><strong>Data Reuse Period</strong></p></th>
-<th><strong>Re-Key Authentication Condition</strong></th>
+<th style="text-align: left;"></th>
+<th colspan="2" style="text-align: left;"><p><strong>Maximum</strong></p>
+<p><strong>Data Reuse</strong></p>
+<p><strong>Period</strong></p></th>
+<th><p><strong>Re-Key Authentication</strong></p>
+<p><strong>Condition</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Domain Name and IP Address Validation</td>
-<td><p>April 20, 2026</p></td>
-<td><p>March 15, 2027</p></td>
-<td>200 days</td>
+<td style="text-align: left;"><p>Domain Name and IP</p>
+<p>Address Validation</p></td>
+<td style="text-align: left;"><p>April 20, 2026</p></td>
+<td style="text-align: left;"><p>March</p>
+<p>2027</p></td>
+<td>15,</td>
+<td style="text-align: left;"><p>200 days</p></td>
+<td style="text-align: left;"></td>
 <td><p>Must be validated within this period prior to certificate issuance.</p></td>
 </tr>
 <tr>
-<td>Domain Name and IP Address Validation</td>
-<td><p>March 15, 2027</p></td>
-<td><p>March 15, 2029</p></td>
-<td>100 days</td>
+<td style="text-align: left;"><p>Domain Name and IP</p>
+<p>Address Validation</p></td>
+<td style="text-align: left;"><p>March 15, 2027</p></td>
+<td style="text-align: left;"><p>March</p>
+<p>2029</p></td>
+<td>15,</td>
+<td style="text-align: left;"><p>100 days</p></td>
+<td style="text-align: left;"></td>
 <td><p>Must be validated within this period prior to certificate issuance.</p></td>
 </tr>
 <tr>
-<td>Domain Name and IP Address Validation</td>
-<td><p>March 15, 2029</p></td>
-<td></td>
-<td>10 days</td>
+<td style="text-align: left;"><p>Domain Name and IP</p>
+<p>Address Validation</p></td>
+<td style="text-align: left;"><p>March 15, 2029</p></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>10 days</p></td>
+<td style="text-align: left;"></td>
 <td><p>Must be validated within this period prior to certificate issuance.</p></td>
 </tr>
 <tr>
-<td>EV (Extended Validation)</td>
-<td><p>-</p></td>
-<td><p>-</p></td>
-<td>As per EV guidelines</td>
-<td><p>Re-key authentication must follow EV Guidelines.</p></td>
+<td style="text-align: left;"><p>EV (Extended</p>
+<p>Validation)</p></td>
+<td style="text-align: left;"><p>-</p></td>
+<td style="text-align: left;"><p>-</p></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>As per</p>
+<p>guidelines</p></td>
+<td style="text-align: left;">EV</td>
+<td><p>Re-key authentication must follow EV</p>
+<p>Guidelines.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1051,7 +1065,7 @@ Identification and Authentication for Re-Key after revocation is based on the sa
 
 A request to revoke keys or digital certificates may be submitted by the Subscriber or an individual authorized under applicable contractual agreements (this includes authorized InCommon administrative personnel). Revocation requests may be initiated through secure mechanisms such as our subscriber portal, CERTInext enterprise and partner platforms, ACME clients, or authorized APIs integrated with our PKI.
 
-To validate a revocation request, the requester is required to authenticate using secure challenge-response methods, such as logging in with verified credentials, demonstrating domain/email control, or signing the request using the corresponding private key.
+To validate a revocation request, the requester is required to authenticate using secure challengeresponse methods, such as logging in with verified credentials, demonstrating domain/email control, or signing the request using the corresponding private key.
 
 We may revoke a certificate without authentication in circumstances where there is evidence or reasonable suspicion of key compromise, misuse, fraud, or based on instructions from a competent legal or regulatory authority or an event that triggers revocation of one or more certificates based on inconsistencies identified between practice and policy. All such revocation actions are logged, and validation personnel ensure traceability of the requester (where applicable), action taken, and reason.
 
@@ -1143,9 +1157,7 @@ Our authorized Registration Authorities (RAs) or us shall approve a certificate 
 
 - Issuance may compromise the trustworthiness, security, or reputation of our PKI;
 
-- The domain is a newly delegated gTLD that is not yet approved for public issuance;
-
-- There is suspected misuse, fraud, or conflict with applicable laws or industry standards.
+- The domain is a newly delegated gTLD that is not yet approved for public issuance; • There is suspected misuse, fraud, or conflict with applicable laws or industry standards.
 
 We are not obligated to provide specific reasons for the rejection of an application. Applicants whose requests have been denied may submit a new application following corrective action.
 
@@ -1165,9 +1177,7 @@ For any certificate application involving domain names intended for server authe
 
 If a CAA DNS Resource Record is present for the domain, we verify whether the record authorizes certificate issuance by us. If the domain's CAA record does not include emsign.com (for the relevant issue or issuewild property tags, as applicable), the certificate application shall be rejected.
 
-emSign recognizes the following domain name values in CAA records as granting authorization for
-
-issuance:
+emSign recognizes the following domain name values in CAA records as granting authorization for issuance:
 
 • emsign.com
 
@@ -1189,7 +1199,9 @@ Issuing CAs operating under this CP/CPS shall comply with all applicable require
 
 The Root CA Certificates are self-signed and generated in an offline environment. Root CA private keys are maintained in secure, offline cryptographic modules in compliance with industry standards and are only used to sign Subordinate CA certificates and CRLs/OCSP responses as required.
 
-We publish our Root CA Certificates, along with their certificate chains, in the online repository[: <u>https://repository.emsign.com</u>.](https://repository.emsign.com/)
+We publish our Root CA Certificates, along with their certificate chains, in the online repository[:](https://repository.emsign.com/)
+
+[<u>https://repository.emsign.com</u>.](https://repository.emsign.com/)
 
 <a id="issuing-certification-authority-certificates"></a>
 
@@ -1217,9 +1229,7 @@ As part of the application process, Registration Authorities are required to nom
 
 Upon the Applicant’s acceptance of the terms and conditions of the Certificate Holder Agreement or other relevant agreement, the successful completion of the application process and final approval of the application by the Issuing CA, the Issuing CA issues the Digital Certificate to the Applicant or Device.
 
-Our platform deploys multi-factor authentication for all accounts capable of directly causing certificate
-
-issuance.
+Our platform deploys multi-factor authentication for all accounts capable of directly causing certificate issuance.
 
 <a id="issuance-safeguards"></a>
 
@@ -1457,9 +1467,7 @@ The notification to other entities for re-key certificate shall be same as the p
 
 ## 4.8. Certificate Modification 
 
-Our platforms do not support modifying SSL/TLS certificates after they are issued. If any certificate
-
-information needs to change, the Subscriber must request a new certificate.
+Our platforms do not support modifying SSL/TLS certificates after they are issued. If any certificate information needs to change, the Subscriber must request a new certificate.
 
 The new request will follow the full validation process as required for the certificate type.
 
@@ -1593,9 +1601,7 @@ The Issuing CA SHALL revoke a Subordinate CA Certificate within seven (7) days i
 
 - Superseded (4): The certificate subscriber should choose the "superseded" revocation reason when they request a new certificate to replace their existing certificate.
 
-- cessationOfOperation (5): The certificate subscriber should choose the
-
-"cessationOfOperation" revocation reason when they no longer own all of the domain names in the certificate or when they will no longer be using the certificate because they are discontinuing their website.
+- cessationOfOperation (5): The certificate subscriber should choose the "cessationOfOperation" revocation reason when they no longer own all of the domain names in the certificate or when they will no longer be using the certificate because they are discontinuing their website.
 
 - privilegeWithdrawn (9): The certificate subscriber should choose the “privilegeWithdrawn“ revocation reason when the original Certificate request was not authorized and does not retroactively grant authorization.
 
@@ -1679,21 +1685,21 @@ CRLs are published to repository within 10 minutes of generation
 
 ### 4.9.9. On-Line Revocation/Status Checking Availability 
 
-Issuing CAs seek to provide online status checking availability for the certificates 7 days a
-
-week, 24 hours a day, subject to routine maintenance.
+Issuing CAs seek to provide online status checking availability for the certificates 7 days a week, 24 hours a day, subject to routine maintenance.
 
 <a id="on-line-revocation-checking-requirement"></a>
 
 ### 4.9.10. On-Line Revocation Checking Requirement 
 
-Relying Parties shall check the validity of a certificate via CRL or OCSP before relying on the Certificate.
+Relying Parties shall verify the revocation status of a Certificate through either the Certificate Revocation List (CRL) or the Online Certificate Status Protocol (OCSP) before relying upon the Certificate. Failure to perform such verification may limit the Relying Party's ability to demonstrate reasonable reliance on the Certificate.
 
-Failure to do so negates the ability of the Relying Party to claim that it acted on the Digital Certificate with reasonable reliance.
+The OCSP service provided by eMudhra enables Relying Parties to determine the current revocation status of Subscriber Certificates, Subordinate CA Certificates, and corresponding Precertificates. The OCSP service is implemented in accordance with RFC 6960 (Online Certificate Status Protocol), RFC 5019 (Lightweight OCSP Profile), and the applicable CA/Browser Forum TLS Baseline Requirements.
 
-The OCSP URL is provided as part of the Digital Certificate, wherever applicable. The OCSP requests supports both GET and POST requests. The OCSP responder does not respond ‘good’ response, in case the certificate has not been issued.
+The OCSP responder URL is included in the Certificate, where applicable. The OCSP responder supports both HTTP GET and HTTP POST methods. The OCSP responder shall not return a "good" status for a certificate serial number that is unassigned, as defined in the applicable CA/Browser Forum TLS Baseline Requirements.
 
-For the subscriber certificates, the update of OCSP is provided at least once every days and has a maximum expiration time of 7 days. Whereas for Subordinate CA certificates, the updates are made at a minimum of once in 12 months, or within 24 hours of a revocation of Subordinate CA.
+Where a Precertificate has been generated but the associated Certificate issuance transaction is not completed due to validation failure, operational cancellation, or system error, eMudhra shall ensure that the corresponding OCSP status information is provisioned and maintained in accordance with the applicable CA/Browser Forum TLS Baseline Requirements.
+
+An authoritative OCSP response for a Subscriber Certificate or its corresponding Precertificate shall be made available within fifteen (15) minutes after the Certificate or Precertificate is first published or otherwise made available.
 
 <a id="other-forms-of-revocation-advertisements-available"></a>
 
@@ -1803,9 +1809,7 @@ Key recovery is only applicable to enterprise TLS certificates issued under CERT
 
 - A competent legal or governmental authority mandates key recovery.
 
-- Recovery is deemed critical by the Subscriber organization under contractual terms.
-
-Only duly authorized administrators of the enterprise account may initiate recovery. All escrowed keys remain encrypted and are protected against unauthorized access. No escrow or recovery is permitted for SSL/TLS certificates outside of such explicitly approved enterprise agreements.
+- Recovery is deemed critical by the Subscriber organization under contractual terms. Only duly authorized administrators of the enterprise account may initiate recovery. All escrowed keys remain encrypted and are protected against unauthorized access. No escrow or recovery is permitted for SSL/TLS certificates outside of such explicitly approved enterprise agreements.
 
 An entity receiving Private Key escrow services shall:
 
@@ -2315,9 +2319,7 @@ Where practical, Key / Digital Certificate revocation shall be timed to coincide
 
 # 6. Technical Security Controls 
 
-We have put in place sufficient security controls to protect the private keys
-
-and access to various modules within the Certifying Authority environment.
+We have put in place sufficient security controls to protect the private keys and access to various modules within the Certifying Authority environment.
 
 The Issuing CA Private Keys are stored securely in a Hardware Security Module which is compliant with FIPS 140-2 Level 3+ Standard. Access to systems/module within the Certification Authority environment are restricted using tokens or smartcards and associated pass phrases in such a manner that no single member holds total control over any component of the system. The Hardware Security Modules are always stored in a physically secure environment that is subject to security control.
 
@@ -2349,7 +2351,7 @@ Issuing CA SHALL reject a certificate request if one or more of the following co
 
 Compromise, such as through the provisions of Section 4.9.1;
 
-1)  In the case of Debian weak keys vulnerability (https://wiki.debian.org/SSLkeys), the Issuer CA shall reject all keys found at https://github.com/cabforum/Debian-weakkeys/ for each key type (e.g. RSA, ECDSA).
+1)  In the case of Debian weak keys vulnerability (https://wiki.debian.org/SSLkeys), the Issuer CA shall reject all keys found at https://github.com/cabforum/Debianweakkeys/ for each key type (e.g. RSA, ECDSA).
 
 2)  In the case of ROCA vulnerability, the Issuer CA shall reject keys identified by the tools available at https://github.com/crocs-muni/roca or equivalent.
 
@@ -2527,47 +2529,48 @@ Issuer CA shall archive a copy of each public key.
 
 The maximum validity periods for Digital Certificates issued within our trust hierarchy are:
 
-<table>
+<table style="width:82%;">
 <colgroup>
+<col style="width: 18%" />
 <col style="width: 22%" />
-<col style="width: 27%" />
-<col style="width: 30%" />
-<col style="width: 19%" />
+<col style="width: 25%" />
+<col style="width: 15%" />
 </colgroup>
 <thead>
 <tr>
-<th><strong>Type</strong></th>
-<th><p><strong>Private Key Use</strong></p>
+<th style="text-align: left;"><p><strong>Type</strong></p></th>
+<th style="text-align: left;"><p><strong>Private Key Use</strong></p>
 <p><strong>(signing the certificates)</strong></p></th>
-<th><p><strong>Private Key Use (signing the</strong></p>
+<th style="text-align: left;"><p><strong>Private Key Use (signing the</strong></p>
 <p><strong>CRL)</strong></p></th>
-<th><strong>Certificate Term</strong></th>
+<th style="text-align: left;"><p><strong>Certificate Term</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><p>Root CA</p>
+<td style="text-align: left;"><p>Root CA</p>
 <p>Certificate</p></td>
-<td>20 years</td>
-<td>25 years</td>
-<td>25 years</td>
+<td style="text-align: left;">20 years</td>
+<td style="text-align: left;"><p>25 years</p></td>
+<td style="text-align: left;"><p>25 years</p></td>
 </tr>
 <tr>
-<td><p>All Subordinate</p>
-<p>CAs of Root CA e.g. InCommon Intermediate CAs</p></td>
-<td>3 years</td>
-<td>10 years</td>
-<td>10 years</td>
+<td style="text-align: left;"><p>All Subordinate CAs of Root CA e.g.</p>
+<p>InCommon</p>
+<p>Intermediate CAs</p></td>
+<td style="text-align: left;">3 years</td>
+<td style="text-align: left;"><p>10 years</p></td>
+<td style="text-align: left;"><p>10 years</p></td>
 </tr>
 <tr>
-<td><p>Subscriber</p>
+<td style="text-align: left;"><p>Subscriber</p>
 <p>Certificates with</p>
 <p>Server</p>
 <p>Authentication</p>
 <p>EKU</p></td>
-<td>Not Applicable</td>
-<td>Not Applicable</td>
-<td>90 Days</td>
+<td style="text-align: left;"><p>Not Applicable</p></td>
+<td style="text-align: left;"><p>Not Applicable</p></td>
+<td style="text-align: left;"><p>90 Days</p></td>
 </tr>
 </tbody>
 </table>
@@ -2577,7 +2580,7 @@ While the validity period of Issuing CA certificates may be defined in accordanc
 Reference for maximum Validity Periods of Subscriber Certificates
 
 | **Certificate Issued On or After** | **Certificate Issued Before** | **Maximum Validity Period** |
-|----|----|----|
+|:---|:---|:---|
 |  |  |  |
 |  |  |  |
 | Apr 20, 2026 | March 15, 2027 | 200 days |
@@ -2690,9 +2693,7 @@ Issuing CA change control process shall include procedures to detect unauthorize
 
 ### 6.6.3. Life Cycle Security Controls 
 
-We periodically verifies the integrity of the Certifying Authority software and monitor the
-
-configuration of CA systems.
+We periodically verifies the integrity of the Certifying Authority software and monitor the configuration of CA systems.
 
 <a id="network-security-controls"></a>
 
@@ -3046,9 +3047,7 @@ Note that the InCommon Subscriber Agreement provides services on an as-is basis 
 
 ### 9.2.4. Financial Records 
 
-We maintain our financial records, including books of accounts, in a commercially
-
-reasonable manner.
+We maintain our financial records, including books of accounts, in a commercially reasonable manner.
 
 <a id="no-partnership-or-agency"></a>
 
@@ -3064,9 +3063,7 @@ No partnership or agency is implied in any subscriber or relying party agreement
 
 ### 9.3.1. Scope of Confidential Information 
 
-We consider the following information as confidential information and protect them from
-
-disclosure using a reasonable degree of care:
+We consider the following information as confidential information and protect them from disclosure using a reasonable degree of care:
 
 1.  Private Keys;
 
@@ -3096,9 +3093,7 @@ Any information other than information indicated as confidential in this CP/CPS 
 
 ### 9.3.3. Responsibility to Protect Private Information 
 
-Our employees, agents and contractors are contractually obliged to protect confidential
-
-information. Further we provide training to employees on protection of confidential information.
+Our employees, agents and contractors are contractually obliged to protect confidential information. Further we provide training to employees on protection of confidential information.
 
 <a id="privacy-of-personal-information"></a>
 
@@ -3328,9 +3323,7 @@ In addition, to the extent permitted by law, Subscribers shall indemnify and hol
 
 ### 9.9.3. Indemnification by Relying Parties 
 
-To the extent permitted by law, any relying party of a Certificate issued by us, shall indemnify and hold harmless our partners, us, any trusted root entities and their respective directors, officers, employees, agents, and contractors from any and all damages and losses arising out of:
-
-1)  breach of the Relying Party Agreement, this CPS, or applicable law;
+To the extent permitted by law, any relying party of a Certificate issued by us, shall indemnify and hold harmless our partners, us, any trusted root entities and their respective directors, officers, employees, agents, and contractors from any and all damages and losses arising out of: (1) breach of the Relying Party Agreement, this CPS, or applicable law;
 
 2)  unreasonable reliance on a Certificate;
 
@@ -3374,7 +3367,7 @@ We may send required notices to Participants via electronic or physical means, u
 
 Notices to InCommon shall be sent to:
 
-**InCommon, LLC c/o Internet2** 3520 Green Court, Suite 200, Ann Arbor, MI 48105 Attn: General Counsel Email: <help@incommon.org> (with copy to <legal@internet2.edu>).
+**InCommon, LLC c/o Internet2** 3520 Green Court, Suite 200, Ann Arbor, MI 48105 Attn: General Counsel Email: <u>help@incommon.org</u> (with copy to <u>legal@internet2.edu</u>).
 
 <a id="amendments"></a>
 
@@ -3390,9 +3383,7 @@ Amendments to this CP/CPS are approved by Policy Authority. Upon any amendment t
 
 ### 9.12.2. Notification Mechanism and Period 
 
-We may make changes to this CP/CPS without notice; further we do not guarantee
-
-or set a notice-and-comment period.
+We may make changes to this CP/CPS without notice; further we do not guarantee or set a notice-and-comment period.
 
 <a id="circumstances-under-which-oid-must-be-changed"></a>
 
@@ -3450,9 +3441,7 @@ If any of the provisions of this CP/CPS is held invalid by a competent authority
 
 Issuing CAs under our trust hierarchy may seek indemnification and attorneys’ fees from a party for damages, losses and expenses related to that party’s conduct.
 
-Our failure to enforce a provision of this CP/CPS does not waive our right to enforce
-
-the same provision later or right to enforce any other provision of this CP/CPS.
+Our failure to enforce a provision of this CP/CPS does not waive our right to enforce the same provision later or right to enforce any other provision of this CP/CPS.
 
 No waiver to any party shall be effective unless it is given in writing by respective Issuing CAs under our trust hierarchy.
 
@@ -3462,9 +3451,7 @@ In its specific agreements with subscribers, relying parties or any other partie
 
 ### 9.16.5. Force Majeure 
 
-We accept no liability for any delay or failure to perform an obligation under this CP/CPS to
-
-the extent those delay or failure is caused by events beyond its reasonable control.
+We accept no liability for any delay or failure to perform an obligation under this CP/CPS to the extent those delay or failure is caused by events beyond its reasonable control.
 
 <a id="other-provisions"></a>
 
@@ -3480,20 +3467,20 @@ No stipulation.
 
 ## 10.1. SSL/TLS - DV 
 
-<table style="width:100%;">
+<table style="width:87%;">
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 75%" />
+<col style="width: 21%" />
+<col style="width: 65%" />
 </colgroup>
 <thead>
 <tr>
-<th><strong>Usage/Purpose</strong></th>
-<th>Secure Websites</th>
+<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
+<th style="text-align: left;">Secure Websites</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Domain Verification</strong></td>
+<td style="text-align: left;"><strong>Domain Verification</strong></td>
 <td><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
 <ol type="1">
 <li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
@@ -3518,9 +3505,9 @@ No stipulation.
 </ol></td>
 </tr>
 <tr>
-<td></td>
+<td style="text-align: left;"></td>
 <td><p>The validation results SHALL be corroborated using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p>
-<p>Each Network Perspective MAY use a recursive DNS resolver that is not co-located with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. Our platforms SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+<p>Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. Our platforms SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
 <p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p>
 <p><strong>DNSSEC Validation :</strong> Our platform performs DNSSEC validation in accordance with the Baseline Requirements as follows:</p>
 <p>For domain validation methods performed under Baseline Requirements Sections 3.2.2.4.4, 3.2.2.4.13, and 3.2.2.4.14, DNSSEC validation back to the IANA DNSSEC root trust anchor MUST be performed on all DNS CNAME, CAA, and TXT queries used to obtain the Authorization Domain Name associated with the validation of domain authorization or control by the Primary Network Perspective. Our platforms MUST NOT use local policy to disable DNSSEC validation for these queries.</p>
@@ -3534,32 +3521,30 @@ No stipulation.
 
 ## 10.2. SSL/TLS - IV/OV 
 
-<table style="width:100%;">
+| **Usage/Purpose** | Secure Websites |
+|-------------------|-----------------|
+
+<table style="width:87%;">
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 75%" />
+<col style="width: 21%" />
+<col style="width: 65%" />
 </colgroup>
 <thead>
 <tr>
-<th><strong>Usage/Purpose</strong></th>
-<th>Secure Websites</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Individual Verification</strong></td>
-<td><p>For Individual Validated (IV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
+<th style="text-align: left;"><strong>Individual Verification</strong></th>
+<th><p>For Individual Validated (IV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
 <li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
 <li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
 <li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
-<li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
-</ol>
-<p>OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p></td>
+<li><p>If the verification is not satisfactorily achieved by any of the above process OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p></li>
+</ol></th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td><p><strong>Organization</strong></p>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
 <p><strong>Verification</strong></p></td>
 <td><p>For Organization Validated (OV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
@@ -3571,19 +3556,19 @@ No stipulation.
 </ol></td>
 </tr>
 <tr>
-<td><strong>Domain Verification</strong></td>
-<td>Refer Domain Verification section for SSL/TLS DV section.</td>
+<td style="text-align: left;"><strong>Domain Verification</strong></td>
+<td style="text-align: left;">Refer Domain Verification section for SSL/TLS DV section.</td>
 </tr>
 <tr>
-<td><strong>Telephone Verification</strong></td>
-<td><p>If Telephone is to be present in the certificate, telephone number shall</p>
+<td style="text-align: left;"><strong>Telephone Verification</strong></td>
+<td style="text-align: left;"><p>If Telephone is to be present in the certificate, telephone number shall</p>
 <ol type="1">
 <li><p>Either be a part of a pre-verified source, including bank verified information, etc.</p></li>
 <li><p>Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
 </ol></td>
 </tr>
 <tr>
-<td><strong>Email Verification</strong></td>
+<td style="text-align: left;"><strong>Email Verification</strong></td>
 <td><p>If Email is to be present in the certificate, The control over email or the domain name of email server,</p>
 <ol type="1">
 <li><p>Either be a part of a pre-verified source, including bank verified information, etc.</p></li>
@@ -3597,46 +3582,46 @@ No stipulation.
 
 ## 10.3. SSL/TLS - EV 
 
-<table style="width:100%;">
+<table style="width:87%;">
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 75%" />
+<col style="width: 21%" />
+<col style="width: 65%" />
 </colgroup>
 <thead>
 <tr>
-<th><strong>Usage/Purpose</strong></th>
-<th>Secure Websites</th>
+<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
+<th style="text-align: left;">Secure Websites</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Physical Verification</strong></td>
-<td>As per EV requirements, mentioned below.</td>
+<td style="text-align: left;"><strong>Physical Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
 </tr>
 <tr>
-<td><strong>Individual Verification</strong></td>
-<td>As per EV requirements, mentioned below.</td>
+<td style="text-align: left;"><strong>Individual Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
 </tr>
 <tr>
-<td><p><strong>Organization</strong></p>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
 <p><strong>Verification</strong></p></td>
-<td>As per EV requirements, mentioned below.</td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
 </tr>
 <tr>
-<td><strong>Domain Verification</strong></td>
-<td><p>Refer Domain Verification section for SSL/TLS DV section</p></td>
+<td style="text-align: left;"><strong>Domain Verification</strong></td>
+<td style="text-align: left;"><p>Refer Domain Verification section for SSL/TLS DV section</p></td>
 </tr>
 <tr>
-<td><strong>Telephone Verification</strong></td>
-<td>As per EV requirements, mentioned below.</td>
+<td style="text-align: left;"><strong>Telephone Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
 </tr>
 <tr>
-<td><strong>Email Verification</strong></td>
-<td>As per EV requirements, mentioned below.</td>
+<td style="text-align: left;"><strong>Email Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
 </tr>
 <tr>
-<td><strong>EV Verification</strong></td>
-<td>Section 11 of EV guidelines of CABF</td>
+<td style="text-align: left;"><strong>EV Verification</strong></td>
+<td style="text-align: left;">Section 11 of EV guidelines of CABF</td>
 </tr>
 </tbody>
 </table>
@@ -3649,84 +3634,84 @@ No stipulation.
 
 ## 11.1. Root Certificates 
 
-<table>
+<table style="width:86%;">
 <colgroup>
-<col style="width: 41%" />
-<col style="width: 58%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr>
-<th>Version</th>
-<th>V3</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">V3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Serial Number</td>
+<td style="text-align: left;">Serial Number</td>
 <td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
 </tr>
 <tr>
-<td>Signature Algorithm</td>
+<td style="text-align: left;">Signature Algorithm</td>
 <td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
-<td>Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">Issuer: CN</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
 </tr>
 <tr>
-<td>Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">Issuer: O</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
 </tr>
 <tr>
-<td>Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">Issuer: OU</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
 </tr>
 <tr>
-<td>Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">Issuer: C</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
-<td>Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Valid From</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td>Valid To</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Valid To</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td>Public Key</td>
-<td><p>RSA 4096 (OR) RSA 8192</p>
+<td style="text-align: left;">Public Key</td>
+<td style="text-align: left;"><p>RSA 4096 (OR) RSA 8192</p>
 <p>ECC curves NIST P-256, P-384, or P-521</p></td>
 </tr>
 <tr>
-<td>Subject: CommonName</td>
-<td>Common Name of Root CA</td>
+<td style="text-align: left;">Subject: CommonName</td>
+<td style="text-align: left;">Common Name of Root CA</td>
 </tr>
 <tr>
-<td>Subject: OrganizationName</td>
-<td>Legal Name of CA Organization</td>
+<td style="text-align: left;">Subject: OrganizationName</td>
+<td style="text-align: left;">Legal Name of CA Organization</td>
 </tr>
 <tr>
-<td>Subject: OrganizationalUnitName</td>
-<td>Variable Information</td>
+<td style="text-align: left;">Subject: OrganizationalUnitName</td>
+<td style="text-align: left;">Variable Information</td>
 </tr>
 <tr>
-<td>Subject: CountryName</td>
-<td>Country of CA</td>
+<td style="text-align: left;">Subject: CountryName</td>
+<td style="text-align: left;">Country of CA</td>
 </tr>
 <tr>
-<td>Key Usage</td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;">Key Usage</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Certificate Signing, Off-line CRL Signing, CRL Signing (06)</p></td>
 </tr>
 <tr>
-<td>Subject Key Identifier</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Subject Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td>Basic Constraints</td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;">Basic Constraints</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Subject Type=CA, Path Length Constraint=None</p></td>
 </tr>
 </tbody>
@@ -3736,91 +3721,94 @@ No stipulation.
 
 ## 11.2. Subordinate CA Certificates (Issuer / Intermediate) 
 
-<table>
+<table style="width:86%;">
 <colgroup>
-<col style="width: 35%" />
-<col style="width: 64%" />
+<col style="width: 30%" />
+<col style="width: 55%" />
 </colgroup>
 <thead>
 <tr>
-<th>Version</th>
-<th>V3</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">V3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Serial Number</td>
-<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+<td style="text-align: left;">Serial Number</td>
+<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
 </tr>
 <tr>
-<td>Signature Algorithm</td>
-<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
+<td style="text-align: left;">Signature Algorithm</td>
+<td style="text-align: left;">SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
-<td>Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">Issuer: CN</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
 </tr>
 <tr>
-<td>Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">Issuer: O</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
 </tr>
 <tr>
-<td>Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">Issuer: OU</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
 </tr>
 <tr>
-<td>Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">Issuer: C</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
-<td>Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Valid From</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td>Valid To</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Valid To</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td>Public Key</td>
-<td><p>RSA 4096 (OR) RSA 8192</p>
+<td style="text-align: left;">Public Key</td>
+<td style="text-align: left;"><p>RSA 4096 (OR) RSA 8192</p>
 <p>ECC curves NIST P-256, P-384, or P-521</p></td>
 </tr>
 <tr>
-<td>Subject: CommonName</td>
-<td>Common Name of CA</td>
+<td style="text-align: left;">Subject: CommonName</td>
+<td style="text-align: left;">Common Name of CA</td>
 </tr>
 <tr>
-<td>Subject: OrganizationName</td>
-<td>Legal Name of CA Organization</td>
+<td style="text-align: left;">Subject: OrganizationName</td>
+<td style="text-align: left;">Legal Name of CA Organization</td>
 </tr>
 <tr>
-<td>Subject: OrganizationalUnitName</td>
-<td>Variable Information</td>
+<td style="text-align: left;">Subject: OrganizationalUnitName</td>
+<td style="text-align: left;">Variable Information</td>
 </tr>
 <tr>
-<td>Subject: CountryName</td>
-<td>Country of CA</td>
+<td style="text-align: left;">Subject: CountryName</td>
+<td style="text-align: left;">Country of CA</td>
 </tr>
 <tr>
-<td>Key Usage</td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;">Key Usage</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Certificate Signing, Off-line CRL Signing, CRL Signing (06)</p></td>
 </tr>
 <tr>
-<td>Enhanced Key Usage</td>
-<td>In case the CA issues Server Authentication certificates:</td>
+<td style="text-align: left;">Enhanced Key Usage</td>
+<td style="text-align: left;">In case the CA issues Server Authentication certificates:</td>
 </tr>
 <tr>
-<td></td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Server Authentication, Client Authentication</p>
 <p><strong>Note:</strong> Any new Issuing CA generated after June 15, 2025 will be restricted to Server Authentication.</p></td>
 </tr>
 <tr>
-<td>Certificate Policies</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Certificate Policies</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <ol type="1">
-<li><p>1.3.6.1.4.1.5923.1.4.3.1.2, https://incommon.org/certificates/repository/</p></li>
+<li><p>1.3.6.1.4.1.5923.1.4.3.1.2,</p></li>
+</ol>
+<p>https://incommon.org/certificates/repository/</p>
+<ol start="2" type="1">
 <li><p>Policy ID = 1.3.6.1.4.1.50977.1.2.100 For DV SSL OR,</p></li>
 </ol>
 <p>1.3.6.1.4.1.50977.1.2.110 For OV SSL OR,</p>
@@ -3832,23 +3820,23 @@ No stipulation.
 <p>2.23.140.1.1 For EV SSL</p></td>
 </tr>
 <tr>
-<td>Subject Key Identifier</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Subject Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td>Authority Key Identifier</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Authority Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td>Basic Constraints</td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;">Basic Constraints</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Subject Type=CA, Path Length Constraint=n</p></td>
 </tr>
 <tr>
-<td>Authority Information access</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Authority Information access</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
 <p>URL=http://ocsp.emSign.com OR,</p>
 <p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR,</p>
@@ -3858,20 +3846,21 @@ No stipulation.
 <p>URL=http://repository.emsign.com/certs/&lt;IssuerName&gt;.crt/p7c/cer</p></td>
 </tr>
 <tr>
-<td>CRL Distribution Points</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">CRL Distribution Points</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>CRL HTTP URL = http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
 </tr>
 </tbody>
 </table>
 
-1.  **InCommon Intermediate CAs**
+11.2.1 **InCommon Intermediate CAs**
 
-    1.  **InCommon DV Intermediate CA (RSA)**
+11.2.1.1. **InCommon DV Intermediate CA (RSA)**
 
 | **Field** | **Value** |
-|----|----|
+|:---|----|
 | Subject DN | CN=InCommon Intermediate CA – DVG2C, O=Internet2, C=US |
+| **Field** | **Value** |
 | Key Algorithm | RSA 4096-bit |
 | Signature Algorithm | SHA-384WithRSAEncryption |
 | BasicConstraints | CA:TRUE, pathLenConstraint as appropriate |
@@ -3882,10 +3871,10 @@ No stipulation.
 | SubjectKeyIdentifier | Present |
 | AuthorityKeyIdentifier | Present |
 
-2.  **InCommon DV Intermediate CA (ECC)**
+11.2.1.2. **InCommon DV Intermediate CA (ECC)**
 
 | **Field** | **Value** |
-|----|----|
+|:---|----|
 | Subject DN | CN=InCommon Intermediate CA – DVG3C, O=Internet2, C=US |
 | Key Algorithm | ECDSA P-384 |
 | Signature Algorithm | ECDSA with SHA-384 |
@@ -3897,10 +3886,10 @@ No stipulation.
 | SubjectKeyIdentifier | Present |
 | AuthorityKeyIdentifier | Present |
 
-3.  **InCommon OV Intermediate CA (RSA)**
+11.2.1.3. **InCommon OV Intermediate CA (RSA)**
 
 | **Field** | **Value** |
-|----|----|
+|:---|----|
 | Subject DN | CN=InCommon Intermediate CA – OVG2C, O=Internet2, C=US |
 | Key Algorithm | RSA 4096-bit |
 | Signature Algorithm | SHA-384WithRSAEncryption |
@@ -3912,10 +3901,10 @@ No stipulation.
 | SubjectKeyIdentifier | Present |
 | AuthorityKeyIdentifier | Present |
 
-4.  **InCommon OV Intermediate CA (ECC)**
+11.2.1.4. **InCommon OV Intermediate CA (ECC)**
 
 | **Field** | **Value** |
-|----|----|
+|:---|----|
 | Subject DN | CN=InCommon Intermediate CA – OVG3C, O=Internet2, C=US |
 | Key Algorithm | ECDSA P-384 |
 | Signature Algorithm | ECDSA with SHA-384 |
@@ -3923,14 +3912,15 @@ No stipulation.
 | KeyUsage | keyCertSign, cRLSign (critical) |
 | CertificatePolicies | InCommon OID(s), emSign OID(s) |
 | AIA | OCSP URL; emSign Root CA Issuer URL (CertiNext-operated) |
+| **Field** | **Value** |
 | CDP | InCommon CRL Distribution Point URL |
 | SubjectKeyIdentifier | Present |
 | AuthorityKeyIdentifier | Present |
 
-5.  **InCommon EV Intermediate CA (RSA)**
+11.2.1.5. **InCommon EV Intermediate CA (RSA)**
 
 | **Field** | **Value** |
-|----|----|
+|:---|----|
 | Subject DN | CN=InCommon Intermediate CA – EVG2C, O=Internet2, C=US |
 | Key Algorithm | RSA 4096-bit |
 | Signature Algorithm | SHA-384WithRSAEncryption |
@@ -3942,14 +3932,15 @@ No stipulation.
 | SubjectKeyIdentifier | Present |
 | AuthorityKeyIdentifier | Present |
 
-6.  **InCommon EV Intermediate CA (ECC)**
+11.2.1.6. **InCommon EV Intermediate CA (ECC)**
 
 | **Field** | **Value** |
-|----|----|
+|:---|----|
 | Subject DN | CN=InCommon Intermediate CA – EVG3C, O=Internet2, C=US |
 | Key Algorithm | ECDSA P-384 |
 | Signature Algorithm | ECDSA with SHA-384 |
 | BasicConstraints | CA:TRUE, pathLenConstraint as appropriate |
+| **Field** | **Value** |
 | KeyUsage | keyCertSign, cRLSign (critical) |
 | CertificatePolicies | InCommon OID(s), emSign OID(s) |
 | AIA | OCSP URL; emSign Root CA Issuer URL (CertiNext-operated) |
@@ -3961,78 +3952,78 @@ No stipulation.
 
 ## 11.3. SSL/TLS - DV 
 
-<table>
+<table style="width:86%;">
 <colgroup>
-<col style="width: 35%" />
-<col style="width: 64%" />
+<col style="width: 30%" />
+<col style="width: 55%" />
 </colgroup>
 <thead>
 <tr>
-<th>Version</th>
-<th>V3</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">V3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Serial Number</td>
-<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+<td style="text-align: left;">Serial Number</td>
+<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
 </tr>
 <tr>
-<td>Signature Algorithm</td>
-<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
+<td style="text-align: left;">Signature Algorithm</td>
+<td style="text-align: left;">SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
-<td>Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">Issuer: CN</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
 </tr>
 <tr>
-<td>Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">Issuer: O</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
 </tr>
 <tr>
-<td>Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">Issuer: OU</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
 </tr>
 <tr>
-<td>Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">Issuer: C</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
-<td>Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Valid From</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td>Valid To</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Valid To</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td>Public Key</td>
-<td>As per Section 6.1.5.</td>
+<td style="text-align: left;">Public Key</td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
 </tr>
 <tr>
-<td>Subject: CommonName</td>
-<td>FQDN or Single IP</td>
+<td style="text-align: left;">Subject: CommonName</td>
+<td style="text-align: left;">FQDN or Single IP</td>
 </tr>
 <tr>
-<td>Subject Alternative Name</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Subject Alternative Name</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>DNS (multiple) = FQDN or Single IP</p></td>
 </tr>
 <tr>
-<td>Key Usage</td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;">Key Usage</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0))</p></td>
 </tr>
 <tr>
-<td>Enhanced Key Usage</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Enhanced Key Usage</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Server Authentication</p></td>
 </tr>
 <tr>
-<td>Certificate Policies</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Certificate Policies</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <ol type="1">
-<li><p>1.3.6.1.4.1.5923.1.4.3.1.2, <a href="https://incommon.org/certificates/repository/">https://incommon.org/certificates/repository/</a></p></li>
+<li><p>1.3.6.1.4.1.5923.1.4.3.1.2, <a href="https://incommon.org/certificates/repository/"><u>https://incommon.org/certificates/repository/</u></a></p></li>
 <li><p>Policy ID=1.3.6.1.4.1.50977.1.2.100 (User Notice,</p></li>
 </ol>
 <p>Domain Validated SSL/TLS Certificate)</p>
@@ -4041,23 +4032,23 @@ No stipulation.
 </ol></td>
 </tr>
 <tr>
-<td>Subject Key Identifier</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Subject Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td>Authority Key Identifier</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Authority Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td>Basic Constraints</td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;">Basic Constraints</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Subject Type=End Entity, Path Length Constraint=None</p></td>
 </tr>
 <tr>
-<td>Authority Information access</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Authority Information access</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
 <p>URL=http://ocsp.emSign.com OR,</p>
 <p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR,</p>
@@ -4067,8 +4058,8 @@ No stipulation.
 <p>URL=http://repository.emsign.com/certs/&lt;IssuerName&gt;.crt/p7c/cer</p></td>
 </tr>
 <tr>
-<td>CRL Distribution Points</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">CRL Distribution Points</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>CRL HTTP URL = http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
 </tr>
 </tbody>
@@ -4078,102 +4069,77 @@ No stipulation.
 
 ## 11.4. SSL/TLS - OV 
 
-<table>
+| Version | V3 |
+|:---|:---|
+| Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
+| Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
+| Issuer: CN | \<Issuing CA Common Name\> |
+| Issuer: O | \<Issuing CA Organization name\> |
+| Issuer: OU | \<Issuing CA Organization unit\> |
+| Issuer: C | \<Issuing CA Country\> |
+| Valid From | Start date expressed in UTC format |
+| Valid To | Start date expressed in UTC format |
+
+<table style="width:86%;">
 <colgroup>
-<col style="width: 34%" />
-<col style="width: 65%" />
+<col style="width: 30%" />
+<col style="width: 56%" />
 </colgroup>
 <thead>
 <tr>
-<th>Version</th>
-<th>V3</th>
+<th style="text-align: left;">Public Key</th>
+<th style="text-align: left;">As per Section 6.1.5.</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Serial Number</td>
-<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+<td style="text-align: left;">Subject: CommonName</td>
+<td style="text-align: left;">FQDN or Single IP</td>
 </tr>
 <tr>
-<td>Signature Algorithm</td>
-<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
+<td style="text-align: left;">Subject: OrganizationName</td>
+<td style="text-align: left;">Legal Name of the Organization with allowed variations</td>
 </tr>
 <tr>
-<td>Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">Subject: StreetAddress</td>
+<td style="text-align: left;">Verified Street Address (Optional)</td>
 </tr>
 <tr>
-<td>Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">Subject: LocalityName</td>
+<td style="text-align: left;">Verified Locality (Optional)</td>
 </tr>
 <tr>
-<td>Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">Subject: StateOrProvinceName</td>
+<td style="text-align: left;">Verified State/Province</td>
 </tr>
 <tr>
-<td>Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">Subject: CountryName</td>
+<td style="text-align: left;">Verified Country</td>
 </tr>
 <tr>
-<td>Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Subject: PostalCode</td>
+<td style="text-align: left;">Verified Postal Code (Optional)</td>
 </tr>
 <tr>
-<td>Valid To</td>
-<td>Start date expressed in UTC format</td>
-</tr>
-<tr>
-<td>Public Key</td>
-<td>As per Section 6.1.5.</td>
-</tr>
-<tr>
-<td>Subject: CommonName</td>
-<td>FQDN or Single IP</td>
-</tr>
-<tr>
-<td>Subject: OrganizationName</td>
-<td>Legal Name of the Organization with allowed variations</td>
-</tr>
-<tr>
-<td>Subject: StreetAddress</td>
-<td>Verified Street Address (Optional)</td>
-</tr>
-<tr>
-<td>Subject: LocalityName</td>
-<td>Verified Locality (Optional)</td>
-</tr>
-<tr>
-<td>Subject: StateOrProvinceName</td>
-<td>Verified State/Province</td>
-</tr>
-<tr>
-<td>Subject: CountryName</td>
-<td>Verified Country</td>
-</tr>
-<tr>
-<td>Subject: PostalCode</td>
-<td>Verified Postal Code (Optional)</td>
-</tr>
-<tr>
-<td>Subject Alternative Name</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Subject Alternative Name</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>DNS (multiple) = FQDN or Single IP</p></td>
 </tr>
 <tr>
-<td>Key Usage</td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;">Key Usage</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0))</p></td>
 </tr>
 <tr>
-<td>Enhanced Key Usage</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Enhanced Key Usage</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Server Authentication</p></td>
 </tr>
 <tr>
-<td>Certificate Policies</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Certificate Policies</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <ol type="1">
-<li><p>1.3.6.1.4.1.5923.1.4.3.1.2, <a href="https://incommon.org/certificates/repository/">https://incommon.org/certificates/repository/</a></p></li>
+<li><p>1.3.6.1.4.1.5923.1.4.3.1.2, <a href="https://incommon.org/certificates/repository/"><u>https://incommon.org/certificates/repository/</u></a></p></li>
 <li><p>Policy ID=1.3.6.1.4.1.50977.1.2.110 (User Notice,</p></li>
 </ol>
 <p>Organization Validated SSL/TLS Certificate)</p>
@@ -4182,23 +4148,23 @@ No stipulation.
 </ol></td>
 </tr>
 <tr>
-<td>Subject Key Identifier</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Subject Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td>Authority Key Identifier</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Authority Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td>Basic Constraints</td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;">Basic Constraints</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Subject Type=End Entity, Path Length Constraint=None</p></td>
 </tr>
 <tr>
-<td>Authority Information access</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">Authority Information access</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
 <p>URL=http://ocsp.emSign.com OR,</p>
 <p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR,</p>
@@ -4208,8 +4174,8 @@ No stipulation.
 <p>URL=http://repository.emsign.com/certs/&lt;IssuerName&gt;.crt/p7c/cer</p></td>
 </tr>
 <tr>
-<td>CRL Distribution Points</td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;">CRL Distribution Points</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>CRL HTTP URL = http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
 </tr>
 </tbody>
@@ -4220,7 +4186,7 @@ No stipulation.
 ## 11.5. SSL/TLS - EV 
 
 | Version | V3 |
-|----|----|
+|:---|:---|
 | Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
 | Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
 | Issuer: CN | \<Issuing CA Common Name\> |
@@ -4228,95 +4194,95 @@ No stipulation.
 | Issuer: OU | \<Issuing CA Organization unit\> |
 | Issuer: C | \<Issuing CA Country\> |
 
-<table>
+<table style="width:86%;">
 <colgroup>
-<col style="width: 34%" />
-<col style="width: 65%" />
+<col style="width: 30%" />
+<col style="width: 56%" />
 </colgroup>
 <thead>
 <tr>
-<th><p>Valid From</p></th>
-<th>Start date expressed in UTC format</th>
+<th style="text-align: left;"><p>Valid From</p></th>
+<th style="text-align: left;">Start date expressed in UTC format</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><p>Valid To</p></td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;"><p>Valid To</p></td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td><p>Public Key</p></td>
-<td>As per Section 6.1.5.</td>
+<td style="text-align: left;"><p>Public Key</p></td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
 </tr>
 <tr>
-<td><p>Subject: CommonName</p></td>
-<td>FQDN or Single IP</td>
+<td style="text-align: left;"><p>Subject: CommonName</p></td>
+<td style="text-align: left;">FQDN or Single IP</td>
 </tr>
 <tr>
-<td><p>Subject: OrganizationName</p></td>
-<td>Legal Name of the Organization with allowed variations</td>
+<td style="text-align: left;"><p>Subject: OrganizationName</p></td>
+<td style="text-align: left;">Legal Name of the Organization with allowed variations</td>
 </tr>
 <tr>
-<td><p>Subject: StreetAddress</p></td>
-<td>Verified Street Address (Optional)</td>
+<td style="text-align: left;"><p>Subject: StreetAddress</p></td>
+<td style="text-align: left;">Verified Street Address (Optional)</td>
 </tr>
 <tr>
-<td><p>Subject: LocalityName</p></td>
-<td>Verified Locality (Optional)</td>
+<td style="text-align: left;"><p>Subject: LocalityName</p></td>
+<td style="text-align: left;">Verified Locality (Optional)</td>
 </tr>
 <tr>
-<td><p>Subject: StateOrProvinceName</p></td>
-<td>Verified State/Province</td>
+<td style="text-align: left;"><p>Subject: StateOrProvinceName</p></td>
+<td style="text-align: left;">Verified State/Province</td>
 </tr>
 <tr>
-<td><p>Subject: CountryName</p></td>
-<td>Verified Country</td>
+<td style="text-align: left;"><p>Subject: CountryName</p></td>
+<td style="text-align: left;">Verified Country</td>
 </tr>
 <tr>
-<td><p>Subject: PostalCode</p></td>
-<td>Verified Postal Code (Optional)</td>
+<td style="text-align: left;"><p>Subject: PostalCode</p></td>
+<td style="text-align: left;">Verified Postal Code (Optional)</td>
 </tr>
 <tr>
-<td><p>Subject: BusinessCategory</p></td>
-<td>Verified Information as per EV criteria</td>
+<td style="text-align: left;"><p>Subject: BusinessCategory</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td><p>Subject: SerialNumber</p></td>
-<td>Verified Information as per EV criteria</td>
+<td style="text-align: left;"><p>Subject: SerialNumber</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td><p>Subject: JurisdictionLocalityName</p></td>
-<td>Verified Information as per EV criteria</td>
+<td style="text-align: left;"><p>Subject: JurisdictionLocalityName</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td><p>Subject:</p>
+<td style="text-align: left;"><p>Subject:</p>
 <p>JurisdictionStateOrProvinceName</p></td>
-<td>Verified Information as per EV criteria</td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td><p>Subject: JurisdictionCountryName</p></td>
-<td>Verified Information as per EV criteria</td>
+<td style="text-align: left;"><p>Subject: JurisdictionCountryName</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td><p>Subject Alternative Name</p></td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;"><p>Subject Alternative Name</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>DNS (multiple) = FQDN or Single IP</p></td>
 </tr>
 <tr>
-<td><p>Key Usage</p></td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;"><p>Key Usage</p></td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0))</p></td>
 </tr>
 <tr>
-<td><p>Enhanced Key Usage</p></td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;"><p>Enhanced Key Usage</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Server Authentication</p></td>
 </tr>
 <tr>
-<td><p>Certificate Policies</p></td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;"><p>Certificate Policies</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <ol type="1">
-<li><p>1.3.6.1.4.1.5923.1.4.3.1.2, <a href="https://incommon.org/certificates/repository/">https://incommon.org/certificates/repository/</a></p></li>
+<li><p>1.3.6.1.4.1.5923.1.4.3.1.2, <a href="https://incommon.org/certificates/repository/"><u>https://incommon.org/certificates/repository/</u></a></p></li>
 <li><p>Policy ID=1.3.6.1.4.1.50977.1.2.120 (User Notice,</p></li>
 </ol>
 <p>Extended Validated SSL/TLS Certificate)</p>
@@ -4325,23 +4291,23 @@ No stipulation.
 </ol></td>
 </tr>
 <tr>
-<td><p>Subject Key Identifier</p></td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;"><p>Subject Key Identifier</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td><p>Authority Key Identifier</p></td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;"><p>Authority Key Identifier</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td><p>Basic Constraints</p></td>
-<td><p>Critical=TRUE</p>
+<td style="text-align: left;"><p>Basic Constraints</p></td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Subject Type=End Entity, Path Length Constraint=None</p></td>
 </tr>
 <tr>
-<td><p>Authority Information access</p></td>
-<td><p>Critical=FALSE</p>
+<td style="text-align: left;"><p>Authority Information access</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
 <p>URL=http://ocsp.emSign.com OR,</p>
 <p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR,</p>
@@ -4349,13 +4315,13 @@ No stipulation.
 <p>URL=http://ocsp-c.emSign.com (for NL location certificate)</p></td>
 </tr>
 <tr>
-<td></td>
-<td><p>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2),</p>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2),</p>
 <p>URL=http://repository.emsign.com/certs/&lt;IssuerName&gt;.crt/p7c/cer</p></td>
 </tr>
 <tr>
-<td><p>CRL Distribution Points</p></td>
-<td><p>Critical=FALSE CRL HTTP URL</p>
+<td style="text-align: left;"><p>CRL Distribution Points</p></td>
+<td style="text-align: left;"><p>Critical=FALSE CRL HTTP URL</p>
 <p>=</p>
 <p>http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
 </tr>
@@ -4368,11 +4334,7 @@ No stipulation.
 
 This section contains the summary of changes made to the CP-CPS. Please check the archived document versions for detailed comparative differences.
 
-**Version 1.00: 19-August-2025**
-
-- emSign TLS Baseline Version
-
-**Version 1.04: 08-April-2026**
+**Version 1.00: 19-August-2025** • emSign TLS Baseline Version **Version 1.04: 08-April-2026**
 
 - InCommon PKI adaptation
 
@@ -4381,5 +4343,9 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 - Section 3.3.1. Identification and Authentication for Routine Re-Key : Updated initial Subscriber identification & authentication duration as per the SSL Baseline Requirement
 
 - Section 6.3.2. Certificate Operational Periods and Key Pair Usage Periods : Updated the maximum Validity Periods of Subscriber Certificates as per the SSL Baseline Requirement
+
+**Version 1.06: 10-July-2026**
+
+- In Section 4.9.10 updated in accordance with the CA/Browser Forum TLS Baseline Requirements.
 
 </div>

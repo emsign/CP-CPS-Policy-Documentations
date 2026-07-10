@@ -9,40 +9,36 @@
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: center;"><strong>Policy Document Description</strong></th>
-<th style="text-align: center;"><strong>Date of Publication</strong></th>
-<th style="text-align: center;"><strong>Version</strong></th>
-<th style="text-align: center;"><strong>CP/CPS OID</strong></th>
+<th style="text-align: left;"><strong>Policy Document Description</strong></th>
+<th style="text-align: left;"><strong>Date of Publication</strong></th>
+<th style="text-align: left;"><strong>Version</strong></th>
+<th style="text-align: left;"><strong>CP/CPS OID</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><p>InCommon Certification</p>
+<td style="text-align: left;"><p>InCommon Certification</p>
 <p>Practices Statement</p>
 <p>for</p>
 <p>the InCommon IGTF</p>
 <p>Server Certification</p>
 <p>Authority</p></td>
-<td style="text-align: center;">21-April-2026</td>
-<td style="text-align: center;">Version 3.01</td>
-<td style="text-align: center;">1.3.6.1.4.1.5923.1.4.3.4.3</td>
+<td style="text-align: left;">10-July-2026</td>
+<td style="text-align: left;">Version 3.02</td>
+<td style="text-align: left;">1.3.6.1.4.1.5923.1.4.3.4.3</td>
 </tr>
 </tbody>
 </table>
 
-<a id=""></a>
-
-# 1. 
-
 <a id="introduction"></a>
 
-# 2. INTRODUCTION 
+# 1. INTRODUCTION 
 
 InCommon (“InCommon”) is an identity and trust community and services provider that offers optional subscription services for X.509 PKI certificates issued by an InCommon certification authority. CertiNext verifies the identity of each Subscriber and the Internet domains for which they are authoritative. InCommon outsources functions including protecting the CA private key, signing certificates, revoking certificates, publishing Certificate Revocation Lists (“CRLs”) and the operation of an Online Certificate Status Protocol (“OCSP”) responder to CertiNext Inc under the Master Services Agreement (“CertiNext Agreement”) between CertiNext Inc. (“CertiNext”) and University Corporation for Advanced Internet Development (d/b/a Internet2) and its single-member LLC, InCommon.
 
 <a id="overview"></a>
 
-## 2.1. Overview 
+## 1.1. Overview 
 
 This InCommon Certification Practices Statement (CPS) outlines the legal, commercial, and technical principles and practices InCommon employs in managing the InCommon RSA IGTF Server CA 4. This CA signs SSL/TLS certificates as a result of Certificate Signing Requests (CSRs) approved by InCommon designated representatives (and their delegates) of research or educational institutions that are
 
@@ -58,7 +54,7 @@ Such sections will contain the text “Provided by CertiNext as stated in the Ce
 
 <a id="document-name-and-identification"></a>
 
-## 2.2. Document Name and Identification 
+## 1.2. Document Name and Identification 
 
 This document is the InCommon IGTF Server CPS version 3.0, which was approved for publication on April 10<sup>th</sup> 2026 by InCommon's certification Policy Authority. There is no separate Certification Policy document; policy is incorporated within this document.
 
@@ -74,10 +70,11 @@ Revisions to this document have been made as follows:
 | November 2013 | Reference CPS documents explicitly in Section 1.1. | 1.1 |
 | May 2023 | Update references from Comodo to Sectigo, update hierarchy | 2.0 |
 | April 2026 | InCommon CA platform provider transitioned to CertiNext Inc | 3.0 |
+| July 2026 | Section 4.9.10 updated in accordance with the CA/Browser Forum TLS Baseline Requirements. | 3.02 |
 
 <a id="pki-participants"></a>
 
-## 2.3. PKI Participants 
+## 1.3. PKI Participants 
 
 **1.3.1. Certification Authorities**
 
@@ -115,7 +112,7 @@ Digital certificates do not guarantee that a certificate holder has good intenti
 
 <a id="certificate-usage"></a>
 
-## 2.4. Certificate Usage 
+## 1.4. Certificate Usage 
 
 A digital certificate is formatted data that cryptographically binds an identified Subject to a public key. A digital certificate allows an entity taking part in an electronic transaction to assert its identity to the other participants in such a transaction.
 
@@ -133,7 +130,7 @@ Certificates may not be used for any application requiring fail-safe performance
 
 <a id="policy-administration"></a>
 
-## 2.5. Policy Administration 
+## 1.5. Policy Administration 
 
 **1.5.1. Organization Administering the Document**
 
@@ -163,7 +160,7 @@ InCommon's CPS (and any amendments made to it) are reviewed and approved by InCo
 
 <a id="definitions-and-acronyms"></a>
 
-## 2.6. Definitions and Acronyms 
+## 1.6. Definitions and Acronyms 
 
 **Acronyms:**
 
@@ -268,7 +265,7 @@ X.509 The ITU-T standard for Certificates and their corresponding authentication
 
 <a id="publication-and-repository-responsibilities"></a>
 
-# 3. PUBLICATION AND REPOSITORY RESPONSIBILITIES 
+# 2. PUBLICATION AND REPOSITORY RESPONSIBILITIES 
 
 This CPS is only one of a set of documents relevant to the InCommon RSA IGTF Server CA 4. The list of documents below is a non-exhaustive list of other relevant documents. The document name, location of, and status, whether public or private, are detailed below.
 
@@ -281,7 +278,7 @@ This CPS is only one of a set of documents relevant to the InCommon RSA IGTF Ser
 
 <a id="repositories"></a>
 
-## 3.1. Repositories 
+## 2.1. Repositories 
 
 InCommon publishes this CPS, related documents and certificates in its PKI services repository at https://www.incommon.org/certificates/repository/. The InCommon Operations group maintains the repository. InCommon makes reasonable efforts to ensure that the information in its repository is accurate, updated, and correct. However, in no event shall InCommon be liable for any amounts beyond the limits set forth in this CPS.
 
@@ -289,29 +286,29 @@ Parties accessing the repository agree to the terms posted in the repository in 
 
 <a id="publication-of-certification-information"></a>
 
-## 3.2. Publication of Certification Information 
+## 2.2. Publication of Certification Information 
 
 Certificate information is published in accordance with the provisions of the CPS relevant to such a certificate. Certificate content is published by issuing the certificate. Revoked certificate information is published in CRLs by InCommon’s CA service provider and is available also by OCSP. Users and relying parties should consult the CRLs or OCSP server prior to relying on information featured in a certificate.
 
 <a id="time-or-frequency-of-publication"></a>
 
-## 3.3. Time or Frequency of Publication 
+## 2.3. Time or Frequency of Publication 
 
 Updates to the CPS are published in accordance with Section 9.12. Updates to the Subscriber Agreement, Relying Party Agreements, and other agreements posted in the repository are published as often as necessary. Certificates are published upon issuance.
 
 <a id="access-controls-on-repositories"></a>
 
-## 3.4. Access Controls on Repositories 
+## 2.4. Access Controls on Repositories 
 
 The information published in the InCommon repository (refer to section 2.1) is public information and may be accessed and redistributed freely by anyone visiting the site, provided they agree to the site’s terms and conditions as posted thereon. Read-only access to the information is unrestricted except as stated in section 2.1 above. InCommon has implemented logical and physical security measures to prevent unauthorized additions, modification, or deletions of repository entries.
 
 <a id="identification-and-authentication"></a>
 
-# 4. IDENTIFICATION AND AUTHENTICATION 
+# 3. IDENTIFICATION AND AUTHENTICATION 
 
 <a id="naming"></a>
 
-## 4.1. Naming 
+## 3.1. Naming 
 
 **3.1.1. Types of Names**
 
@@ -355,7 +352,7 @@ InCommon does not arbitrate, mediate, or otherwise resolve any dispute concernin
 
 <a id="initial-identity-validation"></a>
 
-## 4.2. Initial Identity Validation 
+## 3.2. Initial Identity Validation 
 
 InCommon validates the identity of each new Subscriber and its officially designated officers, while the
 
@@ -401,7 +398,7 @@ https://cabforum.org/baseline-requirements-documents/. Subscribers must notify I
 
 <a id="identification-and-authentication-for-re-key-requests"></a>
 
-## 4.3. Identification and Authentication for Re-key Requests 
+## 3.3. Identification and Authentication for Re-key Requests 
 
 **3.3.1. Identification and Authentication for Routine Re-key**
 
@@ -411,17 +408,17 @@ Any Registrar or Requester can request a re-key by submitting an appropriate CSR
 
 <a id="identification-and-authentication-for-revocation-request"></a>
 
-## 4.4. Identification and Authentication for Revocation Request 
+## 3.4. Identification and Authentication for Revocation Request 
 
 Prior to revoking a certificate, the InCommon CA verifies that the revocation was requested by the certificate Requester or an authorized Registrar associated with the Subscriber. InCommon may, if necessary, also request that the revocation request be made by the Subscriber's Executive contact. Upon receipt of an unconfirmed revocation request, the InCommon CA may request out-of-band confirmation from a known Subscriber Registrar or Executive.
 
 <a id="certificate-life-cycle-operational-requirements"></a>
 
-# 5. CERTIFICATE LIFE-CYCLE OPERATIONAL REQUIREMENTS 
+# 4. CERTIFICATE LIFE-CYCLE OPERATIONAL REQUIREMENTS 
 
 <a id="certificate-application"></a>
 
-## 5.1. Certificate Application 
+## 4.1. Certificate Application 
 
 InCommon certificates are issued to authorized organizations and individuals who submit a certificate signing request and successfully complete the required validation procedures described herein. Prior to the issuance of a certificate, the InCommon RSA IGTF Server CA 4 will validate a request in accordance with this CPS. Validation of the request will involve the information provided by the Subscriber upon completion of their subscription contract and verified by InCommon prior to accepting the certificate request.
 
@@ -435,7 +432,7 @@ InCommon operates the Registration Authority, leveraging its current processes f
 
 <a id="certificate-application-processing"></a>
 
-## 5.2. Certificate Application Processing 
+## 4.2. Certificate Application Processing 
 
 **4.2.1. Performing Identification and Authentication Functions**
 
@@ -455,7 +452,7 @@ Certificate applications are generally processed within one business day.
 
 <a id="certificate-issuance"></a>
 
-## 5.3. Certificate Issuance 
+## 4.3. Certificate Issuance 
 
 InCommon may refuse to issue a certificate to any party as InCommon sees fit. InCommon is not obligated to disclose the reasons for such a refusal.
 
@@ -469,7 +466,7 @@ Each subscribing organization manages the notifications for its members. The InC
 
 <a id="certificate-acceptance"></a>
 
-## 5.4. Certificate Acceptance 
+## 4.4. Certificate Acceptance 
 
 **4.4.1. Conduct Constituting Certificate Acceptance** No stipulation.
 
@@ -479,7 +476,7 @@ Each subscribing organization manages the notifications for its members. The InC
 
 <a id="key-pair-and-certificate-usage"></a>
 
-## 5.5. Key Pair and Certificate Usage 
+## 4.5. Key Pair and Certificate Usage 
 
 **4.5.1. Subscriber Private Key and Certificate Usage**
 
@@ -491,7 +488,7 @@ The final decision concerning whether or not to rely on a verified digital signa
 
 <a id="certificate-renewal"></a>
 
-## 5.6. Certificate Renewal 
+## 4.6. Certificate Renewal 
 
 Renewal request requirements and procedures are treated as new certificate requests.
 
@@ -511,7 +508,7 @@ n/a.
 
 <a id="certificate-re-key"></a>
 
-## 5.7. Certificate Re-key 
+## 4.7. Certificate Re-key 
 
 Certificate rekey is the issuance of a new certificate that certifies a new public key for the same Subject. Rekey request requirements and procedures are treated as new certificate requests.
 
@@ -528,7 +525,7 @@ n/a.
 
 <a id="certificate-modification"></a>
 
-## 5.8. Certificate Modification 
+## 4.8. Certificate Modification 
 
 Certificate information may change during the life of the certificate. In this case, the InCommon RSA IGTF Server CA 4 will issue a new certificate based on the new information rather than modifying an existing certificate. Modification request requirements and procedures are treated as new certificate requests.
 
@@ -562,7 +559,7 @@ n/a.
 
 <a id="certificate-revocation-and-suspension"></a>
 
-## 5.9. Certificate Revocation and Suspension 
+## 4.9. Certificate Revocation and Suspension 
 
 Upon revocation of a certificate, the operational period of that certificate is immediately considered terminated. The serial number of the revoked certificate will be placed within the CRL and available to the OCSP server and will remain available in those locations until the end of the certificate’s validity period.
 
@@ -606,7 +603,15 @@ The InCommon RSA IGTF Server CA 4 manages and makes publicly available informati
 
 **4.9.10. On-line Revocation Checking Requirements**
 
-Relying Parties must confirm the validity of a certificate via the CRL or OCSP mechanisms prior to relying on the Certificate.
+Relying Parties shall verify the revocation status of a Certificate through either the Certificate Revocation List (CRL) or the Online Certificate Status Protocol (OCSP) before relying upon the Certificate. Failure to perform such verification may limit the Relying Party's ability to demonstrate reasonable reliance on the Certificate.
+
+The OCSP service provided by eMudhra enables Relying Parties to determine the current revocation status of Subscriber Certificates, Subordinate CA Certificates, and corresponding Precertificates. The OCSP service is implemented in accordance with RFC 6960 (Online Certificate Status Protocol), RFC 5019 (Lightweight OCSP Profile), and the applicable CA/Browser Forum TLS Baseline Requirements.
+
+The OCSP responder URL is included in the Certificate, where applicable. The OCSP responder supports both HTTP GET and HTTP POST methods. The OCSP responder shall not return a "good" status for a certificate serial number that is unassigned, as defined in the applicable CA/Browser Forum TLS Baseline Requirements.
+
+Where a Precertificate has been generated but the associated Certificate issuance transaction is not completed due to validation failure, operational cancellation, or system error, eMudhra shall ensure that the corresponding OCSP status information is provisioned and maintained in accordance with the applicable CA/Browser Forum TLS Baseline Requirements.
+
+An authoritative OCSP response for a Subscriber Certificate or its corresponding Precertificate shall be made available within fifteen (15) minutes after the Certificate or Precertificate is first published or otherwise made available.
 
 **4.9.11. Other Forms of Revocation Advertisements available**
 
@@ -634,7 +639,7 @@ n/a.
 
 <a id="certificate-status-services"></a>
 
-## 5.10. Certificate Status Services 
+## 4.10. Certificate Status Services 
 
 **4.10.1. Operational Characteristics**
 
@@ -654,23 +659,23 @@ n/a.
 
 <a id="end-of-subscription"></a>
 
-## 5.11. End of Subscription 
+## 4.11. End of Subscription 
 
 Withdrawal and termination are described in the Subscriber Addendum.
 
 <a id="key-escrow-and-recovery"></a>
 
-## 5.12. Key Escrow and Recovery 
+## 4.12. Key Escrow and Recovery 
 
 The InCommon RSA IGTF Server CA 4 does not escrow Subscriber private keys.
 
 <a id="facility-management-and-operational-controls"></a>
 
-# 6. FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS 
+# 5. FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS 
 
 <a id="physical-controls"></a>
 
-## 6.1. Physical Controls 
+## 5.1. Physical Controls 
 
 **5.1.1. Site Location and Construction**
 
@@ -724,7 +729,7 @@ No stipulation.
 
 <a id="procedural-controls"></a>
 
-## 6.2. Procedural Controls 
+## 5.2. Procedural Controls 
 
 **5.2.1. Trusted Roles**
 
@@ -742,7 +747,7 @@ No stipulation.
 
 <a id="personnel-controls"></a>
 
-## 6.3. Personnel Controls 
+## 5.3. Personnel Controls 
 
 **5.3.1. Qualifications, Experience, and Clearance Requirements**
 
@@ -778,7 +783,7 @@ If an independent contractor or consultant is used, InCommon will first ensure t
 
 <a id="audit-logging-procedures"></a>
 
-## 6.4. Audit Logging Procedures 
+## 5.4. Audit Logging Procedures 
 
 **5.4.1. Types of Events Recorded**
 
@@ -816,7 +821,7 @@ No stipulation.
 
 <a id="records-archival"></a>
 
-## 6.5. Records archival 
+## 5.5. Records archival 
 
 **5.5.1. Types of records archived**
 
@@ -865,7 +870,7 @@ No stipulation.
 
 <a id="key-changeover"></a>
 
-## 6.6. Key changeover 
+## 5.6. Key changeover 
 
 Towards the end of each private key’s lifetime, a new CA signing key pair is commissioned and all subsequently issued certificates are signed with the new private signing key. Both the old and new keys will be concurrently active until all end-entity certificates issued under the old key expire. The older but still valid certificate will be available to verify old signatures and to sign CRLs until all the certificates signed using the associated private key have also expired.
 
@@ -873,7 +878,7 @@ The corresponding new CA public key certificate is provided to subscribers and r
 
 <a id="compromise-and-disaster-recovery"></a>
 
-## 6.7. Compromise and disaster recovery 
+## 5.7. Compromise and disaster recovery 
 
 **5.7.1. Incident and compromise handling procedures** No stipulation.
 
@@ -889,17 +894,17 @@ Provided by CertiNext as stated in the CertiNext CPS and binding upon the Subscr
 
 <a id="ca-or-ra-termination"></a>
 
-## 6.8. CA or RA termination 
+## 5.8. CA or RA termination 
 
 If the InCommon RSA IGTF Server CA 4 must cease operation, InCommon will make a commercially reasonable effort to notify all participants in advance of the effective date of the termination as described in the Subscriber Addendum.
 
 <a id="technical-security-controls"></a>
 
-# 7. TECHNICAL SECURITY CONTROLS 
+# 6. TECHNICAL SECURITY CONTROLS 
 
 <a id="key-pair-generation-and-installation"></a>
 
-## 7.1. Key pair generation and installation 
+## 6.1. Key pair generation and installation 
 
 **6.1.1. Key pair generation**
 
@@ -927,7 +932,7 @@ The key usage field extension in InCommon Certificates specifies the purpose for
 
 <a id="private-key-protection-and-cryptographic-module-engineering-controls"></a>
 
-## 7.2. Private Key Protection and Cryptographic Module Engineering Controls 
+## 6.2. Private Key Protection and Cryptographic Module Engineering Controls 
 
 **6.2.1. Cryptographic module standards and controls**
 
@@ -971,7 +976,7 @@ InCommon RSA IGTF Server CA 4 operators can destroy the private key in the crypt
 
 <a id="other-aspects-of-key-pair-management"></a>
 
-## 7.3. Other aspects of key pair management 
+## 6.3. Other aspects of key pair management 
 
 No stipulation.
 
@@ -985,7 +990,7 @@ The operational period of each Certificate generated ends upon its revocation or
 
 <a id="activation-data"></a>
 
-## 7.4. Activation data 
+## 6.4. Activation data 
 
 **6.4.1. Activation data generation and installation** No stipulation.
 
@@ -995,7 +1000,7 @@ The operational period of each Certificate generated ends upon its revocation or
 
 <a id="computer-security-controls"></a>
 
-## 7.5. Computer security controls 
+## 6.5. Computer security controls 
 
 **6.5.1. Specific computer security technical requirements**
 
@@ -1005,7 +1010,7 @@ InCommon computer systems are set up and maintained in a secure manner that prev
 
 <a id="life-cycle-technical-controls"></a>
 
-## 7.6. Life cycle technical controls 
+## 6.6. Life cycle technical controls 
 
 **6.6.1. System development controls**
 
@@ -1019,19 +1024,19 @@ No stipulation.
 
 <a id="network-security-controls"></a>
 
-## 7.7. Network security controls 
+## 6.7. Network security controls 
 
 All InCommon RSA IGTF Server CA 4 systems employ operating system firewalls allowing inbound connections only for required CA services. InCommon RSA IGTF Server CA 4systems are connected to highly protected networks that are actively monitored for intrusions.
 
 <a id="time-stamping"></a>
 
-## 7.8. Time-stamping 
+## 6.8. Time-stamping 
 
 InCommon RSA IGTF Server CA 4 servers maintain accurate system clocks via trusted NTP servers or GPS devices.
 
 <a id="certificate-crl-and-ocsp-profiles"></a>
 
-# 8. CERTIFICATE, CRL, AND OCSP PROFILES 
+# 7. CERTIFICATE, CRL, AND OCSP PROFILES 
 
 This CPS covers only InCommon RSA IGTF Server CA 4 certificates.
 
@@ -1041,7 +1046,7 @@ Revoked certificates are appropriately referenced in the CRL and/or OCSP.
 
 <a id="certificate-profile"></a>
 
-## 8.1. Certificate profile 
+## 7.1. Certificate profile 
 
 In order to use and rely on an InCommon RSA IGTF Server CA 4 certificate, the relying party must use X.509v3 compliant software. Supported certificate profiles are listed in the InCommon Repository.
 
@@ -1123,7 +1128,7 @@ The InCommon RSA IGTF Server CA 4 includes information in the Policy Qualifier f
 
 <a id="crl-profile"></a>
 
-## 8.2. CRL profile 
+## 7.2. CRL profile 
 
 CRLs comply with RFC 5280.
 
@@ -1135,7 +1140,7 @@ The CRL version number is 1 indicating a Version 2 CRL.
 
 <a id="ocsp-profile"></a>
 
-## 8.3. OCSP profile 
+## 7.3. OCSP profile 
 
 OCSP is a way for users to obtain information about the revocation status of an InCommon RSA IGTF Server CA 4 issued Certificate. The InCommon RSA IGTF Server CA 4 uses OCSP to provide information about any of its revoked certificates that are unexpired. OCSP responders conform to RFC 8960.
 
@@ -1147,55 +1152,55 @@ No stipulation.
 
 <a id="compliance-audit-and-other-assessments"></a>
 
-# 9. COMPLIANCE AUDIT AND OTHER ASSESSMENTS 
+# 8. COMPLIANCE AUDIT AND OTHER ASSESSMENTS 
 
 The practices specified in this CPS have been designed to meet or exceed the requirements of generally accepted and developing industry standards, including the AICPA/CICA WebTrust Program for Certification Authorities, ANS X9.79:2001 PKI Practices and Policy Framework, and other industry standards related to the operation of CAs.
 
 <a id="frequency-or-circumstances-of-assessment"></a>
 
-## 9.1. Frequency or Circumstances of Assessment 
+## 8.1. Frequency or Circumstances of Assessment 
 
 The InCommon RSA IGTF Server CA 4 performs internal operational audits at least once per year to verify compliance with the rules and procedures specified in this document.
 
 <a id="identityqualifications-of-assessor"></a>
 
-## 9.2. Identity/Qualifications of Assessor 
+## 8.2. Identity/Qualifications of Assessor 
 
 No stipulation.
 
 <a id="assessor�s-relationship-to-assessed-entity"></a>
 
-## 9.3. Assessor’s Relationship to Assessed Entity 
+## 8.3. Assessor’s Relationship to Assessed Entity 
 
 No stipulation.
 
 <a id="topics-covered-by-assessment"></a>
 
-## 9.4. Topics Covered by Assessment 
+## 8.4. Topics Covered by Assessment 
 
 No stipulation.
 
 <a id="actions-taken-as-a-result-of-deficiency"></a>
 
-## 9.5. Actions Taken as a Result of Deficiency 
+## 8.5. Actions Taken as a Result of Deficiency 
 
 No stipulation.
 
 <a id="communication-of-results"></a>
 
-## 9.6. Communication of Results 
+## 8.6. Communication of Results 
 
 InCommon RSA IGTF Server CA 4 audit result summaries are made available to TAGPMA upon request.
 
 <a id="other-business-and-legal-matters"></a>
 
-# 10. OTHER BUSINESS AND LEGAL MATTERS 
+# 9. OTHER BUSINESS AND LEGAL MATTERS 
 
 While the structure of this CPS has been left intact as a matter of RFC form, the representations, warranties and limitations associated with this service are described in detail and governed by the provisions in the InCommon Participation Agreement and the Certificate Service Addendum.
 
 <a id="fees"></a>
 
-## 10.1. Fees 
+## 9.1. Fees 
 
 **9.1.1. Certificate Issuance or Renewal Fees**
 
@@ -1219,7 +1224,7 @@ Subscriber refunds are described in the Subscriber Addendum.
 
 <a id="financial-responsibility"></a>
 
-## 10.2. Financial Responsibility 
+## 9.2. Financial Responsibility 
 
 InCommon accepts no financial responsibility.
 
@@ -1237,7 +1242,7 @@ InCommon provides no warranty as further described in the Subscriber Addendum an
 
 <a id="confidentiality-of-business-information"></a>
 
-## 10.3. Confidentiality of Business Information 
+## 9.3. Confidentiality of Business Information 
 
 InCommon observes the following rules on the protection of business information:
 
@@ -1277,7 +1282,7 @@ All personnel in trusted positions handle all confidential information in strict
 
 <a id="privacy-of-personal-information"></a>
 
-## 10.4. Privacy of Personal Information 
+## 9.4. Privacy of Personal Information 
 
 **9.4.1. Privacy Plan**
 
@@ -1309,7 +1314,7 @@ InCommon is entitled to disclose any confidential or private information, if InC
 
 <a id="intellectual-property-rights"></a>
 
-## 10.5. Intellectual Property Rights 
+## 9.5. Intellectual Property Rights 
 
 InCommon or its partners or associates own all intellectual property rights associated with its databases, websites, InCommon digital certificates and any other publication originating from InCommon, including this CPS.
 
@@ -1331,7 +1336,7 @@ InCommon does not provide infringement resolution services. Subscribers are resp
 
 <a id="representations-and-warranties"></a>
 
-## 10.6. Representations and Warranties 
+## 9.6. Representations and Warranties 
 
 Subscribers, Subjects, relying parties and any other parties must not interfere with or reverse engineer the technical implementation of InCommon PKI services, including, but not limited to, the key generation process, the public website, and the InCommon repositories except as explicitly permitted by this CPS or upon prior written approval of InCommon. Results of failure to comply with this as a subscriber is described in the Subscriber Addendum. Failure to comply with this as a Relying Party will result in the termination of the agreement with the Relying Party, the removal of permission to use or access the InCommon repository and any Digital Certificate or Service provided by InCommon.
 
@@ -1355,19 +1360,19 @@ Other than the representations and warranties already detailed in this CPS, see 
 
 <a id="disclaimers-of-warranties"></a>
 
-## 10.7. Disclaimers of Warranties 
+## 9.7. Disclaimers of Warranties 
 
 InCommon disclaims all warranties and obligations of any type, including any warranty of fitness for a particular purpose. See the Subscriber Addendum and InCommon Participation Agreement (found in the InCommon Repository) for further information.
 
 <a id="limitations-of-liability"></a>
 
-## 10.8. Limitations of Liability 
+## 9.8. Limitations of Liability 
 
 See the Subscriber Addendum and InCommon Participation Agreement (found in the InCommon Repository) for further information.
 
 <a id="indemnities"></a>
 
-## 10.9. Indemnities 
+## 9.9. Indemnities 
 
 **9.9.1. Subscriber Indemnity to InCommon**
 
@@ -1375,7 +1380,7 @@ Indemnification by Subscriber to InCommon, if any, is described in the InCommon 
 
 <a id="term-and-termination"></a>
 
-## 10.10. Term and Termination 
+## 9.10. Term and Termination 
 
 **9.10.1. Term**
 
@@ -1391,13 +1396,13 @@ Details are provided in the Subscriber Addendum, available in the repository.
 
 <a id="individual-notices-and-communications-with-participants"></a>
 
-## 10.11. Individual notices and communications with Participants 
+## 9.11. Individual notices and communications with Participants 
 
 InCommon accepts notices related to this CPS by means of email messages or in paper form to the InCommon point of contact listed in section 1.5.2. For communication issues related to the performance of certificates or the designation of Subscriber Executives and Registrars, secure communication will be required, either through out-of-band means such as telephone, through authorized web-based transactions or email secured by digital signature.
 
 <a id="amendments"></a>
 
-## 10.12. Amendments 
+## 9.12. Amendments 
 
 The InCommon Policy Authority (PA) is also responsible for determining the suitability of proposed changes to the CPS prior to the publication of an amended edition. Amendments to this CPS may be made from time to time as approved by the InCommon PA. Amendments may be in the form of either an amended form of the CPS or made available as a supplemental document in InCommon's repository.
 
@@ -1415,25 +1420,25 @@ If InCommon decides that a material change in InCommon's certificate policy warr
 
 <a id="dispute-resolution-provisions"></a>
 
-## 10.13. Dispute Resolution Provisions 
+## 9.13. Dispute Resolution Provisions 
 
 Before resorting to any dispute resolution mechanism including adjudication or any type of alternative dispute resolution, a party must notify InCommon of the dispute with a view to seek a resolution. Parties must work with InCommon in good faith to resolve issues in a reasonable manner prior to third party involvement.
 
 <a id="governing-law"></a>
 
-## 10.14. Governing Law 
+## 9.14. Governing Law 
 
 Details are provided in the InCommon Certificate Service Subscriber Addendum, available in the repository. This choice of law is made to provide uniform interpretation of this CPS, regardless of the place of residence or place of use of InCommon RSA IGTF Server CA 4’s certificates.
 
 <a id="compliance-with-applicable-law"></a>
 
-## 10.15. Compliance with Applicable Law 
+## 9.15. Compliance with Applicable Law 
 
 All parties agree to abide by all applicable laws when validating, issuing, or using certificates.
 
 <a id="miscellaneous-provisions"></a>
 
-## 10.16. Miscellaneous Provisions 
+## 9.16. Miscellaneous Provisions 
 
 **9.16.1. Entire Agreement**
 
@@ -1459,19 +1464,19 @@ InCommon is not liable for a delay or failure to perform an obligation to the ex
 
 <a id="other-provisions"></a>
 
-## 10.17. Other Provisions 
+## 9.17. Other Provisions 
 
 No Stipulation
 
 <a id="acknowledgments"></a>
 
-# 11. Acknowledgments 
+# 10. Acknowledgments 
 
 The InCommon Policy Authority acknowledges the considerable efforts of the research and education community in the development of this CPS.
 
 <a id="appendix-a"></a>
 
-# 12. APPENDIX A
+# 11. APPENDIX A
 
 **PKI HIERARCHY**
 
@@ -1479,7 +1484,7 @@ emSign Root TLS CA - G1: InCommon RSA IGTF Server CA 4: Subscriber Server Certif
 
 <a id="appendix-b"></a>
 
-# 13. APPENDIX B
+# 12. APPENDIX B
 
 **CERTIFICATE OBJECT IDENTIFIERS**
 
@@ -1514,9 +1519,5 @@ emSign Root TLS CA - G1: InCommon RSA IGTF Server CA 4: Subscriber Server Certif
 </tr>
 </tbody>
 </table>
-
-<a id=""></a>
-
-# 14.  
 
 </div>

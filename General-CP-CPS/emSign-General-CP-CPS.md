@@ -2,28 +2,28 @@
 
 <table>
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 22%" />
-<col style="width: 16%" />
-<col style="width: 35%" />
+<col style="width: 23%" />
+<col style="width: 25%" />
+<col style="width: 21%" />
+<col style="width: 29%" />
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Policy Document Description</strong></th>
-<th style="text-align: left;"><strong>Date of Publication</strong></th>
-<th style="text-align: left;"><strong>Version</strong></th>
-<th style="text-align: left;"><strong>CP/CPS OID</strong></th>
+<th style="text-align: center;"><strong>Policy Document Description</strong></th>
+<th style="text-align: center;"><strong>Date of Publication</strong></th>
+<th style="text-align: center;"><strong>Version</strong></th>
+<th style="text-align: center;"><strong>CP/CPS OID</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><p>CERTIFICATE POLICY</p>
+<td><p>CERTIFICATE POLICY</p>
 <p>&amp;</p>
 <p>CERTIFICATION PRACTICE STATEMENT</p>
 <p>(CP/CPS)</p></td>
-<td style="text-align: left;">28-November-2025</td>
-<td style="text-align: left;">Version 1.23</td>
-<td style="text-align: left;">1.3.6.1.4.1.50977.1.0.1</td>
+<td style="text-align: center;">10-July-2026</td>
+<td style="text-align: center;">Version 1.24</td>
+<td style="text-align: center;">1.3.6.1.4.1.50977.1.0.1</td>
 </tr>
 </tbody>
 </table>
@@ -48,23 +48,15 @@ This CP/CPS specifies the principles, procedures and practices that the emSign P
 
 1.  RFC 3647 of Internet Engineering Task Force (IETF) for Certificate Policy and Certification Practice Statement.
 
-2.  The latest versions (as on date of this CP/CPS) of the CA/Browser Forum (CABF) requirements including: (Ref: [<u>https://cabforum.org</u>)](https://cabforum.org/)
+2.  The latest versions (as on date of this CP/CPS) of the CA/Browser Forum (CABF) requirements including: (Ref[: <u>https://cabforum.org</u>)](https://cabforum.org/)
 
-    - Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates.
+    - Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME
 
-    - Baseline Requirements for the Issuance and Management of Extended Validation (EV) Certificates,
-
-    - Baseline Requirements for the Issuance and Management of Publicly‐Trusted Code
-
-> Signing Certificates
-
-- Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates.
+Certificates.
 
 - Network and Certificate System Security Requirements
 
-3.  Baseline Requirements for Code Signing Certificates (Ref: [<u>https://aka.ms/csbr</u>)](https://aka.ms/csbr)
-
-4.  Time‐stamping services according to RFC 3161 of IETF and other applicable standards.
+3.  Time-stamping services according to RFC 3161 of IETF and other applicable standards.
 
 <!-- -->
 
@@ -92,40 +84,11 @@ The OID for emSign PKI is an iso (1) identified-organization (3) dod (6) interne
 
 This document is the emSign PKI Certificate Policy and Certification Practice Statement (CP/CPS). The object identifier (OID) values corresponding to the emSign CP/CPS are as follows:
 
-<table>
-<colgroup>
-<col style="width: 53%" />
-<col style="width: 46%" />
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Entity / Certificate Policy</strong></th>
-<th style="text-align: left;"><blockquote>
-<p><strong>OID</strong></p>
-</blockquote></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Organization</td>
-<td style="text-align: left;"><blockquote>
-<p>1.3.6.1.4.1.50977</p>
-</blockquote></td>
-</tr>
-<tr>
-<td style="text-align: left;">emSign PKI</td>
-<td style="text-align: left;"><blockquote>
-<p>1.3.6.1.4.1.50977.1</p>
-</blockquote></td>
-</tr>
-<tr>
-<td style="text-align: left;">emSign CP/CPS Document</td>
-<td style="text-align: left;"><blockquote>
-<p>1.3.6.1.4.1.50977.1.0.1</p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
+| **Entity / Certificate Policy** | **OID**                 |
+|:--------------------------------|:------------------------|
+| Organization                    | 1.3.6.1.4.1.50977       |
+| emSign PKI                      | 1.3.6.1.4.1.50977.1     |
+| emSign CP/CPS Document          | 1.3.6.1.4.1.50977.1.0.1 |
 
 **Type of certificate**
 
@@ -133,10 +96,10 @@ The OID for Certificate Policies under emSign PKI is an iso (1) identified-organ
 
 emSign PKI organizes its OID arcs for the various Certificates described in this CP/CPS as follows:
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 49%" />
-<col style="width: 50%" />
+<col style="width: 49%" />
 </colgroup>
 <thead>
 <tr>
@@ -209,8 +172,8 @@ emSign PKI organizes its OID arcs for the various Certificates described in this
 </tr>
 <tr>
 <td style="text-align: left;">SMIME Certificates</td>
-<td style="text-align: left;">2.23.140.1.5<br />
-1.3.6.1.4.1.50977.1.2.460</td>
+<td style="text-align: left;"><p>2.23.140.1.5</p>
+<p>1.3.6.1.4.1.50977.1.2.460</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">SMIME Mailbox Validated Strict</td>
@@ -218,7 +181,7 @@ emSign PKI organizes its OID arcs for the various Certificates described in this
 <p>1.3.6.1.4.1.50977.1.2.460.1.3</p></td>
 </tr>
 <tr>
-<td style="text-align: left;">SMIME Individual Validated Strict </td>
+<td style="text-align: left;">SMIME Individual Validated Strict</td>
 <td style="text-align: left;"><p>2.23.140.1.5.4.3</p>
 <p>1.3.6.1.4.1.50977.1.2.460.2.3</p></td>
 </tr>
@@ -228,7 +191,7 @@ emSign PKI organizes its OID arcs for the various Certificates described in this
 <p>1.3.6.1.4.1.50977.1.2.460.3.2</p></td>
 </tr>
 <tr>
-<td style="text-align: left;">SMIME Organization Validated Strict </td>
+<td style="text-align: left;">SMIME Organization Validated Strict</td>
 <td style="text-align: left;"><p>2.23.140.1.5.2.3</p>
 <p>1.3.6.1.4.1.50977.1.2.460.3.3</p></td>
 </tr>
@@ -238,7 +201,7 @@ emSign PKI organizes its OID arcs for the various Certificates described in this
 <p>1.3.6.1.4.1.50977.1.2.460.4.2</p></td>
 </tr>
 <tr>
-<td style="text-align: left;">SMIME Sponsor Validated Strict </td>
+<td style="text-align: left;">SMIME Sponsor Validated Strict</td>
 <td style="text-align: left;"><p>2.23.140.1.5.3.3</p>
 <p>1.3.6.1.4.1.50977.1.2.460.4.3</p></td>
 </tr>
@@ -255,7 +218,7 @@ emSign PKI organizes its OID arcs for the various Certificates described in this
 
 This CP/CPS applies to any entity asserting one or more of the emSign OIDs identified above. When a
 
-CA issues a Certificate containing one of the above‐specified policy identifiers, it asserts that the Certificate was issued and is managed in accordance with the requirements applicable to that respective policy.
+CA issues a Certificate containing one of the above-specified policy identifiers, it asserts that the Certificate was issued and is managed in accordance with the requirements applicable to that respective policy.
 
 Subsequent revisions to this CP might contain new OID assignments for the certificate types identified above, or may be amended with new Certificate Types with corresponding new OIDs.
 
@@ -287,7 +250,9 @@ The term Certification Authority (CA) is a trusted third-party entity that issue
 
 2.  Provide Certificate revocation information in the form of a Certificate Revocation List (CRL) distribution point and/or Online Certificate Status Protocol (OCSP) responder.
 
-emSign PKI operates a secure facility in order to deliver CA services by itself and/or through infrastructure, personnel and other resources of eMudhra.
+emSign PKI operates a secure facility in order to deliver CA services by itself and/or through
+
+infrastructure, personnel and other resources of eMudhra.
 
 The emSign PKI also issues certificates to issuing CAs, subordinate CAs, including CAs owned by third parties. All such issuing CAs and subordinate CAs are required to operate in conformance with this CP/CPS.
 
@@ -329,9 +294,7 @@ Obligations of the Registration Authorities (RAs) within the emSign PKI include:
 
 - Identifying and authenticating Subscribers in accordance with this CP/CPS
 
-- Maintain and process all supporting documentation related to digital certificate application
-
-- Receiving, authenticating and processing certificate revocation requests
+- Maintain and process all supporting documentation related to digital certificate application • Receiving, authenticating and processing certificate revocation requests
 
 - Providing suitable training to personnel performing RA functions.
 
@@ -349,7 +312,7 @@ A Subscriber, as used herein, refers to both the Subject of the Certificate and 
 
 Technically, CAs are also subscribers of emSign certificates either as a CA issuing a self-signed Certificate to itself (Root CA), or as a CA being issued a Certificate by a superior CA (Issuing CA / Subordinate CA).
 
-> References to “end entities” and “subscribers” in this CP/CPS, however, apply only to end-user Subscribers.
+References to “end entities” and “subscribers” in this CP/CPS, however, apply only to end-user Subscribers.
 
 Obligations of Subscribers within the emSign PKI include:
 
@@ -403,7 +366,7 @@ All obligations within this section relate to Reasonable Reliance on the validit
 
 Other participants may include bridge CAs and CAs that cross certify issuing CAs to provide trust among other PKI communities.
 
-emSign Roots / Subordinates shall not Cross Certify / Bridge any Third-Party CAs, where such Third-Party CA would derive SSL/TLS and/or SMIME certificate issuing capabilities under emSign PKI.
+emSign Roots / Subordinates shall not Cross Certify / Bridge any Third-Party CAs, where such ThirdParty CA would derive SSL/TLS and/or SMIME certificate issuing capabilities under emSign PKI.
 
 <a id="certificate-usage"></a>
 
@@ -487,9 +450,7 @@ Website: [<u>www.emsign.com</u>](http://www.emsign.com/)
 
 emSign PKI Policy Director can be contacted at the following address:
 
-Attn: Policy Director emSign PKI Policy Authority
-
-eMudhra Technologies Limited (eMudhra Group Company)
+Attn: Policy Director emSign PKI Policy Authority eMudhra Technologies Limited (eMudhra Group Company)
 
 12-P1-A & 12-P1-B, Hi-Tech Defence and Aerospace Park (IT sector),
 
@@ -539,13 +500,13 @@ The CP/CPS shall be reviewed/revised from time to time, as and when needed by th
 
 **Applicant**: The natural person or Legal Entity that applies for (or seeks renewal of) a Certificate. Once the Certificate issues, the Applicant is referred to as the Subscriber. For Certificates issued to devices, the Applicant is the entity that controls or operates the device named in the Certificate, even if the device is sending the actual certificate request.
 
-**Application Software Supplier**: A supplier of Internet browser software or other relying‐party application software that displays or uses Certificates and incorporates Root Certificates.
+**Application Software Supplier**: A supplier of Internet browser software or other relying-party application software that displays or uses Certificates and incorporates Root Certificates.
 
 **Attestation Letter**: A letter attesting that Subject Information is correct written by an accountant, lawyer, government official, or other reliable third party customarily relied upon for such information.
 
-> **Audit Period**: In a period‐of‐time audit, the period between the first day (start) and the last day of operations (end) covered by the auditors in their engagement. (This is not the same as the period of time when the auditors are on‐site at the CA.) The coverage rules and maximum length of audit periods are defined in this CP/CPS.
->
-> **Audit Report:** A report from a Qualified Auditor stating the Qualified Auditor’s opinion on whether an entity’s processes and controls comply with the mandatory provisions of these Requirements.
+**Audit Period**: In a period-of-time audit, the period between the first day (start) and the last day of operations (end) covered by the auditors in their engagement. (This is not the same as the period of time when the auditors are on-site at the CA.) The coverage rules and maximum length of audit periods are defined in this CP/CPS.
+
+**Audit Report:** A report from a Qualified Auditor stating the Qualified Auditor’s opinion on whether an entity’s processes and controls comply with the mandatory provisions of these Requirements.
 
 **Authorization Domain Name**: The Domain Name used to obtain authorization for certificate issuance for a given FQDN. The CA may use the FQDN returned from a DNS CNAME lookup as the FQDN for the purposes of domain validation. If the FQDN contains a wildcard character, then the CA MUST remove all wildcard labels from the left most portion of requested FQDN. The CA may prune zero or more labels from left to right until encountering a Base Domain Name and may use any one of the intermediate values for the purpose of domain validation.
 
@@ -553,7 +514,7 @@ The CP/CPS shall be reviewed/revised from time to time, as and when needed by th
 
 **Base Domain Name:** The portion of an applied for FQDN that is the first domain name node left of a registry controlled or public suffix plus the registry controlled or public suffix (e.g. "example.co.uk" or "example.com"). For FQDNs where the right most domain name node is a gTLD having ICANN Specification 13 in its registry agreement, the gTLD itself may be used as the Base Domain Name.
 
-**Baseline Requirements (BR)**: Means the CA/Browser Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, published at [<u>https://www.cabforum.org</u>](https://www.cabforum.org/)
+**Baseline Requirements (BR)**: Means the CA/Browser Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, published a[t <u>https://www.cabforum.org</u>](https://www.cabforum.org/)
 
 **Basic Constraints**: Means an extension that specifies whether the subject of the Certificate may act as a CA or only as an end-entity
 
@@ -571,7 +532,7 @@ The CP/CPS shall be reviewed/revised from time to time, as and when needed by th
 
 **Certificate Profile**: A set of documents or files that defines requirements for Certificate content and Certificate extensions in accordance with Section 7, e.g. a Section in a CA’s CPS or a certificate template file used by CA software.
 
-> **Certificate Revocation List**: A regularly updated time‐stamped list of revoked Certificates that is created and digitally signed by the CA that issued the Certificates.
+**Certificate Revocation List**: A regularly updated time-stamped list of revoked Certificates that is created and digitally signed by the CA that issued the Certificates.
 
 **Certificate System**: Means the system used by emSign or a delegated third party in providing identity verification, registration and enrollment, Certificate approval, issuance, validity status, support, and other PKI-related services
 
@@ -611,7 +572,7 @@ The CP/CPS shall be reviewed/revised from time to time, as and when needed by th
 
 **Domain Contact**: The Domain Name Registrant, technical contact, or administrative contract (or the equivalent under a ccTLD) as listed in the WHOIS record of the Base Domain Name or in a DNS SOA record.
 
-> **Domain Label**: From RFC 8499 (http://tools.ietf.org/html/rfc8499): “An ordered list of zero or more octets that makes up a portion of a domain name. Using graph theory, a label identifies one node in a portion of the graph of all possible domain names.”
+**Domain Label**: From RFC 8499 (http://tools.ietf.org/html/rfc8499): “An ordered list of zero or more octets that makes up a portion of a domain name. Using graph theory, a label identifies one node in a portion of the graph of all possible domain names.”
 
 **Domain Name Registrant**: Sometimes referred to as the “owner” of a Domain Name, but more properly the person(s) or entity(ies) registered with a Domain Name Registrar as having the right to control how a Domain Name is used, such as the natural person or Legal Entity that is listed as the “Registrant” by WHOIS or the Domain Name Registrar.
 
@@ -629,15 +590,13 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **EV Guidelines (EVG)**: CA/Browser Forum Guidelines for the Issuance and Management of Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](https://www.cabforum.org/)
 
-> **Expiry Date**: The “Not After” date in a Certificate that defines the end of a Certificate’s validity period.
+**Expiry Date**: The “Not After” date in a Certificate that defines the end of a Certificate’s validity period.
 
-**Fully‐Qualified Domain Name**: A Domain Name that includes the labels of all superior nodes in the Internet Domain Name System.
+**Fully-Qualified Domain Name**: A Domain Name that includes the labels of all superior nodes in the Internet Domain Name System.
 
-**Government Entity**: A government‐operated legal entity, agency, department, ministry, branch, or similar element of the government of a country, or political subdivision within such country (such as a state, province, city, county, etc.).
+**Government Entity**: A government-operated legal entity, agency, department, ministry, branch, or similar element of the government of a country, or political subdivision within such country (such as a state, province, city, county, etc.).
 
-**Grace Period**: Means the period during which the Subscriber must make a revocation request.
-
-**High Risk Certificate Request**: A Request that the CA flags for additional scrutiny by reference to internal criteria and databases maintained by the CA, which may include names at higher risk for phishing or other fraudulent usage, names contained in previously rejected certificate requests or revoked Certificates, names listed on the Miller Smiles phishing list or the Google Safe Browsing list, or names that the CA identifies using its own risk‐mitigation criteria.
+**Grace Period**: Means the period during which the Subscriber must make a revocation request. **High Risk Certificate Request**: A Request that the CA flags for additional scrutiny by reference to internal criteria and databases maintained by the CA, which may include names at higher risk for phishing or other fraudulent usage, names contained in previously rejected certificate requests or revoked Certificates, names listed on the Miller Smiles phishing list or the Google Safe Browsing list, or names that the CA identifies using its own risk-mitigation criteria.
 
 **Internal Name**: A string of characters (not an IP address) in a Common Name or Subject Alternative Name field of a Certificate that cannot be verified as globally unique within the public DNS at the time of certificate issuance because it does not end with a Top Level Domain registered in IANA’s Root Zone Database.
 
@@ -655,13 +614,13 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **Multi-Perspective Issuance Corroboration:** A process by which the determinations made during domain validation and CAA checking by the Primary Network Perspective are corroborated by other Network Perspectives before Certificate issuance.
 
-**Network Perspective:** Related to Multi-Perspective Issuance Corroboration. A system (e.g., a cloud-hosted server instance) or collection of network components (e.g., a VPN and corresponding infrastructure) for sending outbound Internet traffic associated with a domain control validation method and/or CAA check. The location of a Network Perspective is determined by the point where unencapsulated outbound Internet traffic is typically first handed off to the network infrastructure providing Internet connectivity to that perspective.
+**Network Perspective:** Related to Multi-Perspective Issuance Corroboration. A system (e.g., a cloudhosted server instance) or collection of network components (e.g., a VPN and corresponding infrastructure) for sending outbound Internet traffic associated with a domain control validation method and/or CAA check. The location of a Network Perspective is determined by the point where unencapsulated outbound Internet traffic is typically first handed off to the network infrastructure providing Internet connectivity to that perspective.
 
-> **Object Identifier**: A unique alphanumeric or numeric identifier registered under the International Organization for Standardization’s applicable standard for a specific object or object class.
+**Object Identifier**: A unique alphanumeric or numeric identifier registered under the International Organization for Standardization’s applicable standard for a specific object or object class.
 
 **OCSP Responder**: An online server operated under the authority of the CA and connected to its Repository for processing Certificate status requests.
 
-**Online Certificate Status Protocol**: An online Certificate‐checking protocol that enables relying party application software to determine the status of an identified Certificate.
+**Online Certificate Status Protocol**: An online Certificate-checking protocol that enables relying party application software to determine the status of an identified Certificate.
 
 **Parent Company**: A company that Controls a Subsidiary Company.
 
@@ -671,7 +630,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **Public Key**: The key of a Key Pair that may be publicly disclosed by the holder of the corresponding Private Key and that is used by a Relying Party to verify Digital Signatures created with the holder's corresponding Private Key and/or to encrypt messages so that they can be decrypted only with the holder's corresponding Private Key.
 
-> **Publicly‐Trusted Certificate**: A Certificate that is trusted by virtue of the fact that its corresponding Root Certificate is distributed as a trust anchor in widely‐available application software.
+**Publicly-Trusted Certificate**: A Certificate that is trusted by virtue of the fact that its corresponding Root Certificate is distributed as a trust anchor in widely-available application software.
 
 **Qualified Auditor**: A natural person or Legal Entity that meets the requirements of this CP/CPS.
 
@@ -689,21 +648,23 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **Relying Party**: Any natural person or Legal Entity that relies on a Valid Certificate. An Application Software Supplier is not considered a Relying Party when software distributed by such Supplier merely displays information relating to a Certificate.
 
-**Repository**: An online database containing publicly‐disclosed PKI governance documents (such as Certificate Policies and Certification Practice Statements) and Certificate status information, either in the form of a CRL or an OCSP response.
+**Repository**: An online database containing publicly-disclosed PKI governance documents (such as Certificate Policies and Certification Practice Statements) and Certificate status information, either in the form of a CRL or an OCSP response.
 
-**Request Token**: A value derived in a method specified by the CA which binds this demonstration of control to the certificate request. The Request Token SHALL incorporate the key used in the certificate request. A Request Token MAY include a timestamp to indicate when it was created. A Request Token MAY include other information to ensure its uniqueness. A Request Token that includes a timestamp SHALL remain valid for no more than 30 days from the time of creation. A Request Token that includes a timestamp SHALL be treated as invalid if its timestamp is in the future. A Request Token that does not include a timestamp is valid for a single use and the CA SHALL NOT re‐use it for a subsequent validation. The binding SHALL use a digital signature algorithm or a cryptographic hash algorithm at least as strong as that to be used in signing the certificate request.
+**Request Token**: A value derived in a method specified by the CA which binds this demonstration of control to the certificate request. The Request Token SHALL incorporate the key used in the certificate request. A Request Token MAY include a timestamp to indicate when it was created. A Request Token MAY include other information to ensure its uniqueness. A Request Token that includes a timestamp SHALL remain valid for no more than 30 days from the time of creation. A Request Token that includes a timestamp SHALL be treated as invalid if its timestamp is in the future. A Request Token that does not include a timestamp is valid for a single use and the CA SHALL NOT re-use it for a subsequent validation. The binding SHALL use a digital signature algorithm or a cryptographic hash algorithm at least as strong as that to be used in signing the certificate request.
 
 **Required Website Content**: Either a Random Value or a Request Token, together with additional information that uniquely identifies the Subscriber, as specified by the CA.
 
 **Reserved IP Address**: An IPv4 or IPv6 address that the IANA has marked as reserved:
 
-[<u>http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml</u>](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml) [<u>http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml</u>](http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml)
+[<u>http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml</u>](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml)
+
+[<u>http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml</u>](http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml)
 
 **Root CA System**: Means a system used to create a Root Certificate or to generate, store, or sign with the Private Key associated with a Root Certificate.
 
 **Root CA**: The top level Certification Authority whose Root Certificate is distributed by Application Software Suppliers and that issues Subordinate CA Certificates.
 
-> **Root Certificate**: The self‐signed Certificate issued by the Root CA to identify itself and to facilitate verification of Certificates issued to its Subordinate CAs.
+**Root Certificate**: The self-signed Certificate issued by the Root CA to identify itself and to facilitate verification of Certificates issued to its Subordinate CAs.
 
 **Sovereign State**: A state or country that administers its own government, and is not dependent upon, or subject to, another power.
 
@@ -741,7 +702,7 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 **WHOIS**: Information retrieved directly from the Domain Name Registrar or registry operator via the protocol defined in RFC 3912, the Registry Data Access Protocol defined in RFC 7482, or an HTTPS website
 
-> **Wildcard Certificate**: A Certificate containing an asterisk (\*) in the left‐most position of any of the Subject Fully‐Qualified Domain Names contained in the Certificate.
+**Wildcard Certificate**: A Certificate containing an asterisk (\*) in the left-most position of any of the Subject Fully-Qualified Domain Names contained in the Certificate.
 
 **Wildcard Domain Name**: A Domain Name consisting of a single asterisk character followed by a single full stop character (\*.) followed by a FQDN
 
@@ -751,414 +712,64 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 ### 1.6.2. Acronyms 
 
-<table>
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 13%" />
-<col style="width: 75%" />
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: center;"><strong>#</strong></th>
-<th style="text-align: left;"><strong>Acronyms</strong></th>
-<th style="text-align: left;"><strong>Meaning</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>1</p>
-</blockquote></td>
-<td style="text-align: left;">AATL</td>
-<td style="text-align: left;">Adobe Approved Trust List</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>2</p>
-</blockquote></td>
-<td style="text-align: left;">ACME</td>
-<td style="text-align: left;">Automated Certificate Management Environment</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>3</p>
-</blockquote></td>
-<td style="text-align: left;">AICPA</td>
-<td style="text-align: left;">American Institute of Certified Public Accountants</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>4</p>
-</blockquote></td>
-<td style="text-align: left;">API</td>
-<td style="text-align: left;">Application Programming Interface</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>5</p>
-</blockquote></td>
-<td style="text-align: left;">CA</td>
-<td style="text-align: left;">Certification Authority</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>6</p>
-</blockquote></td>
-<td style="text-align: left;">CAA</td>
-<td style="text-align: left;">Certification Authority Authorization</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>7</p>
-</blockquote></td>
-<td style="text-align: left;">CABF</td>
-<td style="text-align: left;">CA/Browser Forum</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>8</p>
-</blockquote></td>
-<td style="text-align: left;">ccTLD</td>
-<td style="text-align: left;">Country Code Top‐Level Domain</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>9</p>
-</blockquote></td>
-<td style="text-align: left;">CICA</td>
-<td style="text-align: left;">Canadian Institute of Chartered Accountants</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>10</p>
-</blockquote></td>
-<td style="text-align: left;">CP</td>
-<td style="text-align: left;">Certificate Policy</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>11</p>
-</blockquote></td>
-<td style="text-align: left;">CPS</td>
-<td style="text-align: left;">Certification Practice Statement</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>12</p>
-</blockquote></td>
-<td style="text-align: left;">CRL</td>
-<td style="text-align: left;">Certificate Revocation List</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>13</p>
-</blockquote></td>
-<td style="text-align: left;">CSR</td>
-<td style="text-align: left;">Certificate Signing Request</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>14</p>
-</blockquote></td>
-<td style="text-align: left;">DBA</td>
-<td style="text-align: left;">Doing Business As</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>15</p>
-</blockquote></td>
-<td style="text-align: left;">DBA</td>
-<td style="text-align: left;">Database Administrator</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>16</p>
-</blockquote></td>
-<td style="text-align: left;">DN</td>
-<td style="text-align: left;">Distinguished Names</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>17</p>
-</blockquote></td>
-<td style="text-align: left;">DNS</td>
-<td style="text-align: left;">Domain Name System</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>18</p>
-</blockquote></td>
-<td style="text-align: left;">DSA</td>
-<td style="text-align: left;">Digital Signature Algorithm</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>19</p>
-</blockquote></td>
-<td style="text-align: left;">DV</td>
-<td style="text-align: left;">Domain Validated</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>20</p>
-</blockquote></td>
-<td style="text-align: left;">ECDSA</td>
-<td style="text-align: left;">Elliptic Curve Digital Signature Algorithm</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>21</p>
-</blockquote></td>
-<td style="text-align: left;">EKU</td>
-<td style="text-align: left;">Extended Key Usage</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>22</p>
-</blockquote></td>
-<td style="text-align: left;">EV</td>
-<td style="text-align: left;">Extended Validation</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>23</p>
-</blockquote></td>
-<td style="text-align: left;">FIPS</td>
-<td style="text-align: left;">(US Government) Federal Information Processing Standard</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>24</p>
-</blockquote></td>
-<td style="text-align: left;">FQDN</td>
-<td style="text-align: left;">Fully‐Qualified Domain Name</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>25</p>
-</blockquote></td>
-<td style="text-align: left;">GET</td>
-<td style="text-align: left;">Get Everything Transmitted</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>26</p>
-</blockquote></td>
-<td style="text-align: left;">HTTP</td>
-<td style="text-align: left;">Hypertext Transfer Protocol</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>27</p>
-</blockquote></td>
-<td style="text-align: left;">IANA</td>
-<td style="text-align: left;">Internet Assigned Numbers Authority</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>28</p>
-</blockquote></td>
-<td style="text-align: left;">ICANN</td>
-<td style="text-align: left;">Internet Corporation for Assigned Names and Numbers</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>29</p>
-</blockquote></td>
-<td style="text-align: left;">IDN</td>
-<td style="text-align: left;">Internationalized domain names</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>30</p>
-</blockquote></td>
-<td style="text-align: left;">IDS</td>
-<td style="text-align: left;">Intrusion Detection System</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>31</p>
-</blockquote></td>
-<td style="text-align: left;">IETF</td>
-<td style="text-align: left;">Internet Engineering Task Force</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>32</p>
-</blockquote></td>
-<td style="text-align: left;">IPS</td>
-<td style="text-align: left;">Intrusion Prevention System</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>33</p>
-</blockquote></td>
-<td style="text-align: left;">ISO</td>
-<td style="text-align: left;">International Organization for Standardization</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>34</p>
-</blockquote></td>
-<td style="text-align: left;">MITM</td>
-<td style="text-align: left;">Man-in-the-middle</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>35</p>
-</blockquote></td>
-<td style="text-align: left;">MPIC</td>
-<td style="text-align: left;">Multi-Perspective Issuance Corroboration</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>36</p>
-</blockquote></td>
-<td style="text-align: left;">NIST</td>
-<td style="text-align: left;">National Institute of Standards and Technology (USA)</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>37</p>
-</blockquote></td>
-<td style="text-align: left;">NTP</td>
-<td style="text-align: left;">Network Time Protocol</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>38</p>
-</blockquote></td>
-<td style="text-align: left;">OCSP</td>
-<td style="text-align: left;">Online Certificate Status Protocol</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>39</p>
-</blockquote></td>
-<td style="text-align: left;">OID</td>
-<td style="text-align: left;">Object Identifier</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>40</p>
-</blockquote></td>
-<td style="text-align: left;">OV</td>
-<td style="text-align: left;">Organization Validated</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>41</p>
-</blockquote></td>
-<td style="text-align: left;">PKI</td>
-<td style="text-align: left;">Public Key Infrastructure</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>42</p>
-</blockquote></td>
-<td style="text-align: left;">POST</td>
-<td style="text-align: left;">Power-On Self-Test</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>43</p>
-</blockquote></td>
-<td style="text-align: left;">PSL</td>
-<td style="text-align: left;">public suffix list</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>44</p>
-</blockquote></td>
-<td style="text-align: left;">QSCD</td>
-<td style="text-align: left;">Qualified Signature Creation Device</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>45</p>
-</blockquote></td>
-<td style="text-align: left;">RA</td>
-<td style="text-align: left;">Registration Authority</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>46</p>
-</blockquote></td>
-<td style="text-align: left;">RSA</td>
-<td style="text-align: left;">Rivest Shamir Adleman</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>47</p>
-</blockquote></td>
-<td style="text-align: left;">SMIME</td>
-<td style="text-align: left;">Secure MIME (Multipurpose Internet Mail Extensions)</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>48</p>
-</blockquote></td>
-<td style="text-align: left;">SAN</td>
-<td style="text-align: left;">Subject Alternative Name</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>49</p>
-</blockquote></td>
-<td style="text-align: left;">SOA</td>
-<td style="text-align: left;">Statement of Applicability</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>50</p>
-</blockquote></td>
-<td style="text-align: left;">SSL</td>
-<td style="text-align: left;">Secure Sockets Layer</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>51</p>
-</blockquote></td>
-<td style="text-align: left;">TLS</td>
-<td style="text-align: left;">Transport Layer Security</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>52</p>
-</blockquote></td>
-<td style="text-align: left;">TSA</td>
-<td style="text-align: left;">Time Stamp Authority</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>53</p>
-</blockquote></td>
-<td style="text-align: left;">URL</td>
-<td style="text-align: left;">Uniform Resource Locator</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>54</p>
-</blockquote></td>
-<td style="text-align: left;">UTC</td>
-<td style="text-align: left;">Coordinated Universal Time</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>55</p>
-</blockquote></td>
-<td style="text-align: left;">VESDA</td>
-<td style="text-align: left;">Very Early Smoke Detection Appliance</td>
-</tr>
-<tr>
-<td style="text-align: center;"><blockquote>
-<p>56</p>
-</blockquote></td>
-<td style="text-align: left;">PQC</td>
-<td style="text-align: left;">Post Quantum Cryptography</td>
-</tr>
-</tbody>
-</table>
+| **\#** | **Acronyms** | **Meaning** |
+|:--:|:---|:---|
+| 1 | AATL | Adobe Approved Trust List |
+| 2 | ACME | Automated Certificate Management Environment |
+| 3 | AICPA | American Institute of Certified Public Accountants |
+| 4 | API | Application Programming Interface |
+| 5 | CA | Certification Authority |
+| 6 | CAA | Certification Authority Authorization |
+| 7 | CABF | CA/Browser Forum |
+| 8 | ccTLD | Country Code Top-Level Domain |
+| 9 | CICA | Canadian Institute of Chartered Accountants |
+| 10 | CP | Certificate Policy |
+| 11 | CPS | Certification Practice Statement |
+| 12 | CRL | Certificate Revocation List |
+| 13 | CSR | Certificate Signing Request |
+| 14 | DBA | Doing Business As |
+| 15 | DBA | Database Administrator |
+| 16 | DN | Distinguished Names |
+| 17 | DNS | Domain Name System |
+| 18 | DSA | Digital Signature Algorithm |
+| 19 | DV | Domain Validated |
+| 20 | ECDSA | Elliptic Curve Digital Signature Algorithm |
+| 21 | EKU | Extended Key Usage |
+| 22 | EV | Extended Validation |
+| 23 | FIPS | (US Government) Federal Information Processing Standard |
+| 24 | FQDN | Fully-Qualified Domain Name |
+| 25 | GET | Get Everything Transmitted |
+| 26 | HTTP | Hypertext Transfer Protocol |
+| 27 | IANA | Internet Assigned Numbers Authority |
+| 28 | ICANN | Internet Corporation for Assigned Names and Numbers |
+| 29 | IDN | Internationalized domain names |
+| 30 | IDS | Intrusion Detection System |
+| 31 | IETF | Internet Engineering Task Force |
+| 32 | IPS | Intrusion Prevention System |
+| 33 | ISO | International Organization for Standardization |
+| 34 | MITM | Man-in-the-middle |
+| 35 | MPIC | Multi-Perspective Issuance Corroboration |
+| 36 | NIST | National Institute of Standards and Technology (USA) |
+| 37 | NTP | Network Time Protocol |
+| 38 | OCSP | Online Certificate Status Protocol |
+| 39 | OID | Object Identifier |
+| 40 | OV | Organization Validated |
+| 41 | PKI | Public Key Infrastructure |
+| 42 | POST | Power-On Self-Test |
+| 43 | PSL | public suffix list |
+| 44 | QSCD | Qualified Signature Creation Device |
+| 45 | RA | Registration Authority |
+| 46 | RSA | Rivest Shamir Adleman |
+| 47 | SMIME | Secure MIME (Multipurpose Internet Mail Extensions) |
+| 48 | SAN | Subject Alternative Name |
+| 49 | SOA | Statement of Applicability |
+| 50 | SSL | Secure Sockets Layer |
+| 51 | TLS | Transport Layer Security |
+| 52 | TSA | Time Stamp Authority |
+| 53 | URL | Uniform Resource Locator |
+| 54 | UTC | Coordinated Universal Time |
+| 55 | VESDA | Very Early Smoke Detection Appliance |
+| 56 | PQC | Post Quantum Cryptography |
 
 <a id="publication-and-repository-responsibilities"></a>
 
@@ -1170,13 +781,15 @@ Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](
 
 The emSign PKI online repositories are available at [<u>http://repository.emsign.com</u>.](http://repository.emsign.com/)
 
-Repositories shall ensure that emSign PKI’s Root Certificate and the revocation data for issued Certificates are available through their repository 24 hours a day, 7 days a week with a minimum of 99% availability overall per year with a scheduled down‐time that does not exceed 0.5% annually.
+Repositories shall ensure that emSign PKI’s Root Certificate and the revocation data for issued Certificates are available through their repository 24 hours a day, 7 days a week with a minimum of 99% availability overall per year with a scheduled down-time that does not exceed 0.5% annually.
 
-Other external Issuer CAs shall publish emSign PKI’s Root Certificate, all publicly trusted CA Certificates and Cross‐Certificates, issued to and from the Issuer CA, revocation data for issued digital Certificates, CP/CPS, and standard Relying Party Agreements and Subscriber Agreements in their online repositories, and comply with above uptime requirements.
+Other external Issuer CAs shall publish emSign PKI’s Root Certificate, all publicly trusted CA Certificates and Cross-Certificates, issued to and from the Issuer CA, revocation data for issued digital Certificates, CP/CPS, and standard Relying Party Agreements and Subscriber Agreements in their online repositories, and comply with above uptime requirements.
 
 **Publication and Repository Obligations** emSign and other Issuer CAs shall maintain an online repository of information relevant to the operations of PKI services under emSign PKI hierarchy on best effort basis. The information in the CA repository is subject to change and published periodically and also on need basis.
 
-emSign PKI shall reserve rights to not to publish any information that it considers as confidential or not to be disclosed due to the sensitivity of the information.
+emSign PKI shall reserve rights to not to publish any information that it considers as confidential or not
+
+to be disclosed due to the sensitivity of the information.
 
 In providing Repository services, obligations of the emSign PKI include:
 
@@ -1210,7 +823,9 @@ Pointers to repository information in CA and end entity Certificates shall only 
 
 ## 2.3. Time or Frequency of Publication 
 
-emSign and other Issuer CA shall publish CA certificates and revocation data as soon as possible after issuance.
+emSign and other Issuer CA shall publish CA certificates and revocation data as soon as possible after
+
+issuance.
 
 CAs shall publish new or modified versions of CP/CPS within seven days of their approval. The CP/CPS is subjected to minimum of one annual review, even if there are no external factors influencing the changes in CP/CPS. Such review shall amend the version and date of publication of CP/CPS, as approved by Policy Authority.
 
@@ -1254,7 +869,7 @@ CA and subscriber certificates shall not contain anonymous or pseudonymous ident
 
 <a id="rules-for-interpreting-various-name-forms"></a>
 
-### 3.1.4.  Rules for Interpreting Various Name Forms 
+### 3.1.4. Rules for Interpreting Various Name Forms 
 
 Distinguished Names in Certificates are interpreted using X.500 standards and ASN.1 syntax. For URIs and HTTP References, refer RFC 2253 and 2616 for further information on how X.500 distinguished names in certificates are interpreted.
 
@@ -1262,7 +877,9 @@ Distinguished Names in Certificates are interpreted using X.500 standards and AS
 
 ### 3.1.5. Uniqueness of Names 
 
-The Subscriber names are unique within emSign CA / Issuing CA for a specific class and/or type of Certificate. It is possible for a Subscriber to have two or more certificates with the same Subject Distinguished Name (DN). emSign CA / Issuing CA may, if necessary, insert additional numbers or letters to the Certificate Holder’s Subject Common Name, or other attribute, in order to distinguish between two Digital Certificates that would otherwise have the same Subject Name.
+The Subscriber names are unique within emSign CA / Issuing CA for a specific class and/or type of
+
+Certificate. It is possible for a Subscriber to have two or more certificates with the same Subject Distinguished Name (DN). emSign CA / Issuing CA may, if necessary, insert additional numbers or letters to the Certificate Holder’s Subject Common Name, or other attribute, in order to distinguish between two Digital Certificates that would otherwise have the same Subject Name.
 
 <a id="recognition-authentication-and-role-of-trademarks"></a>
 
@@ -1288,11 +905,15 @@ The possession of the Private key, corresponding to the public key (which has to
 
 For signature keys, this requirement shall not apply where the key pair is generated by emSign PKI on behalf of the Subscriber. Like:
 
-1)  Where pre-generated keys are placed on smart cards / crypto token / any other crypto devices, or
+1)  Where pre-generated keys are placed on smart cards / crypto token / any other crypto devices,
+
+or
 
 2)  A key pair is generated on-behalf of the certificate applicant within secure emSign PKI environment, after due authentication by the certificate applicant. Such authentication may be performed using shared secret, or any other authentication mechanism approved by emSign PKI.
 
-emSign PKI shall not generate the key pairs for end-entity certificates that have an EKU extension containing the KeyPurposeIds id-kp-serverAuth or anyExtendedKeyUsage.
+emSign PKI shall not generate the key pairs for end-entity certificates that have an EKU extension
+
+containing the KeyPurposeIds id-kp-serverAuth or anyExtendedKeyUsage.
 
 <a id="authentication-of-organization-identity"></a>
 
@@ -1400,7 +1021,9 @@ Notwithstanding the foregoing, the following steps are required in any applicati
 
 Issuing CAs shall maintain systems and processes that sufficiently authenticate the Applicant’s identity for all Certificate types that present the identity to Relying Parties. Applicants should submit sufficient information to allow Issuing CAs and/or RAs to successfully perform the required verification. Issuing CAs and RAs shall protect communications and securely store information presented by the Applicant during the application process.
 
-Each Issuing CA may adopt its own application procedures, which Applicants will be required to satisfy. Each Holder of a Digital Certificate is required to be bound by contract with respect to the use of that Digital Certificate. These contracts may be directly between the Issuing CA and the Holder or imposed upon that Holder through terms and conditions binding upon him or her. All agreements concerning the use of, or reliance upon, Digital Certificates issued within the emSign PKI must incorporate by reference, the requirements of this emSign PKI CP/CPS, as may be amended from time to time.
+Each Issuing CA may adopt its own application procedures, which Applicants will be required to satisfy.
+
+Each Holder of a Digital Certificate is required to be bound by contract with respect to the use of that Digital Certificate. These contracts may be directly between the Issuing CA and the Holder or imposed upon that Holder through terms and conditions binding upon him or her. All agreements concerning the use of, or reliance upon, Digital Certificates issued within the emSign PKI must incorporate by reference, the requirements of this emSign PKI CP/CPS, as may be amended from time to time.
 
 <a id="certificate-application-processing"></a>
 
@@ -1418,23 +1041,23 @@ Future identification of repeat Applicants and subsequent authentication checks 
 
 However, use of the documents and data provided to verify certificate information in accordance to Appendix A shall be valid for a period no more than a specific period, prior to issuing the Certificate. This specific period shall not be more than the maximum validity period of the digital certificates limited under section 6.3.2 of this CP/CPS. Any issuance exceeding such period, shall undergo the requirements specified under Appendix A of this CP/CPS.
 
-> For SSL/TLS Certificates, emSign PKI’s Issuing CAs shall also verify the existence of CAA record (RFC 6844) in applicant’s DNS. If any CAA record exists in applicant’s DNS, then the issuance shall be made only of the CAA record value contains the expected value for emSign PKI. The CAA records authorizing emSign PKI shall contain ‘emsign.com’ as the issuer domain names for ‘issue’ and ‘issuewild’ entries.
->
-> Subscribers who wish to authorize emSign to issue S/MIME Certificates for their Mailbox Addresses should include in their respective DNS zone a CAA record property "issuemail", including the value “emSign.com”.
->
-> Starting on March 15, 2025, prior to issuing a Certificate that includes a Mailbox Address, emSign SHALL retrieve and process CAA records in accordance with Section 4 of RFC 9495.
->
-> When processing CAA records, emSign SHALL process the "issuemail" property tag as specified in RFC 9495. Additional property tags MAY be supported, but SHALL NOT conflict with or supersede the authorizations to issue S/MIME Certificates as specified in the issuemail property tag.
->
-> If emSign issues a Certificate following a CAA check, it SHALL do so within the TTL of the CAA record, or 8 hours, whichever is lesser. This stipulation does not prevent emSign from checking CAA records at any other time.
->
-> If the Certificate includes more than one Mailbox Address, then emSign SHALL perform the above procedure for each Mailbox Address.
->
-> If a CAA record exists, emSign must verify that the request aligns with the authorized domain. If no restrictive CAA record is found, emSign may proceed with issuance.
->
-> If the Relevant RRset for an FQDN or Wildcard Domain Name contains no Property Tags that restrict issuance (for instance, if it contains only iodef Property Tags or only Property Tags unrecognized by the CA), CAA does not restrict issuance.
->
-> Subscribers who already have CAA entries in their respective DNS zone and need a server TLS or S/MIME Certificate from emSign SHALL add a CAA record property issue/issuewild or issuemail respectively, with the value “emSign.com.”
+For SSL/TLS Certificates, emSign PKI’s Issuing CAs shall also verify the existence of CAA record (RFC 6844) in applicant’s DNS. If any CAA record exists in applicant’s DNS, then the issuance shall be made only of the CAA record value contains the expected value for emSign PKI. The CAA records authorizing emSign PKI shall contain ‘emsign.com’ as the issuer domain names for ‘issue’ and ‘issuewild’ entries.
+
+Subscribers who wish to authorize emSign to issue S/MIME Certificates for their Mailbox Addresses should include in their respective DNS zone a CAA record property "issuemail", including the value “emSign.com”.
+
+Starting on March 15, 2025, prior to issuing a Certificate that includes a Mailbox Address, emSign SHALL retrieve and process CAA records in accordance with Section 4 of RFC 9495.
+
+When processing CAA records, emSign SHALL process the "issuemail" property tag as specified in RFC 9495. Additional property tags MAY be supported, but SHALL NOT conflict with or supersede the authorizations to issue S/MIME Certificates as specified in the issuemail property tag.
+
+If emSign issues a Certificate following a CAA check, it SHALL do so within the TTL of the CAA record, or 8 hours, whichever is lesser. This stipulation does not prevent emSign from checking CAA records at any other time.
+
+If the Certificate includes more than one Mailbox Address, then emSign SHALL perform the above procedure for each Mailbox Address.
+
+If a CAA record exists, emSign must verify that the request aligns with the authorized domain. If no restrictive CAA record is found, emSign may proceed with issuance.
+
+If the Relevant RRset for an FQDN or Wildcard Domain Name contains no Property Tags that restrict issuance (for instance, if it contains only iodef Property Tags or only Property Tags unrecognized by the CA), CAA does not restrict issuance.
+
+Subscribers who already have CAA entries in their respective DNS zone and need a server TLS or S/MIME Certificate from emSign SHALL add a CAA record property issue/issuewild or issuemail respectively, with the value “emSign.com.”
 
 <a id="approval-or-rejection-of-certificate-applications"></a>
 
@@ -1466,7 +1089,9 @@ During Digital Certificate issuance, Issuing CA must comply with the practices d
 
 The Root Certification Authority Certificate has been self-generated and self-signed. All root certifying authorities are operated offline.
 
-emSign PKI publishes all Root CA Certificates along with its subordinates in its repository available at [<u>http://repository.emsign.com</u>](http://repository.emsign.com/)
+emSign PKI publishes all Root CA Certificates along with its subordinates in its repository available at
+
+[<u>http://repository.emsign.com</u>](http://repository.emsign.com/)
 
 <a id="emsign-issuing-certification-authority-certificates"></a>
 
@@ -1476,7 +1101,9 @@ emSign PKI creates and operates its own Issuing CAs under this CP/CPS.
 
 Issuing Certifying Authorities are issued out of offline root certificates. However, on a need basis, emSign PKI may create and operate issuing CAs under a subordinate under Root CA.
 
-emSign PKI publishes all Issuing CA Certificates along with its Hierarchy to its Root CA, in its repository available at [<u>http://repository.emsign.com</u>](http://repository.emsign.com/)
+emSign PKI publishes all Issuing CA Certificates along with its Hierarchy to its Root CA, in its repository
+
+available at [<u>http://repository.emsign.com</u>](http://repository.emsign.com/)
 
 emSign PKI may also appoint external Issuing CAs upon accepting the terms and conditions of the emSign Issuing CA Agreement by the Issuing CA as prescribed by emSign CA, and final approval of the application by the emSign Policy Authority. The emSign PKI issues the Issuing CA Digital Certificate to the relevant Issuing CA.
 
@@ -1498,11 +1125,13 @@ As part of the application process, Registration Authorities are required to nom
 
 Upon the Applicant’s acceptance of the terms and conditions of the Certificate Holder Agreement or other relevant agreement, the successful completion of the application process and final approval of the application by the Issuing CA, the Issuing CA issues the Digital Certificate to the Applicant or Device.
 
-emSign deploys multi-factor authentication for all accounts capable of directly causing certificate issuance.
+emSign deploys multi-factor authentication for all accounts capable of directly causing certificate
+
+issuance.
 
 <a id="issuance-safeguards"></a>
 
-#### 4.3.1.6. Issuance Safeguards
+#### 4.3.1.6. Issuance Safeguards 
 
 - All issuance systems are subject to automated and manual controls to prevent misissuance.
 
@@ -1856,7 +1485,9 @@ Issuing CA or RA shall accept authenticated requests for revocation from Subscri
 
 **Certificate Problem Reporting**
 
-Any party including Security Researchers, Anti-Malware Organizations, Subscribers, Relying Parties, Application Software Suppliers, or any other third parties may report suspected Private Key Compromise, Certificate misuse, or other types of fraud, compromise, misuse, inappropriate conduct, or any other matter related to Certificates by sending email to the contact as provided in Section 1.5.2 of the CP/CPS. The reporter shall preferably indicate “Certificate Problem Report” in the subject line of such communication. The communication shall also include the Identity and Contact of such party reporting, along with the explanation of the problem / reason for revocation request. Necessary action will be taken up, subject to provisions mentioned in Section 4.9.3 of the CP/CPS.
+Any party including Security Researchers, Anti-Malware Organizations, Subscribers, Relying Parties,
+
+Application Software Suppliers, or any other third parties may report suspected Private Key Compromise, Certificate misuse, or other types of fraud, compromise, misuse, inappropriate conduct, or any other matter related to Certificates by sending email to the contact as provided in Section 1.5.2 of the CP/CPS. The reporter shall preferably indicate “Certificate Problem Report” in the subject line of such communication. The communication shall also include the Identity and Contact of such party reporting, along with the explanation of the problem / reason for revocation request. Necessary action will be taken up, subject to provisions mentioned in Section 4.9.3 of the CP/CPS.
 
 <a id="procedure-for-revocation-request"></a>
 
@@ -1918,19 +1549,23 @@ CRLs are published to repository within 10 minutes of generation
 
 ### 4.9.9. On-Line Revocation/Status Checking Availability 
 
-emSign or Issuing CAs seek to provide online status checking availability for the certificates 7 days a week, 24 hours a day, subject to routine maintenance.
+emSign or Issuing CAs seek to provide online status checking availability for the certificates 7 days a
+
+week, 24 hours a day, subject to routine maintenance.
 
 <a id="on-line-revocation-checking-requirement"></a>
 
 ### 4.9.10. On-Line Revocation Checking Requirement 
 
-Relying Parties shall check the validity of a certificate via CRL or OCSP before relying on the Certificate.
+Relying Parties shall verify the revocation status of a Certificate through either the Certificate Revocation List (CRL) or the Online Certificate Status Protocol (OCSP) before relying upon the Certificate. Failure to perform such verification may limit the Relying Party's ability to demonstrate reasonable reliance on the Certificate.
 
-Failure to do so negates the ability of the Relying Party to claim that it acted on the Digital Certificate with reasonable reliance.
+The OCSP service provided by eMudhra enables Relying Parties to determine the current revocation status of Subscriber Certificates, Subordinate CA Certificates, and corresponding Precertificates. The OCSP service is implemented in accordance with RFC 6960 (Online Certificate Status Protocol), RFC 5019 (Lightweight OCSP Profile), and the applicable CA/Browser Forum TLS Baseline Requirements.
 
-The OCSP URL is provided as part of the Digital Certificate, wherever applicable. The OCSP requests supports both GET and POST requests. The OCSP responder does not respond ‘good’ response, in case the certificate has not been issued.
+The OCSP responder URL is included in the Certificate, where applicable. The OCSP responder supports both HTTP GET and HTTP POST methods. The OCSP responder shall not return a "good" status for a certificate serial number that is unassigned, as defined in the applicable CA/Browser Forum TLS Baseline Requirements.
 
-For the subscriber certificates, the update of OCSP is provided at least once in every 4 days and has a maximum expiration time of 10 days. Whereas for Subordinate CA certificates, the updates are made at a minimum of once in 12 months, or within 24 hours of a revocation of Subordinate CA.
+Where a Precertificate has been generated but the associated Certificate issuance transaction is not completed due to validation failure, operational cancellation, or system error, eMudhra shall ensure that the corresponding OCSP status information is provisioned and maintained in accordance with the applicable CA/Browser Forum TLS Baseline Requirements.
+
+An authoritative OCSP response for a Subscriber Certificate or its corresponding Precertificate shall be made available within fifteen (15) minutes after the Certificate or Precertificate is first published or otherwise made available.
 
 <a id="other-forms-of-revocation-advertisements-available"></a>
 
@@ -1952,9 +1587,7 @@ Any party reporting of key compromise to emSign must include the proof of key co
 
 The reporting party is recommended to provide description of the vulnerability and/or references to vulnerability and/or security incident sources from which the compromise is verifiable.
 
-The reports shall be sent by email to the contact as provided in Section 1.5.2 of the CP/CPS (Certificate Problem Reporting section). The reporter shall preferably indicate “Certificate Problem Report” in the subject line of such communication. The communication shall also include the Identity and Contact of such party reporting, along with the explanation of the problem / reason for revocation request. This is necessary to receive confirmation of the problem report and any associated certificate revocations
-
-The reporting party is required to use above method of reporting. emSign may accept any other acceptable method of submission in future, at its own discretion which may imply future revisions to this section of this document.
+The reports shall be sent by email to the contact as provided in Section 1.5.2 of the CP/CPS (Certificate Problem Reporting section). The reporter shall preferably indicate “Certificate Problem Report” in the subject line of such communication. The communication shall also include the Identity and Contact of such party reporting, along with the explanation of the problem / reason for revocation request. This is necessary to receive confirmation of the problem report and any associated certificate revocations The reporting party is required to use above method of reporting. emSign may accept any other acceptable method of submission in future, at its own discretion which may imply future revisions to this section of this document.
 
 Necessary action will be taken up, subject to provisions mentioned in Section 4.9.3 of the CP/CPS.
 
@@ -2046,7 +1679,7 @@ An entity receiving Private Key escrow services shall:
 
 - Protect any authentication mechanisms that could be used to recover escrowed Private Keys,
 
-- Release escrowed keys only for properly authenticated and authorized requests for recovery, and Comply with any legal obligations to disclose or keep confidential escrowed keys, escrowed key‐related information, or the facts concerning any key recovery request or process.
+- Release escrowed keys only for properly authenticated and authorized requests for recovery, and Comply with any legal obligations to disclose or keep confidential escrowed keys, escrowed key-related information, or the facts concerning any key recovery request or process.
 
 <a id="session-key-encapsulation-and-recovery-policy-and-practices"></a>
 
@@ -2142,9 +1775,7 @@ The off-site storage:
 
 - is available to authorised personnel 24 hours per day seven days per week for the purpose of retrieving software and data; and
 
-- has appropriate levels of physical security in place
-
-- Are stored in fire-rated safes and containers.
+- has appropriate levels of physical security in place • Are stored in fire-rated safes and containers.
 
 <a id="procedural-controls"></a>
 
@@ -2230,7 +1861,9 @@ All Issuing CAs of emSign PKI shall provide its personnel with on the job traini
 
 - The use and operation of PKI system software.
 
-- Common threats to the validation process including phishing and other social engineering Tactics
+- Common threats to the validation process including phishing and other social engineering
+
+Tactics
 
 - CA/Browser forum guidelines.
 
@@ -2274,39 +1907,39 @@ All Issuing CAs of emSign PKI provides personnel in trusted roles with the docum
 
 Audit log shall be maintained for:
 
-> 1\. CA & Certificate Lifecycle Management Events:
+1.  CA & Certificate Lifecycle Management Events:
 
-1.  Generation, certification, backup, recovery and/or destruction of the CA Key Pairs are recorded. This includes all configuration data used in the process.
+    1.  Generation, certification, backup, recovery and/or destruction of the CA Key Pairs are recorded. This includes all configuration data used in the process.
 
-2.  Successful and unsuccessful Certificate applications, Certificate issuances, Certificate re-issuances and Certificate renewals for Subscriber Certificates. Also, the revocation requests for Subscriber Certificate including revocation reason
+    2.  Successful and unsuccessful Certificate applications, Certificate issuances, Certificate re-issuances and Certificate renewals for Subscriber Certificates. Also, the revocation requests for Subscriber Certificate including revocation reason
 
-3.  Generations and issuances of CRLs.
+    3.  Generations and issuances of CRLs.
 
-4.  Custody of keys, devices and media holding keys
+    4.  Custody of keys, devices and media holding keys
 
-5.  Compromise of a Private Key
+    5.  Compromise of a Private Key
 
-2\. Security Related Events:
+2.  Security Related Events:
 
-1.  Firewall and router activities
+    1.  Firewall and router activities
 
-2.  Any downtime in system, software crashes and hardware failures.
+    2.  Any downtime in system, software crashes and hardware failures.
 
-3.  CA system actions performed by trusted personnel, including software updates, hardware replacements and upgrades.
+    3.  CA system actions performed by trusted personnel, including software updates, hardware replacements and upgrades.
 
-4.  Successful and unsuccessful PKI system access attempts
+    4.  Successful and unsuccessful PKI system access attempts
 
-5.  Cryptographic hardware security module events, such as usage, de-installation, service or repair and retirement
+    5.  Cryptographic hardware security module events, such as usage, de-installation, service or repair and retirement
 
-6.  CA facility entry/exit
+    6.  CA facility entry/exit
 
-7.  Each movement of the removable media
+    7.  Each movement of the removable media
 
-3\. Certificate Application Information:
+3.  Certificate Application Information:
 
-1.  All documentation & related information provided by the Applicant for application validation process
+    1.  All documentation & related information provided by the Applicant for application validation process
 
-2.  Physical and/or electronic storage locations of applicant provided documents
+    2.  Physical and/or electronic storage locations of applicant provided documents
 
 All logs include the following elements:
 
@@ -2540,7 +2173,9 @@ Where practical, Key / Digital Certificate revocation shall be timed to coincide
 
 # 6. Technical Security Controls 
 
-emSign Certification Authority has put in place sufficient security controls to protect the private keys and access to various modules within the Certifying Authority environment.
+emSign Certification Authority has put in place sufficient security controls to protect the private keys
+
+and access to various modules within the Certifying Authority environment.
 
 The Issuing CA Private Keys are stored securely in a Hardware Security Module which is compliant with FIPS 140-2 Level 3+ Standard. Access to systems/module within the Certification Authority environment are restricted using tokens or smartcards and associated pass phrases in such a manner that no single member holds total control over any component of the system. The Hardware Security Modules are always stored in a physically secure environment that is subject to security control.
 
@@ -2560,9 +2195,11 @@ Subscriber key pairs:
 
 2.  Differ in its Key generation methods according to the class or type of Digital Certificate requested.
 
-3.  For certain types of certificates like Adobe signing, etc, be generated in a medium that meets FIPS 140‐1 Level 2+ certification standards and also prevents exporting or duplication of keys.
+3.  For certain types of certificates like Adobe signing, etc, be generated in a medium that meets FIPS 140-1 Level 2+ certification standards and also prevents exporting or duplication of keys.
 
-emSign PKI retains the right to generate Subscriber Key Pairs, based on the type or class of the certificate, in the scenario which needs emSign PKI to generate such key pairs.
+emSign PKI retains the right to generate Subscriber Key Pairs, based on the type or class of the
+
+certificate, in the scenario which needs emSign PKI to generate such key pairs.
 
 Issuing CA SHALL reject a certificate request if one or more of the following conditions are met:
 
@@ -2572,11 +2209,11 @@ Issuing CA SHALL reject a certificate request if one or more of the following co
 
 3.  Issuing CA is aware of a demonstrated or proven method that exposes the Applicant’s Private Key to compromise;
 
-4.  Issuing CA has previously been made aware that the Applicant’s Private Key has suffered a Key Compromise, such as through the provisions of Section 4.9.1;
+4.  Issuing CA has previously been made aware that the Applicant’s Private Key has suffered a Key
 
-<!-- -->
+Compromise, such as through the provisions of Section 4.9.1;
 
-1)  In the case of Debian weak keys vulnerability (https://wiki.debian.org/SSLkeys), the Issuer CA shall reject all keys found at https://github.com/cabforum/Debian-weak-keys/ for each key type (e.g. RSA, ECDSA).
+1)  In the case of Debian weak keys vulnerability (https://wiki.debian.org/SSLkeys), the Issuer CA shall reject all keys found at https://github.com/cabforum/Debian-weakkeys/ for each key type (e.g. RSA, ECDSA).
 
 2)  In the case of ROCA vulnerability, the Issuer CA shall reject keys identified by the tools available at https://github.com/crocs-muni/roca or equivalent.
 
@@ -2744,20 +2381,21 @@ Issuer CA shall archive a copy of each public key.
 
 The maximum validity periods for Digital Certificates issued within the emSign CA PKI are:
 
-<table>
+<table style="width:93%;">
 <colgroup>
-<col style="width: 22%" />
-<col style="width: 30%" />
-<col style="width: 22%" />
-<col style="width: 25%" />
+<col style="width: 20%" />
+<col style="width: 27%" />
+<col style="width: 20%" />
+<col style="width: 23%" />
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Type</strong></th>
+<th style="text-align: left;"><p><strong>Type</strong></p></th>
 <th style="text-align: left;"><p><strong>Private Key Use</strong></p>
 <p><strong>(signing the certificates)</strong></p></th>
-<th style="text-align: left;"><strong>Private Key Use (signing the CRL)</strong></th>
-<th style="text-align: left;"><strong>Certificate Term</strong></th>
+<th style="text-align: left;"><p><strong>Private Key Use</strong></p>
+<p><strong>(signing the CRL)</strong></p></th>
+<th style="text-align: left;"><p><strong>Certificate Term</strong></p></th>
 </tr>
 </thead>
 <tbody>
@@ -2765,15 +2403,15 @@ The maximum validity periods for Digital Certificates issued within the emSign C
 <td style="text-align: left;"><p>Root CA</p>
 <p>Certificate</p></td>
 <td style="text-align: left;">20 years</td>
-<td style="text-align: left;">25 years</td>
-<td style="text-align: left;">25 years</td>
+<td style="text-align: left;"><p>25 years</p></td>
+<td style="text-align: left;"><p>25 years</p></td>
 </tr>
 <tr>
 <td style="text-align: left;"><p>All Subordinate</p>
 <p>CAs of Root CA</p></td>
 <td style="text-align: left;">12 years</td>
-<td style="text-align: left;">15 years</td>
-<td style="text-align: left;">15 years</td>
+<td style="text-align: left;"><p>15 years</p></td>
+<td style="text-align: left;"><p>15 years</p></td>
 </tr>
 <tr>
 <td style="text-align: left;"><p>Subscriber</p>
@@ -2781,9 +2419,9 @@ The maximum validity periods for Digital Certificates issued within the emSign C
 <p>Server</p>
 <p>Authentication</p>
 <p>EKU</p></td>
-<td style="text-align: left;">Not Applicable</td>
-<td style="text-align: left;">Not Applicable</td>
-<td style="text-align: left;">397 Days</td>
+<td style="text-align: left;"><p>Not Applicable</p></td>
+<td style="text-align: left;"><p>Not Applicable</p></td>
+<td style="text-align: left;"><p>397 Days</p></td>
 </tr>
 <tr>
 <td style="text-align: left;"><p>Subscriber</p>
@@ -2791,24 +2429,21 @@ The maximum validity periods for Digital Certificates issued within the emSign C
 <p>email</p>
 <p>Authentication</p>
 <p>EKU</p></td>
-<td style="text-align: left;">Not Applicable</td>
-<td style="text-align: left;">Not Applicable</td>
-<td style="text-align: left;">825 Days</td>
+<td style="text-align: left;"><p>Not Applicable</p></td>
+<td style="text-align: left;"><p>Not Applicable</p></td>
+<td style="text-align: left;"><p>825 Days</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><p>Other Subscriber</p>
-<p>Certificates</p></td>
+<td style="text-align: left;"><p>Other Subscriber Certificates</p></td>
 <td style="text-align: left;">Not Applicable</td>
 <td style="text-align: left;">Not Applicable</td>
-<td style="text-align: left;"><p>39 Months (or maximum allowed as per applicable</p>
-<p>guidelines)</p></td>
+<td style="text-align: left;"><p>39 Months (or maximum allowed as per applicable guidelines)</p></td>
 </tr>
 <tr>
-<td style="text-align: left;">All other Digital Certificates</td>
+<td style="text-align: left;"><p>All other Digital Certificates</p></td>
 <td style="text-align: left;">No stipulation</td>
 <td style="text-align: left;">No stipulation</td>
-<td style="text-align: left;"><p>No Stipulation (or maximum allowed as per applicable</p>
-<p>guidelines)</p></td>
+<td style="text-align: left;"><p>No Stipulation (or maximum allowed as per applicable guidelines)</p></td>
 </tr>
 </tbody>
 </table>
@@ -2834,7 +2469,9 @@ All certificates including subscriber certificates or any subordinate CA certifi
 
 Issuing CA shall generate activation data that has sufficient strength to protect its Subscriber Private Keys including methods such as two-factor authentication.
 
-emSign PKI Officers are also required to use strong passwords to further prevent unauthorized access to CA systems.
+emSign PKI Officers are also required to use strong passwords to further prevent unauthorized access
+
+to CA systems.
 
 <a id="activation-data-protection"></a>
 
@@ -2928,7 +2565,9 @@ Issuing CA change control process shall include procedures to detect unauthorize
 
 ### 6.6.3. Life Cycle Security Controls 
 
-emSign PKI periodically verifies the integrity of the Certifying Authority software and monitors the configuration of CA systems.
+emSign PKI periodically verifies the integrity of the Certifying Authority software and monitors the
+
+configuration of CA systems.
 
 <a id="network-security-controls"></a>
 
@@ -2954,7 +2593,7 @@ Issuing CA shall ensure that the network in which the CA system is hosted is pro
 
 <a id="time-stamping"></a>
 
-## 6.8. Time-Stamping 
+## 6.8.  Time-Stamping 
 
 Issuing CAs shall ensure that their components are regularly synchronized with a time service such an atomic clock or Network Time Protocol. The system time on computers shall be updated using the Network Time Protocol (NTP) to synchronize system clocks at least once every eight hours.
 
@@ -3010,9 +2649,7 @@ An object identifier (OID) is a unique number that identifies an object or polic
 
 This may contain additional policy identifiers as required by CABF guidelines, Adobe Certificate requirements, etc in order to provide necessary information or assurance of meeting respective requirements.
 
-**Reserved Certificate Policy Identifiers**
-
-emSign Issuing CAs shall optionally use DV, OV and IV related policy IDs of CA Browser Forum baseline requirements, to assert the respective compliance. The subject field shall also contain the values in compliance to DV, OV and IV requirements, as may be applicable.
+**Reserved Certificate Policy Identifiers** emSign Issuing CAs shall optionally use DV, OV and IV related policy IDs of CA Browser Forum baseline requirements, to assert the respective compliance. The subject field shall also contain the values in compliance to DV, OV and IV requirements, as may be applicable.
 
 **Root CA Certificates** emSign Root CA Certificates shall not contain this extension.
 
@@ -3236,7 +2873,9 @@ emSign PKI reserves the right to charge fee for timestamping and/or any other ad
 
 ### 9.1.5. Refund Policy 
 
-emSign PKI will provide refund to subscribers under certain circumstances and subject to certain conditions. The details of these will be contained in the relevant contractual document.
+emSign PKI will provide refund to subscribers under certain circumstances and subject to certain
+
+conditions. The details of these will be contained in the relevant contractual document.
 
 <a id="financial-responsibilities"></a>
 
@@ -3264,7 +2903,9 @@ Subscribers and Relying parties can apply to Commercial Insurance Providers for 
 
 ### 9.2.4. Financial Records 
 
-emSign PKI shall maintain its financial records, including books of accounts, in a commercially reasonable manner.
+emSign PKI shall maintain its financial records, including books of accounts, in a commercially
+
+reasonable manner.
 
 <a id="no-partnership-or-agency"></a>
 
@@ -3280,7 +2921,9 @@ No partnership or agency is implied in any subscriber or relying party agreement
 
 ### 9.3.1. Scope of Confidential Information 
 
-emSign PKI considers the following information as confidential information and protects them from disclosure using a reasonable degree of care:
+emSign PKI considers the following information as confidential information and protects them from
+
+disclosure using a reasonable degree of care:
 
 1.  Private Keys;
 
@@ -3308,7 +2951,9 @@ Any information other than information indicated as confidential in this CP/CPS 
 
 ### 9.3.3. Responsibility to Protect Private Information 
 
-emSign PKI’s employees, agents and contractors are contractually obliged to protect confidential information. Further emSign provides training to employees on protection of confidential information.
+emSign PKI’s employees, agents and contractors are contractually obliged to protect confidential
+
+information. Further emSign provides training to employees on protection of confidential information.
 
 <a id="privacy-of-personal-information"></a>
 
@@ -3348,7 +2993,9 @@ Personal information obtained from an applicant during the application or identi
 
 ### 9.4.6. Disclosure pursuant to Judicial or Administrative Process 
 
-emSign PKI may disclose private information without notice to the applicants or subscribers where such disclosure is required by law or regulation.
+emSign PKI may disclose private information without notice to the applicants or subscribers where
+
+such disclosure is required by law or regulation.
 
 <a id="other-information-disclosure-circumstances"></a>
 
@@ -3380,7 +3027,9 @@ emSign excludes all liability for breach of any other intellectual property righ
 
 ### 9.6.1. Certification Authority Representation and Warranties 
 
-emSign PKI represents, to the extent specified in this CP/CPS, emSign PKI complies, in all material aspects, with the CP/CPS, and all applicable laws and regulations.
+emSign PKI represents, to the extent specified in this CP/CPS, emSign PKI complies, in all material
+
+aspects, with the CP/CPS, and all applicable laws and regulations.
 
 emSign PKI further warrants that:
 
@@ -3408,7 +3057,7 @@ RAs and LRAs warrant that:
 
 4.  All Certificates requested by them meet all material requirements of this CP/CPS.
 
-> Additional representations and warranties may be contained in emSign’s agreement with RA/LRAs.
+Additional representations and warranties may be contained in emSign’s agreement with RA/LRAs.
 
 <a id="subscriber-representation-and-warranties"></a>
 
@@ -3464,7 +3113,7 @@ A Relying Party accepts that in order to reasonably rely on a emSign PKI Certifi
 
     6)  the Relying Party’s previous course of dealing with the Subscriber,
 
-    7)  the Relying Party’s understanding of trade, including experience with computer‐based methods of trade, and
+    7)  the Relying Party’s understanding of trade, including experience with computer-based methods of trade, and
 
     8)  any other indicia of reliability or unreliability pertaining to the Subscriber and/or the application, communication, or transaction.
 
@@ -3594,7 +3243,9 @@ Upon termination of this CPS, emSign PKI Participants are nevertheless bound by 
 
 emSign PKI accepts notices related to this CP/CPS, in paper or electronic form, at the location and/or email address specified in this CP/CPS. Notices are deemed effective after the sender receives a valid and signed acknowledgment of receipt from emSign PKI. If an acknowledgement of receipt is not received by the sender within seven days, the sender must resend the notice in paper form to the street address specified in this CP/CPS using a courier service that confirms delivery.
 
-emSign PKI will provide any notices required under this CP/CPS by physical or electronic means, unless specifically agreed otherwise.
+emSign PKI will provide any notices required under this CP/CPS by physical or electronic means, unless
+
+specifically agreed otherwise.
 
 <a id="amendments"></a>
 
@@ -3610,7 +3261,9 @@ Amendments to this CP/CPS are approved by emSign Policy Authority. Upon any amen
 
 ### 9.12.2. Notification Mechanism and Period 
 
-emSign PKI may make changes to this CP/CPS without notice; further emSign PKI does not guarantee or set a notice‐and‐comment period.
+emSign PKI may make changes to this CP/CPS without notice; further emSign PKI does not guarantee
+
+or set a notice-and-comment period.
 
 <a id="circumstances-under-which-oid-must-be-changed"></a>
 
@@ -3634,7 +3287,9 @@ This CP/CPS is governed by the laws of India except in circumstances where issui
 
 ## 9.15. Compliance with Applicable Law 
 
-The certificates issued under emSign PKI shall be used by the subscribers and relying parties only in accordance with the laws and regulations of the jurisdiction in which they are used or relied upon. Issuing CAs under emSign PKI may refuse to issue or may revoke Certificates if, in their opinion, issuance or the continued use of the emSign PKI Certificates would violate applicable laws or regulations.
+The certificates issued under emSign PKI shall be used by the subscribers and relying parties only in accordance with the laws and regulations of the jurisdiction in which they are used or relied upon.
+
+Issuing CAs under emSign PKI may refuse to issue or may revoke Certificates if, in their opinion, issuance or the continued use of the emSign PKI Certificates would violate applicable laws or regulations.
 
 <a id="miscellaneous-provisions"></a>
 
@@ -3662,9 +3317,11 @@ If any of the provisions of this CP/CPS is held invalid by a competent authority
 
 ### 9.16.4. Enforcement (attorneys' fees and waiver of rights) 
 
-> Issuing CAs under emSign PKI may seek indemnification and attorneys’ fees from a party for damages, losses and expenses related to that party’s conduct.
->
-> emSign PKI’s failure to enforce a provision of this CP/CPS does not waive emSign PKI ’s right to enforce the same provision later or right to enforce any other provision of this CP/CPS.
+Issuing CAs under emSign PKI may seek indemnification and attorneys’ fees from a party for damages, losses and expenses related to that party’s conduct.
+
+emSign PKI’s failure to enforce a provision of this CP/CPS does not waive emSign PKI ’s right to enforce
+
+the same provision later or right to enforce any other provision of this CP/CPS.
 
 No waiver to any party shall be effective unless it is given in writing by respective issuing CAs under emSign PKI.
 
@@ -3674,7 +3331,9 @@ In its specific agreements with subscribers, relying parties or any other partie
 
 ### 9.16.5. Force Majeure 
 
-emSign PKI accepts no liability for any delay or failure to perform an obligation under this CP/CPS to the extent those delay or failure is caused by events beyond its reasonable control.
+emSign PKI accepts no liability for any delay or failure to perform an obligation under this CP/CPS to
+
+the extent those delay or failure is caused by events beyond its reasonable control.
 
 <a id="other-provisions"></a>
 
@@ -3690,6 +3349,9 @@ No stipulation.
 
 ## 10.1. SSL/TLS - DV 
 
+| **Usage/Purpose** | Secure Websites |
+|-------------------|-----------------|
+
 <table>
 <colgroup>
 <col style="width: 24%" />
@@ -3697,35 +3359,36 @@ No stipulation.
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
-<th style="text-align: left;">Secure Websites</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Domain Verification</strong></td>
-<td><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
+<th style="text-align: left;"><strong>Domain Verification</strong></th>
+<th style="text-align: left;"><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
 <ol type="1">
 <li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
-<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p></li>
+<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization</p></li>
+</ol>
+<p>Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p>
+<ol start="3" type="1">
 <li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
 <li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
 </ol>
 <p><strong>Wildcard domains:</strong> These shall undergo additional checks, to not to wrongly issue, for a domain listed in public suffix list (PSL). If the domain is listed in PSL, the application shall be refused, unless applicant proves ownership of entire domain namespace.</p>
 <p><strong>Country:</strong> If the Country is present in application, it shall be validated against, the domain names ccTLD, or the domain registrar provided information, or by IP address range allocation (by country) checked for the domain or the applicant’s IP address.</p>
 <p><strong>IP Address</strong>: If the IP address is requested for the certificate, in place of domain name, it shall be verified to have the applicant’s control over the IP as per Baseline Requirements Section 3.2.2.5, by means of (i) change in agreed information in an URL containing the IP address, OR (ii)</p>
-<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME “http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
-<p><strong>MPIC:</strong></p>
-<p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
+<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME</p>
+<p>“http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
+<p><strong>MPIC:</strong> emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
 <ol type="1">
 <li><p>DNS-based validation methods, including DNS TXT and CNAME records</p></li>
 <li><p>HTTP-based domain validation methods, including file-based challenges</p></li>
 <li><p>ACME HTTP-01 challenge methods</p></li>
-<li><p>CAA record checks</p></li>
+<li><p>CAA record checks emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p></li>
 </ol>
-<p>emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p>
-<p>Each Network Perspective MAY use a recursive DNS resolver that is not co-located with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it.</p>
-<p>emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+<p>Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
 <p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p></td>
 </tr>
 </tbody>
@@ -3751,49 +3414,66 @@ No stipulation.
 <td style="text-align: left;"><strong>Individual Verification</strong></td>
 <td style="text-align: left;"><p>For Individual Validated (IV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
-<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government‐issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
+<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
 <li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
-<li><p>Additional cross‐checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
 <li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
 <li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
 </ol>
 <p>OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p></td>
 </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
 <tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
-<td style="text-align: left;"><p>For Organization Validated (OV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
+<th style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></th>
+<th><p>For Organization Validated (OV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>A Reliable Data Source including a government/third-party databases, or through a physical/electronic/telephonic communication with the entity or jurisdiction governing the organization’s legal creation, existence, or recognition.</p></li>
 <li><p>A site visit verification by CA or RA.</p></li>
 <li><p>An attestation letter that is signed by a practicing/qualified accountant, lawyer, government official, or any other reliable third party.</p></li>
 <li><p>Any DBA Names ‘to-be-included’ included in the Certificate is also verified using a government source, attestation letter, third party or any other reliable form of identification.</p></li>
 <li><p>For address &amp; validity verification, it can also be made using, a utility bill, bank statement, credit card statement, tax document, or any other reliable form of identification.</p></li>
-</ol></td>
+</ol></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align: left;"><strong>Domain Verification</strong></td>
-<td style="text-align: left;"><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
+<td><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
 <ol type="1">
 <li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
-<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p></li>
+<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization</p></li>
+</ol>
+<p>Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p>
+<ol start="3" type="1">
 <li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
 <li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
 </ol>
 <p><strong>Wildcard domains:</strong> These shall undergo additional checks, to not to wrongly issue, for a domain listed in public suffix list (PSL). If the domain is listed in PSL, the application shall be refused, unless applicant proves ownership of entire domain namespace.</p>
 <p><strong>Country:</strong> If the Country is present in application, it shall be validated against, the domain names ccTLD, or the domain registrar provided information, or by IP address range allocation (by country) checked for the domain or the applicant’s IP address.</p>
 <p><strong>IP Address</strong>: If the IP address is requested for the certificate, in place of domain name, it shall be verified to have the applicant’s control over the IP as per Baseline Requirements Section 3.2.2.5, by means of (i) change in agreed information in an URL containing the IP address, OR (ii)</p>
-<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME “http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
-<p><strong>MPIC:</strong></p>
-<p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
+<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME</p>
+<p>“http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
+<p><strong>MPIC:</strong></p></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
 <ol type="1">
 <li><p>DNS-based validation methods, including DNS TXT and CNAME records</p></li>
 <li><p>HTTP-based domain validation methods, including file-based challenges</p></li>
 <li><p>ACME HTTP-01 challenge methods</p></li>
-<li><p>CAA record checks</p></li>
+<li><p>CAA record checks emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p></li>
 </ol>
-<p>emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p>
-<p>Each Network Perspective MAY use a recursive DNS resolver that is not co-located with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it.</p>
-<p>emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+<p>Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
 <p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p></td>
 </tr>
 <tr>
@@ -3801,7 +3481,7 @@ No stipulation.
 <td style="text-align: left;"><p>If Telephone is to be present in the certificate, telephone number shall</p>
 <ol type="1">
 <li><p>Either be a part of a pre-verified source, including bank verified information, etc</p></li>
-<li><p>Or, be verified by sending a challenge‐response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
+<li><p>Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
 </ol></td>
 </tr>
 <tr>
@@ -3819,6 +3499,11 @@ No stipulation.
 
 ## 10.3. SSL/TLS - EV 
 
+| **Usage/Purpose**           | Secure Websites                          |
+|:----------------------------|:-----------------------------------------|
+| **Physical Verification**   | As per EV requirements, mentioned below. |
+| **Individual Verification** | As per EV requirements, mentioned below. |
+
 <table>
 <colgroup>
 <col style="width: 24%" />
@@ -3826,30 +3511,22 @@ No stipulation.
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
-<th style="text-align: left;">Secure Websites</th>
+<th style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></th>
+<th style="text-align: left;">As per EV requirements, mentioned below.</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Physical Verification</strong></td>
-<td style="text-align: left;">As per EV requirements, mentioned below.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Individual Verification</strong></td>
-<td style="text-align: left;">As per EV requirements, mentioned below.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
-<td style="text-align: left;">As per EV requirements, mentioned below.</td>
-</tr>
-<tr>
 <td style="text-align: left;"><strong>Domain Verification</strong></td>
-<td style="text-align: left;"><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
-<ol type="1">
-<li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
-<li></li>
-<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p></li>
+<td><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
+<p>1. Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p>
+<p>2.</p>
+<ol start="3" type="1">
+<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization</p></li>
+</ol>
+<p>Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p>
+<ol start="4" type="1">
 <li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
 <li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
 </ol></td>
@@ -3868,16 +3545,18 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;"><strong>MPIC</strong></td>
-<td style="text-align: left;"><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
+<td><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
 <ol type="1">
 <li><p>DNS-based validation methods, including DNS TXT and CNAME records</p></li>
 <li><p>HTTP-based domain validation methods, including file-based challenges</p></li>
 <li><p>ACME HTTP-01 challenge methods</p></li>
 <li><p>CAA record checks</p></li>
-</ol>
-<p>emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p>
-<p>Each Network Perspective MAY use a recursive DNS resolver that is not co-located with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it.</p>
-<p>emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+</ol></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p>
+<p>Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
 <p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p></td>
 </tr>
 </tbody>
@@ -3894,26 +3573,26 @@ No stipulation.
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
-<th style="text-align: left;">Secure Application / Objects</th>
+<th style="text-align: left;"><p><strong>Usage/Purpose</strong></p></th>
+<th style="text-align: left;"><p>Secure Application / Objects</p></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Individual Verification</strong></td>
+<td style="text-align: left;"><p><strong>Individual Verification</strong></p></td>
 <td style="text-align: left;"><p>For Individual validated, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
-<p>1. Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government‐issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or</p>
-<p>falsification.</p>
-<ol start="2" type="1">
+<ol type="1">
+<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
 <li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
-<li><p>Additional cross‐checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
 <li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
 <li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
 </ol>
 <p>OR an alternate process is necessary, it may be completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer (above specified grades), or a Government Officer (above specified grades).</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
 <td style="text-align: left;"><p>Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>A Reliable Data Source including the government/third-party databases, or through a physical/electronic/telephonic communication with the entity or jurisdiction governing the organization’s legal creation, existence, or recognition.</p></li>
@@ -3928,7 +3607,7 @@ No stipulation.
 <td style="text-align: left;"><p>If Telephone is to be present in the certificate, telephone number shall</p>
 <ol type="1">
 <li><p>Either be a part of a pre-verified source, including bank verified information, etc</p></li>
-<li><p>Or, be verified by sending a challenge‐response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
+<li><p>Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
 </ol></td>
 </tr>
 <tr>
@@ -3946,15 +3625,49 @@ No stipulation.
 
 ## 10.5. Code Signing - EV 
 
-| **Usage/Purpose** | Secure Application / Objects |
-|:---|:---|
-| **Physical Verification** | As per EV requirements, mentioned below. |
-| **Individual Verification** | As per EV requirements, mentioned below. |
-| **Organization Verification** | As per EV requirements, mentioned below. |
-| **Telephone Verification** | As per EV requirements, mentioned below. |
-| **Email Verification** | As per EV requirements, mentioned below. |
-| **EV Verification** | Section 11 of EV guidelines of CABF |
-| **Key Storage Verification** | Verification of key storage in Crypto Hardware (FIPS 140-2 Level 2+) by the form of IT audit (attested letter) by the organization, or site visit, or any other form of verification to satisfactorily validate the compliance. |
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
+<th style="text-align: left;">Secure Application / Objects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Physical Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Individual Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Telephone Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Email Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>EV Verification</strong></td>
+<td style="text-align: left;">Section 11 of EV guidelines of CABF</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Key Storage Verification</strong></td>
+<td style="text-align: left;">Verification of key storage in Crypto Hardware (FIPS 140-2 Level 2+) by the form of IT audit (attested letter) by the organization, or site visit, or any other form of verification to satisfactorily validate the compliance.</td>
+</tr>
+</tbody>
+</table>
 
 <a id="device-certificates"></a>
 
@@ -3982,7 +3695,8 @@ No stipulation.
 </ol></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
 <td style="text-align: left;"><p>Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>A Reliable Data Source including the government/third-party databases, or through a physical/electronic/telephonic communication with the entity or jurisdiction governing the organization’s legal creation, existence, or recognition.</p></li>
@@ -3998,7 +3712,7 @@ No stipulation.
 <td style="text-align: left;"><p>If Telephone is to be present in the certificate, telephone number shall</p>
 <ol type="1">
 <li><p>Either be a part of a pre-verified source, including bank verified information, etc</p></li>
-<li><p>Or, be verified by sending a challenge‐response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
+<li><p>Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
 </ol></td>
 </tr>
 <tr>
@@ -4016,6 +3730,10 @@ No stipulation.
 
 ## 10.7. Client Certificates - Class 1 
 
+| **Usage/Purpose** | Email Signing Certificate with / without Identity Information |
+|:---|:---|
+| **Physical Verification** | No Stipulation |
+
 <table>
 <colgroup>
 <col style="width: 24%" />
@@ -4023,29 +3741,25 @@ No stipulation.
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
-<th style="text-align: left;">Email Signing Certificate with / without Identity Information</th>
+<th style="text-align: left;"><strong>Individual Verification</strong></th>
+<th style="text-align: left;"><p>For Individual validated, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
+<ol type="1">
+<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
+<li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+<li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
+<li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
+</ol>
+<p>OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p>
+<ol start="6" type="1">
+<li><p>As an alternate or additional validation, information on identity and address from a pre-verified source, including national ID, government ID, bank or telecom verified information, or any other equivalent trusted source shall be considered.</p></li>
+</ol></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Physical Verification</strong></td>
-<td style="text-align: left;">No Stipulation</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Individual Verification</strong></td>
-<td style="text-align: left;"><p>For Individual validated, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
-<ol type="1">
-<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government‐issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
-<li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
-<li><p>Additional cross‐checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
-<li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
-<li><p>If the verification is not satisfactorily achieved by any of the above process OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p></li>
-<li><p>As an alternate or additional validation, information on identity and address from a pre-verified source, including national ID, government ID, bank or telecom verified information, or any other equivalent trusted source shall be considered.</p></li>
-</ol></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
 <td style="text-align: left;"><p>If Organization is to be present in O value of the certificate, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>By documentation from the organization that is sufficient to confirm that the individual has an affiliation with the organization named in the Certificate.</p></li>
@@ -4061,7 +3775,7 @@ No stipulation.
 <td style="text-align: left;"><p>If Telephone is to be present in the certificate, telephone number shall</p>
 <ol type="1">
 <li><p>Either be a part of a pre-verified source, including bank verified information, etc</p></li>
-<li><p>Or, be verified by sending a challenge‐response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
+<li><p>Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
 </ol></td>
 </tr>
 <tr>
@@ -4090,15 +3804,16 @@ No stipulation.
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Physical Verification</strong></td>
-<td style="text-align: left;">Face-to-Face in the form of Physical Verification Letter by Trusted Agents like Accountants, Lawyers, Public Notary, gazetted Officer. OR, Face-to-Face / Video verification by CA / RA</td>
+<td style="text-align: left;"><p>Face-to-Face in the form of Physical Verification Letter by Trusted Agents like</p>
+<p>Accountants, Lawyers, Public Notary, gazetted Officer. OR, Face-to-Face / Video verification by CA / RA</p></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Individual Verification</strong></td>
 <td style="text-align: left;"><p>For Individual validated, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
-<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government‐issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
+<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
 <li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
-<li><p>Additional cross‐checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
 <li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
 <li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
 <li><p>OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p></li>
@@ -4106,27 +3821,27 @@ No stipulation.
 </ol></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
 <td style="text-align: left;"><p>If Organization is to be present in O value of the certificate, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>By documentation from the organization that is sufficient to confirm that the individual has an affiliation with the organization named in the Certificate.</p></li>
 <li><p>A Reliable Data Source including the government/third-party databases, or through a physical/electronic/telephonic communication with the entity or jurisdiction governing the organization’s legal creation, existence, or recognition.A site visit verification by CA or RA.</p></li>
-<li><p>An attestation letter that is signed by a practicing/qualified accountant, lawyer, government official, or any other reliable third party. Any DBA Names ‘to-be-included’ included in the Certificate is also verified</p></li>
-</ol></td>
+<li><p>An attestation letter that is signed by a practicing/qualified accountant, lawyer, government official, or any other reliable third party. Any DBA</p></li>
+</ol>
+<p>Names ‘to-be-included’ included in the Certificate is also verified</p></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><p>using a government source, attestation letter, third party or any other reliable form of identification.</p>
-<ol start="4" type="1">
-<li><p>For address &amp; validity verification, it can also be made using, a utility bill, bank statement, credit card statement, tax document, or any other reliable form of identification.</p></li>
-</ol></td>
+<p>4. For address &amp; validity verification, it can also be made using, a utility bill, bank statement, credit card statement, tax document, or any other reliable form of identification.</p></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Telephone Verification</strong></td>
 <td style="text-align: left;"><p>If Telephone is to be present in the certificate, telephone number shall</p>
 <ol type="1">
 <li><p>Either be a part of a pre-verified source, including bank verified information, etc</p></li>
-<li><p>Or, be verified by sending a challenge‐response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
+<li><p>Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
 </ol></td>
 </tr>
 <tr>
@@ -4165,21 +3880,32 @@ No stipulation.
 <td style="text-align: left;"><strong>Physical Verification</strong></td>
 <td style="text-align: left;">Face-to-Face / Video verification by CA / RA</td>
 </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
 <tr>
-<td style="text-align: left;"><strong>Individual Verification</strong></td>
-<td style="text-align: left;"><p>For Individual validated, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
+<th style="text-align: left;"><strong>Individual Verification</strong></th>
+<th style="text-align: left;"><p>For Individual validated, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
-<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government‐issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
+<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
 <li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
-<li><p>Additional cross‐checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
 <li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
-<li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
-<li><p>OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p></li>
-<li><p>As an alternate or additional validation, information on identity and address from a pre-verified source, including national ID, government ID, bank or telecom verified information, or any other equivalent trusted source shall be considered.</p></li>
-</ol></td>
+<li><p>If the verification is not satisfactorily achieved by any of the above process 6. OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p></li>
+</ol>
+<p>7. As an alternate or additional validation, information on identity and address from a pre-verified source, including national ID, government ID, bank or telecom verified information, or any other equivalent trusted source shall be considered.</p></th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
 <td style="text-align: left;"><p>If Organization is to be present in O value of the certificate, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>By documentation from the organization that is sufficient to confirm that the individual has an affiliation with the organization named in the Certificate.</p></li>
@@ -4195,7 +3921,7 @@ No stipulation.
 <td style="text-align: left;"><p>If Telephone is to be present in the certificate, telephone number shall</p>
 <ol type="1">
 <li><p>Either be a part of a pre-verified source, including bank verified information, etc</p></li>
-<li><p>Or, be verified by sending a challenge‐response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
+<li><p>Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
 </ol></td>
 </tr>
 <tr>
@@ -4215,7 +3941,7 @@ No stipulation.
 
 <a id="emsign-mailbox-validated-strict-smime-certificate"></a>
 
-## 10.10. emSign Mailbox-Validated Strict SMIME Certificate
+## 10.10. emSign Mailbox-Validated Strict SMIME Certificate 
 
 <table>
 <colgroup>
@@ -4242,7 +3968,7 @@ No stipulation.
 
 <a id="emsign-individual-validated-strict-smime-certificate"></a>
 
-## 10.11. emSign Individual -Validated Strict SMIME Certificate
+## 10.11. emSign Individual -Validated Strict SMIME Certificate 
 
 <table>
 <colgroup>
@@ -4268,9 +3994,14 @@ No stipulation.
 <td style="text-align: left;"><strong>Individual Verification</strong></td>
 <td style="text-align: left;"><p>For Individual Validated (IV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
-<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government‐issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
+<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
 <li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
-<li><p>Additional cross‐checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+</ol></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><ol start="3" type="1">
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
 <li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
 <li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
 </ol>
@@ -4285,7 +4016,7 @@ No stipulation.
 
 <a id="emsign-sponsor-validated-strict-smime-certificate"></a>
 
-## 10.12. emSign Sponsor -Validated Strict SMIME Certificate
+## 10.12. emSign Sponsor -Validated Strict SMIME Certificate 
 
 <table>
 <colgroup>
@@ -4311,9 +4042,9 @@ No stipulation.
 <td style="text-align: left;"><strong>Individual Verification</strong></td>
 <td style="text-align: left;"><p>For Individual Validated (IV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
-<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government‐issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
+<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
 <li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
-<li><p>Additional cross‐checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
 <li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
 <li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
 </ol>
@@ -4321,24 +4052,45 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Domain Verification</strong></td>
-<td style="text-align: left;"><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
-<ol type="1">
-<li><p>Validating the request by sending a Random Value to an email address created by prepending ‘admin’, ‘administrator’, ‘webmaster’, ‘hostmaster’, or ‘postmaster’ in the local part, followed by the at-sign (“@”), followed by the Authorization Domain Name and obtaining a response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.4)</p></li>
+<td style="text-align: left;">Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><ol type="1">
+<li><p>Validating the request by sending a Random Value to an email address created by prepending ‘admin’, ‘administrator’, ‘webmaster’, ‘hostmaster’, or ‘postmaster’ in the local part, followed by the at-sign (“@”), followed by the Authorization Domain Name and obtaining a response utilizing the</p></li>
+</ol>
+<p>Random Value (Baseline Requirements Section 3.2.2.4.4)</p>
+<ol start="2" type="1">
 <li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
 <li><p>Validating the request by sending a Random Value to an email address of DNS CAA Email Contact. The relevant CAA Resource Record Set MUST be found using the search algorithm defined in RFC 8659 Section 3 (Baseline Requirements Section 3.2.2.4.13)</p></li>
 <li><p>Validating the request by sending a Random Value to a DNS TXT Record Email Contact via email and then receiving a confirming response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.14)</p></li>
 <li><p>Validating the request by calling the DNS TXT Record Phone Contact’s phone number and obtaining a confirming response to validate the Authorization Domain Name. (Baseline Requirements Section 3.2.2.4.16)</p></li>
-<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p></li>
+<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization</p></li>
+</ol>
+<p>Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p>
+<ol start="7" type="1">
 <li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
 <li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
-</ol></td>
+</ol></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align: left;"><strong>Physical Verification</strong></td>
 <td style="text-align: left;">Face-to-Face / Video verification by CA / RA</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
 <td style="text-align: left;"><p>If Organization is to be present in O value of the certificate, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>By documentation from the organization that is sufficient to confirm that the individual has an affiliation with the organization named in the Certificate.</p></li>
@@ -4351,14 +4103,17 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;"><strong>MPIC</strong></td>
-<td style="text-align: left;"><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
+<td style="text-align: left;"><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to</p>
+<p>improve protection against Border Gateway Protocol (BGP) hijacks and DNS</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>manipulation during domain validation. MPIC is applied to the following validation methods:</p>
 <ol type="1">
 <li><p>DNS-based validation methods, including DNS TXT and CNAME records</p></li>
-<li><p>CAA record checks</p></li>
+<li><p>CAA record checks emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p></li>
 </ol>
-<p>emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p>
-<p>Each Network Perspective MAY use a recursive DNS resolver that is not co-located with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it.</p>
-<p>emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+<p>Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
 <p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p></td>
 </tr>
 </tbody>
@@ -4366,7 +4121,7 @@ No stipulation.
 
 <a id="emsign-organization-validated-strict-smime-certificate"></a>
 
-## 10.13. emSign Organization-Validated Strict SMIME Certificate
+## 10.13. emSign Organization-Validated Strict SMIME Certificate 
 
 <table>
 <colgroup>
@@ -4389,15 +4144,19 @@ No stipulation.
 </ol></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
 <td style="text-align: left;"><p>If Organization is to be present in O value of the certificate, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>By documentation from the organization that is sufficient to confirm that the individual has an affiliation with the organization named in the Certificate.</p></li>
 <li><p>A Reliable Data Source including the government/third-party databases, or through a physical/electronic/telephonic communication with the entity or jurisdiction governing the organization’s legal creation, existence, or recognition.</p></li>
 <li><p>A site visit verification by CA or RA.</p></li>
 <li><p>An attestation letter that is signed by a practicing/qualified accountant, lawyer, government official, or any other reliable third party.</p></li>
-<li><p>Any DBA Names ‘to-be-included’ included in the Certificate is also verified using a government source, attestation letter, third party or any other reliable form of identification.</p></li>
-</ol>
+</ol></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>5. Any DBA Names ‘to-be-included’ included in the Certificate is also verified using a government source, attestation letter, third party or any other reliable form of identification.</p>
 <p>For address &amp; validity verification, it can also be made using, a utility bill, bank statement, credit card statement, tax document, or any other reliable form of identification.</p></td>
 </tr>
 </tbody>
@@ -4405,7 +4164,7 @@ No stipulation.
 
 <a id="emsign-organization-validated-multipurpose-smime-certificate"></a>
 
-## 10.14. emSign Organization-Validated Multipurpose SMIME Certificate
+## 10.14. emSign Organization-Validated Multipurpose SMIME Certificate 
 
 <table>
 <colgroup>
@@ -4444,7 +4203,7 @@ No stipulation.
 
 <a id="emsign-sponsor-validated-multipurpose-smime-certificate"></a>
 
-## 10.15. emSign Sponsor -Validated Multipurpose SMIME Certificate
+## 10.15. emSign Sponsor -Validated Multipurpose SMIME Certificate 
 
 <table>
 <colgroup>
@@ -4469,25 +4228,43 @@ No stipulation.
 <tr>
 <td style="text-align: left;"><strong>Individual Verification</strong></td>
 <td style="text-align: left;"><p>For Individual Validated (IV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
-<ol type="1">
-<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government‐issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
+<p>1. Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s</p></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th><p>license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p>
+<ol start="2" type="1">
 <li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
-<li><p>Additional cross‐checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
 <li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
 <li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
 </ol>
-<p>OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer (above specified grades), or a Government Officer (above specified grades).</p></td>
+<p>OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer (above specified grades), or a Government Officer (above specified grades).</p></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align: left;"><strong>Domain Verification</strong></td>
-<td style="text-align: left;"><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
+<td><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
 <ol type="1">
 <li><p>Validating the request by sending a Random Value to an email address created by prepending ‘admin’, ‘administrator’, ‘webmaster’, ‘hostmaster’, or ‘postmaster’ in the local part, followed by the at-sign (“@”), followed by the Authorization Domain Name and obtaining a response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.4)</p></li>
 <li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
 <li><p>Validating the request by sending a Random Value to an email address of DNS CAA Email Contact. The relevant CAA Resource Record Set MUST be found using the search algorithm defined in RFC 8659 Section 3 (Baseline Requirements Section 3.2.2.4.13)</p></li>
 <li><p>Validating the request by sending a Random Value to a DNS TXT Record Email Contact via email and then receiving a confirming response utilizing the Random Value (Baseline Requirements Section 3.2.2.4.14)</p></li>
 <li><p>Validating the request by calling the DNS TXT Record Phone Contact’s phone number and obtaining a confirming response to validate the Authorization Domain Name. (Baseline Requirements Section 3.2.2.4.16)</p></li>
-<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p></li>
+<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization</p></li>
+</ol>
+<p>Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p>
+<ol start="7" type="1">
 <li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
 <li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
 </ol></td>
@@ -4497,7 +4274,8 @@ No stipulation.
 <td style="text-align: left;">Face-to-Face / Video verification by CA / RA</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Organization Verification</strong></td>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
 <td style="text-align: left;"><p>If Organization is to be present in O value of the certificate, Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
 <ol type="1">
 <li><p>By documentation from the organization that is sufficient to confirm that the individual has an affiliation with the organization named in the Certificate.</p></li>
@@ -4510,14 +4288,12 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;"><strong>MPIC</strong></td>
-<td style="text-align: left;"><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
+<td><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
 <ol type="1">
 <li><p>DNS-based validation methods, including DNS TXT and CNAME records</p></li>
-<li><p>CAA record checks</p></li>
+<li><p>CAA record checks emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p></li>
 </ol>
-<p>emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p>
-<p>Each Network Perspective MAY use a recursive DNS resolver that is not co-located with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it.</p>
-<p>emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+<p>Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
 <p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p></td>
 </tr>
 </tbody>
@@ -4545,12 +4321,11 @@ No stipulation.
 <tbody>
 <tr>
 <td style="text-align: left;">Serial Number</td>
-<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -4579,7 +4354,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Public Key</td>
 <td style="text-align: left;"><p>RSA 2048 (OR) RSA 4096 (OR) RSA 8192</p>
-<p>ECC curves NIST P‐256, P‐384, or P‐521</p></td>
+<p>ECC curves NIST P-256, P-384, or P-521</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Subject: CommonName</td>
@@ -4633,12 +4408,11 @@ No stipulation.
 <tbody>
 <tr>
 <td style="text-align: left;">Serial Number</td>
-<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -4666,8 +4440,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Public Key</td>
-<td style="text-align: left;"><p>RSA 2048 (OR) RSA 4096 (OR) RSA 8192</p>
-<p>ECC curves NIST P‐256, P‐384, or P‐521</p>
+<td style="text-align: left;"><p>RSA 2048 (OR) RSA 4096 (OR) RSA 8192 ECC curves NIST P-256, P-384, or P-521</p>
 <p>emSign reserves the right to accept any additional key algorithm/size that is permitted by the current BRs.</p></td>
 </tr>
 <tr>
@@ -4698,8 +4471,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Server Authentication, Client Authentication</p>
-<p>In case the CA issues Code Signing certificates:</p>
+<p>Server Authentication, Client Authentication In case the CA issues Code Signing certificates:</p>
 <p>Code Signing</p>
 <p>In other cases, it will not be present or limits to other ‘key usage types’ with critical=false.</p></td>
 </tr>
@@ -4726,7 +4498,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -4754,12 +4527,11 @@ No stipulation.
 <tbody>
 <tr>
 <td style="text-align: left;">Serial Number</td>
-<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -4832,7 +4604,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -4864,8 +4637,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td style="text-align: left;">SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -4962,7 +4734,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -4976,6 +4749,13 @@ No stipulation.
 
 ## 11.5. SSL/TLS - EV 
 
+| Version | V3 |
+|:---|:---|
+| Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
+| Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
+| Issuer: CN | \<Issuing CA Common Name\> |
+| Issuer: O | \<Issuing CA Organization name\> |
+
 <table>
 <colgroup>
 <col style="width: 43%" />
@@ -4983,201 +4763,118 @@ No stipulation.
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;"><blockquote>
-<p>Version</p>
-</blockquote></th>
-<th style="text-align: left;">V3</th>
+<th style="text-align: left;"><p>Issuer: OU</p></th>
+<th style="text-align: left;">&lt;Issuing CA Organization unit&gt;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Serial Number</p>
-</blockquote></td>
-<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><blockquote>
-<p>Signature Algorithm</p>
-</blockquote></td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
-</tr>
-<tr>
-<td style="text-align: left;"><blockquote>
-<p>Issuer: CN</p>
-</blockquote></td>
-<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
-</tr>
-<tr>
-<td style="text-align: left;"><blockquote>
-<p>Issuer: O</p>
-</blockquote></td>
-<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
-</tr>
-<tr>
-<td style="text-align: left;"><blockquote>
-<p>Issuer: OU</p>
-</blockquote></td>
-<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
-</tr>
-<tr>
-<td style="text-align: left;"><blockquote>
-<p>Issuer: C</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Issuer: C</p></td>
 <td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Valid From</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Valid From</p></td>
 <td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Valid To</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Valid To</p></td>
 <td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Public Key</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Public Key</p></td>
 <td style="text-align: left;">As per Section 6.1.5.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: CommonName</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: CommonName</p></td>
 <td style="text-align: left;">FQDN or Single IP</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: OrganizationName</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: OrganizationName</p></td>
 <td style="text-align: left;">Legal Name of the Organization with allowed variations</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: StreetAddress</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: StreetAddress</p></td>
 <td style="text-align: left;">Verified Street Address (Optional)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: LocalityName</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: LocalityName</p></td>
 <td style="text-align: left;">Verified Locality (Optional)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: StateOrProvinceName</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: StateOrProvinceName</p></td>
 <td style="text-align: left;">Verified State/Province</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: CountryName</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: CountryName</p></td>
 <td style="text-align: left;">Verified Country</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: PostalCode</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: PostalCode</p></td>
 <td style="text-align: left;">Verified Postal Code (Optional)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: BusinessCategory</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: BusinessCategory</p></td>
 <td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: SerialNumber</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: SerialNumber</p></td>
 <td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: JurisdictionLocalityName</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: JurisdictionLocalityName</p></td>
 <td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: JurisdictionStateOrProvinceName</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: JurisdictionStateOrProvinceName</p></td>
 <td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject: JurisdictionCountryName</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject: JurisdictionCountryName</p></td>
 <td style="text-align: left;">Verified Information as per EV criteria</td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject Alternative Name</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject Alternative Name</p></td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
 <p>DNS (multiple) = FQDN or Single IP</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Key Usage</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Key Usage</p></td>
 <td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0))</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Enhanced Key Usage</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Enhanced Key Usage</p></td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
 <p>Server Authentication, Client Authentication</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Certificate Policies</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Certificate Policies</p></td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>1. Policy ID=1.3.6.1.4.1.50977.1.2.120 (User Notice,</p>
-<p>Extended Validated SSL/TLS Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1 (CPS, http://repository.emsign.com</p></td>
+<p>1. Policy ID=1.3.6.1.4.1.50977.1.2.120 (User Notice, Extended Validated SSL/TLS Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1 (CPS, http://repository.emsign.com</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Subject Key Identifier</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Subject Key Identifier</p></td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Authority Key Identifier</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Authority Key Identifier</p></td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
 <p>160 bit hash (SHA-1)</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Basic Constraints</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Basic Constraints</p></td>
 <td style="text-align: left;"><p>Critical=TRUE</p>
 <p>Subject Type=End Entity, Path Length Constraint=None</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>Authority Information access</p>
-</blockquote></td>
+<td style="text-align: left;"><p>Authority Information access</p></td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><blockquote>
-<p>CRL Distribution Points</p>
-</blockquote></td>
+<td style="text-align: left;"><p>CRL Distribution Points</p></td>
 <td style="text-align: left;"><p>Critical=FALSE CRL HTTP URL =</p>
 <p>http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
 </tr>
@@ -5202,12 +4899,11 @@ No stipulation.
 <tbody>
 <tr>
 <td style="text-align: left;">Serial Number</td>
-<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -5282,8 +4978,9 @@ No stipulation.
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
 <ol type="1">
-<li><p>Policy ID=1.3.6.1.4.1.50977.1.2.200 (User Notice, Code</p></li>
+<li><p>Policy ID=1.3.6.1.4.1.50977.1.2.200 (User Notice,</p></li>
 </ol>
+<p>Code</p>
 <p>Sign Certificate)</p>
 <ol start="2" type="1">
 <li><p>Policy ID=1.3.6.1.4.1.50977.1.0.1 (CPS, http://repository.emsign.com</p></li>
@@ -5307,7 +5004,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -5321,7 +5019,7 @@ No stipulation.
 
 ## 11.7. Code Signing - EV 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 41%" />
 <col style="width: 58%" />
@@ -5335,12 +5033,11 @@ No stipulation.
 <tbody>
 <tr>
 <td style="text-align: left;">Serial Number</td>
-<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -5431,8 +5128,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>1. Policy ID=1.3.6.1.4.1.50977.1.2.210 (User Notice,</p>
-<p>Extended Validated Code Sign Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1 (CPS, http://repository.emsign.com</p></td>
+<p>1. Policy ID=1.3.6.1.4.1.50977.1.2.210 (User Notice, Extended Validated Code Sign Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1 (CPS, http://repository.emsign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Subject Key Identifier</td>
@@ -5452,7 +5148,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -5466,7 +5163,7 @@ No stipulation.
 
 ## 11.8. Device Certificates 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -5484,8 +5181,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -5566,8 +5262,9 @@ No stipulation.
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
 <ol type="1">
-<li><p>Policy ID=1.3.6.1.4.1.50977.1.2.300 (User Notice, Device</p></li>
+<li><p>Policy ID=1.3.6.1.4.1.50977.1.2.300 (User Notice,</p></li>
 </ol>
+<p>Device</p>
 <p>Certificate)</p>
 <ol start="2" type="1">
 <li><p>Policy ID=1.3.6.1.4.1.50977.1.0.1 (CPS, http://repository.emsign.com</p></li>
@@ -5591,7 +5288,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -5605,7 +5303,7 @@ No stipulation.
 
 ## 11.9. Client Certificates - Class 1 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -5623,8 +5321,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -5709,16 +5406,13 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Key Usage</td>
-<td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature, nonRepudiation OR</p>
-<p>keyEncipherment (in case of RSA) OR</p>
+<td><p>Critical=TRUE digitalSignature, nonRepudiation OR keyEncipherment (in case of RSA) OR</p>
 <p>digitalSignature, nonRepudiation, keyEncipherment (in case of RSA)</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Enhanced Key Usage</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>smartcardlogon, clientAuth, emailProtection OR</p>
-<p>emailProtection OR</p>
+<p>smartcardlogon, clientAuth, emailProtection OR emailProtection OR</p>
 <p>smartcardlogon, clientAuth, emailProtection</p></td>
 </tr>
 <tr>
@@ -5750,7 +5444,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -5764,27 +5459,22 @@ No stipulation.
 
 ## 11.10. Client Certificates - Class 2 
 
-<table>
+| Version | V3 |
+|:---|----|
+| Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
+
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;">Version</th>
-<th style="text-align: left;">V3</th>
+<th style="text-align: left;">Signature Algorithm</th>
+<th style="text-align: left;">SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">Serial Number</td>
-<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
-</tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
 <td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
@@ -5869,8 +5559,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Key Usage</td>
 <td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature, nonRepudiation OR</p>
-<p>keyEncipherment (in case of RSA) OR</p>
+<p>digitalSignature, nonRepudiation OR keyEncipherment (in case of RSA) OR</p>
 <p>digitalSignature, nonRepudiation, keyEncipherment (in case of RSA)</p></td>
 </tr>
 <tr>
@@ -5916,7 +5605,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -5930,7 +5620,7 @@ No stipulation.
 
 ## 11.11. Client Certificates - Class 3 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -5948,8 +5638,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -6035,8 +5724,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Key Usage</td>
 <td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature, nonRepudiation OR</p>
-<p>keyEncipherment (in case of RSA) OR</p>
+<p>digitalSignature, nonRepudiation OR keyEncipherment (in case of RSA) OR</p>
 <p>digitalSignature, nonRepudiation, keyEncipherment (in case of RSA)</p></td>
 </tr>
 <tr>
@@ -6079,7 +5767,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com</p></td>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -6091,9 +5780,9 @@ No stipulation.
 
 <a id="emsign-mailbox-validated-strict-smime-certificate"></a>
 
-## 11.12. emSign Mailbox-Validated Strict SMIME Certificate
+## 11.12. emSign Mailbox-Validated Strict SMIME Certificate 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -6111,8 +5800,8 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td style="text-align: left;"><p>SHA-256, SHA-384 or SHA-512 with RSA Encryption or</p>
+<p>ECDSA with SHA-256, SHA-384 or SHA-512</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
@@ -6164,8 +5853,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>CPS | 1.3.6.1.4.1.50977.1.0.1|</p>
-<p>http://repository.emsign.com</p>
+<p>CPS | 1.3.6.1.4.1.50977.1.0.1| http://repository.emsign.com</p>
 <p>Custom OID | 2.23.140.1.5.1.3 | emSign Mailbox-validated Strict SMIME certificate</p></td>
 </tr>
 <tr>
@@ -6187,9 +5875,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Key Usage</td>
-<td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature,</p>
-<p>keyEncipherment</p></td>
+<td style="text-align: left;">Critical=TRUE digitalSignature, keyEncipherment</td>
 </tr>
 <tr>
 <td style="text-align: left;">Basic Constraints</td>
@@ -6202,9 +5888,9 @@ No stipulation.
 
 <a id="emsign-individual-validated-strict-smime-certificate"></a>
 
-## 11.13. emSign Individual -Validated Strict SMIME Certificate
+## 11.13. emSign Individual -Validated Strict SMIME Certificate 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -6222,32 +5908,32 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td style="text-align: left;"><p>SHA-256, SHA-384 or SHA-512 with RSA Encryption or</p>
+<p>ECDSA with SHA-256, SHA-384 or SHA-512</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid To</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Public Key</td>
@@ -6305,8 +5991,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>CPS | 1.3.6.1.4.1.50977.1.0.1|</p>
-<p>http://repository.emsign.com</p>
+<p>CPS | 1.3.6.1.4.1.50977.1.0.1| http://repository.emsign.com</p>
 <p>Custom OID | 2.23.140.1.5.4.3| emSign Individual -validated Strict SMIME certificate</p></td>
 </tr>
 <tr>
@@ -6328,9 +6013,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Key Usage</td>
-<td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature,</p>
-<p>keyEncipherment</p></td>
+<td style="text-align: left;">Critical=TRUE digitalSignature, keyEncipherment</td>
 </tr>
 <tr>
 <td style="text-align: left;">Basic Constraints</td>
@@ -6343,9 +6026,9 @@ No stipulation.
 
 <a id="emsign-sponsor-validated-strict-smime-certificate"></a>
 
-## 11.14. emSign Sponsor -Validated Strict SMIME Certificate
+## 11.14. emSign Sponsor -Validated Strict SMIME Certificate 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -6363,36 +6046,36 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td style="text-align: left;"><p>SHA-256, SHA-384 or SHA-512 with RSA Encryption or</p>
+<p>ECDSA with SHA-256, SHA-384 or SHA-512</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid To</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Public Key</td>
-<td>As per Section 6.1.5.</td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Subject: CommonName</td>
@@ -6454,8 +6137,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>CPS | 1.3.6.1.4.1.50977.1.0.1|</p>
-<p><a href="http://repository.emsign.com">http://repository.emsign.com</a></p>
+<p>CPS | 1.3.6.1.4.1.50977.1.0.1| <a href="http://repository.emsign.com/"><u>http://repository.emsign.com</u></a></p>
 <p>Custom OID | 2.23.140.1.5.3.3| emSign Sponsor-validated Strict SMIME Certificate</p></td>
 </tr>
 <tr>
@@ -6477,9 +6159,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Key Usage</td>
-<td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature,</p>
-<p>keyEncipherment</p></td>
+<td style="text-align: left;">Critical=TRUE digitalSignature, keyEncipherment</td>
 </tr>
 <tr>
 <td style="text-align: left;">Basic Constraints</td>
@@ -6492,9 +6172,9 @@ No stipulation.
 
 <a id="emsign-organization-validated-strict-smime-certificate"></a>
 
-## 11.15. emSign Organization-Validated Strict SMIME Certificate
+## 11.15. emSign Organization-Validated Strict SMIME Certificate 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -6512,36 +6192,36 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td style="text-align: left;"><p>SHA-256, SHA-384 or SHA-512 with RSA Encryption or</p>
+<p>ECDSA with SHA-256, SHA-384 or SHA-512</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid To</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Public Key</td>
-<td>As per Section 6.1.5.</td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Subject: CommonName</td>
@@ -6590,10 +6270,12 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Certificate Policies</td>
-<td style="text-align: left;"><p>Critical=FALSE</p>
-<p>CPS | 1.3.6.1.4.1.50977.1.0.1|</p>
-<p>http://repository.emsign.com</p>
-<p>Custom OID | 2.23.140.1.5.2.3| emSign Organization-validated Strict SMIME Certificate</p></td>
+<td style="text-align: left;">Critical=FALSE</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>CPS | 1.3.6.1.4.1.50977.1.0.1| http://repository.emsign.com</p>
+<p>Custom OID | 2.23.140.1.5.2.3| emSign Organizationvalidated Strict SMIME Certificate</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -6614,9 +6296,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Key Usage</td>
-<td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature,</p>
-<p>keyEncipherment</p></td>
+<td style="text-align: left;">Critical=TRUE digitalSignature, keyEncipherment</td>
 </tr>
 <tr>
 <td style="text-align: left;">Basic Constraints</td>
@@ -6629,9 +6309,9 @@ No stipulation.
 
 <a id="emsign-organization-validated-multipurpose-smime-certificate"></a>
 
-## 11.16. emSign Organization-Validated Multipurpose SMIME Certificate
+## 11.16. emSign Organization-Validated Multipurpose SMIME Certificate 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -6649,36 +6329,36 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td style="text-align: left;"><p>SHA-256, SHA-384 or SHA-512 with RSA Encryption or</p>
+<p>ECDSA with SHA-256, SHA-384 or SHA-512</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid To</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Public Key</td>
-<td>As per Section 6.1.5.</td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Subject: CommonName</td>
@@ -6729,9 +6409,8 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>CPS | 1.3.6.1.4.1.50977.1.0.1|</p>
-<p>http://repository.emsign.com</p>
-<p>Custom OID | 2.23.140.1.5.2.2| emSign Organization-validated Multipurpose SMIME Certificate</p></td>
+<p>CPS | 1.3.6.1.4.1.50977.1.0.1| http://repository.emsign.com</p>
+<p>Custom OID | 2.23.140.1.5.2.2| emSign Organizationvalidated Multipurpose SMIME Certificate</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">CRL Distribution Points</td>
@@ -6752,9 +6431,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Key Usage</td>
-<td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature,</p>
-<p>keyEncipherment</p></td>
+<td style="text-align: left;">Critical=TRUE digitalSignature, keyEncipherment</td>
 </tr>
 <tr>
 <td style="text-align: left;">Basic Constraints</td>
@@ -6767,9 +6444,9 @@ No stipulation.
 
 <a id="emsign-sponsor-validated-multipurpose-smime-certificate"></a>
 
-## 11.17. emSign Sponsor -Validated Multipurpose SMIME Certificate
+## 11.17. emSign Sponsor -Validated Multipurpose SMIME Certificate 
 
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 38%" />
 <col style="width: 61%" />
@@ -6787,36 +6464,36 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Signature Algorithm</td>
-<td><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
+<td style="text-align: left;"><p>SHA-256, SHA-384 or SHA-512 with RSA Encryption or</p>
+<p>ECDSA with SHA-256, SHA-384 or SHA-512</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: CN</td>
-<td>&lt;Issuing CA Common Name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: O</td>
-<td>&lt;Issuing CA Organization name&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: OU</td>
-<td>&lt;Issuing CA Organization unit&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Issuer: C</td>
-<td>&lt;Issuing CA Country&gt;</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid From</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Valid To</td>
-<td>Start date expressed in UTC format</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
 </tr>
 <tr>
 <td style="text-align: left;">Public Key</td>
-<td>As per Section 6.1.5.</td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Subject: CommonName</td>
@@ -6878,8 +6555,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>CPS | 1.3.6.1.4.1.50977.1.0.1|</p>
-<p><a href="http://repository.emsign.com">http://repository.emsign.com</a></p>
+<p>CPS | 1.3.6.1.4.1.50977.1.0.1| <a href="http://repository.emsign.com/"><u>http://repository.emsign.com</u></a></p>
 <p>Custom OID | 2.23.140.1.5.3.3| emSign Sponsor-validated Multipurpose SMIME Certificate</p></td>
 </tr>
 <tr>
@@ -6901,9 +6577,7 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Key Usage</td>
-<td style="text-align: left;"><p>Critical=TRUE</p>
-<p>digitalSignature,</p>
-<p>keyEncipherment</p></td>
+<td style="text-align: left;">Critical=TRUE digitalSignature, keyEncipherment</td>
 </tr>
 <tr>
 <td style="text-align: left;">Basic Constraints</td>
@@ -6916,7 +6590,13 @@ No stipulation.
 
 <a id="subordinate-ca-certificates-issuer-intermediate-for-cross-sign-ca"></a>
 
-## 11.18. Subordinate CA Certificates (Issuer / Intermediate) for Cross sign CA
+## 11.18. Subordinate CA Certificates (Issuer / Intermediate) for Cross sign CA 
+
+| Version | V3 |
+|:---|----|
+| Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
+| Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
+| Issuer: CN | \<Issuing CA Common Name\> |
 
 <table>
 <colgroup>
@@ -6925,28 +6605,11 @@ No stipulation.
 </colgroup>
 <thead>
 <tr>
-<th style="text-align: left;">Version</th>
-<th style="text-align: left;">V3</th>
+<th style="text-align: left;">Issuer: O</th>
+<th style="text-align: left;">&lt;Issuing CA Organization name&gt;</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;">Serial Number</td>
-<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
-</tr>
-<tr>
-<td style="text-align: left;">Signature Algorithm</td>
-<td style="text-align: left;"><p>SHA‐256, SHA‐384 or SHA‐512 with RSA Encryption or</p>
-<p>ECDSA with SHA‐256, SHA‐384 or SHA‐512</p></td>
-</tr>
-<tr>
-<td style="text-align: left;">Issuer: CN</td>
-<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
-</tr>
-<tr>
-<td style="text-align: left;">Issuer: O</td>
-<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
-</tr>
 <tr>
 <td style="text-align: left;">Issuer: OU</td>
 <td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
@@ -6966,7 +6629,7 @@ No stipulation.
 <tr>
 <td style="text-align: left;">Public Key</td>
 <td style="text-align: left;"><p>RSA 4096 (OR) RSA 8192</p>
-<p>ECC curves NIST P‐256, P‐384, or P‐521</p></td>
+<p>ECC curves NIST P-256, P-384, or P-521</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Subject: CommonName</td>
@@ -6987,8 +6650,8 @@ No stipulation.
 </tr>
 <tr>
 <td style="text-align: left;">Enhanced Key Usage</td>
-<td style="text-align: left;"><p>In case the CA issues Server Authentication certificates:<br />
-Critical=FALSE</p>
+<td style="text-align: left;"><p>In case the CA issues Server Authentication certificates:</p>
+<p>Critical=FALSE</p>
 <p>Server Au thentication, Client Authentication</p>
 <p>In case the CA issues Code Signing certificates:</p>
 <p>Code Signing</p>
@@ -6997,15 +6660,19 @@ Critical=FALSE</p>
 <tr>
 <td style="text-align: left;">Certificate Policies</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>1. Policy ID = 1.3.6.1.4.1.50977.1.0.1, <a href="http://repository.emsign.com">http://repository.emsign.com</a><br />
-2. Policy ID = 1.3.6.1.4.1.50977.1.2.100 For DV SSL OR,<br />
-1.3.6.1.4.1.50977.1.2.110 For OV SSL OR,<br />
-1.3.6.1.4.1.50977.1.2.120 For EV SSL OR,<br />
-1.3.6.1.4.1.50977.1.2.200 For OV Code Signing<br />
-3. Policy ID = 2.23.140.1.2.1 For DV SSL OR,<br />
-2.23.140.1.2.2 For OV SSL OR,<br />
-2.23.140.1.1 For EV SSL OR,<br />
-2.23.140.1.4.1 For OV Code Signing</p></td>
+<ol type="1">
+<li><p>Policy ID = 1.3.6.1.4.1.50977.1.0.1, <a href="http://repository.emsign.com/"><u>http://repository.emsign.com</u></a></p></li>
+<li><p>Policy ID = 1.3.6.1.4.1.50977.1.2.100 For DV SSL OR,</p></li>
+</ol>
+<p>1.3.6.1.4.1.50977.1.2.110 For OV SSL OR,</p>
+<p>1.3.6.1.4.1.50977.1.2.120 For EV SSL OR,</p>
+<p>1.3.6.1.4.1.50977.1.2.200 For OV Code Signing</p>
+<ol start="3" type="1">
+<li><p>Policy ID = 2.23.140.1.2.1 For DV SSL OR,</p></li>
+</ol>
+<p>2.23.140.1.2.2 For OV SSL OR,</p>
+<p>2.23.140.1.1 For EV SSL OR,</p>
+<p>2.23.140.1.4.1 For OV Code Signing</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">Subject Key Identifier</td>
@@ -7025,9 +6692,8 @@ Critical=FALSE</p>
 <tr>
 <td style="text-align: left;">Authority Information access</td>
 <td style="text-align: left;"><p>Critical=FALSE</p>
-<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),<br />
-URL=http://ocsp-a.emSign.com (for IN location certificate) OR</p>
-<p>URL=http://ocsp-b.emSign.com (for US location certificate) OR</p>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR URL=http://ocsp-b.emSign.com (for US location certificate) OR</p>
 <p>URL=http://ocsp-c.emSign.com (for NL location certificate)</p></td>
 </tr>
 <tr>
@@ -7056,11 +6722,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - Key Archival sentence corrections to be in sync between section 4.12 and section 6.2.5
 
-- Root and Issuing CA Information and repository URL update in Section 4.3.1.1 and 4.3.1.2
-
-- CRL update frequency has been updated in line with BR specifications, in section 4.9.7
-
-- Root certificate and usage term reduced from 30 to 25 years, in Section 6.3.2.
+- Root and Issuing CA Information and repository URL update in Section 4.3.1.1 and 4.3.1.2 • CRL update frequency has been updated in line with BR specifications, in section 4.9.7 • Root certificate and usage term reduced from 30 to 25 years, in Section 6.3.2.
 
 - Explicit statement to limit subscriber certificates to 825 days, in Section 6.3.2.
 
@@ -7072,7 +6734,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - Domain Verification procedure for IP addresses & wildcard domain in Section 10.1, 10.2 and
 
-> 10.3 of Appendix A.
+10.3 of Appendix A.
 
 - CRL URL correction (special character) in all certificate profiles of Appendix B
 
@@ -7100,7 +6762,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - In section 6.5, information added for multi-factor authentication.
 
-- In Appendix A, the domain verification requirements under SSL-DV, SSL-OV and SSL-EV are updated to incorporate the following changes:
+In Appendix A, the domain verification requirements under SSL-DV, SSL-OV and SSL-EV are updated to incorporate the following changes:
 
 - As Domain Authorization Document is deprecated and not valid for processing after August 01, 2018 (as per Baseline Requirements), this provision is omitted.
 
@@ -7118,11 +6780,11 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - Inserted statement in section 1.5.1 “The changes in CP/CPS are also made based on review of latest Baseline Requirements of CA Browser Forum, as and when published, which may need the policy or practices to be amended.”
 
-> In section 4.9.1, amended the subscriber revocation statement to “Issuing CA shall revoke a Digital Certificate of Subscriber within 24 Hours when…”.
+In section 4.9.1, amended the subscriber revocation statement to “Issuing CA shall revoke a Digital Certificate of Subscriber within 24 Hours when…”.
 
 - In section 6.1.5, the conditional statement is removed, which was referring to 'SHA-1 usage subject to provisions allowed by Baseline Requirements’.
 
-- In section 6.3.2, the statement referring to 'applicability of 825 days with effect from 01-Mar2018’ is removed and made changes to generalize the definition with applicability of 825 days limit to Subscriber Certificates.
+- In section 6.3.2, the statement referring to 'applicability of 825 days with effect from 01Mar2018’ is removed and made changes to generalize the definition with applicability of 825 days limit to Subscriber Certificates.
 
 **Version 1.04: 09-Oct-2018**
 
@@ -7140,7 +6802,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - In section 10.7, 10.8 and 10.9 of Appendix A, the phrase ‘any other reliable means’ is removed under ‘Email Verification’.
 
-- In Section 10.1, 10.2 and 10.3 of Appendix A, the phrase ‘OR (iv) any other equivalent procedure, which proves the applicant’s right to use the IP’ is removed under ‘domain verification’.
+In Section 10.1, 10.2 and 10.3 of Appendix A, the phrase ‘OR (iv) any other equivalent procedure, which proves the applicant’s right to use the IP’ is removed under ‘domain verification’.
 
 - In section 3.2.1, added the sentence “emSign PKI shall not generate the key pairs for endentity certificates that have an EKU extension containing the KeyPurposeIds id-kp-serverAuth or anyExtendedKeyUsage.”
 
@@ -7154,7 +6816,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - New section 3.1.3 and 3.1.4 are inserted, and accordingly existing sections in that position are renumbered to 3.1.5, 3.1.6 and 3.1.7. These new sections are introduced to adhere to the structure of RFC 3647 on ‘anonymous or pseudonymous names’ and ‘Rules for interpreting various name forms’. This is a text addition to CP/CPS and there is no change in practice due to this effect. emSign practices prior to this change adhered to the definition given in these sections.
 
-> In section 1, it promises to adhere to latest CA Browser Forum requirements. For an easy reference, now the statement also contains the URL to CA Browser forum website, which helps the reader to navigate the same.
+In section 1, it promises to adhere to latest CA Browser Forum requirements. For an easy reference, now the statement also contains the URL to CA Browser forum website, which helps the reader to navigate the same.
 
 - Version number has been removed from header of all the pages, and retained in first page of the document, as a single point of reference.
 
@@ -7170,7 +6832,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - Heading text changes across the document in line with RFC, without change in the meaning. (eg: Section 1.1 heading changed from “Objective” to “Overview”)
 
-- Section 2 has been renumbered, and content has been suitably moved within the section. The obligations present in earlier version under this section has been taken out / moved under PKI participants section of Section 1.
+Section 2 has been renumbered, and content has been suitably moved within the section. The obligations present in earlier version under this section has been taken out / moved under PKI participants section of Section 1.
 
 - In Section 3, the old sub section 3.1.7 is merged to 3.1.6.
 
@@ -7272,7 +6934,7 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - In Section 1.1 (Overview), a statement has been added for SMIME Certificates which undertakes that the document may be due for explicit coverage of SMIME BR in each section, and would be done in the future course.
 
-- In Section 1.1 (Overview), the reference made to the document on code signing requirements by CA/Browser Forum, has been corrected to the proper title of “Baseline Requirements for the Issuance and Management of Publicly‐Trusted Code Signing Certificates”
+- In Section 1.1 (Overview), the reference made to the document on code signing requirements by CA/Browser Forum, has been corrected to the proper title of “Baseline Requirements for the Issuance and Management of Publicly-Trusted Code Signing Certificates”
 
 **Version 1.15: 17-Jun-2024**
 
@@ -7337,5 +6999,11 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 **Version 1.23: 28-November-2025**
 
 - In section 5.7.1 added a new sub-section 5.7.1.1, for the mass revocation plan.
+
+**Version 1.24: 10-July-2026**
+
+- In Section 1 updated the list of applicable standards, policies, and root program requirements.
+
+- In Section 4.9.10 updated in accordance with the CA/Browser Forum TLS Baseline Requirements.
 
 </div>
