@@ -1,12 +1,18 @@
-| **Policy Document Description** | **Date of Publication** | **Version** | **CP/CPS OID** |
-|---|---|---|---|
-| CERTIFICATE POLICY & CERTIFICATION PRACTICE STATEMENT (CP/CPS) FOR SSL/TLS CERTIFICATES | 24-July-2026 | Version 1.07 | 1.3.6.1.4.1.50977.1.0.1.1 |
+<div align="justify">
 
-# 1. Introduction
+| **Policy Document Description** | **Date of Publication** | **Version** | **CP/CPS OID** |
+|----|:--:|:--:|:--:|
+| CERTIFICATE POLICY & CERTIFICATION PRACTICE STATEMENT (CP/CPS) FOR SSL/TLS CERTIFICATES | 10-July-2026 | Version 1.06 | 1.3.6.1.4.1.50977.1.0.1.1 |
+
+<a id="introduction"></a>
+
+# 1. Introduction 
 
 eMudhra is a group, engaged in Digital Identity, Authentication and transaction management solutions globally. emSign PKI is part of eMudhra group, represented by eMudhra Inc., USA; CERTInext Inc., USA; eMudhra Limited, India; eMudhra Technologies Limited, India; eMudhra PTE Limited, Singapore; eMudhra DMCC, UAE; eMudhra BV, Netherlands; eMudhra Consumer Services Limited, India; P T eMudhra Technologies Indonesia, Indonesia; Cryptas International GmbH and its subsidiaries.
 
-## 1.1. Overview
+<a id="overview"></a>
+
+## 1.1. Overview 
 
 This emSign PKI (operating under the brand emSign) Certificate Policy and Certification Practice Statement (CP/CPS for Server Authentication) sets forth the principles, procedures, and practices employed by emSign PKI for the issuance, lifecycle management, and oversight of publicly trusted SSL/TLS (Server Authentication) certificates within the emSign PKI hierarchy.
 
@@ -14,51 +20,51 @@ In this document, the terms “emSign,” “emSign CA,” and “emSign PKI” 
 
 This CP/CPS is applicable to all entities having a defined relationship with the emSign PKI, including:
 
-1. Policy Authorities,
+1.  Policy Authorities,
 
-2. Certification Authorities (CAs),
+2.  Certification Authorities (CAs),
 
-3. Registration Authorities (RAs), 4. Subscribers, and
+3.  Registration Authorities (RAs), 4. Subscribers, and
 
-5. Relying Parties.
+5\. Relying Parties.
 
 Other parties, such as hosting providers, enterprise administrators, or technical integrators, may also perform functions related to certificate lifecycle management, such as issuance or revocation on behalf of Subscribers. In such cases, the principles, procedures, and practices contained in this document shall apply to such parties to the extent practicable, and they shall be held to the same compliance and liability standards as Subscribers, where applicable.
 
 This CP/CPS specifies the principles, procedures, and practices that the emSign PKI follows to conform to the following standards, guidelines, and root program requirements:
 
-1. RFC 3647 of the Internet Engineering Task Force (IETF):
+1.  RFC 3647 of the Internet Engineering Task Force (IETF):
 
-  - Framework for Certificate Policy and Certification Practice Statement structure.
+    - Framework for Certificate Policy and Certification Practice Statement structure.
 
-2. The latest versions (as on date of this CP/CPS) of the CA/Browser Forum Requirements (Ref: [https://cabforum.org):](https://cabforum.org/)
+2.  The latest versions (as on date of this CP/CPS) of the CA/Browser Forum Requirements (Ref: [https://cabforum.org):](https://cabforum.org/)
 
-  - Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates (TLS BR)
+    - Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates (TLS BR)
 
-  - Baseline Requirements for the Issuance and Management of Extended Validation (EV)
+    - Baseline Requirements for the Issuance and Management of Extended Validation (EV)
 
 Certificates
 
-  - Network and Certificate System Security Requirements
+- Network and Certificate System Security Requirements
 
-  - *(Note: While other CA/B Forum Baseline Requirements such as for S/MIME and Code Signing exist, they are out of scope for this SSL/TLS CP/CPS and are included here only for completeness and alignment of terminology)*
+- *(Note: While other CA/B Forum Baseline Requirements such as for S/MIME and Code Signing exist, they are out of scope for this SSL/TLS CP/CPS and are included here only for completeness and alignment of terminology)*
 
-3. WebTrust: Principles and Criteria for Certification Authorities, including:
+3.  WebTrust: Principles and Criteria for Certification Authorities, including:
 
-  - WebTrust: Principles and Criteria for Certification Authorities – Network Security
+    - WebTrust: Principles and Criteria for Certification Authorities – Network Security
 
-  - WebTrust: Principles and Criteria for Certification Authorities - TLS Baseline
+    - WebTrust: Principles and Criteria for Certification Authorities - TLS Baseline
 
-  - WebTrust: Principles and Criteria for Certification Authorities – Extended Validation TLS (where applicable)
+    - WebTrust: Principles and Criteria for Certification Authorities – Extended Validation TLS (where applicable)
 
-4. Adherence to the latest published version Root Program Requirements and CCADB policy of major relying party software providers:
+4.  Adherence to the latest published version Root Program Requirements and CCADB policy of major relying party software providers:
 
-  - Google Chrome Root Program Policy
+    - Google Chrome Root Program Policy
 
-  - Mozilla Root Store Policy
+    - Mozilla Root Store Policy
 
-  - Apple Root Certificate Program
+    - Apple Root Certificate Program
 
-  - Microsoft Root Certificate Program
+    - Microsoft Root Certificate Program
 
 If any inconsistency exists between this CP/CPS and aforesaid requirements, then the aforesaid Requirements take precedence over this CP/CPS.
 
@@ -70,19 +76,21 @@ All cross-certificates that form part of an established trust relationship are d
 
 Certain Issuing CAs operating under the emSign PKI hierarchy may publish their own CP/CPS applicable to the certificates they issue. Where such a downstream CP/CPS specifies operational, validation, or certificate-lifecycle requirements that differ from those stated in this document, the downstream CP/CPS shall govern the issuance of certificates under that Issuing CA. In no event shall any such downstream CP/CPS permit practices less stringent than those required by the CA/Browser Forum Baseline Requirements or other applicable industry standards referenced in this CP/CPS.
 
-## 1.2. Document Name and Identification
+<a id="document-name-and-identification"></a>
+
+## 1.2. Document Name and Identification 
 
 The OID for emSign PKI is an iso (1) identified-organization (3) dod (6) internet (1) private (4) enterprise
 
-(1) eMudhra Technologies Limited (50977) emSign PKI (1).
+\(1\) eMudhra Technologies Limited (50977) emSign PKI (1).
 
 This document is the emSign PKI Certificate Policy and Certification Practice Statement (CP/CPS) for SSL/TLS. The object identifier (OID) values corresponding to the emSign SSL/TLS CP/CPS are as follows:
 
-| **Entity / Certificate Policy** | **OID** |
-|---|---|
-| Organization | 1.3.6.1.4.1.50977 |
-| emSign PKI | 1.3.6.1.4.1.50977.1 |
-| emSign SSL CP/CPS | 1.3.6.1.4.1.50977.1.0.1.1 |
+| **Entity / Certificate Policy** | **OID**                   |
+|:--------------------------------|:--------------------------|
+| Organization                    | 1.3.6.1.4.1.50977         |
+| emSign PKI                      | 1.3.6.1.4.1.50977.1       |
+| emSign SSL CP/CPS               | 1.3.6.1.4.1.50977.1.0.1.1 |
 
 **Type of certificate**
 
@@ -90,13 +98,44 @@ The OID for Certificate Policies under emSign PKI is an iso (1) identified-organ
 
 emSign PKI organizes its OID arcs for the various Certificates described in this CP/CPS as follows:
 
-| **Type of Certificate** | **Policy OID** |
-|---|---|
-| SSL/TLS - Domain Validation | 2.23.140.1.2.1, 1.3.6.1.4.1.50977.1.2.100 |
-| SSL/TLS - Organization Validation | 2.23.140.1.2.2, 1.3.6.1.4.1.50977.1.2.110 |
-| SSL/TLS - Individual Validation | 2.23.140.1.2.3, 1.3.6.1.4.1.50977.1.2.115 |
-| SSL/TLS - Extended Validation | 2.23.140.1.1, 1.3.6.1.4.1.50977.1.2.120 |
-| OCSP Certificate | 1.3.6.1.4.1.50977.1.2.600 |
+<table style="width:81%;">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Type of Certificate</strong></th>
+<th style="text-align: left;"><strong>Policy OID</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">SSL/TLS - Domain Validation</td>
+<td style="text-align: left;"><p>2.23.140.1.2.1,</p>
+<p>1.3.6.1.4.1.50977.1.2.100</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">SSL/TLS - Organization Validation</td>
+<td style="text-align: left;"><p>2.23.140.1.2.2,</p>
+<p>1.3.6.1.4.1.50977.1.2.110</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">SSL/TLS - Individual Validation</td>
+<td style="text-align: left;"><p>2.23.140.1.2.3,</p>
+<p>1.3.6.1.4.1.50977.1.2.115</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">SSL/TLS - Extended Validation</td>
+<td style="text-align: left;"><p>2.23.140.1.1,</p>
+<p>1.3.6.1.4.1.50977.1.2.120</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">OCSP Certificate</td>
+<td style="text-align: left;">1.3.6.1.4.1.50977.1.2.600</td>
+</tr>
+</tbody>
+</table>
 
 This CP/CPS applies to any entity asserting one or more of the emSign OIDs identified above. When a
 
@@ -104,27 +143,31 @@ CA issues a Certificate containing one of the above-specified policy identifiers
 
 Subsequent revisions to this CP might contain new OID assignments for the certificate types identified above, or may be amended with new Certificate Types with corresponding new OIDs.
 
-## 1.3. PKI Participants
+<a id="pki-participants"></a>
 
-### 1.3.1. Certification Authorities
+## 1.3. PKI Participants 
+
+<a id="certification-authorities"></a>
+
+### 1.3.1. Certification Authorities 
 
 The term Certification Authority (CA) is a trusted third-party entity that issues Certificates and performs all of the functions associated with issuing such Certificates under this CP/CPS. emSign PKI performs the below functions:
 
-1. Perform tasks related to Public Key Infrastructure (PKI) functions, such as:
+1.  Perform tasks related to Public Key Infrastructure (PKI) functions, such as:
 
-    a. Certificate lifecycle management
+    1.  Certificate lifecycle management
 
-    b. Subscriber registration
+    2.  Subscriber registration
 
-    c. Certificate issuance
+    3.  Certificate issuance
 
-    d. Certificate renewal and/or rekeying
+    4.  Certificate renewal and/or rekeying
 
-    e. Certificate distribution (if applicable)
+    5.  Certificate distribution (if applicable)
 
-    f. Certificate revocation
+    6.  Certificate revocation
 
-2. Provide Certificate revocation information in the form of a Certificate Revocation List (CRL) distribution point and/or Online Certificate Status Protocol (OCSP) responder.
+2.  Provide Certificate revocation information in the form of a Certificate Revocation List (CRL) distribution point and/or Online Certificate Status Protocol (OCSP) responder.
 
 emSign PKI operates secure facilities in order to deliver CA services by itself and/or through infrastructure, personnel and other resources of eMudhra.
 
@@ -132,27 +175,29 @@ The emSign PKI also issues certificates to issuing CAs and subordinate CAs. All 
 
 Obligations of the CAs within the emSign PKI include:
 
-  - Generating, issuing and distributing public key certificates.
+- Generating, issuing and distributing public key certificates.
 
-  - Distributing CA certificates.
+- Distributing CA certificates.
 
-  - Generating and publishing certificate status information (such as CRLs).
+- Generating and publishing certificate status information (such as CRLs).
 
-  - Maintaining the security, availability, and continuity of the certificate issuance and CRL.
+- Maintaining the security, availability, and continuity of the certificate issuance and CRL.
 
-  - signing functions.
+- signing functions.
 
-  - Providing a means for Subscribers to request revocation.
+- Providing a means for Subscribers to request revocation.
 
-  - Revoking public-key certificates.
+- Revoking public-key certificates.
 
-  - Periodically demonstrating internal or external audited compliance with this CP/CPS.
+- Periodically demonstrating internal or external audited compliance with this CP/CPS.
 
 Issuing Certification Authorities (Issuing CAs) under the emSign PKI are operated solely by emSign or by entities that are controlled by emSign or eMudhra. Third-party organizations are not permitted to operate Issuing CAs for publicly trusted SSL/TLS certificate issuance. Issuing CAs are required to act in accordance with their respective Issuing CA Agreements and are bound by the terms of this CP/CPS and applicable industry requirements. Limited functions such as identity validation may be delegated under formal agreements. Issuing CAs may be authorized to issue and manage SSL/TLS certificates as defined in this CP/CPS. All operations are subject to emSign PKI oversight and compliance obligations.
 
 Issuing CAs, if authorized by emSign PKI, may utilize third-party Registration Authorities (RAs) to perform Subscriber identification and domain validation in accordance with this CP/CPS. The Issuing CA remains fully responsible and liable for all validation activities performed by such RAs. All thirdparty RAs must operate under formal agreements, follow applicable industry requirements, and remain under the oversight of emSign PKI.
 
-### 1.3.2. Registration Authorities
+<a id="registration-authorities"></a>
+
+### 1.3.2. Registration Authorities 
 
 A Registration Authority (RA) is an entity that performs identification and authentication of certificate applicants, initiates or forwards revocation requests, and approves applications for renewal or rekeying of certificates on behalf of emSign CA.
 
@@ -172,7 +217,9 @@ emSign PKI may enter into contractual relationships with authorized entities to 
 
 emSign also can act as a RA for the certificates it directly issues.
 
-### 1.3.3. Subscribers
+<a id="subscribers"></a>
+
+### 1.3.3. Subscribers 
 
 Subscribers include all end users consisting of natural persons and/or legal entities that successfully apply for the certificate and receive it. Prior to verification of identity and issuance of a Certificate, a Subscriber is an Applicant.
 
@@ -206,7 +253,9 @@ Obligations of Subscribers within the emSign PKI include:
 
 When using automated mechanisms such as ACME clients, emSign CERTInext, or emSign APIs for requesting, renewing, or revoking certificates, the Subscriber remains fully responsible for secure key management and adherence to the requirements of this CP/CPS. The use of such automation does not waive or reduce the Subscriber’s obligations regarding identity accuracy, private key protection, or timely revocation reporting.
 
-### 1.3.4. Relying Parties
+<a id="relying-parties"></a>
+
+### 1.3.4. Relying Parties 
 
 A Relying Party is an individual or entity that acts in reliance of a TLS certificate issued by an emSign CA. A Relying Party may or may not be a Subscriber of emSign certificates.
 
@@ -226,7 +275,9 @@ Obligations of Relying Parties within the emSign PKI include:
 
 All obligations within this section relate to Reasonable Reliance on the validity of a Digital Signature, not the accuracy of the underlying electronic record. A Relying Party must exercise Reasonable Reliance as set out in this section. This CP/CPS does not require a Certificate Holder to ensure that potential relying parties are compliant with the relying party obligations.
 
-### 1.3.5. Other Participants
+<a id="other-participants"></a>
+
+### 1.3.5. Other Participants 
 
 Other participants may include bridge CAs and CAs that cross-certify Issuing CAs to provide trust among other PKI communities.
 
@@ -234,17 +285,23 @@ emSign Roots and Subordinate CAs shall not cross-certify or bridge any third-par
 
 party CA would derive SSL/TLS issuing capabilities under the emSign PKI hierarchy.
 
-#### 1.3.5.1. emSign CERTInext Enterprise and Partner Accounts
+<a id="emsign-certinext-enterprise-and-partner-accounts"></a>
+
+#### 1.3.5.1. emSign CERTInext Enterprise and Partner Accounts 
 
 Participants within the emSign PKI ecosystem may include authorized entities using the emSign CERTInext platform, such as Enterprise account holders and Partners. These participants may initiate or manage certificate requests through web portals or APIs for their own organizational needs or on behalf of end-user Subscribers. All such activities are performed under emSign’s control, and these entities do not operate as Certification Authorities (CAs) or Registration Authorities (RAs).
 
 Enterprise account holders may streamline certificate lifecycle actions (including request, renewal, and revocation) within the boundaries of pre-approved identity and domain validations. Partners are permitted to request certificates for their clients subject to prior authorization and must comply with all applicable agreements and this CP/CPS. emSign PKI retains full responsibility for validation, issuance, and auditability of these interactions.
 
-## 1.4. Certificate Usage
+<a id="certificate-usage"></a>
+
+## 1.4. Certificate Usage 
 
 A digital certificate enables individuals or entities to prove their identity in electronic transactions to other participants in such transactions.
 
-### 1.4.1. Appropriate Certificate Uses
+<a id="appropriate-certificate-uses"></a>
+
+### 1.4.1. Appropriate Certificate Uses 
 
 Certificates issued under this CP/CPS are intended solely for use in TLS Server Authentication (idkpserverAuth, OID 1.3.6.1.5.5.7.3.1), as indicated by the Key Usage and Extended Key Usage (EKU) extensions included in the certificate.
 
@@ -266,55 +323,59 @@ The Subscriber must ensure that each certificate is used solely for its intended
 
 This section defines the intended technical usage of certificates as governed by their certificate profile and extensions. It does not constitute a representation or guarantee of fitness for a particular purpose. Assurance levels vary based on certificate type and are subject to applicable validation procedures and the Subscriber Agreement.
 
-### 1.4.2. Prohibited Applications and Certificate Uses
+<a id="prohibited-applications-and-certificate-uses"></a>
+
+### 1.4.2. Prohibited Applications and Certificate Uses 
 
 emSign certificates shall not be used for any purpose that is inconsistent with their stated Key Usage or Extended Key Usage (EKU) extensions or outside the scope defined in this CP/CPS and associated certificate profile.
 
 Prohibited uses include, but are not limited to, the following:
 
-1. Use inconsistent with certificate extensions: Any use of the certificate that exceeds the technical purposes indicated by the Key Usage or Extended Key Usage extensions (e.g., using a TLS certificate for code signing or S/MIME).
+1.  Use inconsistent with certificate extensions: Any use of the certificate that exceeds the technical purposes indicated by the Key Usage or Extended Key Usage extensions (e.g., using a TLS certificate for code signing or S/MIME).
 
-2. Exceeding reliance limits: Any use that exceeds the designated reliance limits as specified in the emSign Warranty or Subscriber Agreement.
+2.  Exceeding reliance limits: Any use that exceeds the designated reliance limits as specified in the emSign Warranty or Subscriber Agreement.
 
-3. Use in high-risk environments: Use of certificates for control or operation of systems where failure could result in death, personal injury, or severe environmental harm, including but not limited to:
+3.  Use in high-risk environments: Use of certificates for control or operation of systems where failure could result in death, personal injury, or severe environmental harm, including but not limited to:
 
-  - Nuclear facilities
+    - Nuclear facilities
 
-  - Aircraft navigation or communication systems
+    - Aircraft navigation or communication systems
 
-  - Life support or medical devices
+    - Life support or medical devices
 
-  - Critical infrastructure or fail-safe systems
+    - Critical infrastructure or fail-safe systems
 
-4. Use in unlawful or harmful activities: Use of certificates in connection with or to facilitate illegal or harmful conduct, including but not limited to:
+4.  Use in unlawful or harmful activities: Use of certificates in connection with or to facilitate illegal or harmful conduct, including but not limited to:
 
-  - Fraud
+    - Fraud
 
-  - Pornography or child sexual abuse material (CSAM)
+    - Pornography or child sexual abuse material (CSAM)
 
-  - Obscenity
+    - Obscenity
 
-  - Defamation or harassment
+    - Defamation or harassment
 
-  - Hate speech
+    - Hate speech
 
-  - Any activity contrary to public policy or applicable law
+    - Any activity contrary to public policy or applicable law
 
-5. Man-in-the-middle (MITM) or unauthorized interception: Use of certificates for MITM attacks or inspection of encrypted traffic involving domains or IP addresses not legitimately owned or controlled by the Subscriber is strictly prohibited.
+5.  Man-in-the-middle (MITM) or unauthorized interception: Use of certificates for MITM attacks or inspection of encrypted traffic involving domains or IP addresses not legitimately owned or controlled by the Subscriber is strictly prohibited.
 
-6. Certificate misuse by role:
+6.  Certificate misuse by role:
 
-  - End-entity certificates must not be used to issue other certificates or act as a Certification Authority (CA).
+    - End-entity certificates must not be used to issue other certificates or act as a Certification Authority (CA).
 
-  - CA certificates must not be used to perform end-entity functions, such as document signing or server authentication.
+    - CA certificates must not be used to perform end-entity functions, such as document signing or server authentication.
 
-7. Violation of laws or regulations: Use of certificates must comply with all applicable laws, statutes, regulations, court orders, and governmental mandates.
+7.  Violation of laws or regulations: Use of certificates must comply with all applicable laws, statutes, regulations, court orders, and governmental mandates.
 
 emSign certificates do not guarantee that the Subject is reputable, trustworthy, or operating a secure system, nor do they imply that the device or software where the certificate is installed is free from defect, malware, or vulnerabilities.
 
 The Key Usage and Extended Key Usage extensions are intended to technically enforce permitted usage. All Subscribers and relying parties must ensure that certificates are only used for the designated purposes, consistent with applicable agreements and this CP/CPS.
 
-## 1.5. Policy Administration
+<a id="policy-administration"></a>
+
+## 1.5. Policy Administration 
 
 These emSign PKI policies are administered by emSign Policy Authority.
 
@@ -330,7 +391,9 @@ Obligations of the emSign PKI Policy Authority include:
 
 - Remaining current regarding security threats and ensuring that appropriate actions are taken to counteract significant threats.
 
-### 1.5.1. Organization Administering the Document
+<a id="organization-administering-the-document"></a>
+
+### 1.5.1. Organization Administering the Document 
 
 emSign PKI Policy Authority can be contacted at the following address:
 
@@ -346,11 +409,13 @@ Bangalore - 562149, Karnataka, India
 
 Phone: +91 80 48484090
 
-Email: info@emsign.com
+Email: <u>info@emsign.com</u>
 
-Website: [www.emsign.com](http://www.emsign.com/)
+Website: [<u>www.emsign.com</u>](http://www.emsign.com/)
 
-### 1.5.2. Contact Person
+<a id="contact-person"></a>
+
+### 1.5.2. Contact Person 
 
 emSign PKI Policy Director can be contacted at the following address:
 
@@ -366,33 +431,43 @@ Bangalore - 562149, Karnataka, India
 
 Phone: +91 80 48484090
 
-Email: info@emsign.com
+Email: <u>info@emsign.com</u>
 
-Website: [www.emsign.com](http://www.emsign.com/)
+Website: [<u>www.emsign.com</u>](http://www.emsign.com/)
 
-### 1.5.3. Certificate Problem Reporting
+<a id="certificate-problem-reporting"></a>
+
+### 1.5.3. Certificate Problem Reporting 
 
 To report problems with a certificate issued by emSign or request revocation, parties may contact emSign or use one of the supported automated mechanisms.
 
-#### 1.5.3.1. Email Contact
+<a id="email-contact"></a>
+
+#### 1.5.3.1. Email Contact 
 
 Certificate-related issues such as key compromise, certificate misuse, or suspected fraudulent issuance may be reported via email:
 
 Attn: Revocation Support
 
-Email: problem-reporting@emsign.com
+Email: <u>problem-reporting@emsign.com</u>
 
-#### 1.5.3.2. CERTInext Portal
+<a id="certinext-portal"></a>
+
+#### 1.5.3.2. CERTInext Portal 
 
 Subscribers, partners, and authorized users may initiate certificate revocation requests through the emSign CERTInext Portal using the certificate management dashboard that is available via Login using:
 
-URL: [https://www.emsign.com](https://www.emsign.com/)
+URL: [<u>https://www.emsign.com</u>](https://www.emsign.com/)
 
-#### 1.5.3.3. Enterprise API / Partner Integrations
+<a id="enterprise-api-partner-integrations"></a>
+
+#### 1.5.3.3. Enterprise API / Partner Integrations 
 
 Enterprise customers and authorized partners integrated with emSign via secure APIs may submit certificate revocation requests programmatically. API access must be pre-authorized and authenticated in accordance with the emSign API Specifications.
 
-#### 1.5.3.4. ACME revokeCert Endpoint
+<a id="acme-revokecert-endpoint"></a>
+
+#### 1.5.3.4. ACME revokeCert Endpoint 
 
 For ACME-enabled accounts, certificate revocation may also be requested using the ACME revokeCert method if the Subscriber is in possession of the corresponding private key.
 
@@ -402,17 +477,25 @@ RevokeCert Endpoint: https://acme.emsign.com/v1/acme/revokeCert
 
 emSign authenticates all revocation requests based on the requester’s identity and relationship to the certificate. Requests submitted through trusted channels by Subscribers or Subject Organizations are verified using registered credentials or account-based validation. Requests from third parties may undergo additional investigation or corroboration prior to revocation. All revocation requests and corresponding actions are logged and processed in accordance with this CP/CPS.
 
-### 1.5.4. Person Determining CP/CPS Suitability for the Policy
+<a id="person-determining-cpcps-suitability-for-the-policy"></a>
+
+### 1.5.4. Person Determining CP/CPS Suitability for the Policy 
 
 The CP/CPS suitability for the functions and uses of participants is decided by the Policy Authority of emSign PKI. The Policy Authority consists of representatives from executive management, PKI operations and legal.
 
-### 1.5.5. CPS Approval Procedures
+<a id="cps-approval-procedures"></a>
+
+### 1.5.5. CPS Approval Procedures 
 
 The CP/CPS shall be reviewed and updated by emSign at least annually, or more frequently as needed to reflect changes in applicable standards, policies, or operational practices. All changes are subject to approval by the emSign Policy Authority. Updates may be initiated in response to new or revised CA/Browser Forum Baseline Requirements, root store policies, or other compliance obligations that require corresponding modifications to the CP or CPS.
 
-## 1.6. Definitions & Acronyms
+<a id="definitions-acronyms"></a>
 
-### 1.6.1. Definitions
+## 1.6. Definitions & Acronyms 
+
+<a id="definitions"></a>
+
+### 1.6.1. Definitions 
 
 **Affiliate**: A corporation, partnership, joint venture or other entity controlling, controlled by, or under common control with another entity, or an agency, department, political subdivision, or any entity operating under the direct control of a Government Entity.
 
@@ -434,7 +517,7 @@ The CP/CPS shall be reviewed and updated by emSign at least annually, or more fr
 
 **Base Domain Name:** The portion of an applied for FQDN that is the first domain name node left of a registry controlled or public suffix plus the registry controlled or public suffix (e.g. "example.co.uk" or "example.com"). For FQDNs where the right most domain name node is a gTLD having ICANN Specification 13 in its registry agreement, the gTLD itself may be used as the Base Domain Name.
 
-**Baseline Requirements (BR)**: Means the CA/Browser Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, published a[thttps://www.cabforum.org](https://www.cabforum.org/)
+**Baseline Requirements (BR)**: Means the CA/Browser Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, published a[t <u>https://www.cabforum.org</u>](https://www.cabforum.org/)
 
 **Basic Constraints**: Means an extension that specifies whether the subject of the Certificate may act as a CA or only as an end-entity
 
@@ -500,9 +583,9 @@ Publication of CAA Resource Records allows a public Certification Authority to i
 
 **Enterprise RA**: An employee or agent of an organization unaffiliated with the CA who authorizes issuance of Certificates to that organization.
 
-**EV Code Signing Certificate**: CA/Browser Forum Guidelines for the Issuance and Management of Extended Validation Certificates published at [https://www.cabforum.org](https://www.cabforum.org/)
+**EV Code Signing Certificate**: CA/Browser Forum Guidelines for the Issuance and Management of Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](https://www.cabforum.org/)
 
-**EV Guidelines (EVG)**: CA/Browser Forum Guidelines for the Issuance and Management of Extended Validation Certificates published at [https://www.cabforum.org](https://www.cabforum.org/)
+**EV Guidelines (EVG)**: CA/Browser Forum Guidelines for the Issuance and Management of Extended Validation Certificates published at [<u>https://www.cabforum.org</u>](https://www.cabforum.org/)
 
 **Expiry Date**: The “Not After” date in a Certificate that defines the end of a Certificate’s validity period.
 
@@ -574,7 +657,7 @@ Online Channel: Refers to emSign's online platforms such as CERTInext, ACME, API
 
 **Reserved IP Address**: An IPv4 or IPv6 address that the IANA has marked as reserved:
 
-[http://www.iana.org/assignments/ipv4-address-](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml)[space/ipv4-address-](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml)[space.xml](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml)[http://www.iana.org/assignments/ipv6-address-](http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml)[space/ipv6-address-](http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml)[space.xml](http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml)
+[<u>http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml</u>](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml) [<u>http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml</u>](http://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xml)
 
 **Root CA System**: Means a system used to create a Root Certificate or to generate, store, or sign with the Private Key associated with a Root Certificate.
 
@@ -624,74 +707,80 @@ Online Channel: Refers to emSign's online platforms such as CERTInext, ACME, API
 
 **X.509**: Means the ITU-T standard for Certificates and their corresponding authentication framework
 
-### 1.6.2. Acronyms
+<a id="acronyms"></a>
 
-| **#** | **Acronyms** | **Meaning** |
-|---|---|---|
+### 1.6.2. Acronyms 
 
-| 1 | ACME | Automated Certificate Management Environment |
-|---|---|---|
-| 2 | AICPA | American Institute of Certified Public Accountants |
-| 3 | API | Application Programming Interface |
-| 4 | CA | Certification Authority |
-| 5 | CAA | Certification Authority Authorization |
-| 6 | CABF | CA/Browser Forum |
-| 7 | ccTLD | Country Code Top-Level Domain |
-| 8 | CICA | Canadian Institute of Chartered Accountants |
-| 9 | CP | Certificate Policy |
-| 10 | CPS | Certification Practice Statement |
-| 11 | CRL | Certificate Revocation List |
-| 12 | CSR | Certificate Signing Request |
-| 13 | DBA | Doing Business As |
-| 14 | DBA | Database Administrator |
-| 15 | DN | Distinguished Names |
-| 16 | DNS | Domain Name System |
-| 17 | DSA | Digital Signature Algorithm |
-| 18 | DV | Domain Validated |
-| 19 | ECDSA | Elliptic Curve Digital Signature Algorithm |
-| 20 | EKU | Extended Key Usage |
-| 21 | EV | Extended Validation |
-| 22 | FIPS | (US Government) Federal Information Processing Standard |
-| 23 | FQDN | Fully-Qualified Domain Name |
-| 24 | GET | Get Everything Transmitted |
-| 25 | HTTP | Hypertext Transfer Protocol |
-| 26 | IANA | Internet Assigned Numbers Authority |
-| 27 | ICANN | Internet Corporation for Assigned Names and Numbers |
-| 28 | IDN | Internationalized domain names |
-| 29 | IDS | Intrusion Detection System |
-| 30 | IETF | Internet Engineering Task Force |
-| 31 | IPS | Intrusion Prevention System |
-| 32 | ISO | International Organization for Standardization |
-| 33 | MITM | Man-in-the-middle |
-| 34 | MPIC | Multi-Perspective Issuance Corroboration |
-| 35 | NIST | National Institute of Standards and Technology (USA) |
-| 36 | NTP | Network Time Protocol |
-| 37 | OCSP | Online Certificate Status Protocol |
-| 38 | OID | Object Identifier |
-| 39 | OV | Organization Validated |
-| 40 | PKI | Public Key Infrastructure |
-| 41 | POST | Power-On Self-Test |
-| 42 | PQC | Post Quantum Cryptography |
-| 43 | PSL | public suffix list |
-| 44 | RA | Registration Authority |
-| 45 | RSA | Rivest Shamir Adleman |
-| 46 | SMIME | Secure MIME (Multipurpose Internet Mail Extensions) |
-| 47 | SAN | Subject Alternative Name |
-| 48 | SOA | Statement of Applicability |
-| 49 | SSL | Secure Sockets Layer |
-| 50 | TLS | Transport Layer Security |
-| 51 | TSA | Time Stamp Authority |
-| 52 | URL | Uniform Resource Locator |
-| 53 | UTC | Coordinated Universal Time |
-| 54 | VESDA | Very Early Smoke Detection Appliance |
+| **\#** | **Acronyms** | **Meaning** |
+|--------|--------------|-------------|
 
-# 2. Publication and Repository Responsibilities
+|  1  | ACME  | Automated Certificate Management Environment            |
+|:---:|:------|:--------------------------------------------------------|
+|  2  | AICPA | American Institute of Certified Public Accountants      |
+|  3  | API   | Application Programming Interface                       |
+|  4  | CA    | Certification Authority                                 |
+|  5  | CAA   | Certification Authority Authorization                   |
+|  6  | CABF  | CA/Browser Forum                                        |
+|  7  | ccTLD | Country Code Top-Level Domain                           |
+|  8  | CICA  | Canadian Institute of Chartered Accountants             |
+|  9  | CP    | Certificate Policy                                      |
+| 10  | CPS   | Certification Practice Statement                        |
+| 11  | CRL   | Certificate Revocation List                             |
+| 12  | CSR   | Certificate Signing Request                             |
+| 13  | DBA   | Doing Business As                                       |
+| 14  | DBA   | Database Administrator                                  |
+| 15  | DN    | Distinguished Names                                     |
+| 16  | DNS   | Domain Name System                                      |
+| 17  | DSA   | Digital Signature Algorithm                             |
+| 18  | DV    | Domain Validated                                        |
+| 19  | ECDSA | Elliptic Curve Digital Signature Algorithm              |
+| 20  | EKU   | Extended Key Usage                                      |
+| 21  | EV    | Extended Validation                                     |
+| 22  | FIPS  | (US Government) Federal Information Processing Standard |
+| 23  | FQDN  | Fully-Qualified Domain Name                             |
+| 24  | GET   | Get Everything Transmitted                              |
+| 25  | HTTP  | Hypertext Transfer Protocol                             |
+| 26  | IANA  | Internet Assigned Numbers Authority                     |
+| 27  | ICANN | Internet Corporation for Assigned Names and Numbers     |
+| 28  | IDN   | Internationalized domain names                          |
+| 29  | IDS   | Intrusion Detection System                              |
+| 30  | IETF  | Internet Engineering Task Force                         |
+| 31  | IPS   | Intrusion Prevention System                             |
+| 32  | ISO   | International Organization for Standardization          |
+| 33  | MITM  | Man-in-the-middle                                       |
+| 34  | MPIC  | Multi-Perspective Issuance Corroboration                |
+| 35  | NIST  | National Institute of Standards and Technology (USA)    |
+| 36  | NTP   | Network Time Protocol                                   |
+| 37  | OCSP  | Online Certificate Status Protocol                      |
+| 38  | OID   | Object Identifier                                       |
+| 39  | OV    | Organization Validated                                  |
+| 40  | PKI   | Public Key Infrastructure                               |
+| 41  | POST  | Power-On Self-Test                                      |
+| 42  | PQC   | Post Quantum Cryptography                               |
+| 43  | PSL   | public suffix list                                      |
+| 44  | RA    | Registration Authority                                  |
+| 45  | RSA   | Rivest Shamir Adleman                                   |
+| 46  | SMIME | Secure MIME (Multipurpose Internet Mail Extensions)     |
+| 47  | SAN   | Subject Alternative Name                                |
+| 48  | SOA   | Statement of Applicability                              |
+| 49  | SSL   | Secure Sockets Layer                                    |
+| 50  | TLS   | Transport Layer Security                                |
+| 51  | TSA   | Time Stamp Authority                                    |
+| 52  | URL   | Uniform Resource Locator                                |
+| 53  | UTC   | Coordinated Universal Time                              |
+| 54  | VESDA | Very Early Smoke Detection Appliance                    |
 
-## 2.1. Repositories
+<a id="publication-and-repository-responsibilities"></a>
+
+# 2. Publication and Repository Responsibilities 
+
+<a id="repositories"></a>
+
+## 2.1. Repositories 
 
 The emSign PKI online repository is available at:
 
-[https://repository.emsign.com](https://repository.emsign.com/)
+[<u>https://repository.emsign.com</u>](https://repository.emsign.com/)
 
 The repository ensures that emSign PKI’s Root Certificates, publicly trusted Subordinate CA Certificates, and revocation data (CRLs and/or OCSP responses) are available 24 hours a day, 7 days a week, with a minimum availability of 99.5% annually, excluding scheduled maintenance downtime not exceeding 0.5% per year.
 
@@ -709,7 +798,9 @@ Repository Responsibilities Include:
 
 - Publishing applicable Subscriber and Relying Party Agreements
 
-## 2.2. Publication of Certificate Information
+<a id="publication-of-certificate-information"></a>
+
+## 2.2. Publication of Certificate Information 
 
 emSign and other Issuer CAs shall make the following information publicly accessible on the web:
 
@@ -727,29 +818,41 @@ emSign and other Issuer CAs shall make the following information publicly access
 
 Pointers to repository information in CA and end entity Certificates shall only contain valid Uniform Resource Identifiers (URIs) that are accessible by relying parties.
 
-## 2.3. Time or Frequency of Publication
+<a id="time-or-frequency-of-publication"></a>
+
+## 2.3. Time or Frequency of Publication 
 
 emSign and other Issuer CA shall publish CA certificates and revocation data as soon as possible after issuance.
 
 CAs shall publish new or modified versions of CP/CPS within seven days of their approval. The CP/CPS is subjected to minimum of one annual review, even if there are no external factors influencing the changes in CP/CPS. Such review shall amend the version and date of publication of CP/CPS, as approved by Policy Authority.
 
-## 2.4. Access Controls on Repository
+<a id="access-controls-on-repository"></a>
+
+## 2.4. Access Controls on Repository 
 
 The information published in the emSign PKI online repository is publicly accessible and provided with unrestricted, read-only access. This includes CA certificates, CRLs, CP/CPS documents, and Subscriber and Relying Party Agreements.
 
 emSign has implemented appropriate logical and physical safeguards to prevent unauthorized modification, insertion, or deletion of repository content. Only duly authorized personnel may manage repository contents, ensuring the integrity, authenticity, and availability of published information at all times.
 
-# 3. Identification and Authentication
+<a id="identification-and-authentication"></a>
+
+# 3. Identification and Authentication 
 
 emSign issues different types of SSL/TLS certificates, and the verification process depends on the type of certificate being requested. Before issuance, relevant checks are performed to confirm domain ownership, verify organization details, and validate the authority of the requester where applicable. These identification and authentication activities are carried out either by emSign or by Registration Authorities authorized by emSign, following the requirements defined in this CP/CPS.
 
-## 3.1. Naming
+<a id="naming"></a>
 
-### 3.1.1. Types of Names
+## 3.1. Naming 
+
+<a id="types-of-names"></a>
+
+### 3.1.1. Types of Names 
 
 All names included in SSL/TLS certificates issued by emSign PKI conform to X.500 and X.501 Distinguished Name (DN) standards. The Subject field is populated according to the applicable certificate profile and is used to identify the certificate subscriber. The specific DN attributes included may vary based on the certificate type and profile but are never left empty.
 
-### 3.1.2. Need for Names to be Meaningful
+<a id="need-for-names-to-be-meaningful"></a>
+
+### 3.1.2. Need for Names to be Meaningful 
 
 All certificates issued under this CP/CPS whether for Root CAs, Issuing CAs, or end-entity Subscribers contain Subject Distinguished Names (DNs) that are meaningful and conform to X.500/X.501 and RFC 5280 standards.
 
@@ -759,57 +862,81 @@ For Root and Issuing CA certificates, the Subject DN identifies the CA entity an
 
 Requests involving internationalized domain names (IDNs) are subject to additional review and risk analysis before certificate issuance.
 
-### 3.1.3. Anonymity or Pseudonymity of Subscribers
+<a id="anonymity-or-pseudonymity-of-subscribers"></a>
+
+### 3.1.3. Anonymity or Pseudonymity of Subscribers 
 
 CA and subscriber certificates shall not contain anonymous or pseudonymous identities.
 
-### 3.1.4. Rules for Interpreting Various Name Forms
+<a id="rules-for-interpreting-various-name-forms"></a>
+
+### 3.1.4. Rules for Interpreting Various Name Forms 
 
 Distinguished Names in Certificates are interpreted using X.500 standards and ASN.1 syntax. For URIs and HTTP References, refer RFC 2253 and 2616 for further information on how X.500 distinguished names in certificates are interpreted.
 
-### 3.1.5. Uniqueness of Names
+<a id="uniqueness-of-names"></a>
+
+### 3.1.5. Uniqueness of Names 
 
 Each certificate issued by emSign under this CP/CPS includes a unique serial number generated using a cryptographically secure random process. While the Subject Distinguished Name (DN) may be reused across multiple certificates for the same Subscriber, the domain names listed in the subjectAlternativeName extension are validated for control by the Subscriber. Domain name uniqueness is inherently managed by ICANN as part of the global DNS infrastructure.
 
-### 3.1.6. Recognition, Authentication, and Role of Trademarks
+<a id="recognition-authentication-and-role-of-trademarks"></a>
+
+### 3.1.6. Recognition, Authentication, and Role of Trademarks 
 
 emSign requires that Certificate Applicants avoid including names in their certificate requests that may infringe upon the intellectual property rights of others. While emSign evaluates subject information in line with applicable certificate validation requirements, it does not independently assess trademark ownership, nor does it adjudicate disputes related to trademarks, service marks, or trade names.
 
 If emSign becomes aware of a potential rights conflict, it reserves the right to deny or revoke a certificate application to protect the integrity of the PKI. In the case of Extended Validation (EV) SSL/TLS Certificates, any subject information containing an organization’s name, trade name, or related identifiers is verified through documented processes as specified in this CP/CPS and aligned with EV SSL/TLS Certificate guidelines of CAB Forum.
 
-## 3.2. Initial Identity Validation
+<a id="initial-identity-validation"></a>
+
+## 3.2. Initial Identity Validation 
 
 emSign PKI, through its Issuing CAs or authorized Registration Authorities, validates the identity of Applicants prior to issuing SSL/TLS certificates. For domain validation, emSign uses methods approved under the CA/Browser Forum Baseline Requirements, such as DNS record verification, HTTP file-based validation, and CAA record checking. For Organization Validated (OV) and Extended Validation (EV) certificates, emSign verifies the legal existence, identity, and operational presence of the Applicant using trusted government records or qualified information sources. Reuse of validated Applicant information is permitted only when associated with a verified account and if the information remains current and within the validity period defined by this CP/CPS. Identity validation procedures may be revised to meet updated policy, compliance, or legal obligations.
 
-### 3.2.1. Method to Prove Possession of Private Key
+<a id="method-to-prove-possession-of-private-key"></a>
+
+### 3.2.1. Method to Prove Possession of Private Key 
 
 For SSL/TLS certificates, the Applicant must demonstrate control of the private key corresponding to the public key in the certificate request. This is typically done by submitting a PKCS#10 Certificate Signing Request (CSR) that is signed using the private key. Other industry-approved methods may be used, subject to emSign PKI’s validation and approval.
 
 emSign PKI does not generate key pairs for end-entity SSL/TLS certificates that include the idkpserverAuth or anyExtendedKeyUsage EKU values. The Subscriber is responsible for secure key generation and protection. This ensures the Subscriber maintains sole control over the private key, as required by the CA/Browser Forum Baseline Requirements.
 
-### 3.2.2. Authentication of Organization Identity
+<a id="authentication-of-organization-identity"></a>
+
+### 3.2.2. Authentication of Organization Identity 
 
 If a Certificate asserts the identity of an Organization, emSign or its authorized Registration Authorities shall validate the organization’s legal name, address, and existence using reliable third-party sources such as government business registries. Operational existence may also be confirmed as applicable. All validations are conducted in accordance with the certificate type and procedures outlined in Appendix
 
 A.
 
-### 3.2.3. Authentication of Individual Identity
+<a id="authentication-of-individual-identity"></a>
+
+### 3.2.3. Authentication of Individual Identity 
 
 If a Certificate asserts the identity of an individual, emSign or its authorized Registration Authorities shall validate the individual's name and identity using reliable government-issued photo identification and trusted data sources. The specific procedures followed depend on the certificate type and are described in Appendix A.
 
-### 3.2.4. Non-Verified Certificate Holder Information
+<a id="non-verified-certificate-holder-information"></a>
+
+### 3.2.4. Non-Verified Certificate Holder Information 
 
 emSign does not include unverified information in publicly trusted SSL/TLS certificates. Any information appearing in a certificate is subject to verification as per the applicable validation requirements. However, in limited cases, non-verified information may be included in certificates issued solely for internal demonstration or testing purposes. These certificates are clearly marked as Test or Demonstration Certificates and are not intended for public trust or use in production environments.
 
-### 3.2.5. Validation Of Authority
+<a id="validation-of-authority"></a>
+
+### 3.2.5. Validation Of Authority 
 
 When a certificate request includes an Organizational Name, emSign or its authorized Registration Authorities shall validate that the Applicant is duly authorized to act on behalf of the Organization. This validation includes confirming the Applicant’s role, position, or explicit authorization using verified organizational records, direct confirmation from authoritative contacts within the Organization, or other reliable and documented sources. The method of validation may vary based on the certificate type and ensures that only appropriately authorized individuals can submit certificate requests on behalf of the Organization.
 
-### 3.2.6. Criteria for interoperation
+<a id="criteria-for-interoperation"></a>
+
+### 3.2.6. Criteria for interoperation 
 
 Cross-certification, where performed, does not grant any certificate issuance rights or control over CA private keys to external entities. Any interoperation for trust path compatibility must fully comply with this CP/CPS, maintain exclusive control by emSign or eMudhra over all issuance processes and keys, and be subject to approval by the emSign Policy Authority.
 
-## 3.3. Identification and authentication for re-key requests
+<a id="identification-and-authentication-for-re-key-requests"></a>
+
+## 3.3. Identification and authentication for re-key requests 
 
 For CA Certificates, re-keying is permitted by issuing a new certificate with an extended validity period for the same Distinguished Name (DN).
 
@@ -817,7 +944,9 @@ For Subscriber Certificates, re-keying (renewal) may be allowed using previously
 
 In such cases, and only if the certificate has not been revoked, emSign PKI may accept the renewal request using a previously verified Certificate Signing Request (CSR), or permit re-authentication via secure methods such as a passphrase, shared secret, account-based authentication, or any other mechanism approved by emSign PKI. Renewal or re-keying based on a revoked certificate is explicitly prohibited.
 
-### 3.3.1. Identification and Authentication for Routine Re-Key
+<a id="identification-and-authentication-for-routine-re-key"></a>
+
+### 3.3.1. Identification and Authentication for Routine Re-Key 
 
 Re-keying is a process where new private key / key pair is generated by the subscriber and a request is made to provide certificate, with information similar to a previous certificate.
 
@@ -825,19 +954,88 @@ Subscribers may request Re-key any number of times during the validity period of
 
 Where the initial Subscriber identification & authentication process as per this CP/CPS will be been performed as below:
 
-| **Validation Type** | **Certificate Issued On or After** | **Certificate Issued Before** | **Maximum Data Reuse Period** | **Re-Key Authentication Condition** |
-|---|---|---|---|---|
-| Subject Identity Information Validation |  | March 15, 2026 | 825 days | Re-key allowed using passphrase, shared secret, or other mechanism if initial identification completed within 825 days. |
-| Subject Identity Information Validation | March 15, 2026 |  | 398 days | Re-key allowed using passphrase, shared secret, or other mechanism if initial identification completed within 398 days. |
-| Domain Name and IP Address Validation | November 19, 2025 |  | 90 days | Must be validated within this period prior to certificate issuance. |
-| Domain Name and IP Address Validation | March 15, 2029 |  | 10 days | Must be validated within this period prior to certificate issuance. |
-| EV (Extended Validation) | - | - | As per EV guidelines | Re-key authentication must follow EV Guidelines. |
+<table style="width:82%;">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Validation Type</strong></th>
+<th style="text-align: center;"><p><strong>Certificate</strong></p>
+<p><strong>Issued On or</strong></p>
+<p><strong>After</strong></p></th>
+<th style="text-align: center;"><p><strong>Certificate</strong></p>
+<p><strong>Issued</strong></p>
+<p><strong>Before</strong></p></th>
+<th style="text-align: center;"><p><strong>Maximum</strong></p>
+<p><strong>Data Reuse</strong></p>
+<p><strong>Period</strong></p></th>
+<th style="text-align: center;"><strong>Re-Key Authentication Condition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><p>Subject Identity</p>
+<p>Information</p>
+<p>Validation</p></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>March 15,</p>
+<p>2026</p></td>
+<td style="text-align: left;"><p>825 days</p></td>
+<td style="text-align: left;"><p>Re-key allowed using passphrase, shared secret, or other mechanism if initial</p>
+<p>identification completed within 825 days.</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject Identity</p>
+<p>Information</p>
+<p>Validation</p></td>
+<td style="text-align: left;"><p>March 15, 2026</p></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>398 days</p></td>
+<td style="text-align: left;"><p>Re-key allowed using passphrase, shared secret, or other mechanism if initial</p>
+<p>identification completed within 398 days.</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Domain Name and IP</p>
+<p>Address Validation</p></td>
+<td style="text-align: left;"><p>November 19,</p>
+<p>2025</p></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>90 days</p></td>
+<td style="text-align: left;"><p>Must be validated within this period prior to certificate issuance.</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Domain Name and IP</p>
+<p>Address Validation</p></td>
+<td style="text-align: left;"><p>March 15, 2029</p></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>10 days</p></td>
+<td style="text-align: left;"><p>Must be validated within this period prior to certificate issuance.</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>EV (Extended</p>
+<p>Validation)</p></td>
+<td style="text-align: left;"><p>-</p></td>
+<td style="text-align: left;"><p>-</p></td>
+<td style="text-align: left;"><p>As per EV guidelines</p></td>
+<td style="text-align: left;"><p>Re-key authentication must follow EV Guidelines.</p></td>
+</tr>
+</tbody>
+</table>
 
-### 3.3.2. Identification and Authentication for Re-Key After Revocation
+<a id="identification-and-authentication-for-re-key-after-revocation"></a>
+
+### 3.3.2. Identification and Authentication for Re-Key After Revocation 
 
 Identification and Authentication for Re-Key after revocation is based on the same requirements as issuance of new Certificates.
 
-## 3.4. Identification and Authentication for Revocation Requests
+<a id="identification-and-authentication-for-revocation-requests"></a>
+
+## 3.4. Identification and Authentication for Revocation Requests 
 
 A request to revoke keys or digital certificates may be submitted by the Subscriber or an individual authorized under applicable contractual agreements. Revocation requests may be initiated through secure mechanisms such as emSign’s subscriber portal, CERTInext enterprise and partner platforms, ACME clients, or authorized APIs integrated with emSign PKI.
 
@@ -847,15 +1045,21 @@ emSign PKI may revoke a certificate without authentication in circumstances wher
 
 Requests related to CA certificate revocation are subject to elevated review and must be authorized by the emSign Policy Authority.
 
-# 4. Certificate Life-Cycle Operation Requirements
+<a id="certificate-life-cycle-operation-requirements"></a>
 
-## 4.1. Certificate Application
+# 4. Certificate Life-Cycle Operation Requirements 
+
+<a id="certificate-application"></a>
+
+## 4.1. Certificate Application 
 
 SSL/TLS certificate requests may be submitted through authorized online channel including the CERTInext portal, enterprise integrations using emSign APIs, or automated systems such as ACME. Each application must include sufficient information to allow emSign to confirm the identity of the requesting entity, validate control over the domain names to be certified, and verify that the individual submitting the request is authorized to act on behalf of the applicant organization, where applicable. Additionally, the application must enable validation that the public key submitted corresponds to a private key legitimately held by the applicant.
 
 All applications are subject to verification procedures appropriate to the certificate type requested. Issuance proceeds only after successful completion of identity and domain validation steps by emSign or its authorized Registration Authorities. Applicants must review the issued certificate for accuracy and promptly report any errors or inconsistencies.
 
-### 4.1.1. Who Can Submit a Certificate Application
+<a id="who-can-submit-a-certificate-application"></a>
+
+### 4.1.1. Who Can Submit a Certificate Application 
 
 Certificate applications must be submitted by individuals or entities authorized to act on behalf of the Applicant. Submissions may occur through approved emSign interfaces, including the CERTInext portal, emSign enterprise API integrations, or automated protocols such as ACME.
 
@@ -865,7 +1069,9 @@ EV certificate applications must be submitted by an authorized Certificate Reque
 
 Applications will not be accepted from individuals or entities listed on government sanctions, deniedpersons, or prohibited lists relevant to the jurisdiction of the Issuing CA entity .
 
-### 4.1.2. Enrolment Process and Responsibilities
+<a id="enrolment-process-and-responsibilities"></a>
+
+### 4.1.2. Enrolment Process and Responsibilities 
 
 Applicants seeking SSL/TLS Certificates under the emSign PKI shall complete an enrollment process designed to ensure the integrity, authenticity, and accountability of all issued certificates. While Issuing CAs may define specific implementation workflows, the enrollment process shall include the following minimum steps:
 
@@ -881,9 +1087,13 @@ Applicants seeking SSL/TLS Certificates under the emSign PKI shall complete an e
 
 Applicants are responsible for submitting accurate and complete information, responding to validation requests in a timely manner, and protecting the confidentiality of their private keys. Certificates shall only be issued once all validation requirements have been fulfilled and applicable agreements accepted.
 
-## 4.2. Certificate Application Processing
+<a id="certificate-application-processing"></a>
 
-### 4.2.1. Performing Identification and Authentication Functions
+## 4.2. Certificate Application Processing 
+
+<a id="performing-identification-and-authentication-functions"></a>
+
+### 4.2.1. Performing Identification and Authentication Functions 
 
 Certificate applications may be submitted directly to emSign or through authorized Registration Authorities (RAs), including enterprise interfaces such as the emSign CERTInext portal, API-based integrations, or automated channels like ACME. All applications are ultimately processed and issued by emSign's Issuing CAs.
 
@@ -899,17 +1109,21 @@ Prior to issuance, emSign or its authorized RAs perform validation procedures to
 
 - The certificate request conforms with applicable requirements outlined in Section 3.1 and Appendix A.
 
-For SSL/TLS Certificates, emSign performs DNS-based Certification Authority Authorization (CAA) checks in accordance with RFC 8659 and Section 3.2.2.8 of the CA/Browser Forum TLS Baseline Requirements..
+For SSL/TLS Certificates, emSign performs DNS-based Certification Authority Authorization (CAA) checks in accordance with RFC 8659 and CAB Forum TLS Baseline Requirements. If CAA records exist for any FQDN or wildcard domain in the certificate request, issuance shall proceed only if the CAA records authorize emSign using the issue or issuewild property tags with the value emsign.com.
 
-The detailed CAA checking procedure, including the treatment of CAA record lookup failures, applicable exceptions, and logging, is set out in Section 4.2.4.
+If the Relevant RRset for a Fully Qualified Domain Name (FQDN) or wildcard domain name contains no restrictive tags, such as if it contains only iodef or unrecognized property tags, then CAA does not restrict issuance.
 
-Subscribers who already have CAA records in their DNS zones and intend to request Server TLS certificates from emSign must include a CAA record with the appropriate issue or issuewild, property set to "emsign.com" to explicitly authorize emSign to issue the corresponding certificate type.
+If emSign issues a certificate after performing a CAA check, issuance shall occur within the Time-ToLive (TTL) of the CAA record or within 8 hours, whichever is shorter.
+
+Subscribers who already have CAA records in their DNS zones and intend to request Server TLS certificates from emSign must include a CAA record with the appropriate issue, issuewild, or issuemail property set to "emsign.com" to explicitly authorize emSign to issue the corresponding certificate type.
 
 Where applicable, emSign will also apply Multi-Perspective Issuance Corroboration (MPIC) to ensure that domain validation checks are not biased by single-network visibility and reflect globally reachable DNS resolution.
 
 For publicly-trusted TLS Certificates, DNSSEC validation is performed in accordance with Baseline Requirements for TLS section 3.2.2.8.1
 
-### 4.2.2. Approval or Rejection Of Certificate Applications
+<a id="approval-or-rejection-of-certificate-applications"></a>
+
+### 4.2.2. Approval or Rejection Of Certificate Applications 
 
 emSign or its authorized Registration Authorities (RAs) shall approve a certificate application only after successful completion of all required validation procedures as defined in this CP/CPS and Appendix A. The Issuing CA shall reject any application that fails validation or where the submitted information cannot be verified. Additionally, emSign reserves the right to reject a certificate application at its discretion, including but not limited to cases where:
 
@@ -917,39 +1131,25 @@ emSign or its authorized Registration Authorities (RAs) shall approve a certific
 
 - Issuance may compromise the trustworthiness, security, or reputation of emSign;
 
-- The domain is a newly delegated gTLD that is not yet approved for public issuance;
-
-- There is suspected misuse, fraud, or conflict with applicable laws or industry standards.
+- The domain is a newly delegated gTLD that is not yet approved for public issuance; • There is suspected misuse, fraud, or conflict with applicable laws or industry standards.
 
 emSign is not obligated to provide specific reasons for the rejection of an application. Applicants whose requests have been denied may submit a new application following corrective action.
 
 Subscribers are responsible for ensuring the ongoing accuracy of the information provided in their certificate applications. Failure to notify emSign of changes that affect certificate validity may result in certificate revocation in accordance with Section 4.9 and the terms of the Subscriber Agreement.
 
-### 4.2.3. Time to Process Certificate Applications
+<a id="time-to-process-certificate-applications"></a>
+
+### 4.2.3. Time to Process Certificate Applications 
 
 Registration Authorities and Issuing CAs operating within the emSign PKI are under no obligation to process Digital Certificate Applications other than within a commercially reasonable time.
 
-### 4.2.4. Certificate Authority Authorization (CAA)
+<a id="certificate-authority-authorization-caa"></a>
 
-For any certificate application involving domain names intended for server authentication, emSign shall perform Certification Authority Authorization (CAA) checks in accordance with RFC 8659 and Section 3.2.2.8 of the CA/Browser Forum TLS Baseline Requirements.
+### 4.2.4. Certificate Authority Authorization (CAA) 
 
-As part of the issuance process, emSign checks for CAA records for each dNSName in the subjectAltName extension of the certificate to be issued and processes the records found in accordance with RFC 8659. When processing CAA records, emSign processes the issue or issuewild. A certificate is not issued if an unrecognized property is encountered with the critical flag set.
+For any certificate application involving domain names intended for server authentication, emSign shall perform Certification Authority Authorization (CAA) checks in accordance with RFC 8659.
 
-If a CAA Resource Record is present for the domain, emSign shall verify whether the record authorizes certificate issuance by emSign. If the domain's CAA record does not include emsign.com for the relevant issue or issuewild property tags, as applicable, the certificate application shall be rejected.
-
-If the Relevant RRset for a domain contains no restrictive tags then CAA does not restrict issuance. If no CAA record exists for the domain, issuance may proceed.
-
-If emSign issues a certificate after performing a CAA check, issuance shall occur within the Time-To-Live (TTL) of the CAA record, or 8 hours, whichever is greater.
-
-emSign does not treat a CAA record lookup failure as permission to issue, except under the limited circumstances permitted by the Baseline Requirements. emSign may treat a record lookup failure as permission to issue only if all of the following conditions are met: (i) the failure is outside the CA's infrastructure; (ii) the lookup has been retried at least once; and (iii) the domain's zone does not have a DNSSEC validation chain to the ICANN root. Where these conditions are not met, emSign fails closed and does not issue the certificate.
-
-In accordance with Section 3.2.2.8 of the Baseline Requirements, emSign may rely on the following exceptions where applicable:
-
-1. CAA checking is optional for certificates for which a Certificate Transparency precertificate was created and logged in at least two public logs, and for which CAA was checked at the time of precertificate issuance.
-
-2. CAA checking is optional for certificates issued by a Technically Constrained Subordinate CA Certificate as set out in the Baseline Requirements, where the lack of CAA checking is an explicit contractual provision in the contract with the Applicant
-
-emSign documents all actions taken based on CAA records. Potential issuance that was prevented by a CAA record is documented in sufficient detail to provide feedback to the CA/Browser Forum on the circumstances, where relevant.
+If a CAA DNS Resource Record is present for the domain, emSign shall verify whether the record authorizes certificate issuance by emSign. If the domain's CAA record does not include emsign.com (for the relevant issue or issuewild property tags, as applicable), the certificate application shall be rejected.
 
 emSign recognizes the following domain name values in CAA records as granting authorization for issuance by emSign PKI:
 
@@ -957,43 +1157,57 @@ emSign recognizes the following domain name values in CAA records as granting au
 
 If no CAA record exists for the domain, issuance may proceed. The results of all CAA checks are logged for audit purposes.
 
-Where applicable, emSign applies Multi-Perspective Issuance Corroboration (MPIC) to CAA checking, corroborating results using at least two independent Network Perspectives.
+<a id="certificate-issuance"></a>
 
-## 4.3. Certificate Issuance
+## 4.3. Certificate Issuance 
 
-### 4.3.1. Certification Authority Actions During Certificate Issuance
+<a id="certification-authority-actions-during-certificate-issuance"></a>
+
+### 4.3.1. Certification Authority Actions During Certificate Issuance 
 
 Issuing CAs operating under this CP/CPS shall comply with all applicable requirements and processes defined in the emSign PKI CP/CPS for SSL/TLS. Certificate issuance shall occur only after successful validation of the Applicant and verification of all certificate data in accordance with the applicable certificate profile and Appendix A.
 
-#### 4.3.1.1. emSign Root Certification Authority
+<a id="emsign-root-certification-authority"></a>
+
+#### 4.3.1.1. emSign Root Certification Authority 
 
 The Root CA Certificates are self-signed and generated in an offline environment. Root CA private keys are maintained in secure, offline cryptographic modules in compliance with industry standards and are only used to sign Subordinate CA certificates and CRLs/OCSP responses as required.
 
 emSign PKI publishes its Root CA Certificates, along with their certificate chains, in the online
 
-repository[:https://repository.emsign.com.](https://repository.emsign.com/)
+repository[: <u>https://repository.emsign.com</u>.](https://repository.emsign.com/)
 
-#### 4.3.1.2. emSign Issuing Certification Authority Certificates
+<a id="emsign-issuing-certification-authority-certificates"></a>
+
+#### 4.3.1.2. emSign Issuing Certification Authority Certificates 
 
 emSign operates its own Issuing CAs under this CP/CPS. These CAs are directly subordinate to an emSign-operated offline Root CA. All Issuing CA certificates are published in the repository, including the hierarchy path to the Root.
 
 Where necessary, emSign may operate issuing CAs under other emSign subordinate CAs within the same hierarchy, subject to strict internal controls and authorization by the emSign Policy Authority.
 
-#### 4.3.1.3. emSign PKI Registration Authority Appointment
+<a id="emsign-pki-registration-authority-appointment"></a>
+
+#### 4.3.1.3. emSign PKI Registration Authority Appointment 
 
 Any Issuing CA (under emSign PKI) can appoint external Registration Authorities, who must accept the terms and conditions of emSign PKI Registration Authority Agreement. Upon final approval of the application by Issuing CA, the Registration Authority becomes duly appointed. Upon appointment, they shall be appropriately trained and qualified staff members of the Registration Authority are eligible for Registration Authority Officer Digital Certificates.
 
-#### 4.3.1.4. Registration Authority Officer’s Certificate
+<a id="registration-authority-officer�s-certificate"></a>
+
+#### 4.3.1.4. Registration Authority Officer’s Certificate 
 
 As part of the application process, Registration Authorities are required to nominate one or more persons within their Organisation to take responsibility for the operation of their Registration Authority functions. Those nominated persons will each be issued a Registration Authority Officer’s Digital Certificate.
 
-#### 4.3.1.5. Certificate Holder Certificates
+<a id="certificate-holder-certificates"></a>
+
+#### 4.3.1.5. Certificate Holder Certificates 
 
 Upon the Applicant’s acceptance of the terms and conditions of the Certificate Holder Agreement or other relevant agreement, the successful completion of the application process and final approval of the application by the Issuing CA, the Issuing CA issues the Digital Certificate to the Applicant or Device.
 
 emSign deploys multi-factor authentication for all accounts capable of directly causing certificate issuance.
 
-#### 4.3.1.6. Issuance Safeguards
+<a id="issuance-safeguards"></a>
+
+#### 4.3.1.6. Issuance Safeguards 
 
 - All issuance systems are subject to automated and manual controls to prevent misissuance.
 
@@ -1005,11 +1219,15 @@ emSign deploys multi-factor authentication for all accounts capable of directly 
 
 - The Root CA does not support automated issuance. All operations involving Root key usage are performed manually by authorized personnel under controlled environments.
 
-### 4.3.2. Notification to subscriber by the CA of issuance of certificate
+<a id="notification-to-subscriber-by-the-ca-of-issuance-of-certificate"></a>
+
+### 4.3.2. Notification to subscriber by the CA of issuance of certificate 
 
 The Issuing CA shall notify the Subscriber of the issuance of a Certificate in a convenient and appropriate way based on information submitted during the enrolment process.
 
-## 4.4. Certificate Acceptance
+<a id="certificate-acceptance"></a>
+
+## 4.4. Certificate Acceptance 
 
 Certificate acceptance is governed by the requirements outlined in this CP/CPS. A certificate is considered accepted when the Subscriber uses the certificate, downloads or installs it, or authorizes its use by another entity. Acceptance may also be inferred if 30 days pass from the date of issuance without objection.
 
@@ -1025,11 +1243,15 @@ By accepting a certificate, the Subscriber:
 
 If a certificate is not accepted, eMudhra reserves the right to revoke the certificate. However, use of the certificate or any reliance upon it constitutes deemed acceptance, binding the Subscriber to the terms and conditions stated herein.
 
-### 4.4.1. Conduct Constituting Certificate Acceptance
+<a id="conduct-constituting-certificate-acceptance"></a>
+
+### 4.4.1. Conduct Constituting Certificate Acceptance 
 
 The downloading, installing or otherwise taking delivery (through physical or electronic means via certificate delivered over link/download in the Issuing CA website or in email, etc) by the subscriber, or by an entity authorized/consented by subscriber, of a Digital Certificate constitutes acceptance of a Digital Certificate within the emSign PKI.
 
-### 4.4.2. Publication of the Certificate by the Certification Authority
+<a id="publication-of-the-certificate-by-the-certification-authority"></a>
+
+### 4.4.2. Publication of the Certificate by the Certification Authority 
 
 Issuing CAs may publish a Certificate by sending the Certificate to the Subscriber and/or publishing in a suitable Repository.
 
@@ -1037,7 +1259,9 @@ The Issuing CA MUST submit a pre-certificate to publicly trusted Certificate Tra
 
 The Issuing CA MUST also submit the final issued SSL/TLS certificate (post-certificate logging) to publicly trusted CT logs after issuance.
 
-### 4.4.3. Notification of Certificate Issuance by the Certification Authority to Other Entities
+<a id="notification-of-certificate-issuance-by-the-certification-authority-to-other-entities"></a>
+
+### 4.4.3. Notification of Certificate Issuance by the Certification Authority to Other Entities 
 
 In addition to the Subscriber, emSign may notify:
 
@@ -1047,9 +1271,13 @@ In addition to the Subscriber, emSign may notify:
 
 - The emSign Policy Authority, in cases involving CA certificate issuance;
 
-## 4.5. Key Pair And Certificate Usage
+<a id="key-pair-and-certificate-usage"></a>
 
-### 4.5.1. Subscriber Private Key and Certificate Usage
+## 4.5. Key Pair And Certificate Usage 
+
+<a id="subscriber-private-key-and-certificate-usage"></a>
+
+### 4.5.1. Subscriber Private Key and Certificate Usage 
 
 By accepting the SSL/TLS Certificate, the Subscriber agrees to use the Certificate strictly in accordance with its designated key usage extensions as defined in the Certificate Profile. Subscribers must ensure that their private keys are protected against unauthorized access, disclosure, or use, and must only use the key for lawful purposes and in line with the intended use.
 
@@ -1061,7 +1289,9 @@ Subscribers are responsible for:
 
 - Promptly notifying emSign if there is any suspicion of key compromise.
 
-### 4.5.2. Relying Party Public Key and Certificate Usage
+<a id="relying-party-public-key-and-certificate-usage"></a>
+
+### 4.5.2. Relying Party Public Key and Certificate Usage 
 
 Relying Parties are individuals or entities that depend on the validity of a Digital Certificate issued under this CP/CPS to establish trust in digital communications or transactions. A Relying Party may accept a Digital Certificate only to the extent that:
 
@@ -1093,9 +1323,13 @@ Relying Parties must assess, at a minimum:
 
 Warranties provided under this CP/CPS are only valid if the Relying Party has performed the above verification and assessment steps.
 
-## 4.6. Certificate Renewal
+<a id="certificate-renewal"></a>
 
-### 4.6.1. Circumstances for Certificate Renewal
+## 4.6. Certificate Renewal 
+
+<a id="circumstances-for-certificate-renewal"></a>
+
+### 4.6.1. Circumstances for Certificate Renewal 
 
 An Issuing CA may process a renewal request if all of the following conditions are met:
 
@@ -1109,35 +1343,51 @@ An Issuing CA may process a renewal request if all of the following conditions a
 
 Renewal may be permitted even after certificate expiration, provided the above conditions are met. However, the original certificate shall not be further renewed, rekeyed, or modified once expired.
 
-### 4.6.2. Who may request renewal
+<a id="who-may-request-renewal"></a>
+
+### 4.6.2. Who may request renewal 
 
 Renewal may be requested by the original Subscriber or by a Registration Authority acting on their behalf. All renewal requests must be authenticated using approved subscriber authentication methods, such as passphrases, shared secrets, or account-based authentication. Submission of a CSR is optional, but if used, it must contain the same public key.
 
-### 4.6.3. Processing Certificate Renewal Requests
+<a id="processing-certificate-renewal-requests"></a>
+
+### 4.6.3. Processing Certificate Renewal Requests 
 
 emSign PKI reserves the right to request re-authentication or updated information prior to processing a renewal request. In such cases, the same validation procedures applicable to new issuance may be applied. The original certificate may remain valid or may be revoked at emSign’s discretion.
 
-### 4.6.4. Notification of new certificate issuance to subscriber
+<a id="notification-of-new-certificate-issuance-to-subscriber"></a>
+
+### 4.6.4. Notification of new certificate issuance to subscriber 
 
 Notification of the renewed certificate shall follow the same process as for new certificate issuance, as defined in Section 4.3.2 of this CP/CPS. Subscribers may also receive email reminders about impending certificate expiration as a courtesy, typically within 60 days prior to expiry.
 
-### 4.6.5. Conduct constituting acceptance of a renewal certificate
+<a id="conduct-constituting-acceptance-of-a-renewal-certificate"></a>
+
+### 4.6.5. Conduct constituting acceptance of a renewal certificate 
 
 Subscriber conduct constituting acceptance of a renewed certificate shall be the same as defined under Section 4.4.1. This includes usage, installation, or download of the certificate.
 
-### 4.6.6. Publication of the Renewed Digital Certificate by Certification Authority
+<a id="publication-of-the-renewed-digital-certificate-by-certification-authority"></a>
+
+### 4.6.6. Publication of the Renewed Digital Certificate by Certification Authority 
 
 Renewed certificates shall be published using the same mechanisms as those for new certificate issuance, including delivery to the Subscriber and publication in the emSign certificate repository and CT logs, if applicable.
 
-### 4.6.7. Notification of certificate issuance by the CA to other entities
+<a id="notification-of-certificate-issuance-by-the-ca-to-other-entities"></a>
+
+### 4.6.7. Notification of certificate issuance by the CA to other entities 
 
 The CA may notify relevant Registration Authorities involved in the renewal process. No additional notifications are sent to external entities unless specifically required under applicable practices or agreements.
 
-## 4.7. Certificate Re-Key
+<a id="certificate-re-key"></a>
+
+## 4.7. Certificate Re-Key 
 
 Certificate re-key refers to the issuance of a new certificate with a newly generated public key, while retaining the same subject information as the original certificate. All re-key operations must comply with the requirements of this CP/CPS, including due diligence in key pair generation, validation, and secure delivery.
 
-### 4.7.1. Circumstance For Certificate Re-Key
+<a id="circumstance-for-certificate-re-key"></a>
+
+### 4.7.1. Circumstance For Certificate Re-Key 
 
 An Issuing CA may re-key a Certificate upon request as long as:
 
@@ -1145,7 +1395,9 @@ An Issuing CA may re-key a Certificate upon request as long as:
 
 - All retained details within the Certificate remain accurate and no new or additional validation is required.
 
-### 4.7.2. Who may request certification of a new public key
+<a id="who-may-request-certification-of-a-new-public-key"></a>
+
+### 4.7.2. Who may request certification of a new public key 
 
 Re-key requests may be initiated by:
 
@@ -1153,65 +1405,95 @@ Re-key requests may be initiated by:
 
 - An authorized PKI Sponsor or delegated Registration Authority acting on behalf of the Subscriber
 
-### 4.7.3. Processing Certificate Re-Key Request
+<a id="processing-certificate-re-key-request"></a>
+
+### 4.7.3. Processing Certificate Re-Key Request 
 
 Re-key requests are processed using the same procedures applicable to new certificate issuance. The Subscriber must authenticate as required for routine re-keying under this CP/CPS.
 
 If the private key has not been compromised and the subject and domain information remain unchanged, a replacement certificate may be issued based on a previously validated certificate request (CSR).
 
-### 4.7.4. Notification of new certificate issuance to subscriber
+<a id="notification-of-new-certificate-issuance-to-subscriber"></a>
+
+### 4.7.4. Notification of new certificate issuance to subscriber 
 
 The notification to subscriber on new certificate issuance (for re-key certificate) shall be same as the process defined in this CP/CPS for new certificate issuance notification to Certificate Holder.
 
-### 4.7.5. Conduct constituting acceptance of a Re-Key Digital Certificate
+<a id="conduct-constituting-acceptance-of-a-re-key-digital-certificate"></a>
+
+### 4.7.5. Conduct constituting acceptance of a Re-Key Digital Certificate 
 
 The conduct constituting the certificate acceptance for re-key shall be same as the process defined in this CP/CPS for new certificate acceptance.
 
-### 4.7.6. Publication of the Re-Key Digital Certificate by Certification Authority
+<a id="publication-of-the-re-key-digital-certificate-by-certification-authority"></a>
+
+### 4.7.6. Publication of the Re-Key Digital Certificate by Certification Authority 
 
 The publication of certificate in case of re-key shall be same as the process defined in this CP/CPS for new certificate publication.
 
-### 4.7.7. Notification of Re-Key Digital Certificate Issuance by the Certification Authority to other entities
+<a id="notification-of-re-key-digital-certificate-issuance-by-the-certification-authority-to-other-entities"></a>
+
+### 4.7.7. Notification of Re-Key Digital Certificate Issuance by the Certification Authority to other entities 
 
 The notification to other entities for re-key certificate shall be same as the process defined in this CP/CPS for new certificate issuance notification to other entities.
 
-## 4.8. Certificate Modification
+<a id="certificate-modification"></a>
+
+## 4.8. Certificate Modification 
 
 emSign PKI does not support modifying SSL/TLS certificates after they are issued. If any certificate information needs to change, the Subscriber must request a new certificate.
 
 The new request will follow the full validation process as required for the certificate type.
 
-### 4.8.1. Circumstance for certificate modification
+<a id="circumstance-for-certificate-modification"></a>
+
+### 4.8.1. Circumstance for certificate modification 
 
 No stipulation.
 
-### 4.8.2. Who may request certificate modification
+<a id="who-may-request-certificate-modification"></a>
+
+### 4.8.2. Who may request certificate modification 
 
 No stipulation.
 
-### 4.8.3. Processing certificate modification requests
+<a id="processing-certificate-modification-requests"></a>
+
+### 4.8.3. Processing certificate modification requests 
 
 No stipulation.
 
-### 4.8.4. Notification of new certificate issuance to subscriber
+<a id="notification-of-new-certificate-issuance-to-subscriber"></a>
+
+### 4.8.4. Notification of new certificate issuance to subscriber 
 
 No stipulation.
 
-### 4.8.5. Conduct constituting acceptance of modified certificate
+<a id="conduct-constituting-acceptance-of-modified-certificate"></a>
+
+### 4.8.5. Conduct constituting acceptance of modified certificate 
 
 No stipulation.
 
-### 4.8.6. Publication of the modified certificate by the CA
+<a id="publication-of-the-modified-certificate-by-the-ca"></a>
+
+### 4.8.6. Publication of the modified certificate by the CA 
 
 No stipulation.
 
-### 4.8.7. Notification of certificate issuance by the CA to other entities
+<a id="notification-of-certificate-issuance-by-the-ca-to-other-entities"></a>
+
+### 4.8.7. Notification of certificate issuance by the CA to other entities 
 
 No stipulation.
 
-## 4.9. Certificate Revocation and Suspension
+<a id="certificate-revocation-and-suspension"></a>
 
-### 4.9.1. Circumstances For Revocation
+## 4.9. Certificate Revocation and Suspension 
+
+<a id="circumstances-for-revocation"></a>
+
+### 4.9.1. Circumstances For Revocation 
 
 Issuing CAs shall revoke Digital Certificates when the private key associated with the Digital Certificate is compromised or suspected to be compromised or when any of the information on a Digital Certificate change or becomes obsolete.
 
@@ -1295,7 +1577,9 @@ The Issuing CA SHALL revoke a Subordinate CA Certificate within seven (7) days i
 
 - privilegeWithdrawn (9): The certificate subscriber should choose the “privilegeWithdrawn“ revocation reason when the original Certificate request was not authorized and does not retroactively grant authorization.
 
-### 4.9.2. Who Can Request Revocation
+<a id="who-can-request-revocation"></a>
+
+### 4.9.2. Who Can Request Revocation 
 
 A revocation request for an SSL/TLS certificate may be submitted by the Subscriber, an authorized representative of the Subscriber’s organization, or a Registration Authority (RA). The Issuing CA may also revoke a certificate at its discretion, without receiving a formal request, if it determines that revocation is necessary for security or compliance reasons. Additionally, third parties such as security researchers or relying parties may report suspected key compromise, misuse, or other certificaterelated issues using the contact details provided in Section 1.5.2.1.
 
@@ -1311,7 +1595,9 @@ Reports should be submitted via email to the contact listed in Section 1.5.2 of 
 
 All reports will be evaluated and acted upon as appropriate, in accordance with the provisions of Section 4.9.3 of this CP/CPS.
 
-### 4.9.3. Procedure For Revocation Request
+<a id="procedure-for-revocation-request"></a>
+
+### 4.9.3. Procedure For Revocation Request 
 
 Issuing CAs and RAs will revoke a Digital Certificate upon receipt of a valid request and may provide automated mechanisms for requesting and authenticating revocation requests. A revocation request may be sent by the Certificate Holder or Affiliated Organization through any one or many of the following modes, as may be provided by Issuing CA:
 
@@ -1327,41 +1613,55 @@ Certificate Holders or Affiliated Organization may use a passphrase or any kind 
 
 If revocation is requested by someone other than an authorized representative of the Subscriber or Affiliated Organization, the Issuer CA or RA shall investigate the alleged basis for the revocation request and take appropriate action.
 
-### 4.9.4. Revocation Request Grace Period
+<a id="revocation-request-grace-period"></a>
+
+### 4.9.4. Revocation Request Grace Period 
 
 The revocation request grace period is the time available to the subscriber within which the subscriber must make a revocation request after reasons for revocation have been identified. Subscribers shall request revocation as soon as possible if the Private Key corresponding to the Certificate is lost or compromised or if the certificate data is no longer valid. Issuing CAs will revoke Digital Certificates as soon as reasonably practical following verification of a revocation request.
 
-### 4.9.5. Time within which CA must process the revocation request
+<a id="time-within-which-ca-must-process-the-revocation-request"></a>
+
+### 4.9.5. Time within which CA must process the revocation request 
 
 The Issuer CA shall revoke Digital Certificates within such time, as reasonably practical, after validating the revocation request within timelines as mentioned in section 4.9 of this CP/CPS.
 
-### 4.9.6. Revocation Checking Requirement for Relying Parties
+<a id="revocation-checking-requirement-for-relying-parties"></a>
+
+### 4.9.6. Revocation Checking Requirement for Relying Parties 
 
 Certificate Revocation List is provided in the emSign PKI Repository and Relying Parties are required to validate the suitability of the certificate to the purpose intended and ensure that the Certificate remains valid at the time of usage by checking against the Certificate Revocation List.
 
-### 4.9.7. Certificate Revocation List Issuance Frequency
+<a id="certificate-revocation-list-issuance-frequency"></a>
+
+### 4.9.7. Certificate Revocation List Issuance Frequency 
 
 The CRL which provides the status of Subscriber Certificates (Issuing CAs), the CRL shall be:
 
-1. Generated once within seven (7) days, or within thirty (30) minutes of any revocation made.
+1.  Generated once within seven (7) days, or within thirty (30) minutes of any revocation made.
 
-2. Valid for NOT more than ten (10) days from the date of generation.
+2.  Valid for NOT more than ten (10) days from the date of generation.
 
 For other certificates (Root CA and/or CAs that has Sub CAs), the CRL shall be:
 
-1. Generated once within twelve (12) months, or within twenty-four (24) hours of any revocation made.
+1.  Generated once within twelve (12) months, or within twenty-four (24) hours of any revocation made.
 
-2. Valid for NOT more than twelve (12) months from the date of generation.
+2.  Valid for NOT more than twelve (12) months from the date of generation.
 
-### 4.9.8. Maximum Latency for Certificate Revocation List publication
+<a id="maximum-latency-for-certificate-revocation-list-publication"></a>
+
+### 4.9.8. Maximum Latency for Certificate Revocation List publication 
 
 CRLs are published to repository within 10 minutes of generation
 
-### 4.9.9. On-Line Revocation/Status Checking Availability
+<a id="on-line-revocationstatus-checking-availability"></a>
+
+### 4.9.9. On-Line Revocation/Status Checking Availability 
 
 emSign or Issuing CAs seek to provide online status checking availability for the certificates 7 days a week, 24 hours a day, subject to routine maintenance.
 
-### 4.9.10. On-Line Revocation Checking Requirement
+<a id="on-line-revocation-checking-requirement"></a>
+
+### 4.9.10. On-Line Revocation Checking Requirement 
 
 Relying Parties shall verify the revocation status of a Certificate through either the Certificate Revocation List (CRL) or the Online Certificate Status Protocol (OCSP) before relying upon the Certificate. Failure to perform such verification may limit the Relying Party's ability to demonstrate reasonable reliance on the Certificate.
 
@@ -1373,11 +1673,15 @@ Where a Precertificate has been generated but the associated Certificate issuanc
 
 An authoritative OCSP response for a Subscriber Certificate or its corresponding Precertificate shall be made available within fifteen (15) minutes after the Certificate or Precertificate is first published or otherwise made available.
 
-### 4.9.11. Other Forms of Revocation Advertisements Available
+<a id="other-forms-of-revocation-advertisements-available"></a>
+
+### 4.9.11. Other Forms of Revocation Advertisements Available 
 
 Not applicable.
 
-### 4.9.12. Special Requirements in Relation to Key Compromise
+<a id="special-requirements-in-relation-to-key-compromise"></a>
+
+### 4.9.12. Special Requirements in Relation to Key Compromise 
 
 emSign PKI uses commercially reasonable efforts to notify Subscribers if it becomes aware of, or suspects, a compromise of a Subscriber's private key. This may include newly discovered vulnerabilities, incident reports, or discretionary assessment based on credible evidence.
 
@@ -1393,37 +1697,55 @@ Reports must be submitted via email to the contact listed in Section 1.5.2, with
 
 emSign will review each report in accordance with Section 4.9.3 of this CP/CPS.
 
-### 4.9.13. Circumstances For Suspension
+<a id="circumstances-for-suspension"></a>
+
+### 4.9.13. Circumstances For Suspension 
 
 Not Applicable.
 
-### 4.9.14. Who Can Request Suspension
+<a id="who-can-request-suspension"></a>
+
+### 4.9.14. Who Can Request Suspension 
 
 Not Applicable.
 
-### 4.9.15. Procedure For Suspension Request
+<a id="procedure-for-suspension-request"></a>
+
+### 4.9.15. Procedure For Suspension Request 
 
 Not Applicable.
 
-### 4.9.16. Limits On Suspension Period
+<a id="limits-on-suspension-period"></a>
+
+### 4.9.16. Limits On Suspension Period 
 
 Not Applicable.
 
-## 4.10. Certificate Status Services
+<a id="certificate-status-services"></a>
 
-### 4.10.1. Operational Characteristics
+## 4.10. Certificate Status Services 
+
+<a id="operational-characteristics"></a>
+
+### 4.10.1. Operational Characteristics 
 
 Issuer CAs shall make certificate status information available via CRL or OCSP.
 
-### 4.10.2. Service Availability
+<a id="service-availability"></a>
+
+### 4.10.2. Service Availability 
 
 Digital Certificate status services are available 24x7 throughout the year.
 
-### 4.10.3. Optional Features
+<a id="optional-features"></a>
+
+### 4.10.3. Optional Features 
 
 No stipulation.
 
-## 4.11. End Of Subscription
+<a id="end-of-subscription"></a>
+
+## 4.11. End Of Subscription 
 
 A Subscriber’s subscription to emSign PKI services shall be considered ended under the following circumstances:
 
@@ -1439,13 +1761,17 @@ A Subscriber’s subscription to emSign PKI services shall be considered ended u
 
 The end of subscription does not absolve the Subscriber from responsibilities accrued prior to termination, including the continued obligation to prevent misuse of any previously issued Certificates.
 
-## 4.12. Key escrow and recovery
+<a id="key-escrow-and-recovery"></a>
+
+## 4.12. Key escrow and recovery 
 
 Private Keys associated with SSL/TLS Certificates shall not be escrowed or archived under any circumstance, except in specific enterprise TLS automation scenarios described below.
 
 emSign PKI does not support private key escrow for general-purpose TLS subscriber certificates. However, under the CERTInext brand, emSign PKI may optionally offer automation services which necessitates TLS subscriber private keys to be temporarily escrowed under certain use cases, to enterprise customers, based on explicit agreement. In such cases, CERTInext acts as the escrow agent and stores the Subscriber Private Key in securely encrypted form to facilitate the automation. The process is strictly limited to the enterprise requesting the automation services, and any escrow retrieval action automatically triggers revocation of the corresponding certificate to prevent further use.
 
-### 4.12.1. Key escrow and recovery policy and practices
+<a id="key-escrow-and-recovery-policy-and-practices"></a>
+
+### 4.12.1. Key escrow and recovery policy and practices 
 
 Key recovery is only applicable to enterprise TLS certificates issued under CERTInext where automation services necessitate private key escrow and have been contractually agreed. Recovery may be initiated only under the following conditions:
 
@@ -1467,65 +1793,85 @@ An entity receiving Private Key escrow services shall:
 
 - Release escrowed keys only for properly authenticated and authorized requests for recovery, and Comply with any legal obligations to disclose or keep confidential escrowed keys, escrowed key-related information, or the facts concerning any key recovery request or process.
 
-### 4.12.2. Session Key Encapsulation and Recovery Policy and Practices
+<a id="session-key-encapsulation-and-recovery-policy-and-practices"></a>
+
+### 4.12.2. Session Key Encapsulation and Recovery Policy and Practices 
 
 No Stipulation.
 
-# 5. Facility, Management, And Operational Controls
+<a id="facility-management-and-operational-controls"></a>
 
-## 5.1. Physical Controls
+# 5. Facility, Management, And Operational Controls 
+
+<a id="physical-controls"></a>
+
+## 5.1. Physical Controls 
 
 All Issuing CAs of emSign PKI shall implement appropriate physical controls for the following:
 
-1. Physical access control to the hardware used in connection with CA operations.
+1.  Physical access control to the hardware used in connection with CA operations.
 
-2. Physical access control over the relevant software.
+2.  Physical access control over the relevant software.
 
-3. Fire safety protection
+3.  Fire safety protection
 
-4. Protection against failure of supporting utilities like power, telecommunications, etc.
+4.  Protection against failure of supporting utilities like power, telecommunications, etc.
 
-5. Protection against theft.
+5.  Protection against theft.
 
-6. Disaster recovery procedures.
+6.  Disaster recovery procedures.
 
-### 5.1.1. Site Location and construction
+<a id="site-location-and-construction"></a>
+
+### 5.1.1. Site Location and construction 
 
 All Issuing CAs of emSign PKI shall perform their CA operations from a secure datacenter with the following features:
 
-1. The datacenter shall be equipped with physical and logical controls that makes the CA operations inaccessible to unauthorised persons.
+1.  The datacenter shall be equipped with physical and logical controls that makes the CA operations inaccessible to unauthorised persons.
 
-2. The datacenter shall be a facility made of concrete and steel construction.
+2.  The datacenter shall be a facility made of concrete and steel construction.
 
-3. The datacenter shall have security protection mechanisms such as guards, door locks.
+3.  The datacenter shall have security protection mechanisms such as guards, door locks.
 
-4. The datacenter shall be with raised floor construction and an array of resilient security and environmental systems.
+4.  The datacenter shall be with raised floor construction and an array of resilient security and environmental systems.
 
 For SSL/TLS Issuing CAs operated in colocation environments, physical access to the racks, HSMs, and related CA infrastructure is fully controlled and managed exclusively by emSign personnel. These systems are physically isolated and are not accessible to the datacenter provider or other tenants.
 
-### 5.1.2. Physical Access
+<a id="physical-access"></a>
+
+### 5.1.2. Physical Access 
 
 All Issuing CAs of emSign PKI’s systems are located in a secure datacenter. Entry into this secure facility is allowed only to security-cleared and authorised personnel, whose movements within the facility are logged and audited. Physical access to this facility is also video recorded on a 24/7 basis. Further physical access to this facility is monitored 24/7 by onsite security personnel.
 
-### 5.1.3. Power and Air-Conditioning
+<a id="power-and-air-conditioning"></a>
+
+### 5.1.3. Power and Air-Conditioning 
 
 The supply of power to All Issuing CAs of emSign PKI systems are protected with dual power feeds through the use of Uninterrupted Power Supply (UPS) systems and generators in order to prevent abnormal shutdown in the event of a power failure.
 
 Climate control systems have been implemented to ensure that the temperature within all Issuing CAs of emSign PKI facility is maintained within reasonable operating limits
 
-### 5.1.4. Water Exposures
+<a id="water-exposures"></a>
+
+### 5.1.4. Water Exposures 
 
 The facility is located outside any flood prone area. Further, it is located on an upper floor with raised flooring, which provide protection against water exposures. Further the outside walls are also sealed to provide protection from water exposure.
 
-### 5.1.5. Fire Prevention and Protection
+<a id="fire-prevention-and-protection"></a>
+
+### 5.1.5. Fire Prevention and Protection 
 
 The datacenter is equipped with smoke detection system. It is also equipped with necessary Fire Suppression system (FM200) and Very Early Smoke Detection Appliance (VESDA) for fire protection.
 
-### 5.1.6. Media Storage
+<a id="media-storage"></a>
+
+### 5.1.6. Media Storage 
 
 All magnetic media containing emSign PKI information, including backup media, are stored in containers, cabinets or safes with fire protection capabilities. Further they are located either within the emSign PKI service operations area or in a secure off-site storage area and are protected from any unauthorised physical access.
 
-### 5.1.7. Waste Disposal
+<a id="waste-disposal"></a>
+
+### 5.1.7. Waste Disposal 
 
 All Issuing CAs of emSign PKI shall dispose of commercially sensitive or confidential information as under:
 
@@ -1533,7 +1879,9 @@ All Issuing CAs of emSign PKI shall dispose of commercially sensitive or confide
 
 - In case of magnetic media containing trusted elements of CA or commercially sensitive or confidential information it shall be securely disposed of by physical damage to, or complete destruction of, the asset or by use of an approved utility to wipe or overwrite the magnetic media;
 
-### 5.1.8. Off-Site Backup
+<a id="off-site-backup"></a>
+
+### 5.1.8. Off-Site Backup 
 
 An off-site location is used for the storage and retention of backup software and data.
 
@@ -1543,33 +1891,45 @@ The off-site storage:
 
 - has appropriate levels of physical security in place • Are stored in fire-rated safes and containers.
 
-## 5.2. Procedural Controls
+<a id="procedural-controls"></a>
+
+## 5.2. Procedural Controls 
 
 All Issuing CAs of emSign PKI shall ensure that they adhere to all Administrative processes and procedures as detailed in this CP/CPS and as dealt with and described in detail in the various documents used within and supporting the emSign PKI.
 
-### 5.2.1. Trusted Roles
+<a id="trusted-roles"></a>
+
+### 5.2.1. Trusted Roles 
 
 Trusted roles are created in the emSign PKI system in order to ensure that one person acting alone cannot circumvent security safeguards implemented in the CA system. To ensure this the responsibilities are shared by multiple roles and individuals. This is accomplished by creating separate roles and accounts on various components of the CA system, and each role has a limited amount of capability. This method allows a system of "checks and balances" to occur among the various roles.
 
 The trusted roles within the emSign PKI system defined includes various roles like Admin Officer, Audit Officer, Registration Officer, Security Officer, Systems Officer, etc. These are defined in detail along with their responsibilities as part of internal policy documents and may be confidential in nature.
 
-### 5.2.2. Number of Persons Required Per Task
+<a id="number-of-persons-required-per-task"></a>
+
+### 5.2.2. Number of Persons Required Per Task 
 
 At least two people are assigned to each trusted role to prevent the possibility of accidental or intentional compromise of any component of the CA infrastructure. Each Issuer CA shall require that at least two people acting in a trusted role take action requiring a trusted role, such as activating the Issuer CA’s Private Keys, generating a CA Key Pair, or creating a backup of a CA Private Key. Such sensitive operations also require active participation and oversight of senior management.
 
 Issuing CAs will utilize commercially reasonable practices to ensure that one person acting alone cannot circumvent safeguards. Issuing CAs shall use commercially reasonable efforts to identify a separate individual for each trusted role. Issuing CAs must ensure that no single individual may gain access to any Private Key (other than the individual’s own Private Key).
 
-### 5.2.3. Identification and Authentication for Each Role
+<a id="identification-and-authentication-for-each-role"></a>
+
+### 5.2.3. Identification and Authentication for Each Role 
 
 All Issuing CAs of emSign PKI shall perform appropriate security screening procedure including background check before appointing a person to the trusted role. Each role described here are identified and authenticated in a manner to guarantee that the right person has the right role to support the CA.
 
-### 5.2.4. Roles Requiring Separation of Duties
+<a id="roles-requiring-separation-of-duties"></a>
+
+### 5.2.4. Roles Requiring Separation of Duties 
 
 Issuing CAs shall enforce role separation for each of the roles and Individual trusted-personnel shall be specifically designated to the roles Identified & defined in this CP/CPS and/or as part of CA’s Operating procedures.
 
 It is not permitted for any one person to serve on more than one role at the same time for a specific activity or a task.
 
-## 5.3. Personnel Controls
+<a id="personnel-controls"></a>
+
+## 5.3. Personnel Controls 
 
 All Issuing CAs of emSign PKI shall conduct appropriate background checks on all persons selected to take up a trusted role in accordance with the designated security screening procedure, prior to the commencement of their duties. CA shall determine the nature and extent of any background checks, in its sole discretion.
 
@@ -1577,11 +1937,15 @@ CA shall not be liable for employee conduct that is outside of their duties and 
 
 All employees, agents or independent contractors performing trusted roles, shall be bound by these personnel controls’ requirements.
 
-### 5.3.1. Qualifications, Experience, and Clearance Requirements
+<a id="qualifications-experience-and-clearance-requirements"></a>
+
+### 5.3.1. Qualifications, Experience, and Clearance Requirements 
 
 All Issuing CAs of emSign PKI requires that personnel meet a certain minimum standard with regards to background, Qualifications, Experience, and clearance requirements for each trusted role. Selection of personnel are made against these criteria.
 
-### 5.3.2. Background Check Procedures
+<a id="background-check-procedures"></a>
+
+### 5.3.2. Background Check Procedures 
 
 Background check procedures may include but are not limited to checks and confirmation of:
 
@@ -1597,7 +1961,9 @@ Background check procedures may include but are not limited to checks and confir
 
 Where the checks and confirmations cannot be obtained due to a prohibition or limitation of law or other circumstances, All Issuing CAs of emSign PKI will utilize available substitute investigation techniques that provide similar information, including background checks performed by applicable Government and/or Private agencies.
 
-### 5.3.3. Training Requirements
+<a id="training-requirements"></a>
+
+### 5.3.3. Training Requirements 
 
 All Issuing CAs of emSign PKI shall provide its personnel with on the job training covering the following areas to the extent relevant for the role of the concerned personnel.
 
@@ -1615,121 +1981,149 @@ Tactics
 
 - CA/Browser Forum Guidelines.
 
-### 5.3.4. Retraining Frequency and Requirements
+<a id="retraining-frequency-and-requirements"></a>
+
+### 5.3.4. Retraining Frequency and Requirements 
 
 Whenever there is any change in the Issuer CA’s or RA’s operations appropriate training is provided to the individuals acting in trusted roles so that they are aware of the changes. Apart from this a general yearly training update is provided to all personnel on related topics
 
-### 5.3.5. Job Rotation Frequency and Sequence
+<a id="job-rotation-frequency-and-sequence"></a>
+
+### 5.3.5. Job Rotation Frequency and Sequence 
 
 No Stipulation.
 
-### 5.3.6. Sanctions for Unauthorised Actions
+<a id="sanctions-for-unauthorised-actions"></a>
+
+### 5.3.6. Sanctions for Unauthorised Actions 
 
 Appropriate disciplinary actions will be taken for unauthorised actions by any of the personnel, including potential termination of employment and criminal actions.
 
-### 5.3.7. Independent Contractor Requirements
+<a id="independent-contractor-requirements"></a>
+
+### 5.3.7. Independent Contractor Requirements 
 
 All Issuing CAs of emSign PKI may employ independent contractors as may be necessary. When independent contractors are employed they will be subjected to the same process, procedures and controls as prescribed in this CP/CPS and other related documents.
 
-### 5.3.8. Documentation Supplied to Personnel
+<a id="documentation-supplied-to-personnel"></a>
+
+### 5.3.8. Documentation Supplied to Personnel 
 
 All Issuing CAs of emSign PKI provides personnel in trusted roles with the documentation necessary to perform their roles including this CP/CPS.
 
-## 5.4. Audit Logging Procedures
+<a id="audit-logging-procedures"></a>
 
-### 5.4.1. Types Of Events Recorded
+## 5.4. Audit Logging Procedures 
+
+<a id="types-of-events-recorded"></a>
+
+### 5.4.1. Types Of Events Recorded 
 
 Audit log shall be maintained for:
 
-1. CA & Certificate Lifecycle Management Events:
+1.  CA & Certificate Lifecycle Management Events:
 
-    a. Generation, certification, backup, recovery and/or destruction of the CA Key Pairs are recorded. This includes all configuration data used in the process.
+    1.  Generation, certification, backup, recovery and/or destruction of the CA Key Pairs are recorded. This includes all configuration data used in the process.
 
-    b. Successful and unsuccessful Certificate applications, Certificate issuances, Certificate re-issuances and Certificate renewals for Subscriber Certificates. Also, the revocation requests for Subscriber Certificate including revocation reason
+    2.  Successful and unsuccessful Certificate applications, Certificate issuances, Certificate re-issuances and Certificate renewals for Subscriber Certificates. Also, the revocation requests for Subscriber Certificate including revocation reason
 
-    c. Generations and issuances of CRLs.
+    3.  Generations and issuances of CRLs.
 
-    d. Custody of keys, devices and media holding keys
+    4.  Custody of keys, devices and media holding keys
 
-    e. Compromise of a Private Key
+    5.  Compromise of a Private Key
 
-2. Security Related Events:
+2.  Security Related Events:
 
-    a. Firewall and router activities
+    1.  Firewall and router activities
 
-    b. Any downtime in system, software crashes and hardware failures.
+    2.  Any downtime in system, software crashes and hardware failures.
 
-    c. CA system actions performed by trusted personnel, including software updates, hardware replacements and upgrades.
+    3.  CA system actions performed by trusted personnel, including software updates, hardware replacements and upgrades.
 
-    d. Successful and unsuccessful PKI system access attempts
+    4.  Successful and unsuccessful PKI system access attempts
 
-    e. Cryptographic hardware security module events, such as usage, de-installation, service or repair and retirement
+    5.  Cryptographic hardware security module events, such as usage, de-installation, service or repair and retirement
 
-    f. CA facility entry/exit
+    6.  CA facility entry/exit
 
-    g. Each movement of the removable media
+    7.  Each movement of the removable media
 
-3. Certificate Application Information:
+3.  Certificate Application Information:
 
-    a. All documentation & related information provided by the Applicant for application validation process
+    1.  All documentation & related information provided by the Applicant for application validation process
 
-    b. Physical and/or electronic storage locations of applicant provided documents
+    2.  Physical and/or electronic storage locations of applicant provided documents
 
 All logs include the following elements:
 
-  - Date and time of entry
+- Date and time of entry
 
-  - Sequence number of entry
+- Sequence number of entry
 
-  - Description of the entry
+- Description of the entry
 
-  - Identity of person/device making log entry
+- Identity of person/device making log entry
 
 The Audit log files for all events relating to the security and services of the Issuing CA shall be generated and maintained. Where possible, the security audit logs shall be automatically generated. Where this is not possible, a logbook in paper form, or other physical mechanism shall be used. Security audit logs of all events as above shall be retained and made available during compliance audits.
 
 The access to the systems are either protected by PIN protected Crypto Tokens or in the form of username - password as may be required by specific system or software or database. The administrative passwords in such cases are ensured to be split, so that minimum of two person will be required to perform critical / administrative activity.
 
-### 5.4.2. Frequency Of Processing Log
+<a id="frequency-of-processing-log"></a>
+
+### 5.4.2. Frequency Of Processing Log 
 
 Audit logs shall be verified at least monthly to see for any evidence of malicious activity.
 
-### 5.4.3. Retention Period For Audit Log
+<a id="retention-period-for-audit-log"></a>
+
+### 5.4.3. Retention Period For Audit Log 
 
 The retention period for audit logs, as mentioned in Section 5.4.1, and applicable to all Issuing CAs of the emSign PKI, shall be as follows:
 
-1. Logs of CA key management activity minimum 2 years
+1.  Logs of CA key management activity minimum 2 years
 
-2. CA system logs of certificate management activity minimum 2 years
+2.  CA system logs of certificate management activity minimum 2 years
 
-3. Operating system logs minimum 2 years
+3.  Operating system logs minimum 2 years
 
-4. Physical access system logs minimum 2 years
+4.  Physical access system logs minimum 2 years
 
-5. Manual logs of physical access minimum 2 years
+5.  Manual logs of physical access minimum 2 years
 
-6. Video recording of CA facility accesses 90 days
+6.  Video recording of CA facility accesses 90 days
 
-### 5.4.4. Protection Of Audit Log
+<a id="protection-of-audit-log"></a>
+
+### 5.4.4. Protection Of Audit Log 
 
 In all Issuing CAs of emSign PKI, Audit logs are protected using a combination of physical and logical access controls. The events are logged in a way that they cannot be deleted or destroyed for any period of time that they are retained. The events are logged in a manner to ensure that only individuals with authorized trusted access are able to perform any operations based on their profile without modifying integrity, authenticity and confidentiality of the data.
 
 The records of events are protected in a manner to prevent alteration and detect tampering.
 
-### 5.4.5. Audit Log Backup Procedures
+<a id="audit-log-backup-procedures"></a>
+
+### 5.4.5. Audit Log Backup Procedures 
 
 All Issuing CAs of emSign PKI shall do onsite back up of the system generated audit logs on a daily basis. At least on a monthly basis all audit logs and audit summaries shall be backed-up in a secure off site location. These shall be under the control of an authorized trusted role. Audit log backup should be protected to the same degree as originals.
 
-### 5.4.6. Audit collection system (internal vs. external)
+<a id="audit-collection-system-internal-vs-external"></a>
+
+### 5.4.6. Audit collection system (internal vs. external) 
 
 The security audit process of each Issuing CA must be initiated at system start up and may finish only at system shutdown. The audit collection system should ensure the integrity and availability of the data collected. If necessary, the audit collection system should protect the data confidentiality. In the case of a problem occurring during the process of the audit collection the Issuing CAs must determine whether to suspend Issuing CA operations until the problem is remedied.
 
 Automated audit data is generated and recorded at the application, network, and operating system level. Manually generated audit data is recorded by the trusted-personnel.
 
-### 5.4.7. Notification To Event-Causing Subject
+<a id="notification-to-event-causing-subject"></a>
+
+### 5.4.7. Notification To Event-Causing Subject 
 
 No stipulation.
 
-### 5.4.8. Vulnerability Assessment
+<a id="vulnerability-assessment"></a>
+
+### 5.4.8. Vulnerability Assessment 
 
 All Issuing CAs of emSign PKI shall perform regular vulnerability assessments. Such vulnerability assessments should focus on internal and external threats that could result in unauthorized access, tampering, modification, alteration or destruction of the Certificate issuance process.
 
@@ -1737,11 +2131,15 @@ The Vulnerability Assessments shall also include application scanning, as well a
 
 The results of such vulnerability assessment tests shall be used to enhance the security of the environment.
 
-## 5.5. Records Archival
+<a id="records-archival"></a>
+
+## 5.5. Records Archival 
 
 All Issuing CAs of emSign PKI shall maintain an archive of the relevant records as per the record retention policies set forth in this CP/CPS and any record retention policies that apply by law. The CA shall include sufficient detail in archived records to show that a Certificate was issued in accordance with the CP/CPS.
 
-### 5.5.1. Types Of Records Archived
+<a id="types-of-records-archived"></a>
+
+### 5.5.1. Types Of Records Archived 
 
 All Issuing CAs of emSign PKI archives records that will include all relevant evidence in the Issuing CA's possession including:
 
@@ -1763,31 +2161,45 @@ All Issuing CAs of emSign PKI archives records that will include all relevant ev
 
 For each Digital Certificate, the records contain information related to creation, issuance, intended use, revocation and expiration. Upon authorized request, the CA makes available, documentation related to each Digital Certificate subject to the emSign PKI Document Access Policy.
 
-### 5.5.2. Retention Period For Archive
+<a id="retention-period-for-archive"></a>
+
+### 5.5.2. Retention Period For Archive 
 
 All Issuing CAs of emSign PKI archives and retains audit logs in accordance the audit log retention policy described in this CP/CPS.
 
-### 5.5.3. Protection Of Archive
+<a id="protection-of-archive"></a>
+
+### 5.5.3. Protection Of Archive 
 
 All Issuing CAs of emSign PKI archives and protects audit logs in accordance the audit log protection policy described in this CP/CPS.
 
-### 5.5.4. Archive Backup Procedures
+<a id="archive-backup-procedures"></a>
+
+### 5.5.4. Archive Backup Procedures 
 
 All Issuing CAs of emSign PKI maintains and implements backup procedures so that backup copies of the archived records are stored in a separate location so that in the event of the loss or destruction of the primary archives a complete set of backup copies is readily available.
 
-### 5.5.5. Requirements For Time-Stamping Of Records
+<a id="requirements-for-time-stamping-of-records"></a>
+
+### 5.5.5. Requirements For Time-Stamping Of Records 
 
 All Issuing CAs of emSign PKI shall automatically timestamp its records as they are created. All events that are recorded within the emSign PKI include the date and time of when the event took place. This date and time are based on the system time on which the CA system is operating. emSign PKI uses procedures to review and ensure that all systems operating within the emSign PKI rely on a trusted time source.
 
-### 5.5.6. Archive collection system (internal or external)
+<a id="archive-collection-system-internal-or-external"></a>
+
+### 5.5.6. Archive collection system (internal or external) 
 
 emSign PKI’s Archive Collection System is internal.
 
-### 5.5.7. Procedures To Obtain And Verify Archive Information
+<a id="procedures-to-obtain-and-verify-archive-information"></a>
+
+### 5.5.7. Procedures To Obtain And Verify Archive Information 
 
 Only specific Trusted Roles and auditors may view the archives in whole. The Issuer CA may allow Subscribers to obtain a copy of their archived information. The contents of the archives will not be released, except as required by law.
 
-## 5.6. Key Changeover
+<a id="key-changeover"></a>
+
+## 5.6. Key Changeover 
 
 To enable smooth transition of expiring CA certificates, new CA Private key shall be certified towards the end of old certificate expiry date. The new CA private key and certificate will be commissioned and used for issuing new subscriber certificates henceforth.
 
@@ -1795,9 +2207,13 @@ In this case, both old and new CA private keys may be concurrently active.
 
 Old CA Private Keys used to sign previous Subscriber Certificates are maintained till such time that all Subscriber Certificates underneath that gets expired. Until then, the old private key will be used for purposes including CRL and OCSP.
 
-## 5.7. Compromise And Disaster Recovery
+<a id="compromise-and-disaster-recovery"></a>
 
-### 5.7.1. Incident and compromise handling procedures
+## 5.7. Compromise And Disaster Recovery 
+
+<a id="incident-and-compromise-handling-procedures"></a>
+
+### 5.7.1. Incident and compromise handling procedures 
 
 The CA Operations Disaster & Recovery Plan is in place with all CAs under emSign PKI, in the form of Business Continuity Plan. This plan fulfils the purpose towards restoring the core business operations when operations and/or systems have been adversely and significantly impacted. This restoration shall be made as quickly as practicable. Such plan shall provide immediate resumption of revocation services in the event of an unexpected emergency.
 
@@ -1809,21 +2225,29 @@ All Issuing CAs under emSign PKI have in place an appropriate Key compromise pla
 
 - Notifying emSign Issuing CA and all of the Holders of Digital Certificates issued by that emSign PKI’s Issuing CA.
 
-#### 5.7.1.1. Mass Revocation Plan
+<a id="mass-revocation-plan"></a>
+
+#### 5.7.1.1. Mass Revocation Plan 
 
 emSign maintains a documented Mass Revocation Plan to manage large-scale certificate revocation events, such as widespread mis issuance or compromise. This plan is reviewed, tested, and updated at least annually and is integrated into emSign’s overall business continuity and incident response frameworks. It outlines clear roles and responsibilities for executing revocation actions, including notification to affected Subscribers, revocation timelines, and post-revocation validation.
 
 The plan ensures rapid response while minimizing disruption to relying parties. Revocation actions are initiated in accordance with emSign’s incident handling procedures and under the supervision of the emSign Policy Authority. Communication protocols include timely updates through appropriate channels and coordination with root programs and ecosystem stakeholders as required.
 
-### 5.7.2. Computing resources, software, and/or data are corrupted
+<a id="computing-resources-software-andor-data-are-corrupted"></a>
+
+### 5.7.2. Computing resources, software, and/or data are corrupted 
 
 Any compromise detected on emSign PKI’s computing resources, software, or data operations, it shall be investigated to the extent of the compromise and the risk presented to affected parties. Depending on the extent of the compromise, if it is determined that a continued operation could pose a significant risk to Relying Parties or Subscribers, such operation shall be suspended until it is ensured that the risk is mitigated.
 
-### 5.7.3. Entity private key compromise procedures
+<a id="entity-private-key-compromise-procedures"></a>
+
+### 5.7.3. Entity private key compromise procedures 
 
 The CA Private Keys are classified as highly critical to the business operations and continuity. If any of the CA’s private signing keys were compromised or were suspected of having been compromised, an assessment shall be made to determine the nature and extent of the compromise. In the most severe circumstances, all Certificates ever issued by the use of those keys shall be revoked and a notification shall be sent to all owners of Certificates of that revocation, and offer to re-issue the Certificates to the customers with an alternative /new key.
 
-### 5.7.4. Business continuity capabilities after a disaster
+<a id="business-continuity-capabilities-after-a-disaster"></a>
+
+### 5.7.4. Business continuity capabilities after a disaster 
 
 emSign PKI’s Business Continuity Plan shall provide for a minimum of:
 
@@ -1837,7 +2261,9 @@ emSign PKI’s Business Continuity Plan shall provide for a minimum of:
 
 The stated goals of this plan shall ensure that certificate status services be only minimally affected by any disaster involving CA facility and that it shall be capable of maintaining other services or resuming them as quickly as possible following a disaster. The business continuity plans are made available to the auditors and audited during defined audit cycles. These are also subjected to annual test, review, and update of the procedures.
 
-## 5.8. CA or RA termination
+<a id="ca-or-ra-termination"></a>
+
+## 5.8. CA or RA termination 
 
 When it is necessary to terminate an Issuing CA or Registration Authority service, emSign PKI shall:
 
@@ -1857,55 +2283,69 @@ The successor CA should assume the same obligations, duties and rights of termin
 
 Where practical, Key / Digital Certificate revocation shall be timed to coincide with the progressive & planned rollout of new Keys and Digital Certificates by a successor Issuing CA.
 
-# 6. Technical Security Controls
+<a id="technical-security-controls"></a>
+
+# 6. Technical Security Controls 
 
 emSign Certification Authority has put in place sufficient security controls to protect the private keys and access to various modules within the Certifying Authority environment.
 
 The Issuing CA Private Keys are stored securely in a Hardware Security Module which is compliant with FIPS 140-2 Level 3+ Standard. Access to systems/module within the Certification Authority environment are restricted using tokens or smartcards and associated pass phrases in such a manner that no single member holds total control over any component of the system. The Hardware Security Modules are always stored in a physically secure environment that is subject to security control.
 
-## 6.1. Key Pair Generation and Installation
+<a id="key-pair-generation-and-installation"></a>
 
-### 6.1.1. Key Pair Generation
+## 6.1. Key Pair Generation and Installation 
+
+<a id="key-pair-generation"></a>
+
+### 6.1.1. Key Pair Generation 
 
 Issuing CA key pairs are generated in a secure manner as part of a key ceremony in a physically trusted environment by trusted personnel. Issuing CA key generation is carried out in a secure device that is at least FIPS 140-2 Level 3 compliant.
 
 Subscriber key pairs:
 
-1. Subscriber key pairs are generally generated by the Subscriber using secure methods (software or hardware) prior to submitting a Certificate Signing Request (CSR).
+1.  Subscriber key pairs are generally generated by the Subscriber using secure methods (software or hardware) prior to submitting a Certificate Signing Request (CSR).
 
-2. For SSL/TLS certificates, key generation typically occurs within the Subscriber's server or secure cryptographic device.
+2.  For SSL/TLS certificates, key generation typically occurs within the Subscriber's server or secure cryptographic device.
 
 Issuing CA SHALL reject a certificate request if one or more of the following conditions are met:
 
-1. The Key Pair does not meet the requirements set forth in Section 6.1.5 and/or Section 6.1.6;
+1.  The Key Pair does not meet the requirements set forth in Section 6.1.5 and/or Section 6.1.6;
 
-2. There is clear evidence that the specific method used to generate the Private Key was flawed;
+2.  There is clear evidence that the specific method used to generate the Private Key was flawed;
 
-3. Issuing CA is aware of a demonstrated or proven method that exposes the Applicant’s Private Key to compromise;
+3.  Issuing CA is aware of a demonstrated or proven method that exposes the Applicant’s Private Key to compromise;
 
-4. Issuing CA has previously been made aware that the Applicant’s Private Key has suffered a Key
+4.  Issuing CA has previously been made aware that the Applicant’s Private Key has suffered a Key
 
 Compromise, such as through the provisions of Section 4.9.1;
 
-  a) In the case of Debian weak keys vulnerability (https://wiki.debian.org/SSLkeys), the Issuer CA shall reject all keys found at https://github.com/cabforum/Debianweakkeys/ for each key type (e.g. RSA, ECDSA).
+1)  In the case of Debian weak keys vulnerability (https://wiki.debian.org/SSLkeys), the Issuer CA shall reject all keys found at https://github.com/cabforum/Debianweakkeys/ for each key type (e.g. RSA, ECDSA).
 
-  b) In the case of ROCA vulnerability, the Issuer CA shall reject keys identified by the tools available at https://github.com/crocs-muni/roca or equivalent.
+2)  In the case of ROCA vulnerability, the Issuer CA shall reject keys identified by the tools available at https://github.com/crocs-muni/roca or equivalent.
 
 In the case of Close Primes vulnerability (https://fermatattack.secvuln.info/), the Issuer CA shall reject weak keys which can be factored within 100 rounds using Fermat’s factorization method.
 
-### 6.1.2. Private Key Delivery to Certificate Holder
+<a id="private-key-delivery-to-certificate-holder"></a>
+
+### 6.1.2. Private Key Delivery to Certificate Holder 
 
 For TLS certificates, emSign does not generate or deliver private keys. The Subscriber is solely responsible for generating the key pair and ensuring the private key remains confidential and protected at all times. emSign does not retain, archive, or transmit private keys for TLS certificate Subscribers, except for the limited use case when automation services are contracted, as per Section 4.12..
 
-### 6.1.3. Public Key Delivery to Certificate Issuer
+<a id="public-key-delivery-to-certificate-issuer"></a>
+
+### 6.1.3. Public Key Delivery to Certificate Issuer 
 
 For TLS certificates, the Subscriber delivers the public key to the Issuing CA as part of a Certificate Signing Request (CSR). The CSR must be delivered over a secure channel and contain a valid digital signature that demonstrates the Subscriber’s possession of the corresponding private key. The Issuing CA ensures the integrity of the public key during transmission and verifies that it corresponds to the Subscriber's verified identity before certificate issuance.
 
-### 6.1.4. Certification Authority Public Key to Relying Parties
+<a id="certification-authority-public-key-to-relying-parties"></a>
+
+### 6.1.4. Certification Authority Public Key to Relying Parties 
 
 All Issuing CAs of emSign PKI shall ensure that Public Key delivery to Relying Parties is done in a secure manner to serve as a trust anchor in commercial browsers and operating system root stores, or may be specified in a Certificate validation or path discovery policy file. CA may deliver its Public Key certificate through its repository available on emSign or Issuer website.
 
-### 6.1.5. Key Sizes
+<a id="key-sizes"></a>
+
+### 6.1.5. Key Sizes 
 
 Within the emSign PKI, key algorithms and lengths for TLS certificates are defined by certificate profiles and comply with CA/Browser Forum Baseline Requirements.
 
@@ -1925,17 +2365,21 @@ The Issuing CA SHALL ensure that all key lengths and algorithms are compliant wi
 
 Following points shall be noted on Hash algorithms:
 
-1. All Signature Algorithms are used in conjunction with Digest Algorithm of SHA-256 or a hash algorithm that is equally or more resistant to a collision attack.
+1.  All Signature Algorithms are used in conjunction with Digest Algorithm of SHA-256 or a hash algorithm that is equally or more resistant to a collision attack.
 
-2. MD5 is not supported.
+2.  MD5 is not supported.
 
-### 6.1.6. Public Key Parameters Generation And Quality Checking
+<a id="public-key-parameters-generation-and-quality-checking"></a>
+
+### 6.1.6. Public Key Parameters Generation And Quality Checking 
 
 All CA keys are generated on FIPS 140-2 qualified hardware and meets the requirements of FIPS 1862, which ensures the proper parameters and their quality for Public Keys.
 
 Reasonable techniques are used to validate the suitability of Subscriber Public Keys. Any known weak keys shall be tested for and rejected at the point of submission.
 
-### 6.1.7. Key Usage Purposes (As Per X.509 V3 Key Usage Field)
+<a id="key-usage-purposes-as-per-x509-v3-key-usage-field"></a>
+
+### 6.1.7. Key Usage Purposes (As Per X.509 V3 Key Usage Field) 
 
 The Key Usage and Extended Key Usage extensions included in certificates issued under emSign PKI comply with RFC 5280, CA/Browser Forum Baseline Requirements, and are set according to the certificate type and its intended use.
 
@@ -1951,7 +2395,9 @@ The Key Usage and Extended Key Usage extensions included in certificates issued 
 
 The specific key usages and extended key usages for each certificate type are defined in the Certificate Profiles section of this CP/CPS.
 
-## 6.2. Private Key Protection And Cryptographic Module Engineering Controls
+<a id="private-key-protection-and-cryptographic-module-engineering-controls"></a>
+
+## 6.2. Private Key Protection And Cryptographic Module Engineering Controls 
 
 Issuing CA, RA, Subscribers and other participates are required to take appropriate and adequate steps to protect Private Keys in line with the requirements of this CP/CPS.
 
@@ -1963,103 +2409,182 @@ This includes:
 
 - Exercise sole and complete control and use of the Private Key
 
-### 6.2.1. Cryptographic Module Standards and Controls
+<a id="cryptographic-module-standards-and-controls"></a>
+
+### 6.2.1. Cryptographic Module Standards and Controls 
 
 All CA Private Keys under emSign PKI must be generated and maintained in a Hardware Security Module that is compliant with Federal Information Protection Standards 140-2 Level 3+.
 
-### 6.2.2. Private key (n out of m) multi-person control
+<a id="private-key-n-out-of-m-multi-person-control"></a>
+
+### 6.2.2. Private key (n out of m) multi-person control 
 
 All Issuer CA Private Keys are accessed / activated in CA System through n-of-m multiple trusted person control including for any Private Key backups.
 
-### 6.2.3. Private Key Escrow
+<a id="private-key-escrow"></a>
+
+### 6.2.3. Private Key Escrow 
 
 Private keys associated with TLS CA certificates are not escrowed. emSign PKI does not support private key escrow for general-purpose TLS subscriber certificates. However, under the CERTInext brand, emSign PKI may optionally offer automation services that require TLS subscriber private keys to be temporarily escrowed for certain enterprise use cases, based on explicit agreement with the Subscriber. In such cases, CERTInext acts as the escrow agent and stores the Subscriber’s private key in securely encrypted form. This process is strictly limited to the enterprise requesting the automation service, and any retrieval of an escrowed private key automatically triggers revocation of the corresponding certificate to prevent further use.
 
-### 6.2.4. Private Key Backup
+<a id="private-key-backup"></a>
+
+### 6.2.4. Private Key Backup 
 
 Issuing CAs under emSign PKI may backup their Private Keys using a secure cryptographic device and store the Private Keys in an encrypted state if private keys are stored outside the cryptographic module.
 
 Subscribers may choose to backup up their Private Keys using a secure manner. Issuing CA may provide backup services of Private Key for Subscriber provided that the backups shall be secured in a manner that only the Subscriber can control the Private Key.
 
-### 6.2.5. Private key archival
+<a id="private-key-archival"></a>
+
+### 6.2.5. Private key archival 
 
 After the expiry of CA Certificates, the associated key pair shall be retained securely for a period of minimum 5 years. Such storage of archival shall meet the requirement of private key storage (in cryptographic module). Such archived keys shall not be used for any production signing.
 
-### 6.2.6. Private Key Transfer into or from a Cryptographic Module
+<a id="private-key-transfer-into-or-from-a-cryptographic-module"></a>
+
+### 6.2.6. Private Key Transfer into or from a Cryptographic Module 
 
 CA Keys are always generated in cryptographic modules. They are copied to similar cryptographic modules for recovery / business continuity purposes. Such copying shall also happen in encrypted form, and the private key must never exist in plain text form outside the cryptographic module.
 
-### 6.2.7. Private Key Storage on Cryptographic Module
+<a id="private-key-storage-on-cryptographic-module"></a>
+
+### 6.2.7. Private Key Storage on Cryptographic Module 
 
 CA Private Keys shall be stored on a Hardware Security Module that is compliant with FIPS 140-2 Level 3 Standard.
 
 Subscriber Private Keys can be stored on a Cryptographic Module.
 
-### 6.2.8. Method Of Activating Private Key
+<a id="method-of-activating-private-key"></a>
+
+### 6.2.8. Method Of Activating Private Key 
 
 CA Private Keys are activated in accordance with the specifications of the Cryptographic Module Manufacturer.
 
-### 6.2.9. Method Of Deactivating Private Key
+<a id="method-of-deactivating-private-key"></a>
+
+### 6.2.9. Method Of Deactivating Private Key 
 
 When not in use, Issuing CA shall deactivate its Private Keys by ending (logging out) the sessions with cryptographic modules. These are based on specifications of the Cryptographic Module Manufacturer.
 
-### 6.2.10. Method Of Destroying Private Key
+<a id="method-of-destroying-private-key"></a>
+
+### 6.2.10. Method Of Destroying Private Key 
 
 Issuing CA shall use individuals in trusted roles to destroy Private Keys when they are no longer needed or upon expiry or upon revocation of the Certificate by deleting or overwriting the data or using physical destruction.
 
 Subscribers may destroy their Private Keys when the corresponding Certificate is revoked or expired of if the Private Key is no longer needed. This must be done in a secure manner so as to ensure that there is no loss, theft, compromise or unauthorized disclosure or use.
 
-### 6.2.11. Cryptographic Module Rating
+<a id="cryptographic-module-rating"></a>
+
+### 6.2.11. Cryptographic Module Rating 
 
 The rating of the Cryptographic Module shall meet the requirements laid down in “Cryptographic Module Standards and Controls” section of this CP/CPS.
 
-## 6.3. Other Aspects of Key Pair Management
+<a id="other-aspects-of-key-pair-management"></a>
 
-### 6.3.1. Public Key Archival
+## 6.3. Other Aspects of Key Pair Management 
+
+<a id="public-key-archival"></a>
+
+### 6.3.1. Public Key Archival 
 
 Issuer CA shall archive a copy of each public key.
 
-### 6.3.2. Certificate Operational Periods and Key Pair Usage Periods
+<a id="certificate-operational-periods-and-key-pair-usage-periods"></a>
+
+### 6.3.2. Certificate Operational Periods and Key Pair Usage Periods 
 
 The maximum validity periods for Digital Certificates issued within the emSign CA PKI are:
 
-| **Type** | **Private Key Use (signing the certificates)** | **Private Key Use (signing the CRL)** | **Certificate Term** |
-|---|---|---|---|
-| Root CA Certificate | 20 years | 25 years | 25 years |
-| All Subordinate CAs of Root CA | 12 years | 15 years | 15 years |
-| Subscriber Certificates with Server Authentication EKU | Not Applicable | Not Applicable | 90 Days |
+<table style="width:82%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 22%" />
+<col style="width: 25%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><p><strong>Type</strong></p></th>
+<th style="text-align: left;"><p><strong>Private Key Use</strong></p>
+<p><strong>(signing the certificates)</strong></p></th>
+<th style="text-align: left;"><p><strong>Private Key Use (signing the</strong></p>
+<p><strong>CRL)</strong></p></th>
+<th style="text-align: left;"><p><strong>Certificate Term</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><p>Root CA</p>
+<p>Certificate</p></td>
+<td style="text-align: left;">20 years</td>
+<td style="text-align: left;"><p>25 years</p></td>
+<td style="text-align: left;"><p>25 years</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>All Subordinate</p>
+<p>CAs of Root CA</p></td>
+<td style="text-align: left;">12 years</td>
+<td style="text-align: left;"><p>15 years</p></td>
+<td style="text-align: left;"><p>15 years</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subscriber</p>
+<p>Certificates with</p>
+<p>Server</p>
+<p>Authentication</p>
+<p>EKU</p></td>
+<td style="text-align: left;">Not Applicable</td>
+<td style="text-align: left;"><p>Not Applicable</p></td>
+<td style="text-align: left;"><p>90 Days</p></td>
+</tr>
+</tbody>
+</table>
 
 While the validity period of Issuing CA certificates may be defined in accordance with this Policy, emSign limits the operational use of any Issuing CA certificate to a maximum of five (5) years from the date of issuance. The certificate will be replaced prior to exceeding this operational limit, even if the remaining validity period allows for continued use.
 
 Reference for maximum Validity Periods of Subscriber Certificates
 
 | **Certificate Issued On or After** | **Certificate Issued Before** | **Maximum Validity Period** |
-|---|---|---|
+|:---|:---|:---|
 | – | November 19, 2025 | 398 days |
 | November 19, 2025 | March 15, 2029 | 90 days |
 | March 15, 2029 | – | 47 days |
 
 All certificates including subscriber certificates or any subordinate CA certificate end date shall not exceed the end date of its signing certificate (issuer).
 
-## 6.4. Activation Data
+<a id="activation-data"></a>
 
-### 6.4.1. Activation Data Generation and Installation
+## 6.4. Activation Data 
+
+<a id="activation-data-generation-and-installation"></a>
+
+### 6.4.1. Activation Data Generation and Installation 
 
 Issuing CAs under emSign PKI shall ensure that activation data used to protect access to private keys such as PINs, passphrases, or cryptographic tokens has sufficient entropy and strength to prevent unauthorized access. Activation mechanisms must include multi-factor authentication wherever applicable.
 
 All personnel involved in CA operations, including emSign PKI Officers, shall use strong, complex passwords or cryptographic authentication methods to safeguard sensitive systems, in line with emSign PKI's internal security policies.
 
-### 6.4.2. Activation Data Protection
+<a id="activation-data-protection"></a>
+
+### 6.4.2. Activation Data Protection 
 
 If activation data must be transmitted to subscribers, it shall be via a channel of appropriate protection, and distinct in time and place from the associated Cryptographic Module. Personal Identification Codes may be supplied to Subscriber in a secure manner.
 
-### 6.4.3. Other Aspects of Activation Data
+<a id="other-aspects-of-activation-data"></a>
+
+### 6.4.3. Other Aspects of Activation Data 
 
 Where a PIN or Passphrase is used, User is required to enter PIN or Passphrase along with other personal identification details to be able to access and install their keys or digital certificates.
 
-## 6.5. Computer Security Controls
+<a id="computer-security-controls"></a>
 
-### 6.5.1. Specific computer security technical requirements
+## 6.5. Computer Security Controls 
+
+<a id="specific-computer-security-technical-requirements"></a>
+
+### 6.5.1. Specific computer security technical requirements 
 
 emSign PKI has an Information Security Policy that documents the policies, standards and guidelines relating to information security. This Information Security Policy has been approved by the emSign Policy Authority and is communicated to all employees that pertain to the emSign PKI business.
 
@@ -2085,11 +2610,15 @@ Some of the security controls and policies include:
 
 - Enforcement of Multi-factor authentication for all accounts capable of directly causing a certificate issuance.
 
-### 6.5.2. Computer Security Rating
+<a id="computer-security-rating"></a>
+
+### 6.5.2. Computer Security Rating 
 
 No stipulation.
 
-## 6.6. Life Cycle Technical Controls
+<a id="life-cycle-technical-controls"></a>
+
+## 6.6. Life Cycle Technical Controls 
 
 Following lifecycle controls are required to be followed to ensure mitigation of risk during operation of emSign PKI ecosystem.
 
@@ -2105,7 +2634,9 @@ Following lifecycle controls are required to be followed to ensure mitigation of
 
 - System administrators in network do not have access to certificate issuance systems due to proper segmentation of duties and least privilege principles.
 
-### 6.6.1. System Development Controls
+<a id="system-development-controls"></a>
+
+### 6.6.1. System Development Controls 
 
 Adequate controls are put in place for System Development as follows
 
@@ -2115,17 +2646,23 @@ Adequate controls are put in place for System Development as follows
 
 - Outsourcing of projects (if any) is closely monitored and controlled.
 
-### 6.6.2. Security Management Controls
+<a id="security-management-controls"></a>
+
+### 6.6.2. Security Management Controls 
 
 Issuing CA installation, configuration, as well as any modifications are documented and controlled by Issuing CA through formal mechanisms.
 
 Issuing CA change control process shall include procedures to detect unauthorized modification to the Issuing CA systems. Any third-party software procured shall be verified for integrity, appropriate versioning and for being free of any modifications.
 
-### 6.6.3. Life Cycle Security Controls
+<a id="life-cycle-security-controls"></a>
+
+### 6.6.3. Life Cycle Security Controls 
 
 emSign PKI periodically verifies the integrity of the Certifying Authority software and monitors the configuration of CA systems.
 
-## 6.7. Network Security Controls
+<a id="network-security-controls"></a>
+
+## 6.7. Network Security Controls 
 
 Issuing CA shall ensure that the network in which the CA system is hosted is protected by network firewalls and other systems that to the extent possible prevent unauthorized access by parties. Other measures include:
 
@@ -2145,18 +2682,9 @@ Issuing CA shall ensure that the network in which the CA system is hosted is pro
 
 - Segmentation of key certificate issuance systems from non-related servers and systems such as marketing websites, etc.
 
-### 6.7.1. Timeframe for Responding to and Remediating Vulnerabilities
+<a id="time-stamping"></a>
 
-eMudhra shall maintain a documented process for the identification, assessment, prioritization, and remediation of vulnerabilities affecting systems, applications, and infrastructure supporting Certification Authority operations. Risk assessment for each identified vulnerability shall be completed within 48 working hours of identification. Vulnerabilities shall be remediated within the following timeframes based on their severity classification:
-
-| **Severity Level** | **Remediation Timeline** |
-|---|---|
-| Critical | Within 96 Working Hours |
-| High | Within 14 Working Days |
-| Medium | Within 30 Working Days |
-| Low | Within 60 Working Days |
-
-## 6.8. Time-Stamping
+## 6.8. Time-Stamping 
 
 Issuing CAs shall ensure that their components are regularly synchronized with a time service such an atomic clock or Network Time Protocol. The system time on computers shall be updated using the Network Time Protocol (NTP) to synchronize system clocks at least once every eight hours.
 
@@ -2172,29 +2700,41 @@ This shall be used for establishing the time of:
 
 An internal NTP server is maintained that synchronizes with external sources and maintains the accuracy of its clock within one second or less.
 
-# 7. Certificate, CRL, And OCSP Profiles
+<a id="certificate-crl-and-ocsp-profiles"></a>
 
-## 7.1. Certificate Profile
+# 7. Certificate, CRL, And OCSP Profiles 
+
+<a id="certificate-profile"></a>
+
+## 7.1. Certificate Profile 
 
 All emSign PKI Digital Certificates conform to Digital Certificate and Certificate Revocation List profiles as described in RFC 5280 and utilise the ITU-T X.509 version 3 Digital Certificate standards.
 
 Refer to APPENDIX B for Certificate contents that are specific to the individual classes of Digital Certificates.
 
-### 7.1.1. Version Number(s)
+<a id="version-numbers"></a>
+
+### 7.1.1. Version Number(s) 
 
 All Certificates issued by emSign are X.509 version 3.
 
-### 7.1.2. Certificate Extensions
+<a id="certificate-extensions"></a>
+
+### 7.1.2. Certificate Extensions 
 
 Certificate extensions shall be in conformance to RFC 5280 and the Baseline Requirements.
 
 The certificates are with the extensions required by respective certificate profiles. Private extensions are permissible, but the use of private extensions is not warranted under this CP/CPS unless specifically included by reference.
 
-#### 7.1.2.1. Key Usage
+<a id="key-usage"></a>
+
+#### 7.1.2.1. Key Usage 
 
 This permits the standard Key Usage values, and the criticality field of the *KeyUsage* extension is generally set to TRUE.
 
-#### 7.1.2.2. Certificate Policies Extension
+<a id="certificate-policies-extension"></a>
+
+#### 7.1.2.2. Certificate Policies Extension 
 
 The *certificatePolicies* extension in TLS certificates issued under emSign PKI shall include the appropriate object identifier (OID) corresponding to the certificate policy defined in this CP/CPS. The *critical* field of this extension SHALL be set to FALSE.
 
@@ -2222,11 +2762,15 @@ Organization Validation (OV), Extended Validated (EV) or Individual Validation (
 
 - Additional policy OIDs SHALL represent the certificate’s validation level and compliance with verification, issuance, and other requirements, as specified in Appendix A and Appendix B, and referenced in Section 1.2 of this CP/CPS.
 
-### 7.1.3. Algorithm Object Identifiers
+<a id="algorithm-object-identifiers"></a>
+
+### 7.1.3. Algorithm Object Identifiers 
 
 The certificate contains the Signing Algorithm information as per RFC 5280 specifications.
 
-### 7.1.4. Name Forms
+<a id="name-forms"></a>
+
+### 7.1.4. Name Forms 
 
 The certificates with name forms compliant to RFC 5280. Each certificate includes a unique certificate serial number (non-sequential) among respective Issuing CA, that exhibits at least 80 bits of output from a CSPRNG.
 
@@ -2240,83 +2784,115 @@ emSign SHALL NOT issue a publicly trusted SSL/TLS Certificate containing a Domai
 
 an IP Reverse Zone Suffix, including in-addr.arpa or ip6.arpa
 
-### 7.1.5. Name constraints
+<a id="name-constraints"></a>
+
+### 7.1.5. Name constraints 
 
 emSign PKI includes Name Constraints in Subordinate CA Certificates when relevant. emSign PKI places Name Constraints in a non-critical nameConstraints extension within the CA certificate. emSign PKI does not include the anyExtendedKeyUsage EKU in Name Constrained CA certificates.
 
-### 7.1.6. Certificate policy object identifier
+<a id="certificate-policy-object-identifier"></a>
+
+### 7.1.6. Certificate policy object identifier 
 
 The OIDs used by emSign PKI are listed in Section 1.2.
 
-### 7.1.7. Usage of Policy Constraints extension
+<a id="usage-of-policy-constraints-extension"></a>
+
+### 7.1.7. Usage of Policy Constraints extension 
 
 No stipulation.
 
-### 7.1.8. Policy qualifiers syntax and semantics
+<a id="policy-qualifiers-syntax-and-semantics"></a>
+
+### 7.1.8. Policy qualifiers syntax and semantics 
 
 emSign PKI includes in End Entity Certificates a non-critical Certificate Policies extension as defined in RFC5280. It includes a one or more PolicyInformation extension that includes the Certificate Policy Identifier and a single Policy Qualifier referring to the CPS URI or a userNotice.
 
-### 7.1.9. Processing semantics for the critical Certificate Policies extension
+<a id="processing-semantics-for-the-critical-certificate-policies-extension"></a>
+
+### 7.1.9. Processing semantics for the critical Certificate Policies extension 
 
 No stipulation.
 
-## 7.2. CRL Profile
+<a id="crl-profile"></a>
+
+## 7.2. CRL Profile 
 
 Certificate Revocation Lists are issued in the X.509 version 2 format in accordance with RFC 5280.
 
-### 7.2.1. Version Number(s)
+<a id="version-numbers"></a>
+
+### 7.2.1. Version Number(s) 
 
 Issuing CAs within the emSign PKI issue X.509 version 2 Certificate Revocation Lists.
 
-### 7.2.2. CRL and CRL entry extensions
+<a id="crl-and-crl-entry-extensions"></a>
 
-#### 7.2.2.1. Fields in CRL
+### 7.2.2. CRL and CRL entry extensions 
+
+<a id="fields-in-crl"></a>
+
+#### 7.2.2.1. Fields in CRL 
 
 The CRL contains following fields:
 
-1. Issuer DN
+1.  Issuer DN
 
-2. Effective date of CRL issuance
+2.  Effective date of CRL issuance
 
-3. Next update date
+3.  Next update date
 
-4. Signature Algorithm
+4.  Signature Algorithm
 
-5. Signature Hash Algorithm
+5.  Signature Hash Algorithm
 
-#### 7.2.2.2. CRL Extensions
+<a id="crl-extensions"></a>
+
+#### 7.2.2.2. CRL Extensions 
 
 CRL contains the following extensions:
 
-1. CRL Number: Sequential number for CRL under specific issuer.
+1.  CRL Number: Sequential number for CRL under specific issuer.
 
-2. Authority Key Identifier: Identifier of Issuing CA.
+2.  Authority Key Identifier: Identifier of Issuing CA.
 
-#### 7.2.2.3. CRL Entries
+<a id="crl-entries"></a>
+
+#### 7.2.2.3. CRL Entries 
 
 CRL contains the entries of certificates revoked under that issuer. Each of these entries contain:
 
-1. Certificate Serial Number
+1.  Certificate Serial Number
 
-2. Revocation Date
+2.  Revocation Date
 
-3. Revocation reason
+3.  Revocation reason
 
-## 7.3. OCSP Profile
+<a id="ocsp-profile"></a>
+
+## 7.3. OCSP Profile 
 
 Issuer CA may operate an Online Certificate Status Protocol responder in compliance with necessary requirements. OCSP responders conform to RFC 5019 and/or RFC 6960. The OCSP requests and responses shall be compliant with the requirements of RFC.
 
-### 7.3.1. Version Number(s)
+<a id="version-numbers"></a>
+
+### 7.3.1. Version Number(s) 
 
 Issuing CAs within the emSign PKI issue Version 1 OCSP Responses.
 
-### 7.3.2. OCSP Extensions
+<a id="ocsp-extensions"></a>
+
+### 7.3.2. OCSP Extensions 
 
 No Stipulation
 
-# 8. COMPLIANCE AUDIT AND OTHER ASSESSMENTS
+<a id="compliance-audit-and-other-assessments"></a>
 
-## 8.1. Frequency or circumstances of assessment
+# 8. COMPLIANCE AUDIT AND OTHER ASSESSMENTS 
+
+<a id="frequency-or-circumstances-of-assessment"></a>
+
+## 8.1. Frequency or circumstances of assessment 
 
 All Issuing Certification Authorities under the emSign PKI are subject to an annual compliance audit. These audits are conducted by qualified independent auditors and are designed to confirm conformance with the latest versions of AICPA/CICA:
 
@@ -2330,141 +2906,205 @@ All Issuing Certification Authorities under the emSign PKI are subject to an ann
 
 These assessments ensure that emSign PKI’s practices align with the CA/Browser Forum’s Baseline Requirements and applicable browser root program policies. Additional assessments may be performed in response to significant changes in CA operations, incidents, or at the discretion of the Policy Authority.
 
-## 8.2. Identity and Qualifications of Assessor
+<a id="identity-and-qualifications-of-assessor"></a>
+
+## 8.2. Identity and Qualifications of Assessor 
 
 External compliance audits of emSign PKI’s Issuing Certification Authorities are conducted by a Qualified Auditor who is independent of emSign, credible, and recognized by AICPA/WebTrust. The auditor must have substantial experience in auditing Information Security systems, PKI operations, and cryptographic technologies. The auditor is bound by applicable laws, regulations, or professional codes of ethics and must maintain professional liability or errors and omissions insurance with coverage of at least USD 1,000,000. The auditor must be authorized to conduct WebTrust audits, including for Certification Authorities, Baseline Requirements for TLS, and Extended Validation SSL where applicable.
 
 emSign PKI audits have been carried out by BDO.
 
-## 8.3. Assessor’s Relationship to Assessed Entity
+<a id="assessor�s-relationship-to-assessed-entity"></a>
+
+## 8.3. Assessor’s Relationship to Assessed Entity 
 
 emSign PKI has selected an auditor that is completely independent from emSign CA
 
-## 8.4. Topics Covered by Assessment
+<a id="topics-covered-by-assessment"></a>
+
+## 8.4. Topics Covered by Assessment 
 
 Topics covered by the Assessment include but are not limited to CA business practice disclosure (CP/CPS), service integrity of emSign Operations and emSign’s operational compliance to this CP/CPS and to the WebTrust guidelines.
 
-## 8.5. Actions Taken As a Result of Deficiency
+<a id="actions-taken-as-a-result-of-deficiency"></a>
+
+## 8.5. Actions Taken As a Result of Deficiency 
 
 For any material non-compliance or deficiency presented by the Auditors, emSign, at its sole discretion will determine an appropriate corrective action plan with appropriate time frame to remove the deficiency.
 
-## 8.6. Communication of results
+<a id="communication-of-results"></a>
+
+## 8.6. Communication of results 
 
 Results of the audit are reported to the Policy Authority for analysis and resolution of any deficiency through a subsequent corrective action plan.
 
-## 8.7. Self Audits
+<a id="self-audits"></a>
+
+## 8.7. Self Audits 
 
 emSign PKI controls service quality through ongoing internal audits at least a quarterly basis, against a randomly selected sample of certificates. The sample size of certificates issued would be at least 3%. This sample size period should begin from the first time the certificate is issued, or immediately after the previous self-audit sample was taken
 
-# 9. Other Business and Legal Matters
+<a id="other-business-and-legal-matters"></a>
 
-## 9.1. Fees
+# 9. Other Business and Legal Matters 
 
-### 9.1.1. Certificate Issuance or Renewal Fees
+<a id="fees"></a>
+
+## 9.1. Fees 
+
+<a id="certificate-issuance-or-renewal-fees"></a>
+
+### 9.1.1. Certificate Issuance or Renewal Fees 
 
 emSign PKI charges fee to its customers for certificate issuance and renewal. The fees are indicated to the customers through suitable web interface or through sales and marketing materials. The fees can be changed from time to time at emSign’s discretion.
 
-### 9.1.2. Certificate Access Fees
+<a id="certificate-access-fees"></a>
+
+### 9.1.2. Certificate Access Fees 
 
 emSign PKI may charge access fee for bulk access to its certificate databases/repository as specified in applicable agreements.
 
-### 9.1.3. Revocation or Status Information Access Fees
+<a id="revocation-or-status-information-access-fees"></a>
+
+### 9.1.3. Revocation or Status Information Access Fees 
 
 No fee will be charged by emSign CA for revocation of a certificate. Further no fee will be charged for a relying party to check the validity of the existing certificate using a CRL.
 
 However, emSign PKI reserves the right to charge a fee for providing certificate status information via OCSP.
 
-### 9.1.4. Fees for Other Services
+<a id="fees-for-other-services"></a>
+
+### 9.1.4. Fees for Other Services 
 
 emSign PKI reserves the right to charge fee for enterprise support and/or any other additional services.
 
-### 9.1.5. Refund Policy
+<a id="refund-policy"></a>
+
+### 9.1.5. Refund Policy 
 
 emSign PKI will provide refund to subscribers under certain circumstances and subject to certain conditions. The details of these will be contained in the relevant contractual document.
 
-## 9.2. Financial Responsibilities
+<a id="financial-responsibilities"></a>
 
-### 9.2.1. Insurance Cover
+## 9.2. Financial Responsibilities 
 
-emSign maintains Commercial General Liability insurance with a policy limit of at least two million US dollars ($2,000,000) in coverage and Errors and Omissions/Professional Liability insurance with a policy limit of at least Five million US dollars ($ 5,000,000) in coverage.
+<a id="insurance-cover"></a>
 
-### 9.2.2. Other Assets
+### 9.2.1. Insurance Cover 
+
+emSign maintains Commercial General Liability insurance with a policy limit of at least two million US dollars (\$2,000,000) in coverage and Errors and Omissions/Professional Liability insurance with a policy limit of at least Five million US dollars (\$ 5,000,000) in coverage.
+
+<a id="other-assets"></a>
+
+### 9.2.2. Other Assets 
 
 No stipulation.
 
-### 9.2.3. Insurance or warranty coverage for end-entities
+<a id="insurance-or-warranty-coverage-for-end-entities"></a>
+
+### 9.2.3. Insurance or warranty coverage for end-entities 
 
 Subscribers and Relying parties can apply to Commercial Insurance Providers for Financial Protection against accidental occurrences such as theft, corruption, loss or unintentional disclosure of the private key that corresponds to the public key in their emSign Certificate.
 
-### 9.2.4. Financial Records
+<a id="financial-records"></a>
+
+### 9.2.4. Financial Records 
 
 emSign PKI shall maintain its financial records, including books of accounts, in a commercially reasonable manner.
 
-### 9.2.5. No Partnership or Agency
+<a id="no-partnership-or-agency"></a>
+
+### 9.2.5. No Partnership or Agency 
 
 No partnership or agency is implied in any subscriber or relying party agreement under this CP/CPS. Hence emSign is not the agent, fiduciary trustee or other representative of subscribers or the relying parties. Further the subscribers and relying parties shall not represent themselves as agent, partner, affiliate, employee or representative of emSign and shall have no authority to commit anything on behalf of emSign.
 
-## 9.3. Confidentiality of Business Information
+<a id="confidentiality-of-business-information"></a>
 
-### 9.3.1. Scope of Confidential Information
+## 9.3. Confidentiality of Business Information 
+
+<a id="scope-of-confidential-information"></a>
+
+### 9.3.1. Scope of Confidential Information 
 
 emSign PKI considers the following information as confidential information and protects them from disclosure using a reasonable degree of care:
 
-1. Private Keys;
+1.  Private Keys;
 
-2. Activation data used to access Private Keys or to gain access to the CA system;
+2.  Activation data used to access Private Keys or to gain access to the CA system;
 
-3. Business continuity, incident response, contingency, and disaster recovery plans;
+3.  Business continuity, incident response, contingency, and disaster recovery plans;
 
-4. Other security practices used to protect the confidentiality, integrity, or availability of information;
+4.  Other security practices used to protect the confidentiality, integrity, or availability of information;
 
-5. Information held by emSign PKI as private information in accordance with this CP/CPS;
+5.  Information held by emSign PKI as private information in accordance with this CP/CPS;
 
-6. Audit logs and archive records;
+6.  Audit logs and archive records;
 
-7. Transaction records, financial audit records, and external or internal audit trail records and any audit reports (with the exception of an auditor’s letter confirming the effectiveness of the controls set forth in this CPS).
+7.  Transaction records, financial audit records, and external or internal audit trail records and any audit reports (with the exception of an auditor’s letter confirming the effectiveness of the controls set forth in this CPS).
 
-8. Any other information relating to subscriber or emSign PKI, which may be sensitive in nature.
+8.  Any other information relating to subscriber or emSign PKI, which may be sensitive in nature.
 
-### 9.3.2. Information not Within the Scope of Confidential Information
+<a id="information-not-within-the-scope-of-confidential-information"></a>
+
+### 9.3.2. Information not Within the Scope of Confidential Information 
 
 Any information other than information indicated as confidential in this CP/CPS shall be deemed public. Further Information appearing in certificates and in the Repository, are considered public.
 
-### 9.3.3. Responsibility to Protect Private Information
+<a id="responsibility-to-protect-private-information"></a>
+
+### 9.3.3. Responsibility to Protect Private Information 
 
 emSign PKI’s employees, agents and contractors are contractually obliged to protect confidential information. Further emSign provides training to employees on protection of confidential information.
 
-## 9.4. Privacy of Personal Information
+<a id="privacy-of-personal-information"></a>
 
-### 9.4.1. Privacy Plan
+## 9.4. Privacy of Personal Information 
+
+<a id="privacy-plan"></a>
+
+### 9.4.1. Privacy Plan 
 
 emSign PKI protects personal information as per the Privacy Policy published in emSign Repository.
 
-### 9.4.2. Information Treated as Private
+<a id="information-treated-as-private"></a>
+
+### 9.4.2. Information Treated as Private 
 
 All personal information about an applicant that is not publicly available in the contents of a Certificate or CRL are treated as private information by emSign PKI.
 
-### 9.4.3. Information not deemed private
+<a id="information-not-deemed-private"></a>
+
+### 9.4.3. Information not deemed private 
 
 Any certificate content and certificate status information is deemed not private in emSign PKI.
 
-### 9.4.4. Responsibility to Protect Private Information
+<a id="responsibility-to-protect-private-information"></a>
+
+### 9.4.4. Responsibility to Protect Private Information 
 
 emSign PKI shall store private information in accordance with the published Privacy Policy document published in emSign repository. All private information is securely stored and protected against accidental disclosure.
 
-### 9.4.5. Notice and Consent to Use Private Information
+<a id="notice-and-consent-to-use-private-information"></a>
+
+### 9.4.5. Notice and Consent to Use Private Information 
 
 Personal information obtained from an applicant during the application or identity verification process, to the extent not included in a certificate, is considered private information. Such private information will be used by emSign PKI only after obtaining the subject's consent or as required by applicable law or regulation. All subscribers are deemed to have consented to the global transfer and publication of any personal data contained in a Certificate.
 
-### 9.4.6. Disclosure pursuant to Judicial or Administrative Process
+<a id="disclosure-pursuant-to-judicial-or-administrative-process"></a>
+
+### 9.4.6. Disclosure pursuant to Judicial or Administrative Process 
 
 emSign PKI may disclose private information without notice to the applicants or subscribers where such disclosure is required by law or regulation.
 
-### 9.4.7. Other information disclosure circumstances
+<a id="other-information-disclosure-circumstances"></a>
+
+### 9.4.7. Other information disclosure circumstances 
 
 No stipulation.
 
-## 9.5. Intellectual Property Rights
+<a id="intellectual-property-rights"></a>
+
+## 9.5. Intellectual Property Rights 
 
 emSign does not knowingly violate the intellectual property rights of third parties.
 
@@ -2478,101 +3118,117 @@ Public keys and Private keys are the property of the applicable Certificate Hold
 
 emSign excludes all liability for breach of any other intellectual property rights.
 
-## 9.6. Representations and Warranties
+<a id="representations-and-warranties"></a>
 
-### 9.6.1. Certification Authority Representation and Warranties
+## 9.6. Representations and Warranties 
+
+<a id="certification-authority-representation-and-warranties"></a>
+
+### 9.6.1. Certification Authority Representation and Warranties 
 
 emSign PKI represents that it complies, in all material respects, with the provisions of this CP/CPSSSL/TLS CP/CPS and all applicable laws and regulations.
 
 emSign PKI further warrants that:
 
-1. Reasonable steps are taken to verify that the information contained in any Certificate is accurate at the time of issuance and is validated in accordance with this CP/CPS, the CA/Browser Forum Baseline Requirements, and EV Guidelines, where applicable.
+1.  Reasonable steps are taken to verify that the information contained in any Certificate is accurate at the time of issuance and is validated in accordance with this CP/CPS, the CA/Browser Forum Baseline Requirements, and EV Guidelines, where applicable.
 
-2. Certificates will be revoked promptly upon discovery or notification that the Certificate's contents are no longer accurate, or that the associated Private Key has been compromised.
+2.  Certificates will be revoked promptly upon discovery or notification that the Certificate's contents are no longer accurate, or that the associated Private Key has been compromised.
 
 emSign PKI also provides the representations and warranties required under the CA/Browser Forum Baseline Requirements and, where applicable, the CA/Browser Forum Guidelines for Extended Validation (EV) SSL Certificates.
 
 No other warranties are made by emSign. All other warranties, whether express, implied, statutory, or otherwise including, but not limited to, implied warranties of merchantability and fitness for a particular purpose are disclaimed to the fullest extent permitted by applicable law.
 
-### 9.6.2. RA representations and warranties
+<a id="ra-representations-and-warranties"></a>
+
+### 9.6.2. RA representations and warranties 
 
 RAs and LRAs warrant that:
 
-1. They carry out the issuance process in compliance with this CP/CPS.
+1.  They carry out the issuance process in compliance with this CP/CPS.
 
-2. The information provided by them does not contain any false or misleading information.
+2.  The information provided by them does not contain any false or misleading information.
 
-3. Translations performed by them are an accurate translation of the original information.
+3.  Translations performed by them are an accurate translation of the original information.
 
-4. All Certificates requested by them meet all material requirements of this CP/CPS.
+4.  All Certificates requested by them meet all material requirements of this CP/CPS.
 
 Additional representations and warranties may be contained in emSign’s agreement with RA/LRAs.
 
-### 9.6.3. Subscriber Representation and Warranties
+<a id="subscriber-representation-and-warranties"></a>
+
+### 9.6.3. Subscriber Representation and Warranties 
 
 Subscribers represent and warrant to emSign PKI, Relying Parties and other parties that, for each Certificate, the Subscriber will:
 
-1. Securely generate its Private Keys and protect its Private Keys from compromise,
+1.  Securely generate its Private Keys and protect its Private Keys from compromise,
 
-2. Provide accurate and complete information when communicating with emSign,
+2.  Provide accurate and complete information when communicating with emSign,
 
-3. Confirm the accuracy of the certificate data prior to using the Certificate,
+3.  Confirm the accuracy of the certificate data prior to using the Certificate,
 
-4. Promptly request revocation of a Certificate, cease using it and its associated Private Key and notify emSign PKI if there is any actual or suspected misuse or compromise of the Private Key associated with the Public Key included in the certificate,
+4.  Promptly request revocation of a Certificate, cease using it and its associated Private Key and notify emSign PKI if there is any actual or suspected misuse or compromise of the Private Key associated with the Public Key included in the certificate,
 
-5. Promptly request revocation of the Certificate, and cease using it, if any information in the Certificate is or becomes incorrect or inaccurate,
+5.  Promptly request revocation of the Certificate, and cease using it, if any information in the Certificate is or becomes incorrect or inaccurate,
 
-6. Use the Certificate only for authorized and legal purposes, consistent with the certificate purpose, this CPS, any applicable CP, and the relevant Subscriber Agreement, including only installing SSL Certificates on servers accessible at the domain listed in the Certificate and
+6.  Use the Certificate only for authorized and legal purposes, consistent with the certificate purpose, this CPS, any applicable CP, and the relevant Subscriber Agreement, including only installing SSL Certificates on servers accessible at the domain listed in the Certificate and
 
-7. Promptly cease using the Certificate and related Private Key after the Certificate’s expiration.
+7.  Promptly cease using the Certificate and related Private Key after the Certificate’s expiration.
 
 Subscribers represent and warrant as specified in CA Browser Forum Requirements & Guidelines.
 
-### 9.6.4. Relying Party Representation and Warranties
+<a id="relying-party-representation-and-warranties"></a>
+
+### 9.6.4. Relying Party Representation and Warranties 
 
 The Relying Party is solely responsible for making the decision to rely on a emSign PKI Certificate.
 
 A Relying Party accepts that to reasonably rely on a emSign PKI Certificate, the Relying Party must have:
 
-1. Obtained sufficient knowledge on the use of digital Certificates and PKI,
+1.  Obtained sufficient knowledge on the use of digital Certificates and PKI,
 
-2. Studied the applicable limitations on the usage of Certificates and agrees to emSign’s limitations on liability related to the use of Certificates,
+2.  Studied the applicable limitations on the usage of Certificates and agrees to emSign’s limitations on liability related to the use of Certificates,
 
-3. Read, understood, and agreed to the emSign’s Relying Party Agreement and this CP/CPS,
+3.  Read, understood, and agreed to the emSign’s Relying Party Agreement and this CP/CPS,
 
-4. Verified both the emSign Certificate and the Certificates in the certificate chain using the relevant CRL or OCSP
+4.  Verified both the emSign Certificate and the Certificates in the certificate chain using the relevant CRL or OCSP
 
-5. Not used a emSign Certificate which has expired or been revoked,
+5.  Not used a emSign Certificate which has expired or been revoked,
 
-6. Taken all reasonable steps to minimize the risk associated with relying on a digital signature certificate after considering:
+6.  Taken all reasonable steps to minimize the risk associated with relying on a digital signature certificate after considering:
 
-  a) applicable law and the legal requirements for identification of a party, protection of the confidentiality or privacy of information, and enforceability of the transaction;
+    1)  applicable law and the legal requirements for identification of a party, protection of the confidentiality or privacy of information, and enforceability of the transaction;
 
-  b) the intended use of the Certificate as listed in the certificate or this CPS,
+    2)  the intended use of the Certificate as listed in the certificate or this CPS,
 
-  c) the data listed in the Certificate,
+    3)  the data listed in the Certificate,
 
-  d) the economic value of the transaction or communication,
+    4)  the economic value of the transaction or communication,
 
-  e) the potential loss or damage that would be caused by an erroneous identification or a loss of confidentiality or privacy of information in the application, transaction, or communication,
+    5)  the potential loss or damage that would be caused by an erroneous identification or a loss of confidentiality or privacy of information in the application, transaction, or communication,
 
-  f) the Relying Party’s previous course of dealing with the Subscriber,
+    6)  the Relying Party’s previous course of dealing with the Subscriber,
 
-  g) the Relying Party’s understanding of trade, including experience with computer-based methods of trade, and
+    7)  the Relying Party’s understanding of trade, including experience with computer-based methods of trade, and
 
-  h) any other indicia of reliability or unreliability pertaining to the Subscriber and/or the application, communication, or transaction.
+    8)  any other indicia of reliability or unreliability pertaining to the Subscriber and/or the application, communication, or transaction.
 
 Any unauthorized reliance on a Certificate is at the Relying Party’s own risk.
 
-### 9.6.5. Representation and Warranties of Other Parties
+<a id="representation-and-warranties-of-other-parties"></a>
+
+### 9.6.5. Representation and Warranties of Other Parties 
 
 No stipulation.
 
-## 9.7. Disclaimer of Warranties
+<a id="disclaimer-of-warranties"></a>
+
+## 9.7. Disclaimer of Warranties 
 
 emSign PKI hereby disclaims all warranties including warranty on merchantability and /or fitness to a particular purpose other than to the extent prohibited by law or otherwise expressly provided in this CP/CPS.
 
-## 9.8. Limitation of Liability
+<a id="limitation-of-liability"></a>
+
+## 9.8. Limitation of Liability 
 
 All Issuing CAs under emSign PKI provides the service on best effort basis. The security and suitability of the service will not be guaranteed by Issuing CAs under emSign PKI.
 
@@ -2586,9 +3242,9 @@ Issuing CAs under emSign PKI shall be liable to Certificate Holders or Relying P
 
 Limits of Liability per Subscriber or Relying party or Third Party per certificate:
 
-(1) US Dollars One Thousand only (USD 1,000/-)
+1)  US Dollars One Thousand only (USD 1,000/-)
 
-(2) US Dollars Two Thousand only (USD 2,000/-) for Extended validation certificates.
+2)  US Dollars Two Thousand only (USD 2,000/-) for Extended validation certificates.
 
 The limit for aggregate maximum liability for all claims related to a single certificate or service shall be a liability of US Dollars Ten Thousand (USD 10,000/- only) or the amount paid by the subscriber in respect of that certificate or service during the past 12 months, whichever is higher.
 
@@ -2598,69 +3254,87 @@ Issuing CA’s liability, under emSign PKI, to any person for damages arising un
 
 By participating within the Issuing CAs under emSign PKI, any person that participates within the emSign PKI irrevocably agrees that they shall not apply for or otherwise seek either indirect, exemplary, consequential, special, incidental, or punitive damages and irrevocably confirms to Issuing CAs under emSign PKI their acceptance of the foregoing and the fact that emSign has relied upon the foregoing as a condition and inducement to permit that person to participate within the emSign Public Key Infrastructure.
 
-## 9.9. Indemnities
+<a id="indemnities"></a>
 
-### 9.9.1. Indemnification by emSign PKI
+## 9.9. Indemnities 
+
+<a id="indemnification-by-emsign-pki"></a>
+
+### 9.9.1. Indemnification by emSign PKI 
 
 emSign PKI shall indemnify each Application Software Vendor against any claim, damage, or loss suffered by an Application Software Vendor related to an EV Certificate issued by emSign PKI, except where the claim, damage, or loss suffered by the Application Software Vendor was directly caused by the Application Software Vendor’s software displaying either:
 
-(1) a valid and trustworthy EV Certificate as not valid or trustworthy or
+1)  a valid and trustworthy EV Certificate as not valid or trustworthy or
 
-(2) displaying as trustworthy
+2)  displaying as trustworthy
 
-  (i) an EV Certificate that has expired or
+    1)  an EV Certificate that has expired or
 
-  (ii) a revoked EV Certificate where the revocation status is available online but the Application Software Vendor’s software failed to check or ignored the status.
+    2)  a revoked EV Certificate where the revocation status is available online but the Application Software Vendor’s software failed to check or ignored the status.
 
-### 9.9.2. Indemnification by Subscribers
+<a id="indemnification-by-subscribers"></a>
+
+### 9.9.2. Indemnification by Subscribers 
 
 Any subscriber of a emSign Certificate, shall indemnify and hold harmless emSign PKI , its partners, any trusted root entities and their respective directors, officers, employees, agents, and contractors from any and all damages and losses arising out of:
 
-(1) use of the emSign PKI Certificate in a manner not authorised by emSign PKI;
+1)  use of the emSign PKI Certificate in a manner not authorised by emSign PKI;
 
-(2) tampering with the emSign Certificate; or
+2)  tampering with the emSign Certificate; or
 
-(3) misrepresentation or omission of material fact in order to obtain or use a Certificate, whether or not such misrepresentation or omission was intentional.
+3)  misrepresentation or omission of material fact in order to obtain or use a Certificate, whether or not such misrepresentation or omission was intentional.
 
 In addition, Subscribers shall indemnify and hold harmless emSign PKI from any and all damages (including legal fees) for lawsuits, claims or actions by third-parties relying on or otherwise using a emSign Certificate relating to:
 
-(1) Subscriber’s breach of their obligations under the Subscriber Agreement or this CP/CPS;
+1)  Subscriber’s breach of their obligations under the Subscriber Agreement or this CP/CPS;
 
-(2) Subscriber’s failure to protect its private key; or
+2)  Subscriber’s failure to protect its private key; or
 
-(3) claims (including without limitation infringement claims) pertaining to content or other information or data supplied by Certificate Holder.
+3)  claims (including without limitation infringement claims) pertaining to content or other information or data supplied by Certificate Holder.
 
-### 9.9.3. Indemnification by Relying Parties
+<a id="indemnification-by-relying-parties"></a>
+
+### 9.9.3. Indemnification by Relying Parties 
 
 Any relying party of a emSign Certificate, , shall indemnify and hold harmless emSign PKI , its partners, any trusted root entities and their respective directors, officers, employees, agents, and contractors from any and all damages and losses arising out of:
 
-(1) breach of the Relying Party Agreement, this CPS, or applicable law;
+1)  breach of the Relying Party Agreement, this CPS, or applicable law;
 
-(2) unreasonable reliance on a Certificate;
+2)  unreasonable reliance on a Certificate;
 
-(3) failure to check the Certificate’s status prior to use.
+3)  failure to check the Certificate’s status prior to use.
 
-(4) use of the emSign Certificate in a manner not authorised by emSign PKI;
+4)  use of the emSign Certificate in a manner not authorised by emSign PKI;
 
-(5) tampering with the emSign Certificate; or
+5)  tampering with the emSign Certificate; or
 
-(6) misrepresentation or omission of material fact in order to obtain or use a Certificate, whether or not such misrepresentation or omission was intentional.
+6)  misrepresentation or omission of material fact in order to obtain or use a Certificate, whether or not such misrepresentation or omission was intentional.
 
-## 9.10. Term and Termination
+<a id="term-and-termination"></a>
 
-### 9.10.1. Term
+## 9.10. Term and Termination 
+
+<a id="term"></a>
+
+### 9.10.1. Term 
 
 This CP/CPS and any amendments to this shall become effective upon publication in the emSign repository and shall remain in effect until it is replaced by a newer version.
 
-### 9.10.2. Termination
+<a id="termination"></a>
+
+### 9.10.2. Termination 
 
 This CP/CPS and any amendments shall remain in force until it is amended or replaced by a newer version.
 
-### 9.10.3. Effect of Termination and Survival
+<a id="effect-of-termination-and-survival"></a>
+
+### 9.10.3. Effect of Termination and Survival 
 
 Upon termination of this CPS, emSign PKI Participants are nevertheless bound by its terms for all certificates issued for the remainder of the validity periods of such certificates. At a minimum, all responsibilities related to protecting confidential information will survive termination.
 
-## 9.11. Individual Notices and Communications with Participants
+<a id="individual-notices-and-communications-with-participants"></a>
+
+## 9.11. Individual Notices and Communications with Participants 
 
 Notices related to this CP/CPS may be submitted to emSign PKI in either paper or electronic form, using the contact details provided in Section 1.5.2 of this document. A notice is considered effective only upon receipt of a valid and signed acknowledgment from emSign PKI. If an acknowledgment is not received within seven (7) calendar days, the sender is required to resend the notice in physical form to the postal address specified in this CP/CPS, using a courier service that provides delivery confirmation.
 
@@ -2668,25 +3342,37 @@ emSign PKI may send required notices to Participants via electronic or physical 
 
 otherwise explicitly agreed upon in writing.
 
-## 9.12. Amendments
+<a id="amendments"></a>
 
-### 9.12.1. Procedure for Amendment
+## 9.12. Amendments 
+
+<a id="procedure-for-amendment"></a>
+
+### 9.12.1. Procedure for Amendment 
 
 Amendments to this CP/CPS are approved by emSign Policy Authority. Upon any amendment the amended CP/CPS shall be posted on the online repository within the duration defined in this CP/CPS.
 
-### 9.12.2. Notification Mechanism and Period
+<a id="notification-mechanism-and-period"></a>
+
+### 9.12.2. Notification Mechanism and Period 
 
 emSign PKI may make changes to this CP/CPS without notice; further emSign PKI does not guarantee or set a notice-and-comment period.
 
-### 9.12.3. Circumstances under which OID must be changed
+<a id="circumstances-under-which-oid-must-be-changed"></a>
+
+### 9.12.3. Circumstances under which OID must be changed 
 
 No stipulation.
 
-## 9.13. Dispute Resolution Procedures
+<a id="dispute-resolution-procedures"></a>
+
+## 9.13. Dispute Resolution Procedures 
 
 If any dispute arises between the parties participating in the emSign PKI the parties shall first attempt to solve the dispute by good faith negotiations by referring directly to emSign, before resorting to any other dispute resolution mechanism. If such good faith negotiations fail then the parties may refer the matter to arbitration or adjudication.
 
-## 9.14. Governing Law
+<a id="governing-law"></a>
+
+## 9.14. Governing Law 
 
 This CP/CPS shall be governed by and construed in accordance with the laws applicable to the issuing Certification Authority (CA) under the emSign PKI that issued the relevant certificate, except in circumstances where issuing CAs under emSign PKI have explicitly agreed with the subscriber / relying party / any other party to be governed by the laws of any other country.
 
@@ -2694,25 +3380,37 @@ Where a certificate is issued by an issuing CA under the emSign PKI operating in
 
 Where a certificate is issued by an issuing CA under the emSign PKI operating in India, this CPS and any dispute arising out of or in connection with such certificate shall be governed by the laws of India and shall be subject to the exclusive jurisdiction of the courts in Bangalore, India.
 
-## 9.15. Compliance with Applicable Law
+<a id="compliance-with-applicable-law"></a>
+
+## 9.15. Compliance with Applicable Law 
 
 The certificates issued under emSign PKI shall be used by the subscribers and relying parties only in accordance with the laws and regulations of the jurisdiction in which they are used or relied upon. Issuing CAs under emSign PKI may refuse to issue or may revoke Certificates if, in their opinion, issuance or the continued use of the emSign PKI Certificates would violate applicable laws or regulations.
 
-## 9.16. Miscellaneous Provisions
+<a id="miscellaneous-provisions"></a>
 
-### 9.16.1. Entire Agreement
+## 9.16. Miscellaneous Provisions 
+
+<a id="entire-agreement"></a>
+
+### 9.16.1. Entire Agreement 
 
 No stipulation.
 
-### 9.16.2. Assignment
+<a id="assignment"></a>
+
+### 9.16.2. Assignment 
 
 Issuing CAs, subscribers, relying parties, Registering Authorities or any other entities operating under this CP/CPS are not entitled to assign any of their rights or obligations under this CP/CPS without the prior written consent of eMudhra.
 
-### 9.16.3. Severability
+<a id="severability"></a>
+
+### 9.16.3. Severability 
 
 If any of the provisions of this CP/CPS is held invalid by a competent authority in the applicable jurisdiction, the remainder of the CP/CPS will remain valid and enforceable.
 
-### 9.16.4. Enforcement (attorneys' fees and waiver of rights)
+<a id="enforcement-attorneys-fees-and-waiver-of-rights"></a>
+
+### 9.16.4. Enforcement (attorneys' fees and waiver of rights) 
 
 Issuing CAs under emSign PKI may seek indemnification and attorneys’ fees from a party for damages, losses and expenses related to that party’s conduct.
 
@@ -2722,205 +3420,872 @@ No waiver to any party shall be effective unless it is given in writing by respe
 
 In its specific agreements with subscribers, relying parties or any other parties emSign PKI may agree to further provisions relating to enforcement.
 
-### 9.16.5. Force Majeure
+<a id="force-majeure"></a>
+
+### 9.16.5. Force Majeure 
 
 emSign PKI accepts no liability for any delay or failure to perform an obligation under this CP/CPS to the extent those delay or failure is caused by events beyond its reasonable control.
 
-## 9.17. Other Provisions
+<a id="other-provisions"></a>
+
+## 9.17. Other Provisions 
 
 No stipulation.
 
-# 10. Appendix A: Verification Requirements for Subscriber
+<a id="appendix-a-verification-requirements-for-subscriber"></a>
 
-## 10.1. SSL/TLS - DV
+# 10. Appendix A: Verification Requirements for Subscriber 
+
+<a id="ssltls-dv"></a>
+
+## 10.1. SSL/TLS - DV 
+
+<table style="width:87%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
+<th style="text-align: left;">Secure Websites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Domain Verification</strong></td>
+<td><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
+<ol type="1">
+<li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
+<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization</p></li>
+</ol>
+<p>Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p>
+<ol start="3" type="1">
+<li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
+<li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
+</ol>
+<p><strong>Wildcard domains:</strong> These shall undergo additional checks, to not to wrongly issue, for a domain listed in public suffix list (PSL). If the domain is listed in PSL, the application shall be refused, unless applicant proves ownership of entire domain namespace.</p>
+<p><strong>Country:</strong> If the Country is present in application, it shall be validated against, the domain names ccTLD, or the domain registrar provided information, or by IP address range allocation (by country) checked for the domain or the applicant’s IP address.</p>
+<p><strong>IP Address</strong>: If the IP address is requested for the certificate, in place of domain name, it shall be verified to have the applicant’s control over the IP as per Baseline Requirements Section 3.2.2.5, by means of (i) change in agreed information in an URL containing the IP address, OR (ii)</p>
+<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME</p>
+<p>“http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
+<p><strong>MPIC: emSign</strong> implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
+<ol type="1">
+<li><p>DNS-based validation methods, including DNS TXT and CNAME records</p></li>
+<li><p>HTTP-based domain validation methods, including file-based challenges</p></li>
+<li><p>ACME HTTP-01 challenge methods</p></li>
+<li><p>CAA record checks</p></li>
+</ol></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers. Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+<p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p>
+<p><strong>DNSSEC Validation :</strong> emSign performs DNSSEC validation in accordance with the Baseline Requirements as follows:</p>
+<p>For domain validation methods performed under Baseline Requirements Sections 3.2.2.4.4, 3.2.2.4.13, and 3.2.2.4.14, DNSSEC validation back to the IANA DNSSEC root trust anchor MUST be performed on all DNS CNAME, CAA, and TXT queries used to obtain the Authorization Domain Name associated with the validation of domain authorization or control by the Primary Network Perspective. emSign MUST NOT use local policy to disable DNSSEC validation for these queries.</p>
+<p>For all other DNS queries performed as part of domain validation or certificate issuance processes, DNSSEC validation back to the IANA DNSSEC root trust anchor SHOULD be performed. emSign SHOULD NOT use local policy to disable DNSSEC validation for such queries.</p>
+<p>Where DNSSEC validation is required and the DNS response fails DNSSEC validation (e.g., due to a signature verification failure, missing signatures on a signed zone, or a broken chain of trust to the IANA DNSSEC root trust anchor), the query result SHALL NOT be used for domain validation purposes, and the certificate SHALL NOT be issued.</p></td>
+</tr>
+</tbody>
+</table>
+
+<a id="ssltls-ivov"></a>
+
+## 10.2. SSL/TLS - IV/OV 
 
 | **Usage/Purpose** | Secure Websites |
-|---|---|
-| **Domain Verification** | Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain: 1. Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7) 2. Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18) 3. Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19) 4. ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21) **Wildcard domains:** These shall undergo additional checks, to not to wrongly issue, for a domain listed in public suffix list (PSL). If the domain is listed in PSL, the application shall be refused, unless applicant proves ownership of entire domain namespace. **Country:** If the Country is present in application, it shall be validated against, the domain names ccTLD, or the domain registrar provided information, or by IP address range allocation (by country) checked for the domain or the applicant’s IP address. **IP Address**: If the IP address is requested for the certificate, in place of domain name, it shall be verified to have the applicant’s control over the IP as per Baseline Requirements Section 3.2.2.5, by means of (i) change in agreed information in an URL containing the IP address, OR (ii) IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME “http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure. **MPIC: emSign** implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods: 1. DNS-based validation methods, including DNS TXT and CNAME records 2. HTTP-based domain validation methods, including file-based challenges 3. ACME HTTP-01 challenge methods 4. CAA record checks |
-|  | emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers. Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another. MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued. **DNSSEC Validation :** emSign performs DNSSEC validation in accordance with the Baseline Requirements as follows: For domain validation methods performed under Baseline Requirements Sections 3.2.2.4.4, 3.2.2.4.13, and 3.2.2.4.14, DNSSEC validation back to the IANA DNSSEC root trust anchor MUST be performed on all DNS CNAME, CAA, and TXT queries used to obtain the Authorization Domain Name associated with the validation of domain authorization or control by the Primary Network Perspective. emSign MUST NOT use local policy to disable DNSSEC validation for these queries. For all other DNS queries performed as part of domain validation or certificate issuance processes, DNSSEC validation back to the IANA DNSSEC root trust anchor SHOULD be performed. emSign SHOULD NOT use local policy to disable DNSSEC validation for such queries. Where DNSSEC validation is required and the DNS response fails DNSSEC validation (e.g., due to a signature verification failure, missing signatures on a signed zone, or a broken chain of trust to the IANA DNSSEC root trust anchor), the query result SHALL NOT be used for domain validation purposes, and the certificate SHALL NOT be issued. |
+|-------------------|-----------------|
 
-## 10.2. SSL/TLS - IV/OV
+<table style="width:87%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Individual Verification</strong></th>
+<th style="text-align: left;"><p>For Individual Validated (IV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
+<ol type="1">
+<li><p>Identity &amp; address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification.</p></li>
+<li><p>If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type.</p></li>
+<li><p>Additional cross-checks may be made the Applicant’s name &amp; address for consistency with a Reliable Data Source.</p></li>
+<li><p>Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax.</p></li>
+<li><p>If the verification is not satisfactorily achieved by any of the above process</p></li>
+</ol>
+<p>OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades).</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
+<td><p>For Organization Validated (OV), Verification of the identity &amp; address of the applicant shall be made using, any one or more the following:</p>
+<ol type="1">
+<li><p>A Reliable Data Source including a government/third-party databases, or through a physical/electronic/telephonic communication with the entity or jurisdiction governing the organization’s legal creation, existence, or recognition.</p></li>
+<li><p>A site visit verification by CA or RA.</p></li>
+<li><p>An attestation letter that is signed by a practicing/qualified accountant, lawyer, government official, or any other reliable third party.</p></li>
+<li><p>Any DBA Names ‘to-be-included’ included in the Certificate is also verified using a government source, attestation letter, third party or any other reliable form of identification.</p></li>
+<li><p>For address &amp; validity verification, it can also be made using, a utility bill, bank statement, credit card statement, tax document, or any other reliable form of identification.</p></li>
+</ol></td>
+</tr>
+</tbody>
+</table>
 
-| **Usage/Purpose** | Secure Websites |
-|---|---|
+<table style="width:87%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Domain Verification</strong></th>
+<th><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
+<ol type="1">
+<li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
+<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization</p></li>
+</ol>
+<p>Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p>
+<ol start="3" type="1">
+<li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
+<li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21)</p></li>
+</ol>
+<p><strong>Wildcard domains:</strong> These shall undergo additional checks, to not to wrongly issue, for a domain listed in public suffix list (PSL). If the domain is listed in PSL, the application shall be refused, unless applicant proves ownership of entire domain namespace.</p>
+<p><strong>Country:</strong> If the Country is present in application, it shall be validated against, the domain names ccTLD, or the domain registrar provided information, or by IP address range allocation (by country) checked for the domain or the applicant’s IP address.</p>
+<p><strong>IP Address</strong>: If the IP address is requested for the certificate, in place of domain name, it shall be verified to have the applicant’s control over the IP as per Baseline Requirements Section 3.2.2.5, by means of (i) change in agreed information in an URL containing the IP address, OR (ii)</p>
+<p>IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME</p>
+<p>“http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure.</p>
+<p><strong>MPIC:</strong></p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
 
-| **Individual Verification** | For Individual Validated (IV), Verification of the identity & address of the applicant shall be made using, any one or more the following: 1. Identity & address of the applicant shall be verified by obtaining a legible copy, which noticeably shows the Applicant’s face, of at least one currently valid government-issued photo ID proof (passport, national ID, driver’s license, government employment ID, or any other equivalent document type). The copy of the document shall be inspected for any indication of alteration or falsification. 2. If address is not part of identity proof and/or requires any further assurance, this may be checked by taking an additional form of identification, such as recent utility bills, telephone bills, financial account statements, credit card, an additional ID proof, or any other equivalent document type. 3. Additional cross-checks may be made the Applicant’s name & address for consistency with a Reliable Data Source. 4. Confirmation may be taken that the Applicant is able to receive communication by telephone, postal mail/courier, or fax. 5. If the verification is not satisfactorily achieved by any of the above process OR an alternate process is necessary, it may completed by accepting a Declaration of Identity, that is attested by a the RA, Trusted Agent, notary, lawyer, certified/practicing accountant, Bank officer (above specified grades), Postal Officer(above specified grades), or a Government Officer (above specified grades). |
-|---|---|
-| **Organization Verification** | For Organization Validated (OV), Verification of the identity & address of the applicant shall be made using, any one or more the following: 1. A Reliable Data Source including a government/third-party databases, or through a physical/electronic/telephonic communication with the entity or jurisdiction governing the organization’s legal creation, existence, or recognition. 2. A site visit verification by CA or RA. 3. An attestation letter that is signed by a practicing/qualified accountant, lawyer, government official, or any other reliable third party. 4. Any DBA Names ‘to-be-included’ included in the Certificate is also verified using a government source, attestation letter, third party or any other reliable form of identification. 5. For address & validity verification, it can also be made using, a utility bill, bank statement, credit card statement, tax document, or any other reliable form of identification. |
+<table style="width:87%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
+<ol type="1">
+<li><p>DNS-based validation methods, including DNS TXT and CNAME records</p></li>
+<li><p>HTTP-based domain validation methods, including file-based challenges</p></li>
+<li><p>ACME HTTP-01 challenge methods</p></li>
+<li><p>CAA record checks emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers.</p></li>
+</ol>
+<p>Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+<p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p>
+<p><strong>DNSSEC Validation :</strong> emSign performs DNSSEC validation in accordance with the Baseline Requirements as follows:</p>
+<p>For domain validation methods performed under Baseline Requirements Sections 3.2.2.4.4, 3.2.2.4.13, and 3.2.2.4.14, DNSSEC validation back to the IANA DNSSEC root trust anchor MUST be performed on all DNS CNAME, CAA, and TXT queries used to obtain the Authorization Domain Name associated with the validation of domain authorization or control by the Primary Network Perspective. emSign MUST NOT use local policy to disable DNSSEC validation for these queries.</p>
+<p>For all other DNS queries performed as part of domain validation or certificate issuance processes, DNSSEC validation back to the IANA DNSSEC root trust anchor SHOULD be performed. emSign SHOULD NOT use local policy to disable DNSSEC validation for such queries.</p>
+<p>Where DNSSEC validation is required and the DNS response fails DNSSEC validation (e.g., due to a signature verification failure, missing signatures on a signed zone, or a broken chain of trust to the IANA DNSSEC root trust anchor), the query result SHALL NOT be used for domain validation purposes, and the certificate SHALL NOT be issued.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Telephone Verification</strong></td>
+<td style="text-align: left;"><p>If Telephone is to be present in the certificate, telephone number shall</p>
+<ol type="1">
+<li><p>Either be a part of a pre-verified source, including bank verified information,</p></li>
+</ol>
+<p>etc</p>
+<ol start="2" type="1">
+<li><p>Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number.</p></li>
+</ol></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Email Verification</strong></td>
+<td style="text-align: left;"><p>If Email is to be present in the certificate, The control over email or the domain name of email server,</p>
+<ol type="1">
+<li><p>Either be a part of a pre-verified source, including bank verified information,</p></li>
+</ol>
+<p>etc</p>
+<ol start="2" type="1">
+<li><p>Or, be verified in the form of delivery and acceptance of the email.</p></li>
+</ol></td>
+</tr>
+</tbody>
+</table>
 
-| **Domain Verification** | Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain: 1. Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7) 2. Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18) 3. Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19) 4. ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21) **Wildcard domains:** These shall undergo additional checks, to not to wrongly issue, for a domain listed in public suffix list (PSL). If the domain is listed in PSL, the application shall be refused, unless applicant proves ownership of entire domain namespace. **Country:** If the Country is present in application, it shall be validated against, the domain names ccTLD, or the domain registrar provided information, or by IP address range allocation (by country) checked for the domain or the applicant’s IP address. **IP Address**: If the IP address is requested for the certificate, in place of domain name, it shall be verified to have the applicant’s control over the IP as per Baseline Requirements Section 3.2.2.5, by means of (i) change in agreed information in an URL containing the IP address, OR (ii) IP assignment document of IANA or Regional Internet Registry, OR (iii) ACME “http-01” method for IP Addresses OR (iv) ACME “tls-alpn-01” method for IP Addresses performing r-DNS lookup resulting in a domain name verified by above procedure. **MPIC:** |
-|---|---|
+<a id="ssltls-ev"></a>
 
-|  | emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods: 1. DNS-based validation methods, including DNS TXT and CNAME records 2. HTTP-based domain validation methods, including file-based challenges 3. ACME HTTP-01 challenge methods 4. CAA record checks emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers. Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another. MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued. **DNSSEC Validation :** emSign performs DNSSEC validation in accordance with the Baseline Requirements as follows: For domain validation methods performed under Baseline Requirements Sections 3.2.2.4.4, 3.2.2.4.13, and 3.2.2.4.14, DNSSEC validation back to the IANA DNSSEC root trust anchor MUST be performed on all DNS CNAME, CAA, and TXT queries used to obtain the Authorization Domain Name associated with the validation of domain authorization or control by the Primary Network Perspective. emSign MUST NOT use local policy to disable DNSSEC validation for these queries. For all other DNS queries performed as part of domain validation or certificate issuance processes, DNSSEC validation back to the IANA DNSSEC root trust anchor SHOULD be performed. emSign SHOULD NOT use local policy to disable DNSSEC validation for such queries. Where DNSSEC validation is required and the DNS response fails DNSSEC validation (e.g., due to a signature verification failure, missing signatures on a signed zone, or a broken chain of trust to the IANA DNSSEC root trust anchor), the query result SHALL NOT be used for domain validation purposes, and the certificate SHALL NOT be issued. |
-|---|---|
-| **Telephone Verification** | If Telephone is to be present in the certificate, telephone number shall 1. Either be a part of a pre-verified source, including bank verified information, etc 2. Or, be verified by sending a challenge-response SMS text message or by recording the applicant’s voice during a communication to/by that telephone number. |
-| **Email Verification** | If Email is to be present in the certificate, The control over email or the domain name of email server, 1. Either be a part of a pre-verified source, including bank verified information, etc 2. Or, be verified in the form of delivery and acceptance of the email. |
+## 10.3. SSL/TLS - EV 
 
-## 10.3. SSL/TLS - EV
+<table style="width:87%;">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Usage/Purpose</strong></th>
+<th style="text-align: left;">Secure Websites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Physical Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Individual Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p><strong>Organization</strong></p>
+<p><strong>Verification</strong></p></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Domain Verification</strong></td>
+<td style="text-align: left;"><p>Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain:</p>
+<ol type="1">
+<li><p>Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7)</p></li>
+<li><p>Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization</p></li>
+</ol>
+<p>Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18)</p>
+<ol start="3" type="1">
+<li><p>Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19)</p></li>
+<li><p>ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21) <strong>DNSSEC Validation :</strong> emSign performs DNSSEC validation in accordance with the Baseline Requirements as follows:</p></li>
+</ol>
+<p>For domain validation methods performed under Baseline Requirements Sections 3.2.2.4.4, 3.2.2.4.13, and 3.2.2.4.14, DNSSEC validation back to the IANA DNSSEC root trust anchor MUST be performed on all DNS CNAME, CAA, and TXT queries used to obtain the Authorization Domain Name associated with the validation of domain authorization or control by the Primary Network Perspective. emSign MUST NOT use local policy to disable DNSSEC validation for these queries.</p>
+<p>For all other DNS queries performed as part of domain validation or certificate issuance processes, DNSSEC validation back to the IANA DNSSEC root trust</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>anchor SHOULD be performed. emSign SHOULD NOT use local policy to disable DNSSEC validation for such queries.</p>
+<p>Where DNSSEC validation is required and the DNS response fails DNSSEC validation (e.g., due to a signature verification failure, missing signatures on a signed zone, or a broken chain of trust to the IANA DNSSEC root trust anchor), the query result SHALL NOT be used for domain validation purposes, and the certificate SHALL NOT be issued.</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Telephone Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Email Verification</strong></td>
+<td style="text-align: left;">As per EV requirements, mentioned below.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>EV Verification</strong></td>
+<td style="text-align: left;">Section 11 of EV guidelines of CABF</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MPIC</strong></td>
+<td style="text-align: left;"><p>emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods:</p>
+<ol type="1">
+<li><p>DNS-based validation methods, including DNS TXT and CNAME records</p></li>
+<li><p>HTTP-based domain validation methods, including file-based challenges</p></li>
+<li><p>ACME HTTP-01 challenge methods</p></li>
+<li><p>CAA record checks</p></li>
+</ol></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers. Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another.</p>
+<p>MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued.</p></td>
+</tr>
+</tbody>
+</table>
 
-| **Usage/Purpose** | Secure Websites |
-|---|---|
-| **Physical Verification** | As per EV requirements, mentioned below. |
-| **Individual Verification** | As per EV requirements, mentioned below. |
-| **Organization Verification** | As per EV requirements, mentioned below. |
-| **Domain Verification** | Domain name(s) to be listed in the Certificate shall be checked with any one or more of the following procedures, for satisfactory proof of right-to-use the domain: 1. Validating the request by confirming the presence of a Random Value in a DNS CNAME or TXT record on the Authorization Domain Name (Baseline Requirements Section 3.2.2.4.7) 2. Validating the request by confirming the presence of a Random Value within a file under the "/.well-known/pki-validation" directory on the Authorization Domain Name that is accessible by the CA via HTTP/HTTPS over an Authorized Port. (Baseline Requirements Section 3.2.2.4.18) 3. Validating the request by using the ACME HTTP Challenge method in accordance to RFC 8555 (Baseline Requirements Section 3.2.2.4.19) 4. ACME DNS Challenge (Labelled with Account ID) DNS validation using ACME with account-specific labels (Baseline Requirements Section 3.2.2.4.21) **DNSSEC Validation :** emSign performs DNSSEC validation in accordance with the Baseline Requirements as follows: For domain validation methods performed under Baseline Requirements Sections 3.2.2.4.4, 3.2.2.4.13, and 3.2.2.4.14, DNSSEC validation back to the IANA DNSSEC root trust anchor MUST be performed on all DNS CNAME, CAA, and TXT queries used to obtain the Authorization Domain Name associated with the validation of domain authorization or control by the Primary Network Perspective. emSign MUST NOT use local policy to disable DNSSEC validation for these queries. For all other DNS queries performed as part of domain validation or certificate issuance processes, DNSSEC validation back to the IANA DNSSEC root trust |
-|  | anchor SHOULD be performed. emSign SHOULD NOT use local policy to disable DNSSEC validation for such queries. Where DNSSEC validation is required and the DNS response fails DNSSEC validation (e.g., due to a signature verification failure, missing signatures on a signed zone, or a broken chain of trust to the IANA DNSSEC root trust anchor), the query result SHALL NOT be used for domain validation purposes, and the certificate SHALL NOT be issued. |
-| **Telephone Verification** | As per EV requirements, mentioned below. |
-| **Email Verification** | As per EV requirements, mentioned below. |
-| **EV Verification** | Section 11 of EV guidelines of CABF |
-| **MPIC** | emSign implements Multi-Perspective Issuance Corroboration (MPIC) to improve protection against Border Gateway Protocol (BGP) hijacks and DNS manipulation during domain validation. MPIC is applied to the following validation methods: 1. DNS-based validation methods, including DNS TXT and CNAME records 2. HTTP-based domain validation methods, including file-based challenges 3. ACME HTTP-01 challenge methods 4. CAA record checks |
-|  | emSign SHALL corroborate validation results using at least two independent Network Perspectives. These Network Perspectives MUST be geographically separated by a straight-line distance of at least 500 kilometers. Each Network Perspective MAY use a recursive DNS resolver that is not colocated with the Network Perspective. However, the DNS resolver used by the Network Perspective MUST fall within the same Regional Internet Registry (RIR) service region as the Network Perspective relying upon it. emSign SHALL ensure that no Network Perspective reuses or shares DNS cache or validation results with any other perspective. DNS queries and HTTP validations MUST be performed independently from each perspective. Validation results from one perspective SHALL NOT influence or substitute for validation results from another. MPIC SHALL be used to detect and prevent certificate issuance in the presence of routing or DNS anomalies, including BGP hijacks, DNS poisoning, or other forms of network-level interference. Any inconsistencies detected during MPIC SHALL result in the validation being treated as a failure, and the certificate SHALL NOT be issued. |
+<a id="appendix-b-certificate-profiles"></a>
 
-# 11. Appendix B: Certificate Profiles
+# 11. Appendix B: Certificate Profiles 
 
-## 11.1. Root Certificates
+<a id="root-certificates"></a>
+
+## 11.1. Root Certificates 
+
+<table style="width:86%;">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">V3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Serial Number</td>
+<td>Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Signature Algorithm</td>
+<td>SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: CN</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: O</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: OU</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: C</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid From</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid To</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
+</tr>
+<tr>
+<td style="text-align: left;">Public Key</td>
+<td style="text-align: left;"><p>RSA 4096 (OR) RSA 8192</p>
+<p>ECC curves NIST P-256, P-384, or P-521</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: CommonName</td>
+<td style="text-align: left;">Common Name of Root CA</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: OrganizationName</td>
+<td style="text-align: left;">Legal Name of CA Organization</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: OrganizationalUnitName</td>
+<td style="text-align: left;">Variable Information</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: CountryName</td>
+<td style="text-align: left;">Country of CA</td>
+</tr>
+<tr>
+<td style="text-align: left;">Key Usage</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Certificate Signing, Off-line CRL Signing, CRL Signing (06)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Basic Constraints</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Subject Type=CA, Path Length Constraint=None</p></td>
+</tr>
+</tbody>
+</table>
+
+<a id="subordinate-ca-certificates-issuer-intermediate"></a>
+
+## 11.2. Subordinate CA Certificates (Issuer / Intermediate) 
 
 | Version | V3 |
-|---|---|
+|:---|:---|
 | Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
 | Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
-| Issuer: CN | <Issuing CA Common Name> |
-| Issuer: O | <Issuing CA Organization name> |
-| Issuer: OU | <Issuing CA Organization unit> |
-| Issuer: C | <Issuing CA Country> |
-| Valid From | Start date expressed in UTC format |
-| Valid To | Start date expressed in UTC format |
-| Public Key | RSA 4096 (OR) RSA 8192 ECC curves NIST P-256, P-384, or P-521 |
-| Subject: CommonName | Common Name of Root CA |
-| Subject: OrganizationName | Legal Name of CA Organization |
-| Subject: OrganizationalUnitName | Variable Information |
-| Subject: CountryName | Country of CA |
-| Key Usage | Critical=TRUE Certificate Signing, Off-line CRL Signing, CRL Signing (06) |
-| Subject Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Basic Constraints | Critical=TRUE Subject Type=CA, Path Length Constraint=None |
 
-## 11.2. Subordinate CA Certificates (Issuer / Intermediate)
+<table style="width:86%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Issuer: CN</th>
+<th style="text-align: left;">&lt;Issuing CA Common Name&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Issuer: O</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: OU</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: C</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid From</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid To</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
+</tr>
+<tr>
+<td style="text-align: left;">Public Key</td>
+<td style="text-align: left;"><p>RSA 4096 (OR) RSA 8192</p>
+<p>ECC curves NIST P-256, P-384, or P-521</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: CommonName</td>
+<td style="text-align: left;">Common Name of CA</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: OrganizationName</td>
+<td style="text-align: left;">Legal Name of CA Organization</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: OrganizationalUnitName</td>
+<td style="text-align: left;">Variable Information</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: CountryName</td>
+<td style="text-align: left;">Country of CA</td>
+</tr>
+<tr>
+<td style="text-align: left;">Key Usage</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Certificate Signing, Off-line CRL Signing, CRL Signing (06)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Enhanced Key Usage</td>
+<td style="text-align: left;">In case the CA issues Server Authentication certificates:</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>Server Authentication, Client Authentication</p>
+<p><strong>Note:</strong> Any new Issuing CA generated after June 15, 2025 will be restricted to Server Authentication.</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Certificate Policies</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<ol type="1">
+<li><p>Policy ID=2.5.29.32.0<a href="http://repository.emsign.com/">, <u>http://repository.emsign.com</u> O</a>R Policy ID=1.3.6.1.4.1.50977.1.0.1<a href="http://repository.emsign.com/">, <u>http://repository.emsign.com</u>.</a></p></li>
+<li><p>Policy ID = 1.3.6.1.4.1.50977.1.2.100 For DV SSL OR,</p></li>
+</ol>
+<p>1.3.6.1.4.1.50977.1.2.110 For OV SSL OR,</p>
+<p>1.3.6.1.4.1.50977.1.2.120 For EV SSL</p>
+<ol start="3" type="1">
+<li><p>Policy ID = 2.23.140.1.2.1 For DV SSL OR,</p></li>
+</ol>
+<p>2.23.140.1.2.2 For OV SSL OR,</p>
+<p>2.23.140.1.1 For EV SSL</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Authority Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Basic Constraints</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Subject Type=CA, Path Length Constraint=n</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Authority Information access</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com OR,</p>
+<p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR,</p>
+<p>URL=http://ocsp-b.emSign.com (for US location certificate) OR,</p>
+<p>URL=http://ocsp-c.emSign.com (for NL location certificate)</p>
+<p>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2),</p>
+<p>URL=http://repository.emsign.com/certs/&lt;IssuerName&gt;.crt/p7c/cer</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">CRL Distribution Points</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>CRL HTTP URL = http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
+</tr>
+</tbody>
+</table>
+
+<a id="ssltls-dv"></a>
+
+## 11.3. SSL/TLS - DV 
+
+<table style="width:86%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">V3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Serial Number</td>
+<td style="text-align: left;">Unique Non-Sequential CSPRNG Number and is greater than zero.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Signature Algorithm</td>
+<td style="text-align: left;">SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: CN</td>
+<td style="text-align: left;">&lt;Issuing CA Common Name&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: O</td>
+<td style="text-align: left;">&lt;Issuing CA Organization name&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: OU</td>
+<td style="text-align: left;">&lt;Issuing CA Organization unit&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Issuer: C</td>
+<td style="text-align: left;">&lt;Issuing CA Country&gt;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid From</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
+</tr>
+<tr>
+<td style="text-align: left;">Valid To</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
+</tr>
+<tr>
+<td style="text-align: left;">Public Key</td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: CommonName</td>
+<td style="text-align: left;">FQDN or Single IP</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject Alternative Name</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>DNS (multiple) = FQDN or Single IP</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Key Usage</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0))</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Enhanced Key Usage</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>Server Authentication</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Certificate Policies</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<ol type="1">
+<li><p>Policy ID=1.3.6.1.4.1.50977.1.2.100 (User Notice,</p></li>
+</ol>
+<p>Domain Validated SSL/TLS Certificate)</p>
+<ol start="2" type="1">
+<li><p>Policy ID=1.3.6.1.4.1.50977.1.0.1.1 (CPS),</p></li>
+</ol></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p><a href="http://repository.emsign.com/"><u>http://repository.emsign.com</u></a></p>
+<p>3. Policy ID = 2.23.140.1.2.1</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Authority Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Basic Constraints</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Subject Type=End Entity, Path Length Constraint=None</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Authority Information access</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com OR,</p>
+<p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR,</p>
+<p>URL=http://ocsp-b.emSign.com (for US location certificate) OR,</p>
+<p>URL=http://ocsp-c.emSign.com (for NL location certificate)</p>
+<p>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2),</p>
+<p>URL=http://repository.emsign.com/certs/&lt;IssuerName&gt;.crt/p7c/cer</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">CRL Distribution Points</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>CRL HTTP URL = http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
+</tr>
+</tbody>
+</table>
+
+<a id="ssltls-ov"></a>
+
+## 11.4. SSL/TLS - OV 
 
 | Version | V3 |
-|---|---|
+|:---|:---|
 | Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
 | Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
+| Issuer: CN | \<Issuing CA Common Name\> |
+| Issuer: O | \<Issuing CA Organization name\> |
+| Issuer: OU | \<Issuing CA Organization unit\> |
+| Issuer: C | \<Issuing CA Country\> |
 
-| Issuer: CN | <Issuing CA Common Name> |
-|---|---|
-| Issuer: O | <Issuing CA Organization name> |
-| Issuer: OU | <Issuing CA Organization unit> |
-| Issuer: C | <Issuing CA Country> |
-| Valid From | Start date expressed in UTC format |
-| Valid To | Start date expressed in UTC format |
-| Public Key | RSA 4096 (OR) RSA 8192 ECC curves NIST P-256, P-384, or P-521 |
-| Subject: CommonName | Common Name of CA |
-| Subject: OrganizationName | Legal Name of CA Organization |
-| Subject: OrganizationalUnitName | Variable Information |
-| Subject: CountryName | Country of CA |
-| Key Usage | Critical=TRUE Certificate Signing, Off-line CRL Signing, CRL Signing (06) |
-| Enhanced Key Usage | In case the CA issues Server Authentication certificates: |
-|  | Critical=FALSE Server Authentication, Client Authentication **Note:** Any new Issuing CA generated after June 15, 2025 will be restricted to Server Authentication. |
-| Certificate Policies | Critical=FALSE 1. Policy ID=2.5.29.32.0[,http://repository.emsign.comO](http://repository.emsign.com/)R Policy ID=1.3.6.1.4.1.50977.1.0.1[,http://repository.emsign.com.](http://repository.emsign.com/) 2. Policy ID = 1.3.6.1.4.1.50977.1.2.100 For DV SSL OR, 1.3.6.1.4.1.50977.1.2.110 For OV SSL OR, 1.3.6.1.4.1.50977.1.2.120 For EV SSL 3. Policy ID = 2.23.140.1.2.1 For DV SSL OR, 2.23.140.1.2.2 For OV SSL OR, 2.23.140.1.1 For EV SSL |
-| Subject Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Authority Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Basic Constraints | Critical=TRUE Subject Type=CA, Path Length Constraint=n |
-| Authority Information access | Critical=FALSE Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com OR, URL=http://ocsp-a.emSign.com (for IN location certificate) OR, URL=http://ocsp-b.emSign.com (for US location certificate) OR, URL=http://ocsp-c.emSign.com (for NL location certificate) Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2), URL=http://repository.emsign.com/certs/<IssuerName>.crt/p7c/cer |
-| CRL Distribution Points | Critical=FALSE CRL HTTP URL = http://crl.emsign.com?<IssuerName>.crl |
+<table style="width:86%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Valid From</th>
+<th style="text-align: left;">Start date expressed in UTC format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Valid To</td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
+</tr>
+<tr>
+<td style="text-align: left;">Public Key</td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: CommonName</td>
+<td style="text-align: left;">FQDN or Single IP</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: OrganizationName</td>
+<td style="text-align: left;">Legal Name of the Organization with allowed variations</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: StreetAddress</td>
+<td style="text-align: left;">Verified Street Address (Optional)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: LocalityName</td>
+<td style="text-align: left;">Verified Locality (Optional)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: StateOrProvinceName</td>
+<td style="text-align: left;">Verified State/Province</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: CountryName</td>
+<td style="text-align: left;">Verified Country</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject: PostalCode</td>
+<td style="text-align: left;">Verified Postal Code (Optional)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject Alternative Name</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>DNS (multiple) = FQDN or Single IP</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Key Usage</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0))</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Enhanced Key Usage</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>Server Authentication</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Certificate Policies</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>1. Policy ID=1.3.6.1.4.1.50977.1.2.110 (User Notice,</p>
+<p>Organization Validated SSL/TLS Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1.1 (CPS, <a href="http://repository.emsign.com/"><u>http://repository.emsign.com</u> 3</a>. Policy ID = 2.23.140.1.2.2</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Subject Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Authority Key Identifier</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Basic Constraints</td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Subject Type=End Entity, Path Length Constraint=None</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">Authority Information access</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com OR,</p>
+<p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR,</p>
+<p>URL=http://ocsp-b.emSign.com (for US location certificate) OR,</p>
+<p>URL=http://ocsp-c.emSign.com (for NL location certificate)</p>
+<p>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2),</p>
+<p>URL=http://repository.emsign.com/certs/&lt;IssuerName&gt;.crt/p7c/cer</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">CRL Distribution Points</td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>CRL HTTP URL = http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
+</tr>
+</tbody>
+</table>
 
-## 11.3. SSL/TLS - DV
+<a id="ssltls-ev"></a>
+
+## 11.5. SSL/TLS - EV 
 
 | Version | V3 |
-|---|---|
+|:---|:---|
 | Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
 | Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
-| Issuer: CN | <Issuing CA Common Name> |
-| Issuer: O | <Issuing CA Organization name> |
-| Issuer: OU | <Issuing CA Organization unit> |
-| Issuer: C | <Issuing CA Country> |
-| Valid From | Start date expressed in UTC format |
-| Valid To | Start date expressed in UTC format |
-| Public Key | As per Section 6.1.5. |
-| Subject: CommonName | FQDN or Single IP |
-| Subject Alternative Name | Critical=FALSE DNS (multiple) = FQDN or Single IP |
-| Key Usage | Critical=TRUE Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0)) |
-| Enhanced Key Usage | Critical=FALSE Server Authentication |
-| Certificate Policies | Critical=FALSE 1. Policy ID=1.3.6.1.4.1.50977.1.2.100 (User Notice, Domain Validated SSL/TLS Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1.1 (CPS), |
-|  | [http://repository.emsign.com](http://repository.emsign.com/) 3. Policy ID = 2.23.140.1.2.1 |
-| Subject Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Authority Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Basic Constraints | Critical=TRUE Subject Type=End Entity, Path Length Constraint=None |
-| Authority Information access | Critical=FALSE Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com OR, URL=http://ocsp-a.emSign.com (for IN location certificate) OR, URL=http://ocsp-b.emSign.com (for US location certificate) OR, URL=http://ocsp-c.emSign.com (for NL location certificate) Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2), URL=http://repository.emsign.com/certs/<IssuerName>.crt/p7c/cer |
-| CRL Distribution Points | Critical=FALSE CRL HTTP URL = http://crl.emsign.com?<IssuerName>.crl |
+| Issuer: CN | \<Issuing CA Common Name\> |
+| Issuer: O | \<Issuing CA Organization name\> |
+| Issuer: OU | \<Issuing CA Organization unit\> |
+| Issuer: C | \<Issuing CA Country\> |
 
-## 11.4. SSL/TLS - OV
+<table style="width:86%;">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><p>Valid From</p></th>
+<th style="text-align: left;">Start date expressed in UTC format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><p>Valid To</p></td>
+<td style="text-align: left;">Start date expressed in UTC format</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Public Key</p></td>
+<td style="text-align: left;">As per Section 6.1.5.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: CommonName</p></td>
+<td style="text-align: left;">FQDN or Single IP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: OrganizationName</p></td>
+<td style="text-align: left;">Legal Name of the Organization with allowed variations</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: StreetAddress</p></td>
+<td style="text-align: left;">Verified Street Address (Optional)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: LocalityName</p></td>
+<td style="text-align: left;">Verified Locality (Optional)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: StateOrProvinceName</p></td>
+<td style="text-align: left;">Verified State/Province</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: CountryName</p></td>
+<td style="text-align: left;">Verified Country</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: PostalCode</p></td>
+<td style="text-align: left;">Verified Postal Code (Optional)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: BusinessCategory</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: SerialNumber</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: JurisdictionLocalityName</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject:</p>
+<p>JurisdictionStateOrProvinceName</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject: JurisdictionCountryName</p></td>
+<td style="text-align: left;">Verified Information as per EV criteria</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject Alternative Name</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>DNS (multiple) = FQDN or Single IP</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Key Usage</p></td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0))</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Enhanced Key Usage</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>Server Authentication</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Certificate Policies</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>1. Policy ID=1.3.6.1.4.1.50977.1.2.120 (User Notice, Extended Validated SSL/TLS Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1.1 (CPS, <a href="http://repository.emsign.com/"><u>http://repository.emsign.com</u> 3</a>. Policy ID = 2.23.140.1.1</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Subject Key Identifier</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Authority Key Identifier</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>160 bit hash (SHA-1)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Basic Constraints</p></td>
+<td style="text-align: left;"><p>Critical=TRUE</p>
+<p>Subject Type=End Entity, Path Length Constraint=None</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Authority Information access</p></td>
+<td style="text-align: left;"><p>Critical=FALSE</p>
+<p>Access Method=OCSP (1.3.6.1.5.5.7.48.1),</p>
+<p>URL=http://ocsp.emSign.com OR,</p>
+<p>URL=http://ocsp-a.emSign.com (for IN location certificate) OR,</p>
+<p>URL=http://ocsp-b.emSign.com (for US location certificate) OR,</p>
+<p>URL=http://ocsp-c.emSign.com (for NL location certificate)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><p>Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2),</p>
+<p>URL=http://repository.emsign.com/certs/&lt;IssuerName&gt;.crt/p7c/cer</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>CRL Distribution Points</p></td>
+<td style="text-align: left;"><p>Critical=FALSE CRL HTTP URL</p>
+<p>=</p>
+<p>http://crl.emsign.com?&lt;IssuerName&gt;.crl</p></td>
+</tr>
+</tbody>
+</table>
 
-| Version | V3 |
-|---|---|
-| Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
-| Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
-| Issuer: CN | <Issuing CA Common Name> |
-| Issuer: O | <Issuing CA Organization name> |
-| Issuer: OU | <Issuing CA Organization unit> |
-| Issuer: C | <Issuing CA Country> |
+<a id="appendix-c-change-history"></a>
 
-| Valid From | Start date expressed in UTC format |
-|---|---|
-| Valid To | Start date expressed in UTC format |
-| Public Key | As per Section 6.1.5. |
-| Subject: CommonName | FQDN or Single IP |
-| Subject: OrganizationName | Legal Name of the Organization with allowed variations |
-| Subject: StreetAddress | Verified Street Address (Optional) |
-| Subject: LocalityName | Verified Locality (Optional) |
-| Subject: StateOrProvinceName | Verified State/Province |
-| Subject: CountryName | Verified Country |
-| Subject: PostalCode | Verified Postal Code (Optional) |
-| Subject: domainComponent1 | Verified domainComponent (Optional) |
-| Subject: domainComponent2 | Verified domainComponent (Optional) |
-| Subject Alternative Name | Critical=FALSE DNS (multiple) = FQDN or Single IP |
-| Key Usage | Critical=TRUE Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0)) |
-| Enhanced Key Usage | Critical=FALSE Server Authentication |
-| Certificate Policies | Critical=FALSE 1. Policy ID=1.3.6.1.4.1.50977.1.2.110 (User Notice, Organization Validated SSL/TLS Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1.1 (CPS, [http://repository.emsign.com3](http://repository.emsign.com/). Policy ID = 2.23.140.1.2.2 |
-| Subject Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Authority Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Basic Constraints | Critical=TRUE Subject Type=End Entity, Path Length Constraint=None |
-| Authority Information access | Critical=FALSE Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com OR, URL=http://ocsp-a.emSign.com (for IN location certificate) OR, URL=http://ocsp-b.emSign.com (for US location certificate) OR, URL=http://ocsp-c.emSign.com (for NL location certificate) Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2), URL=http://repository.emsign.com/certs/<IssuerName>.crt/p7c/cer |
-| CRL Distribution Points | Critical=FALSE CRL HTTP URL = http://crl.emsign.com?<IssuerName>.crl |
-
-## 11.5. SSL/TLS - EV
-
-| Version | V3 |
-|---|---|
-| Serial Number | Unique Non-Sequential CSPRNG Number and is greater than zero. |
-| Signature Algorithm | SHA-256, SHA-384 or SHA-512 with RSA Encryption or ECDSA with SHA-256, SHA-384 or SHA-512 |
-| Issuer: CN | <Issuing CA Common Name> |
-| Issuer: O | <Issuing CA Organization name> |
-| Issuer: OU | <Issuing CA Organization unit> |
-| Issuer: C | <Issuing CA Country> |
-
-| Valid From | Start date expressed in UTC format |
-|---|---|
-| Valid To | Start date expressed in UTC format |
-| Public Key | As per Section 6.1.5. |
-| Subject: CommonName | FQDN or Single IP |
-| Subject: OrganizationName | Legal Name of the Organization with allowed variations |
-| Subject: StreetAddress | Verified Street Address (Optional) |
-| Subject: LocalityName | Verified Locality (Optional) |
-| Subject: StateOrProvinceName | Verified State/Province |
-| Subject: CountryName | Verified Country |
-| Subject: PostalCode | Verified Postal Code (Optional) |
-| Subject: BusinessCategory | Verified Information as per EV criteria |
-| Subject: SerialNumber | Verified Information as per EV criteria |
-| Subject: JurisdictionLocalityName | Verified Information as per EV criteria |
-| Subject: JurisdictionStateOrProvinceName | Verified Information as per EV criteria |
-| Subject: JurisdictionCountryName | Verified Information as per EV criteria |
-| Subject Alternative Name | Critical=FALSE DNS (multiple) = FQDN or Single IP |
-| Key Usage | Critical=TRUE Digital Signature, (in case of RSA algorithm, it shall also contain Key Encipherment (a0)) |
-| Enhanced Key Usage | Critical=FALSE Server Authentication |
-| Certificate Policies | Critical=FALSE 1. Policy ID=1.3.6.1.4.1.50977.1.2.120 (User Notice, Extended Validated SSL/TLS Certificate) 2. Policy ID=1.3.6.1.4.1.50977.1.0.1.1 (CPS, [http://repository.emsign.com3](http://repository.emsign.com/). Policy ID = 2.23.140.1.1 |
-| Subject Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Authority Key Identifier | Critical=FALSE 160 bit hash (SHA-1) |
-| Basic Constraints | Critical=TRUE Subject Type=End Entity, Path Length Constraint=None |
-| Authority Information access | Critical=FALSE Access Method=OCSP (1.3.6.1.5.5.7.48.1), URL=http://ocsp.emSign.com OR, URL=http://ocsp-a.emSign.com (for IN location certificate) OR, URL=http://ocsp-b.emSign.com (for US location certificate) OR, URL=http://ocsp-c.emSign.com (for NL location certificate) |
-|  | Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2), URL=http://repository.emsign.com/certs/<IssuerName>.crt/p7c/cer |
-| CRL Distribution Points | Critical=FALSE CRL HTTP URL = http://crl.emsign.com?<IssuerName>.crl |
-
-# 12. Appendix C: Change History
+# 12. Appendix C: Change History 
 
 This section contains the summary of changes made to the CP-CPS. Please check the archived document versions for detailed comparative differences.
 
@@ -2968,12 +4333,4 @@ This section contains the summary of changes made to the CP-CPS. Please check th
 
 - In Section 4.9.10 updated in accordance with the CA/Browser Forum TLS Baseline Requirements.
 
-**Version 1.07: 24-July-2026**
-
-- In Section 4.2.1 Updated CAA validation requirements.
-
-- In Section 4.2.4 Updated CAA validation procedures to align with Section 3.2.2.8 of the CA/Browser Forum TLS Baseline Requirements.
-
-- In Section 6.7.1 added a Timeframe for Responding to and Remediating Vulnerabilities
-
-- In Section 11.4 (Appendix B) Updated the SSL/TLS OV Certificate Profile to include optional verified domainComponent Subject attributes.
+</div>
